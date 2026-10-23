@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-09T03:01:32.463Z",
+ "generatedAt": "2026-10-23T01:45:02.892Z",
  "counts": {
-  "v11Stories": 507,
-  "v12Stories": 624,
-  "ibmpStories": 270,
-  "matched": 498,
-  "migrated": 91
+  "v11Stories": 508,
+  "v12Stories": 643,
+  "ibmpStories": 257,
+  "matched": 499,
+  "migrated": 109
  },
  "matched": [
   {
@@ -4100,6 +4100,16 @@
   },
   {
    "base": "v11",
+   "baseId": "components-ui-shell-sidenav--fixed-side-nav-w-mixed-links-and-buttons",
+   "v11": "components-ui-shell-sidenav--fixed-side-nav-w-mixed-links-and-buttons",
+   "v12": "components-ui-shell-sidenav--fixed-side-nav-w-mixed-links-and-buttons",
+   "title": "Components/UI Shell/SideNav",
+   "name": "Fixed Side Nav with Mixed Buttons and Links",
+   "component": "UI Shell",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
    "baseId": "components-ui-shell-sidenav--side-nav-rail-w-header",
    "v11": "components-ui-shell-sidenav--side-nav-rail-w-header",
    "v12": "components-ui-shell-sidenav--side-nav-rail-w-header",
@@ -5482,13 +5492,13 @@
   },
   {
    "base": "ibmp",
-   "baseId": "components-tearsheet--with-influencer",
+   "baseId": "preview-tearsheet--with-influencer",
    "v12": "components-tearsheet--with-influencer",
    "title": "Components/Tearsheet",
    "name": "With Influencer",
    "component": "Tearsheet",
-   "match": "exact",
-   "ibmpTitle": "Components/Tearsheet"
+   "match": "name",
+   "ibmpTitle": "Preview/Tearsheet"
   },
   {
    "base": "ibmp",
@@ -5539,6 +5549,136 @@
    "component": "UserAvatar",
    "match": "exact",
    "ibmpTitle": "Components/UserAvatar"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--default",
+   "v12": "examples-add-and-select-multiaddselect--default",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "Default",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--non-hierarchical-with-peek-inside-item",
+   "v12": "examples-add-and-select-multiaddselect--non-hierarchical-with-peek-inside-item",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "Non-Hierarchical with Peek Inside Item",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-column-actions",
+   "v12": "examples-add-and-select-multiaddselect--with-column-actions",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Column Actions",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-data-table",
+   "v12": "examples-add-and-select-multiaddselect--with-data-table",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With DataTable",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-global-actions",
+   "v12": "examples-add-and-select-multiaddselect--with-global-actions",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Global Actions",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-hierarchy",
+   "v12": "examples-add-and-select-multiaddselect--with-hierarchy",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Hierarchy",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-hierarchy-no-select-all",
+   "v12": "examples-add-and-select-multiaddselect--with-hierarchy-no-select-all",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Hierarchy (No Select All)",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-modifiers",
+   "v12": "examples-add-and-select-multiaddselect--with-modifiers",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Modifiers",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
+   "v12": "examples-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Modifiers and Bulk Actions",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-multiaddselect--with-scroll",
+   "v12": "examples-add-and-select-multiaddselect--with-scroll",
+   "title": "Examples/Add and select/MultiAddSelect",
+   "name": "With Scroll (progressive loading)",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/MultiAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-singleaddselect--default",
+   "v12": "examples-add-and-select-singleaddselect--default",
+   "title": "Examples/Add and select/SingleAddSelect",
+   "name": "Default",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/SingleAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-singleaddselect--with-hierarchy",
+   "v12": "examples-add-and-select-singleaddselect--with-hierarchy",
+   "title": "Examples/Add and select/SingleAddSelect",
+   "name": "With Hierarchy",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/SingleAddSelect"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-add-and-select-singleaddselect--with-hierarchy-and-side-panel",
+   "v12": "examples-add-and-select-singleaddselect--with-hierarchy-and-side-panel",
+   "title": "Examples/Add and select/SingleAddSelect",
+   "name": "With Hierarchy and Side Panel",
+   "component": "Add and select",
+   "match": "name",
+   "ibmpTitle": "Patterns/Add and select/SingleAddSelect"
   },
   {
    "base": "ibmp",
@@ -5862,6 +6002,56 @@
   },
   {
    "base": "ibmp",
+   "baseId": "patterns-saving--auto",
+   "v12": "examples-saving--auto-saving",
+   "title": "Examples/Saving",
+   "name": "Auto",
+   "component": "Saving",
+   "match": "name",
+   "ibmpTitle": "Patterns/Saving"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-saving--manual",
+   "v12": "examples-saving--manual-saving",
+   "title": "Examples/Saving",
+   "name": "Manual",
+   "component": "Saving",
+   "match": "name",
+   "ibmpTitle": "Patterns/Saving"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-webterminal--default-web-terminal",
+   "v12": "examples-web-terminal--default-web-terminal",
+   "title": "Examples/Web Terminal",
+   "name": "Default",
+   "component": "Web Terminal",
+   "match": "name",
+   "ibmpTitle": "Patterns/webTerminal"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-webterminal--with-actions",
+   "v12": "examples-web-terminal--with-actions",
+   "title": "Examples/Web Terminal",
+   "name": "With actions",
+   "component": "Web Terminal",
+   "match": "name",
+   "ibmpTitle": "Patterns/webTerminal"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "patterns-webterminal--with-documentation-links",
+   "v12": "examples-web-terminal--with-documentation-links",
+   "title": "Examples/Web Terminal",
+   "name": "With documentation links",
+   "component": "Web Terminal",
+   "match": "name",
+   "ibmpTitle": "Patterns/webTerminal"
+  },
+  {
+   "base": "ibmp",
    "baseId": "preview-candidate-onboarding-guidebanner--collapsible",
    "v12": "preview-onboarding-preview-guidebanner--collapsible",
    "title": "Preview/Onboarding/preview__Guidebanner",
@@ -5902,6 +6092,17 @@
   }
  ],
  "migratedComponents": [
+  {
+   "component": "Add and select",
+   "v12Title": "Examples/Add and select/MultiAddSelect",
+   "ibmpTitles": [
+    "Patterns/Add and select/MultiAddSelect",
+    "Patterns/Prebuilt patterns/Add and select/MultiAddSelect"
+   ],
+   "tagged": false,
+   "matched": 13,
+   "unmatched": []
+  },
   {
    "component": "AddSelect",
    "v12Title": "Components/AddSelect",
@@ -6189,6 +6390,16 @@
    ]
   },
   {
+   "component": "Saving",
+   "v12Title": "Examples/Saving",
+   "ibmpTitles": [
+    "Patterns/Saving"
+   ],
+   "tagged": false,
+   "matched": 2,
+   "unmatched": []
+  },
+  {
    "component": "ScrollGradient",
    "v12Title": "Utilities/ScrollGradient",
    "ibmpTitles": [
@@ -6231,7 +6442,6 @@
    "component": "Tearsheet",
    "v12Title": "Components/Tearsheet",
    "ibmpTitles": [
-    "Components/Tearsheet",
     "Preview/Tearsheet"
    ],
    "tagged": true,
@@ -6256,6 +6466,16 @@
    ],
    "tagged": true,
    "matched": 2,
+   "unmatched": []
+  },
+  {
+   "component": "Web Terminal",
+   "v12Title": "Examples/Web Terminal",
+   "ibmpTitles": [
+    "Patterns/webTerminal"
+   ],
+   "tagged": false,
+   "matched": 3,
    "unmatched": []
   }
  ],
@@ -6340,6 +6560,9 @@
    "Elements/Motion/Custom surface",
    "Elements/Motion/Expand",
    "Elements/Motion/Invoke",
+   "Examples/Add and select/MultiAddSelect",
+   "Examples/Add and select/Overview",
+   "Examples/Add and select/SingleAddSelect",
    "Examples/Coachmark/Coachmark Fixed",
    "Examples/Coachmark/Coachmark Overlay Elements",
    "Examples/Coachmark/Coachmark Stacked",
@@ -6352,6 +6575,8 @@
    "Examples/ExportModal",
    "Examples/Generate an API Key",
    "Examples/Import and upload",
+   "Examples/Saving",
+   "Examples/Web Terminal",
    "Getting Started/Changelog",
    "Preview/Onboarding/preview__Guidebanner",
    "Preview/preview__BigNumber",

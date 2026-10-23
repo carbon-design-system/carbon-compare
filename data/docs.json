@@ -77,6 +77,16 @@
     "section": "current"
    },
    {
+    "flag": "enable-v12-autoalign",
+    "description": "Enable autoAlign by default for components that support it",
+    "availability": [
+     "React",
+     "Web Components"
+    ],
+    "codemod": null,
+    "section": "current"
+   },
+   {
     "flag": "enable-v12-dynamic-floating-styles",
     "description": "Enable dynamic setting of floating styles for components like Popover, Tooltip, etc.",
     "availability": [

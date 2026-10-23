@@ -1,14 +1,14 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-10-09T03:15:01.792Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-10-23T02:00:29.885Z from the live V11 and V12 Storybooks. Values are computed styles.
 
-Components: 31 unchanged · 23 migrated · 32 changed · 18 inherited · 4 removed · 1 new
+Components: 31 unchanged · 26 migrated · 33 changed · 17 inherited · 4 removed · 1 new
 
 ## Tokens
 
 - added `--cds-button-radius`: 0px
-- added `--cds-button-radius-ee`: 0px
-- added `--cds-button-radius-es`: 999999px
+- added `--cds-button-radius-ee`: .5rem
+- added `--cds-button-radius-es`: .5rem
 - added `--cds-button-radius-se`: 0px
 - added `--cds-button-radius-ss`: 999999px
 - changed `--cds-popover-border-radius`: 2px → .25rem
@@ -19,7 +19,7 @@ Components: 31 unchanged · 23 migrated · 32 changed · 18 inherited · 4 remov
 - **August 5, 2026**: A new preview DatePicker has been added to @carbon/react as preview__DatePicker. It is built on the Temporal API and a framework-agnostic state machine shared with @carbon/web-components, replacing the Flatpickr-based implementation. Stories and documentation can be found in the Components/Preview/preview__DatePicker section of Storybook.
 - **July 22, 2026**: Initial motion API has been added to @carbon/motion and @carbon/react packages. Stories along with documentation in the Overview page can be viewed in the Elements/Motion section of Storybook. The initial work covers definition of "surfaces" which are different motion animations we want to standardize (currently examples!) and new React wrapper components that implement the Motion library under the hood. There is an option to also utilize native CSS for the "reveal" surfaces.
 
-## Changed (32)
+## Changed (33)
 
 ### Breadcrumb
 
@@ -107,6 +107,7 @@ _Components · max 0.4% pixels, 1/11 stories differ_
 - **Visual** ContainedList · .cds--tooltip-trigger__wrapper · line-height 0px → 16px (inherited from Tooltip)
 - **Visual** ContainedList · .cds--popover · line-height 0px → 16px (inherited from Popover)
 - **Visual** ContainedList · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · line-height 0px → 16px (inherited from IconButton)
+- **Visual** ContainedList · .cds--search-input · padding 0px 48px → 0px 8px 0px 48px
 - **Structure** ContainedList · .cds--autoalign.cds--overflow-menu__container element added (inherited from OverflowMenu)
 - **Structure** ContainedList · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu)
 
@@ -124,10 +125,12 @@ _Components · max 1.6% pixels, 1/25 stories differ_
 - **Visual** DataTable · .cds--btn.cds--overflow-menu · padding 8px 0px → 0px (inherited from OverflowMenu) _(8 stories)_
 - **Visual** DataTable · .cds--search-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Search) _(5 stories)_
 - **Visual** DataTable · .cds--search-input · border-top/right/left none → 1px solid transparent (inherited from Search) _(5 stories)_
+- **Visual** DataTable · .cds--search-input · padding 0px 48px → 0px 8px 0px 48px _(2 stories)_
 - **Visual** DataTable · .cds--btn.cds--overflow-menu · border-radius 0px → 999999px (pill) (inherited from OverflowMenu)
 - **Visual** DataTable · .cds--tooltip-trigger__wrapper · line-height 0px → 18.0001px
 - **Visual** DataTable · .cds--popover · line-height 0px → 18.0001px
 - **Visual** DataTable · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · line-height 0px → 18.0001px (inherited from Popover, Tooltip)
+- **Visual** DataTable · .cds--search-input · padding 0px 32px → 0px 8px 0px 32px
 - **Layout** DataTable · .cds--table-column-menu · width 103.2px → 114.91px (+11.71px)
 - **Structure** DataTable · .cds--autoalign.cds--overflow-menu.cds--overflow-menu__container.cds--toolbar-action element added (inherited from OverflowMenu) _(8 stories)_
 - **Structure** DataTable · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu) _(8 stories)_
@@ -160,21 +163,16 @@ _Components · max 1.7% pixels, 8/9 stories differ_
 
 _Components · max 1.4% pixels, 5/9 stories differ_
 
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · border-radius 0px → 4px _(7 stories)_
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent _(7 stories)_
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent _(5 stories)_
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(4 stories)_
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent _(4 stories)_
-- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · background-color #ffffff → transparent
-- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%)
-- **Visual** Dropdown · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
-- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent
-- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px _(8 stories)_
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent _(8 stories)_
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent _(6 stories)_
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(5 stories)_
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent _(5 stories)_
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-color #ffffff → transparent
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%)
+- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
 - **Visual** Dropdown · .cds--dropdown.cds--skeleton · border-radius 0px → 4px
-- **Visual** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent
-- **Layout** Dropdown · .cds--dropdown.cds--list-box · width 119.28px → 121.28px (+2px) _(2 stories)_
+- **Layout** Dropdown · .cds--autoalign.cds--dropdown.cds--list-box · width 119.28px → 121.28px (+2px) _(2 stories)_
 - **Story** Dropdown · story graduated from Feature Flag: components-dropdown--floating-styles
 - **Flag** Dropdown · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12
 
@@ -195,7 +193,7 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--skeleton.cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(5 stories)_
 - **Visual** Fluid Components · .cds--list-box.cds--skeleton · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(5 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · background-color #f4f4f4 → transparent (inherited from ComboBox) _(4 stories)_
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown) _(4 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown) _(4 stories)_
 - **Visual** Fluid Components · .cds--form-item.cds--text-input-wrapper · background-color #f4f4f4 → transparent (inherited from TextInput) _(4 stories)_
 - **Visual** Fluid Components · .cds--text-input · background-color #f4f4f4 → transparent (inherited from TextInput) _(4 stories)_
 - **Visual** Fluid Components · .cds--select · background-color #f4f4f4 → transparent (inherited from Select) _(4 stories)_
@@ -207,32 +205,32 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(4 stories)_
 - **Visual** Fluid Components · .cds--form-item · border-bottom 1px solid #c6c6c6 → 1px solid transparent _(4 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · border-radius 0px → 4px (inherited from ComboBox) _(4 stories)_
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(4 stories)_
-- **Visual** Fluid Components · .cds--list-box__wrapper.cds--list-box__wrapper--fluid.cds--multi-select__wrapper · border-radius 0px → 4px (inherited from Dropdown, MultiSelect) _(4 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(4 stories)_
 - **Visual** Fluid Components · .cds--select-input__wrapper · border-radius 0px → 4px _(4 stories)_
 - **Visual** Fluid Components · .cds--select-input · border-radius 0px → 4px (inherited from Select) _(4 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(4 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from ComboBox) _(4 stories)_
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(4 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(4 stories)_
 - **Visual** Fluid Components · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(4 stories)_
 - **Visual** Fluid Components · .cds--select-input · border-top/right/left none → 1px solid transparent (inherited from Select) _(4 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(4 stories)_
 - **Visual** Fluid Components · .cds--form-item · border-top/right/left none → 1px solid transparent _(4 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-color #f4f4f4 → transparent (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from ComboBox) _(3 stories)_
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown) _(3 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown) _(3 stories)_
 - **Visual** Fluid Components · .cds--select-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Select) _(3 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--text-input · border-bottom 1px solid #8d8d8d → none _(3 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from ComboBox) _(3 stories)_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-bottom 1px solid #8d8d8d → none _(3 stories)_
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown) _(3 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown) _(3 stories)_
 - **Visual** Fluid Components · .cds--select-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Select) _(3 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 4px (inherited from DatePicker) _(3 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(3 stories)_
+- **Visual** Fluid Components · .cds--autoalign.cds--list-box__wrapper.cds--list-box__wrapper--fluid.cds--multi-select__wrapper · border-radius 0px → 4px (inherited from Dropdown, MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-top/right/left none → 1px solid transparent (inherited from DatePicker) _(3 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(3 stories)_
 - **Visual** Fluid Components · .cds--search-input · background-color #f4f4f4 → transparent (inherited from Search) _(2 stories)_
@@ -250,11 +248,12 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 0px 4px 4px 0px (inherited from DatePicker) _(2 stories)_
 - **Visual** Fluid Components · .cds--dropdown__wrapper.cds--list-box__wrapper.cds--list-box__wrapper--fluid · border-radius 0px → 4px (inherited from Dropdown) _(2 stories)_
 - **Visual** Fluid Components · .cds--search-input · border-radius 0px → 4px (inherited from Search) _(2 stories)_
+- **Visual** Fluid Components · .cds--list-box__wrapper.cds--list-box__wrapper--fluid.cds--multi-select__wrapper · border-radius 0px → 4px (inherited from Dropdown, MultiSelect) _(2 stories)_
 - **Visual** Fluid Components · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput) _(2 stories)_
 - **Visual** Fluid Components · .cds--password-input.cds--text-input · border-radius 0px → 4px (inherited from PasswordInput) _(2 stories)_
 - **Visual** Fluid Components · .cds--btn.cds--tooltip__trigger · border-radius 0px → 4px (inherited from Button, Tooltip) _(2 stories)_
-- **Visual** Fluid Components · .cds--tag · border-radius 16px → 4px (inherited from Tag) _(2 stories)_
 - **Visual** Fluid Components · .cds--tag__close-icon · border-radius 50% → 4px (inherited from Tag) _(2 stories)_
+- **Visual** Fluid Components · .cds--tag · border-radius 16px → 4px (inherited from Tag) _(2 stories)_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-top/left none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Fluid Components · .cds--date-picker__input.cds--date-picker__input--md · border-top/right none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Fluid Components · .cds--search-input · border-top/right/left none → 1px solid transparent (inherited from Search) _(2 stories)_
@@ -262,7 +261,7 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--number__rule-divider · display block → none (inherited from NumberInput) _(2 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-color #ffffff → transparent (inherited from MultiSelect)
 - **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from ComboBox)
-- **Visual** Fluid Components · .cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
+- **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect)
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
 - **Visual** Fluid Components · .cds--select-input · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Select)
@@ -291,9 +290,9 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Layout** Fluid Components · .cds--text-input · width 600px → 598px (-2px) (inherited from TextInput)
 - **Layout** Fluid Components · .cds--text-input · width 292px → 290px (-2px) (inherited from TextInput)
 - **Layout** Fluid Components · .cds--text-input · width 334.67px → 332.67px (-2px) (inherited from TextInput)
-- **Layout** Fluid Components · .cds--text-input · width 450px → 448px (-2px) (inherited from TextInput)
-- **Layout** Fluid Components · .cds--text-input · width 416px → 414px (-2px) (inherited from TextInput)
 - **Layout** Fluid Components · .cds--text-input · width 382px → 380px (-2px) (inherited from TextInput)
+- **Layout** Fluid Components · .cds--text-input · width 416px → 414px (-2px) (inherited from TextInput)
+- **Layout** Fluid Components · .cds--text-input · width 450px → 448px (-2px) (inherited from TextInput)
 - **Layout** Fluid Components · .cds--label.cds--skeleton · width 37.5px → 36.5px (-1px) (inherited from FormLabel)
 - **Layout** Fluid Components · .cds--label.cds--skeleton::before · width 37.5px → 36.5px (-1px) (inherited from FormLabel)
 - **Layout** Fluid Components · .cds--list-box__field · width 37.5px → 36.5px (-1px) (inherited from Dropdown)
@@ -309,11 +308,11 @@ _Components · max 1.0% pixels, 2/2 stories differ_
 
 - **Visual** Form · .cds--search-input · background-color #f4f4f4 → transparent (inherited from Search) _(2 stories)_
 - **Visual** Form · .cds--text-input · background-color #f4f4f4 → transparent (inherited from TextInput) _(2 stories)_
-- **Visual** Form · .cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · background-color #f4f4f4 → transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--select-input · background-color #f4f4f4 → transparent (inherited from Select) _(2 stories)_
-- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · background-color #f4f4f4 → transparent (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--password-input.cds--text-input · background-color #f4f4f4 → transparent (inherited from PasswordInput) _(2 stories)_
+- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · background-color #f4f4f4 → transparent (inherited from MultiSelect) _(2 stories)_
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · background-color #f4f4f4 → transparent (inherited from ComboBox) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · background-color #f4f4f4 → transparent (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--search-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Search) _(2 stories)_
@@ -323,49 +322,50 @@ _Components · max 1.0% pixels, 2/2 stories differ_
 - **Visual** Form · .cds--password-input.cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from PasswordInput) _(2 stories)_
 - **Visual** Form · .cds--search-input · border-radius 0px → 4px (inherited from Search) _(2 stories)_
 - **Visual** Form · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(2 stories)_
-- **Visual** Form · .cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 4px 0px 0px 4px (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 0px 4px 4px 0px (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 4px (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput) _(2 stories)_
 - **Visual** Form · .cds--select-input · border-radius 0px → 4px (inherited from Select) _(2 stories)_
-- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--password-input.cds--text-input · border-radius 0px → 4px (inherited from PasswordInput) _(2 stories)_
 - **Visual** Form · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
+- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--btn.cds--tooltip__trigger · border-radius 0px → 4px (inherited from Button, Tooltip) _(2 stories)_
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · border-radius 0px → 4px (inherited from ComboBox) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-top/left none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-top/right none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--search-input · border-top/right/left none → 1px solid transparent (inherited from Search) _(2 stories)_
 - **Visual** Form · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(2 stories)_
-- **Visual** Form · .cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-top/right/left none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--select-input · border-top/right/left none → 1px solid transparent (inherited from Select) _(2 stories)_
-- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--password-input.cds--text-input · border-top/right/left none → 1px solid transparent (inherited from PasswordInput) _(2 stories)_
+- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(2 stories)_
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from ComboBox) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(2 stories)_
+- **Visual** Form · .cds--search-input · padding 0px 40px → 0px 8px 0px 40px (inherited from Search) _(2 stories)_
 - **Visual** Form · .cds--text-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput)
-- **Visual** Form · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from DatePicker)
 - **Visual** Form · .cds--select-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Select)
 - **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect)
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from ComboBox)
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect)
 - **Visual** Form · .cds--text-input · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from TextInput)
-- **Visual** Form · .cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from DatePicker)
 - **Visual** Form · .cds--select-input · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Select)
 - **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from ComboBox)
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
 - **Visual** Form · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput)
-- **Visual** Form · .cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from DatePicker)
 - **Visual** Form · .cds--select-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Select)
-- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect)
 - **Visual** Form · .cds--text-input · border-bottom 1px solid #8d8d8d → none
+- **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect)
+- **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from ComboBox)
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect)
 - **Visual** Form · .cds--text-input · border-bottom 1px solid #4589ff → 1px solid transparent (inherited from TextInput)
@@ -373,10 +373,10 @@ _Components · max 1.0% pixels, 2/2 stories differ_
 - **Visual** Form · .cds--select-input · border-bottom 1px solid #4589ff → 1px solid transparent (inherited from Select)
 - **Visual** Form · .cds--text-input · border-bottom 1px solid transparent → none
 - **Visual** Form · .cds--number__rule-divider · display block → none (inherited from NumberInput)
-- **Layout** Form · .cds--text-input · height 39px → 38px (-1px) (inherited from TextInput) _(2 stories)_
 - **Layout** Form · .cds--text-input · height 40px → 38px (-2px) (inherited from TextInput) _(2 stories)_
-- **Layout** Form · .cds--text-input · width 600px → 598px (-2px) (inherited from TextInput) _(2 stories)_
+- **Layout** Form · .cds--text-input · height 39px → 38px (-1px) (inherited from TextInput) _(2 stories)_
 - **Layout** Form · .cds--text-input · width 292px → 290px (-2px) (inherited from TextInput) _(2 stories)_
+- **Layout** Form · .cds--text-input · width 600px → 598px (-2px) (inherited from TextInput) _(2 stories)_
 - **Layout** Form · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput)
 - **Layout** Form · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput)
 - **Structure** Form · .cds--number__control-btn element removed (inherited from NumberInput)
@@ -427,7 +427,7 @@ _Components · max 2.6% pixels, 7/11 stories differ_
 - **Visual** Modal · .cds--autoalign.cds--combo-box.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from ComboBox) _(2 stories)_
 - **Visual** Modal · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(2 stories)_
 - **Visual** Modal · .cds--autoalign.cds--dropdown.cds--list-box · background-color #ffffff → transparent (inherited from Dropdown)
-- **Visual** Modal · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
+- **Visual** Modal · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
 - **Visual** Modal · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
 - **Visual** Modal · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** Modal · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip)
@@ -446,8 +446,8 @@ _Components · max 1.8% pixels, 10/14 stories differ_
 - **Visual** MultiSelect · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(8 stories)_
 - **Visual** MultiSelect · .cds--autoalign.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent _(8 stories)_
 - **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · background-color #f4f4f4 → transparent _(5 stories)_
-- **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px _(5 stories)_
 - **Visual** MultiSelect · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(5 stories)_
+- **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px _(5 stories)_
 - **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent _(5 stories)_
 - **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(4 stories)_
 - **Visual** MultiSelect · .cds--combo-box.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent _(4 stories)_
@@ -548,7 +548,7 @@ _Components · max 9.6% pixels, 5/6 stories differ_
 
 ### ProgressBar
 
-_Components · max 0.6% pixels, 1/4 stories differ_
+_Components · max 1.5% pixels, 1/4 stories differ_
 
 - **Visual** ProgressBar · .cds--progress-bar__track · border-radius 0px → 999999px (pill) _(4 stories)_
 - **Visual** ProgressBar · .cds--progress-bar__track::after · background-color transparent → #0f62fe _(2 stories)_
@@ -569,6 +569,7 @@ _Components · max 0.5% pixels, 2/5 stories differ_
 - **Visual** Search · .cds--search-input · border-bottom 1px solid #8d8d8d → 1px solid transparent _(2 stories)_
 - **Visual** Search · .cds--search-magnifier · border-radius 0px → 4px (inherited from Tooltip) _(2 stories)_
 - **Visual** Search · .cds--search-input · border-top/right/left none → 1px solid transparent _(2 stories)_
+- **Visual** Search · .cds--search-input · padding 0px 40px → 0px 8px 0px 40px _(2 stories)_
 - **Visual** Search · .cds--search-input · background-color #ffffff → transparent
 - **Visual** Search · .cds--search-input · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
 
@@ -687,7 +688,7 @@ _Components · max 7.9% pixels, 3/5 stories differ_
 
 ### Toggletip
 
-_Components · max 17.9% pixels, 1/3 stories differ_
+_Components · max 17.9% pixels, 1/2 stories differ_
 
 - **Visual** Toggletip · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
 - **Visual** Toggletip · .cds--popover-content · border-radius 2px → 4px _(2 stories)_
@@ -710,12 +711,45 @@ _Components · max 4.4% pixels, 4/5 stories differ_
 
 ### EmptyState
 
-_Examples · max 0.1% pixels, 2/3 stories differ_
+_Examples · max 0.1% pixels, 1/2 stories differ_
 
-- **Visual** EmptyState · .cds--btn.cds--empty-state__action · border-radius 0px → 999999px (pill) _(3 stories)_
+- **Visual** EmptyState · .cds--btn.cds--empty-state__action · border-radius 0px → 999999px (pill) _(2 stories)_
 - **Visual** EmptyState · .cds--search-input · background-color #f4f4f4 → transparent (inherited from Search)
 - **Visual** EmptyState · .cds--search-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Search)
 - **Visual** EmptyState · .cds--search-input · border-radius 0px → 4px (inherited from Search)
+- **Visual** EmptyState · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display inline-block → block (inherited from Popover, Tooltip)
+- **Visual** EmptyState · .cds--tooltip-trigger__wrapper · line-height 0px → 16px (inherited from Tooltip)
+- **Visual** EmptyState · .cds--popover · line-height 0px → 16px (inherited from Popover)
+- **Visual** EmptyState · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · line-height 0px → 16px (inherited from IconButton)
+- **Visual** EmptyState · .cds--search-input · padding 0px 48px → 0px 8px 0px 48px
+- **Visual** EmptyState · .cds--btn.cds--overflow-menu · padding 8px 0px → 0px (inherited from OverflowMenu)
+- **Structure** EmptyState · .cds--autoalign.cds--overflow-menu.cds--overflow-menu__container.cds--toolbar-action element added (inherited from OverflowMenu)
+- **Structure** EmptyState · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu)
+
+### preview__Card
+
+_Preview · max 1.6% pixels, 5/17 stories differ_
+
+- **Visual** preview__Card · .cds--card · border-radius 0px → 8px (inherited from AspectRatio) _(17 stories)_
+- **Visual** preview__Card · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(7 stories)_
+- **Visual** preview__Card · .cds--btn · border-radius 0px → 0px 0px 8px _(6 stories)_
+- **Visual** preview__Card · .cds--btn · border-radius 0px → 0px 0px 0px 8px _(5 stories)_
+- **Visual** preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px 8px 0px 0px (inherited from AspectRatio) _(3 stories)_
+- **Visual** preview__Card · .cds--btn.cds--overflow-menu · border-radius 0px → 999999px (pill) (inherited from OverflowMenu) _(2 stories)_
+- **Visual** preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 7px 7px 0px 0px (inherited from AspectRatio)
+- **Visual** preview__Card · .cds--btn · border-radius 0px → 0px 0px 8px 8px
+- **Visual** preview__Card · .cds--card__body.cds--card__body--flush · border-radius 0px → 0px 0px 8px 8px (inherited from AspectRatio)
+- **Visual** preview__Card · .cds--tag · border-radius 16px → 4px (inherited from Tag)
+- **Visual** preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 8px 0px 0px 8px (inherited from AspectRatio)
+- **Visual** preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 0px 8px 8px 0px (inherited from AspectRatio)
+- **Visual** preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px (inherited from AspectRatio)
+- **Layout** preview__Card · .cds--card · height 348.36px → 346.36px (-2px) (inherited from AspectRatio)
+- **Layout** preview__Card · .cds--card · height 354.36px → 352.36px (-2px) (inherited from AspectRatio)
+- **Layout** preview__Card · .cds--card · height 281.48px → 279.48px (-2px) (inherited from AspectRatio)
+- **Layout** preview__Card · .cds--card · height 340.47px → 338.47px (-2px) (inherited from AspectRatio)
+- **Layout** preview__Card · .cds--card · height 462.98px → 460.98px (-2px) (inherited from AspectRatio)
+- **Structure** preview__Card · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--right.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
+- **Structure** preview__Card · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(2 stories)_
 
 ### preview__Layout
 
@@ -731,7 +765,7 @@ _Preview · max 0.6% pixels, 1/1 stories differ_
 - **Visual** preview__Layout · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput)
 - **Layout** preview__Layout · .cds--text-input · width 230.47px → 231.8px (+1.33px) (inherited from TextInput)
 
-## Inherited (18)
+## Inherited (17)
 
 ### ComposedModal
 
@@ -749,15 +783,15 @@ _Components · max 2.5% pixels, 8/10 stories differ_
 - **Visual** ComposedModal · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(6 stories)_
 - **Visual** ComposedModal · .cds--select-input · border-top/right/left none → 1px solid transparent (inherited from Select) _(6 stories)_
 - **Visual** ComposedModal · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(2 stories)_
-- **Visual** ComposedModal · .cds--dropdown.cds--list-box · background-color #ffffff → transparent (inherited from Dropdown)
+- **Visual** ComposedModal · .cds--autoalign.cds--dropdown.cds--list-box · background-color #ffffff → transparent (inherited from Dropdown)
 - **Visual** ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · background-color #ffffff → transparent (inherited from MultiSelect)
-- **Visual** ComposedModal · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
+- **Visual** ComposedModal · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
 - **Visual** ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect)
-- **Visual** ComposedModal · .cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
+- **Visual** ComposedModal · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
 - **Visual** ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect)
-- **Visual** ComposedModal · .cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
+- **Visual** ComposedModal · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect)
-- **Visual** ComposedModal · .cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
+- **Visual** ComposedModal · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
 - **Visual** ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect)
 - **Structure** ComposedModal · .cds--popover-caret element removed (inherited from Popover) _(2 stories)_
 
@@ -850,15 +884,9 @@ _Components · max 0.3% pixels, 1/6 stories differ_
 
 ### UI Shell
 
-_Components · max 0.0% pixels, 0/11 stories differ_
+_Components · max 0.0% pixels, 0/12 stories differ_
 
-- **Visual** UI Shell · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(11 stories)_
-
-### preview__Card
-
-_Preview · max 0.0% pixels, 0/17 stories differ_
-
-- **Visual** preview__Card · .cds--tag · border-radius 16px → 4px (inherited from Tag)
+- **Visual** UI Shell · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(12 stories)_
 
 ### preview__DatePicker
 
@@ -911,14 +939,14 @@ _Preview · max 0.0% pixels, 0/1 stories differ_
 
 _Preview · max 0.2% pixels, 1/4 stories differ_
 
-- **Visual** preview_Text · .cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown)
-- **Visual** preview_Text · .cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
-- **Visual** preview_Text · .cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
+- **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → transparent (inherited from Dropdown)
+- **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
+- **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
 - **Visual** preview_Text · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
-- **Visual** preview_Text · .cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
-- **Visual** preview_Text · .cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
+- **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
+- **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
 
-## Migrated (23)
+## Migrated (26)
 
 ### AddSelect
 
@@ -934,36 +962,35 @@ _Components_
 
 ### Coachmark
 
-_Components · max 15.2% pixels, 5/5 stories differ_
+_Components · max 45.5% pixels, 5/5 stories differ_
 
 - **API** Coachmark · class prefix c4p-- → cds--
 - **API** Coachmark · package @carbon/ibm-products → @carbon/react
 - **Visual** Coachmark · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(2 stories)_
 - **Visual** Coachmark · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
-- **Visual** Coachmark · .cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton, Popover, Tooltip) _(2 stories)_
+- **Visual** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton) _(2 stories)_
 - **Visual** Coachmark · .cds--btn · outline none → 1px solid transparent _(2 stories)_
 - **Visual** Coachmark · .cds--btn · background-color transparent → #0f62fe (inherited from Button)
 - **Visual** Coachmark · .cds--btn · color #0f62fe → #ffffff (inherited from Button)
 - **Visual** Coachmark · .cds--btn · display inline-flex → flex (inherited from Button)
-- **Visual** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · margin 0px → 0px 226px 0px 0px (inherited from Popover, Tooltip)
 - **Visual** Coachmark · .cds--btn · margin 0px → 16px 0px 0px
 - **Visual** Coachmark · .cds--btn · padding 0px → 5.99996px 63px 5.99996px 15px
 - **Layout** Coachmark · .cds--btn · width 32px → 116.81px (+84.81px) (inherited from Button)
 - **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element removed _(5 stories)_
 - **Structure** Coachmark · .cds--coachmark__next--content-header element removed _(5 stories)_
 - **Structure** Coachmark · .cds--coachmark__next--content-body element removed _(5 stories)_
+- **Structure** Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(4 stories)_
 - **Structure** Coachmark · .cds--layout element added _(3 stories)_
 - **Structure** Coachmark · .cds--layer-one.cds--white element added _(3 stories)_
+- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
 - **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element added _(3 stories)_
 - **Structure** Coachmark · .cds--coachmark__next--content-header element added _(3 stories)_
-- **Structure** Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
 - **Structure** Coachmark · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip) _(3 stories)_
 - **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element added _(3 stories)_
 - **Structure** Coachmark · .cds--popover element added (inherited from Popover) _(3 stories)_
 - **Structure** Coachmark · .cds--coachmark__next--content-body element added _(3 stories)_
 - **Structure** Coachmark · .cds--g10.cds--layer-one element removed _(3 stories)_
 - **Structure** Coachmark · .cds--popover-caret element removed (inherited from Popover) _(3 stories)_
-- **Structure** Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(3 stories)_
 - **Structure** Coachmark · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip) _(3 stories)_
 - **Structure** Coachmark · .cds--popover element removed (inherited from Popover) _(3 stories)_
 - **Structure** Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button) _(3 stories)_
@@ -984,11 +1011,11 @@ _Components · max 15.2% pixels, 5/5 stories differ_
 - **Structure** Coachmark · .cds--coachmark element added
 - **Structure** Coachmark · .cds--link element added (inherited from Link)
 - **Structure** Coachmark · .cds--coachmark__next element added
-- **Structure** Coachmark · .cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)
+- **Structure** Coachmark · .cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)
 - **Structure** Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element added (inherited from Popover)
 - **Structure** Coachmark · .cds--coachmark-beacon__target element added (inherited from Popover)
 - **Structure** Coachmark · .cds--coachmark-beacon__center element added (inherited from Popover)
-- **Structure** Coachmark · .cds--popover-caret element added (inherited from Popover)
+- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
 - **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)
 - **Structure** Coachmark · .cds--coachmark__next.cds--coachmark__next--floating element removed
 - **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm element removed (inherited from Button)
@@ -1166,6 +1193,8 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 36.0002px → 16px (inherited from Tooltip) _(2 stories)_
 - **Visual** PageHeader · .cds--popover · line-height 36.0002px → 16px (inherited from Popover) _(2 stories)_
 - **Visual** PageHeader · .cds--autoalign.cds--popover-container.cds--tooltip · line-height 0px → 36.0002px (inherited from Popover) _(2 stories)_
+- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 18.0001px _(2 stories)_
+- **Visual** PageHeader · .cds--popover · line-height 0px → 18.0001px _(2 stories)_
 - **Visual** PageHeader · .cds--tag · background-color #e0e0e0 → #d0e2ff (inherited from Tag)
 - **Visual** PageHeader · .cds--header · background-color #f4f4f4 → #ffffff (inherited from UI Shell)
 - **Visual** PageHeader · .cds--tag · border 1px solid #a8a8a8 → 1px solid #78a9ff (inherited from Tag)
@@ -1177,19 +1206,15 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Visual** PageHeader · .cds--link · display inline-flex → flex
 - **Visual** PageHeader · .cds--breadcrumb-item · display none → flex (inherited from Breadcrumb)
 - **Visual** PageHeader · .cds--breadcrumb-item::after · display inline → block (inherited from Breadcrumb)
-- **Visual** PageHeader · .cds--overflow-menu__wrapper · display block → inline (inherited from OverflowMenu)
 - **Visual** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item · display flex → none (inherited from Breadcrumb)
 - **Visual** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item::after · display block → inline (inherited from Breadcrumb)
 - **Visual** PageHeader · .cds--btn.cds--overflow-menu · font-size 14px → 16px (inherited from OverflowMenu)
 - **Visual** PageHeader · .cds--tooltip-trigger__wrapper · font-size 14px → 16px (inherited from Tooltip)
 - **Visual** PageHeader · .cds--popover · font-size 14px → 16px (inherited from Popover)
-- **Visual** PageHeader · .cds--icon-tooltip.cds--popover-container.cds--tooltip · font-size 14px → 16px (inherited from IconButton, Popover, Tooltip)
 - **Visual** PageHeader · .cds--btn__icon.cds--overflow-menu__icon · font-size 14px → 16px (inherited from OverflowMenu)
-- **Visual** PageHeader · .cds--icon-tooltip.cds--popover-container.cds--tooltip · letter-spacing 0.16px → normal (inherited from IconButton, Popover, Tooltip)
 - **Visual** PageHeader · .cds--btn.cds--overflow-menu · line-height 18.0001px → 20.5715px (inherited from OverflowMenu)
 - **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 16px (inherited from Tooltip)
 - **Visual** PageHeader · .cds--popover · line-height 0px → 16px (inherited from Popover)
-- **Visual** PageHeader · .cds--icon-tooltip.cds--popover-container.cds--tooltip · line-height 0px → 16px (inherited from IconButton, Popover, Tooltip)
 - **Visual** PageHeader · .cds--btn__icon.cds--overflow-menu__icon · line-height 18.0001px → 20.5715px (inherited from OverflowMenu)
 - **Layout** PageHeader · .cds--btn · height 0px → 40px (+40px) (inherited from Button) _(6 stories)_
 - **Layout** PageHeader · .cds--btn · width 0px → 40px (+40px) (inherited from Button) _(6 stories)_
@@ -1207,6 +1232,7 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--breadcrumb-item element added (inherited from Breadcrumb) _(7 stories)_
 - **Structure** PageHeader · .cds--link element added (inherited from Link) _(7 stories)_
 - **Structure** PageHeader · .cds--truncated-text__text-content element added (inherited from TruncatedText) _(7 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--left.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(7 stories)_
 - **Structure** PageHeader · .cds--css-grid element removed _(7 stories)_
 - **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-16.cds--md:col-span-8.cds--sm:col-span-4 element removed (inherited from AspectRatio, Grid, preview__Card) _(7 stories)_
 - **Structure** PageHeader · .cds--page-header__breadcrumb-container element removed _(7 stories)_
@@ -1231,6 +1257,7 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border element removed _(6 stories)_
 - **Structure** PageHeader · .cds--page-header__breadcrumb__actions element removed _(6 stories)_
 - **Structure** PageHeader · .cds--page-header__breadcrumb-page-actions element removed _(6 stories)_
+- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(6 stories)_
 - **Structure** PageHeader · .cds--page-header__content element removed _(6 stories)_
 - **Structure** PageHeader · .cds--page-header__content__title-wrapper element removed _(6 stories)_
 - **Structure** PageHeader · .cds--page-header__content__start element removed _(6 stories)_
@@ -1242,12 +1269,10 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--page-header__breadcrumb__icon element added _(5 stories)_
 - **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element added (inherited from Button) _(5 stories)_
 - **Structure** PageHeader · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip) _(5 stories)_
-- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(5 stories)_
 - **Structure** PageHeader · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip) _(5 stories)_
 - **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button) _(5 stories)_
 - **Structure** PageHeader · .cds--popover element removed (inherited from Popover) _(5 stories)_
 - **Structure** PageHeader · .cds--page-header__breadcrumb__icon element removed _(5 stories)_
-- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(4 stories)_
 - **Structure** PageHeader · .cds--page-header__tab-bar element added _(3 stories)_
 - **Structure** PageHeader · .cds--css-grid.cds--css-grid--condensed element added _(3 stories)_
 - **Structure** PageHeader · .cds--tabs element added (inherited from Tabs) _(3 stories)_
@@ -1260,7 +1285,7 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--tag__label element added (inherited from Tag) _(3 stories)_
 - **Structure** PageHeader · .cds--tab-content element added (inherited from Tabs) _(3 stories)_
 - **Structure** PageHeader · .cds--page-header__content__page-actions element added _(3 stories)_
-- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
 - **Structure** PageHeader · .cds--page-header__tab-bar element removed _(3 stories)_
 - **Structure** PageHeader · .cds--css-grid.cds--css-grid--condensed element removed _(3 stories)_
 - **Structure** PageHeader · .cds--tabs element removed (inherited from Tabs) _(3 stories)_
@@ -1272,9 +1297,13 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-link element removed (inherited from Tabs) _(3 stories)_
 - **Structure** PageHeader · .cds--tag__label element removed (inherited from Tag) _(3 stories)_
 - **Structure** PageHeader · .cds--tab-content element removed (inherited from Tabs) _(3 stories)_
+- **Structure** PageHeader · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu) _(3 stories)_
+- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(3 stories)_
 - **Structure** PageHeader · .cds--truncated-text__tooltip-trigger element added (inherited from TruncatedText) _(2 stories)_
 - **Structure** PageHeader · .cds--page-header__content__contextual-actions element added _(2 stories)_
 - **Structure** PageHeader · .cds--layout--size-lg.cds--tag.cds--tag--blue.cds--tag--lg element added (inherited from Tag) _(2 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--overflow-menu__container element added (inherited from OverflowMenu) _(2 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--right.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
 - **Structure** PageHeader · .cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element removed (inherited from Popover, Tooltip) _(2 stories)_
 - **Structure** PageHeader · .cds--truncated-text__tooltip-trigger element removed (inherited from TruncatedText) _(2 stories)_
 - **Structure** PageHeader · .cds--page-header__content__contextual-actions element removed _(2 stories)_
@@ -1300,8 +1329,6 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--btn.cds--btn--md.cds--btn--primary.cds--layout--size-md element added (inherited from Button)
 - **Structure** PageHeader · .cds--btn__icon element added (inherited from Button)
 - **Structure** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item.cds--page-header-overflow-breadcrumb-item-with-items element added (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--overflow-menu__wrapper element added (inherited from OverflowMenu)
-- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
 - **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--overflow-menu element added (inherited from OverflowMenu)
 - **Structure** PageHeader · .cds--overflow-menu__icon element added (inherited from OverflowMenu)
 - **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show__with-content-element element added (inherited from Breadcrumb)
@@ -1323,7 +1350,6 @@ _Components · max 3.8% pixels, 5/9 stories differ_
 - **Structure** PageHeader · .cds--aspect-ratio.cds--aspect-ratio--2x1.cds--page-header__hero-image.cds--page-header__hero-image--object-fit-cover element removed
 - **Structure** PageHeader · .cds--page-header__content__icon element removed
 - **Structure** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item.cds--page-header-overflow-breadcrumb-item-with-items element removed (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu)
 - **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--overflow-menu element removed (inherited from OverflowMenu)
 - **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show__with-content-element element removed (inherited from Breadcrumb)
 - **Structure** PageHeader · .cds--page-header__breadcrumb__content-actions.cds--page-header__breadcrumb__content-actions-with-global-actions element removed
@@ -1345,16 +1371,16 @@ _Components · max 10.8% pixels, 8/8 stories differ_
 - **Visual** SidePanel · .cds--header__name · color #f4f4f4 → #161616 (inherited from UI Shell) _(8 stories)_
 - **Visual** SidePanel · .cds--text-input · background-color #f4f4f4 → #ffffff _(7 stories)_
 - **Visual** SidePanel · .cds--text-area · background-color #f4f4f4 → #ffffff (inherited from TextArea) _(7 stories)_
-- **Visual** SidePanel · .cds--list-box.cds--multi-select · background-color #f4f4f4 → #ffffff (inherited from Dropdown, MultiSelect) _(7 stories)_
+- **Visual** SidePanel · .cds--autoalign.cds--list-box.cds--multi-select · background-color #f4f4f4 → #ffffff (inherited from Dropdown) _(7 stories)_
 - **Visual** SidePanel · .cds--text-input · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput) _(7 stories)_
-- **Visual** SidePanel · .cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown, MultiSelect) _(7 stories)_
+- **Visual** SidePanel · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect) _(7 stories)_
 - **Visual** SidePanel · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(7 stories)_
-- **Visual** SidePanel · .cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown, MultiSelect) _(7 stories)_
+- **Visual** SidePanel · .cds--autoalign.cds--list-box.cds--multi-select · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from MultiSelect) _(7 stories)_
 - **Visual** SidePanel · .cds--side-panel · border-left 1px solid #e0e0e0 → 1px solid #c6c6c6 _(7 stories)_
 - **Visual** SidePanel · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(7 stories)_
-- **Visual** SidePanel · .cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from Dropdown, MultiSelect) _(7 stories)_
+- **Visual** SidePanel · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(7 stories)_
 - **Visual** SidePanel · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(7 stories)_
-- **Visual** SidePanel · .cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from Dropdown, MultiSelect) _(7 stories)_
+- **Visual** SidePanel · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect) _(7 stories)_
 - **Visual** SidePanel · .cds--btn · display flex → inline-flex (inherited from Button) _(7 stories)_
 - **Visual** SidePanel · .cds--btn · margin 320px 514.719px → 0px (inherited from Button) _(7 stories)_
 - **Visual** SidePanel · .cds--text-input · margin 0px 16px 0px 0px → 0px (inherited from TextInput) _(7 stories)_
@@ -1484,7 +1510,7 @@ _Components · max 2.5% pixels, 8/8 stories differ_
 
 ### Tearsheet
 
-_Components · max 4.4% pixels, 10/10 stories differ_
+_Components · max 2.0% pixels, 10/10 stories differ_
 
 - **API** Tearsheet · class prefix c4p-- → cds--
 - **API** Tearsheet · package @carbon/ibm-products → @carbon/react
@@ -1492,17 +1518,21 @@ _Components · max 4.4% pixels, 10/10 stories differ_
 - **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · background-color #ffffff → #f4f4f4 _(10 stories)_
 - **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · border 1px solid #e0e0e0 → 1px solid #c6c6c6 _(10 stories)_
 - **Visual** Tearsheet · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(10 stories)_
 - **Visual** Tearsheet · .cds--body--with-modal-open · padding 0px → 42px _(10 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(9 stories)_
-- **Visual** Tearsheet · .cds--text-input · background-color #ffffff → transparent (inherited from TextInput) _(8 stories)_
-- **Visual** Tearsheet · .cds--text-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput) _(8 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(8 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(8 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(8 stories)_
+- **Visual** Tearsheet · .cds--text-input · background-color #ffffff → transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--number__rule-divider · background-color #c6c6c6 → #e0e0e0 (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__control-btn · border none → 1px solid transparent (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--btn.cds--modal-close · box-shadow #0f62fe 0px 0px 0px 1px inset, #f4f4f4 0px 0px 0px 2px inset → #0f62fe 0px 0px 0px 1px inset, #ffffff 0px 0px 0px 2px inset (inherited from Button) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret::after · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__rule-divider · display block → none (inherited from NumberInput) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · display block → none (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret::after · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
@@ -1510,34 +1540,19 @@ _Components · max 4.4% pixels, 10/10 stories differ_
 - **Visual** Tearsheet · .cds--popover-caret::after · letter-spacing normal → 0.16px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret::after · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--number__rule-divider · background-color #c6c6c6 → #e0e0e0 (inherited from NumberInput) _(6 stories)_
-- **Visual** Tearsheet · .cds--number__control-btn · border none → 1px solid transparent (inherited from NumberInput) _(6 stories)_
-- **Visual** Tearsheet · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput) _(6 stories)_
-- **Visual** Tearsheet · .cds--number__rule-divider · display block → none (inherited from NumberInput) _(6 stories)_
 - **Visual** Tearsheet · .cds--btn · background-color #0050e6 → #0f62fe (inherited from Button) _(3 stories)_
-- **Visual** Tearsheet · .cds--progress-line · background-color #c6c6c6 → #e0e0e0 (inherited from ProgressIndicator) _(2 stories)_
-- **Visual** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet · background-color transparent → #000000 / 60%
-- **Visual** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon · background-color #ffffff → transparent
-- **Visual** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6
+- **Visual** Tearsheet · .cds--progress-line · background-color #c6c6c6 → #e0e0e0 (inherited from ProgressIndicator) _(3 stories)_
 - **Visual** Tearsheet · .cds--tabs__nav-item.cds--tabs__nav-link · border-bottom 2px solid #c6c6c6 → 2px solid #e0e0e0 (inherited from Tabs)
 - **Visual** Tearsheet · .cds--btn.cds--tearsheet__scroller-button · border-radius 0px → 999999px (pill)
-- **Visual** Tearsheet · .cds--body--with-modal-open · display block → flex
-- **Visual** Tearsheet · .cds--tearsheet__header-description · display inline-flex → block
-- **Visual** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon · display block → flex
-- **Visual** Tearsheet · .cds--tearsheet__header-description · margin 16px 0px 0px → 0px
-- **Visual** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon · padding 24px 32px → 24px 32px 0px
-- **Visual** Tearsheet · .cds--btn · padding 16px 63px 32px 15px → 14px 63px 14px 15px (inherited from Button)
-- **Visual** Tearsheet · .cds--btn · padding 16px 15px 32px 16px → 14px 15px 14px 32px (inherited from Button)
-- **Layout** Tearsheet · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput) _(6 stories)_
-- **Layout** Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button) _(6 stories)_
-- **Layout** Tearsheet · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput) _(6 stories)_
-- **Layout** Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button) _(6 stories)_
+- **Layout** Tearsheet · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput) _(7 stories)_
+- **Layout** Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button) _(7 stories)_
+- **Layout** Tearsheet · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput) _(7 stories)_
+- **Layout** Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button) _(7 stories)_
 - **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · height 0px → 32px (+32px) (inherited from Button, MenuButton) _(3 stories)_
 - **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · width 0px → 192px (+192px) (inherited from Button, MenuButton) _(3 stories)_
-- **Layout** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon · height 137px → 167.98px (+30.98px)
-- **Layout** Tearsheet · .cds--modal-container.cds--tearsheet__container · height 710px → 712px (+2px)
 - **Layout** Tearsheet · .cds--text-input · width 415px → 830px (+415px) (inherited from TextInput)
 - **Layout** Tearsheet · .cds--text-input · width 543px → 1086px (+543px) (inherited from TextInput)
+- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__header-content-wrapper element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__header-actions element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__content__header-actions element added _(10 stories)_
@@ -1548,42 +1563,41 @@ _Components · max 4.4% pixels, 10/10 stories differ_
 - **Structure** Tearsheet · .cds--tearsheet__content__title-wrapper element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__header-title element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__content__title.cds--truncated-text element added _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__header-description element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__body element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__main-content element added _(10 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__footer element added _(10 stories)_
-- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon element added _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-description element added _(9 stories)_
+- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__next__header.cds--tearsheet__next__header--with-close-icon element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-content-wrapper element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-actions element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__content__header-actions element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-action-item element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--modal-close-button.cds--tearsheet__next__close-button element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-content element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-label element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__content__title-wrapper element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-title element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__content__title.cds--truncated-text element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-description element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__body element removed _(10 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__main-content element removed _(10 stories)_
 - **Structure** Tearsheet · .cds--btn-set.cds--btn-set--fluid.cds--tearsheet__footer-button-set element added _(9 stories)_
 - **Structure** Tearsheet · .cds--btn-set__fluid-inner.cds--btn-set__fluid-inner--auto-stack element added (inherited from Button) _(9 stories)_
-- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__next__header.cds--tearsheet__next__header--with-close-icon element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-content-wrapper element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-actions element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__header-actions element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-action-item element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--modal-close-button.cds--tearsheet__next__close-button element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-content element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-label element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__title-wrapper element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-title element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__title.cds--truncated-text element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-description element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__body element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__main-content element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__footer.cds--tearsheet__next__footer--three-actions element removed _(8 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__footer.cds--tearsheet__next__footer--three-actions element removed _(9 stories)_
+- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--wide element added _(8 stories)_
+- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet__next.cds--tearsheet__next--wide element removed _(8 stories)_
 - **Structure** Tearsheet · .cds--layout element added _(7 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--wide element added _(7 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__header-actions-menuButton element added _(7 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet__next.cds--tearsheet__next--wide element removed _(7 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--ghost.cds--layout--size-2xl element added (inherited from Button) _(6 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--primary.cds--layout--size-2xl element added (inherited from Button) _(6 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-actions-menuButton element removed _(6 stories)_
-- **Structure** Tearsheet · .cds--action-set.cds--action-set--2xl.cds--action-set--row-triple.cds--btn-set element removed (inherited from Button) _(6 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--action-set__action-button--ghost.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--ghost.cds--layout--size-2xl element removed (inherited from Button) _(6 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--primary.cds--layout--size-2xl element removed (inherited from Button) _(6 stories)_
+- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--ghost.cds--layout--size-2xl element added (inherited from Button) _(7 stories)_
+- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--primary.cds--layout--size-2xl element added (inherited from Button) _(7 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__header-actions-menuButton element removed _(7 stories)_
+- **Structure** Tearsheet · .cds--action-set.cds--action-set--2xl.cds--action-set--row-triple.cds--btn-set element removed (inherited from Button) _(7 stories)_
+- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--action-set__action-button--ghost.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--ghost.cds--layout--size-2xl element removed (inherited from Button) _(7 stories)_
+- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--primary.cds--layout--size-2xl element removed (inherited from Button) _(7 stories)_
+- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--secondary.cds--layout--size-2xl element added (inherited from Button) _(5 stories)_
+- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--secondary.cds--layout--size-2xl element removed (inherited from Button) _(5 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__summary-content element added _(4 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--secondary.cds--layout--size-2xl element added (inherited from Button) _(4 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__next__summary-content element removed _(4 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--secondary.cds--layout--size-2xl element removed (inherited from Button) _(4 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden element added _(3 stories)_
 - **Structure** Tearsheet · .cds--tearsheet__title-start element added _(2 stories)_
 - **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--narrow element added _(2 stories)_
@@ -1599,66 +1613,13 @@ _Components · max 4.4% pixels, 10/10 stories differ_
 - **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--action-set__action-button--ghost.cds--btn.cds--btn--expressive.cds--btn--ghost.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
 - **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--expressive.cds--btn--secondary.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
 - **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--expressive.cds--btn--primary.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
+- **Structure** Tearsheet · .cds--layer-one.cds--modal-content.cds--tearsheet__next__body-layout.cds--tearsheet__next__body-layout--has-influencer element removed _(2 stories)_
+- **Structure** Tearsheet · .cds--tearsheet__next__influencer element removed _(2 stories)_
 - **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--disabled.cds--btn--expressive.cds--btn--secondary.cds--layout--size-2xl element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--sm.cds--btn--tertiary.cds--layout--size-sm element added (inherited from Button)
-- **Structure** Tearsheet · .cds--menu-button__container element added (inherited from MenuButton)
-- **Structure** Tearsheet · .cds--btn.cds--btn--sm.cds--btn--tertiary.cds--layout--size-sm.cds--menu-button__trigger element added (inherited from Button, MenuButton)
-- **Structure** Tearsheet · .cds--btn__icon element added (inherited from Button)
-- **Structure** Tearsheet · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--left.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
-- **Structure** Tearsheet · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip)
-- **Structure** Tearsheet · .cds--btn.cds--btn--icon-only.cds--btn--primary.cds--modal-close element added (inherited from Button)
-- **Structure** Tearsheet · .cds--modal-close__icon element added (inherited from Button)
-- **Structure** Tearsheet · .cds--popover element added (inherited from Popover)
-- **Structure** Tearsheet · .cds--truncated-text__text-content element added (inherited from TruncatedText)
-- **Structure** Tearsheet · .cds--truncated-text__expand-toggle element added (inherited from TruncatedText)
-- **Structure** Tearsheet · .cds--progress.cds--progress--vertical element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-step.cds--progress-step--current element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-step-button.cds--progress-step-button--unclickable element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-text element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-label element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-optional element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-line element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--progress-step.cds--progress-step--incomplete element added (inherited from ProgressIndicator)
-- **Structure** Tearsheet · .cds--form element added
-- **Structure** Tearsheet · .cds--fieldset element added
-- **Structure** Tearsheet · .cds--label element added (inherited from FormLabel)
-- **Structure** Tearsheet · .cds--form-item.cds--text-input-wrapper element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__label-wrapper element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__field-outer-wrapper element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__field-wrapper element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__counter-alert element added (inherited from TextInput)
-- **Structure** Tearsheet · .cds--form-item element added
-- **Structure** Tearsheet · .cds--number.cds--number--helpertext.cds--number--md element added (inherited from NumberInput)
-- **Structure** Tearsheet · .cds--number__input-wrapper element added (inherited from NumberInput)
-- **Structure** Tearsheet · .cds--number__controls element added (inherited from NumberInput)
-- **Structure** Tearsheet · .cds--number__control-btn element added (inherited from NumberInput)
 - **Structure** Tearsheet · .cds--tearsheet__navigation-bar element added
 - **Structure** Tearsheet · .cds--tearsheet__scroller-container element added
 - **Structure** Tearsheet · .cds--tearsheet__scroller-button-icon element added
 - **Structure** Tearsheet · .cds--tearsheet__next__footer element removed
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--wide element removed
-- **Structure** Tearsheet · .cds--layer-two.cds--tearsheet__header-content element removed
-- **Structure** Tearsheet · .cds--tearsheet__header-fields element removed
-- **Structure** Tearsheet · .cds--modal-header__heading.cds--tearsheet__heading element removed
-- **Structure** Tearsheet · .cds--modal-content.cds--tearsheet__body element removed
-- **Structure** Tearsheet · .cds--tearsheet__influencer element removed
-- **Structure** Tearsheet · .cds--tearsheet__right element removed
-- **Structure** Tearsheet · .cds--tearsheet__main element removed
-- **Structure** Tearsheet · .cds--tearsheet__content element removed
-- **Structure** Tearsheet · .cds--form element removed
-- **Structure** Tearsheet · .cds--fieldset element removed
-- **Structure** Tearsheet · .cds--label element removed (inherited from FormLabel)
-- **Structure** Tearsheet · .cds--form-item.cds--text-input-wrapper element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__label-wrapper element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__field-outer-wrapper element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__field-wrapper element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--text-input__counter-alert element removed (inherited from TextInput)
-- **Structure** Tearsheet · .cds--tearsheet__button-container element removed
-- **Structure** Tearsheet · .cds--action-set.cds--action-set--2xl.cds--action-set--row-triple.cds--btn-set.cds--tearsheet__buttons element removed
-- **Structure** Tearsheet · .cds--layer-one.cds--modal-content.cds--tearsheet__next__body-layout.cds--tearsheet__next__body-layout--has-influencer element removed
-- **Structure** Tearsheet · .cds--tearsheet__next__influencer element removed
 - **Structure** Tearsheet · .cds--tearsheet__next__navigation-bar element removed
 - **Structure** Tearsheet · .cds--tearsheet__next__scroller-container element removed
 - **Structure** Tearsheet · .cds--tearsheet__next__scroller-button-icon element removed
@@ -1672,6 +1633,72 @@ _Components · max 54.2% pixels, 2/2 stories differ_
 - **Structure** UserAvatar · .cds--layout element added _(2 stories)_
 - **Structure** UserAvatar · .cds--user-avatar__tooltip-trigger element added _(2 stories)_
 - **Structure** UserAvatar · .cds--tooltip-trigger element removed (inherited from Tooltip) _(2 stories)_
+
+### Add and select
+
+_Examples · max 3.2% pixels, 13/13 stories differ_
+
+- **API** Add and select · class prefix c4p-- → cds--
+- **API** Add and select · package @carbon/ibm-products → @carbon/react
+- **Visual** Add and select · .cds--body--with-modal-open · background-color #f4f4f4 → #ffffff _(13 stories)_
+- **Visual** Add and select · .cds--modal-container.cds--tearsheet__next__container · background-color #ffffff → #f4f4f4 (inherited from Modal, Tearsheet) _(13 stories)_
+- **Visual** Add and select · .cds--tearsheet__next__flush.cds--tearsheet__next__main-content · background-color #f4f4f4 → #ffffff (inherited from Tearsheet) _(13 stories)_
+- **Visual** Add and select · .cds--search-input · background-color #ffffff → transparent (inherited from Search) _(13 stories)_
+- **Visual** Add and select · .cds--action-set.cds--btn-set · background-color #ffffff → #f4f4f4 (inherited from Button) _(13 stories)_
+- **Visual** Add and select · .cds--search-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Search) _(13 stories)_
+- **Visual** Add and select · .cds--modal-container.cds--tearsheet__next__container · border 1px solid #e0e0e0 → 1px solid #c6c6c6 (inherited from Modal, Tearsheet) _(13 stories)_
+- **Visual** Add and select · .cds--modal-header.cds--tearsheet__next__header · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 (inherited from Tearsheet) _(13 stories)_
+- **Visual** Add and select · .cds--add-select__next__header · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 _(13 stories)_
+- **Visual** Add and select · .cds--search-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Search) _(13 stories)_
+- **Visual** Add and select · .cds--search-input · border-radius 0px → 4px (inherited from Search) _(13 stories)_
+- **Visual** Add and select · .cds--tag · border-radius 16px → 2px _(13 stories)_
+- **Visual** Add and select · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(13 stories)_
+- **Visual** Add and select · .cds--tearsheet__next__footer · border-top 1px solid #e0e0e0 → 1px solid #c6c6c6 (inherited from Tearsheet) _(13 stories)_
+- **Visual** Add and select · .cds--search-input · border-top/right/left none → 1px solid transparent (inherited from Search) _(13 stories)_
+- **Visual** Add and select · .cds--body--with-modal-open · display flex → block _(13 stories)_
+- **Visual** Add and select · .cds--truncated-text__text-content · display flow-root → inline _(13 stories)_
+- **Visual** Add and select · .cds--btn · margin 8px 0px 32px → 16px 0px 32px _(13 stories)_
+- **Visual** Add and select · .cds--search-input · padding 0px 48px → 0px 8px 0px 48px _(13 stories)_
+- **Visual** Add and select · .cds--add-select__next-row__cell-wrapper · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 _(12 stories)_
+- **Visual** Add and select · .cds--truncated-text__text-content · line-height normal → 36.0002px _(11 stories)_
+- **Visual** Add and select · .cds--checkbox-label-text.cds--visually-hidden · padding 0px 0px 0px 10px → 0px _(9 stories)_
+- **Visual** Add and select · .cds--add-select__next-column__header · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 _(6 stories)_
+- **Visual** Add and select · .cds--add-select__next-column · border-right 1px solid #e0e0e0 → 1px solid #c6c6c6 _(6 stories)_
+- **Visual** Add and select · .cds--search-input · padding 0px 40px → 0px 8px 0px 40px (inherited from Search) _(5 stories)_
+- **Visual** Add and select · .cds--tag__label · background-color #f4f4f4 → #ffffff _(2 stories)_
+- **Visual** Add and select · .cds--tag · background-color #f4f4f4 → #ffffff (inherited from Tag) _(2 stories)_
+- **Visual** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(2 stories)_
+- **Visual** Add and select · .cds--tag__close-icon · border-radius 50% → 4px (inherited from Tag) _(2 stories)_
+- **Visual** Add and select · .cds--tag · border-radius 16px → 4px (inherited from Tag) _(2 stories)_
+- **Visual** Add and select · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
+- **Visual** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown) _(2 stories)_
+- **Visual** Add and select · .cds--truncated-text__text-content · line-height normal → 28px _(2 stories)_
+- **Visual** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · background-color #ffffff → transparent (inherited from Dropdown)
+- **Visual** Add and select · .cds--add-select__next__selection-summary-item.cds--add-select__next__selection-summary-item--accordion · background-color #ffffff → #f4f4f4
+- **Visual** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown)
+- **Visual** Add and select · .cds--table-column-checkbox · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 (inherited from DataTable)
+- **Visual** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)
+- **Visual** Add and select · .cds--add-select__next__selection-summary-item.cds--add-select__next__selection-summary-item--accordion · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6
+- **Visual** Add and select · .cds--add-select__next-row__view-item-panel.cds--btn · border-radius 0px → 999999px (pill)
+- **Visual** Add and select · .cds--table-column-checkbox · border-top 1px solid #ffffff → 1px solid #f4f4f4 (inherited from DataTable)
+- **Layout** Add and select · .cds--modal-header.cds--tearsheet__next__header · height 110px → 109px (-1px) (inherited from Tearsheet) _(9 stories)_
+- **Layout** Add and select · .cds--tearsheet__next__flush.cds--tearsheet__next__main-content · height 519px → 520px (+1px) (inherited from Tearsheet) _(9 stories)_
+- **Layout** Add and select · .cds--add-select__next-column · height 412px → 413px (+1px) _(3 stories)_
+- **Layout** Add and select · .cds--modal-header.cds--tearsheet__next__header · height 100px → 101px (+1px) (inherited from Tearsheet) _(2 stories)_
+- **Layout** Add and select · .cds--tearsheet__next__flush.cds--tearsheet__next__main-content · height 545px → 544px (-1px) (inherited from Tearsheet) _(2 stories)_
+- **Layout** Add and select · .cds--add-select__next-column · height 430px → 431px (+1px)
+- **Layout** Add and select · .cds--modal-header.cds--tearsheet__next__header · height 126px → 125px (-1px) (inherited from Tearsheet)
+- **Layout** Add and select · .cds--tearsheet__next__flush.cds--tearsheet__next__main-content · height 503px → 504px (+1px) (inherited from Tearsheet)
+- **Layout** Add and select · .cds--add-select__next-column · height 396px → 397px (+1px)
+- **Layout** Add and select · .cds--modal-header.cds--tearsheet__next__header · height 142px → 141px (-1px) (inherited from Tearsheet)
+- **Layout** Add and select · .cds--tearsheet__next__flush.cds--tearsheet__next__main-content · height 487px → 488px (+1px) (inherited from Tearsheet)
+- **Layout** Add and select · .cds--add-select__next-column · height 380px → 381px (+1px)
+- **Layout** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · width 102.97px → 104.97px (+2px) (inherited from Dropdown)
+- **Layout** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · width 109.97px → 111.97px (+2px) (inherited from Dropdown)
+- **Layout** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · width 105.81px → 107.81px (+2px) (inherited from Dropdown)
+- **Layout** Add and select · .cds--search-input · width 637.55px → 635.55px (-2px) (inherited from Search)
+- **Layout** Add and select · .cds--autoalign.cds--dropdown.cds--list-box · width 120.45px → 122.45px (+2px) (inherited from Dropdown)
+- **Structure** Add and select · .cds--layout element added _(13 stories)_
 
 ### Create flows
 
@@ -1744,6 +1771,25 @@ _Examples_
 
 - **API** Import and upload · package @carbon/ibm-products → @carbon/react
 - **Story** Import and upload · story added: Import and Upload (no IBM Products equivalent)
+
+### Saving
+
+_Examples · max 17.0% pixels, 2/2 stories differ_
+
+- **API** Saving · package @carbon/ibm-products → @carbon/react
+- **Visual** Saving · .cds--text-area · background-color #ffffff → #f4f4f4 (inherited from TextArea)
+- **Visual** Saving · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
+- **Visual** Saving · .cds--text-area · padding 11px 16px → 11px 16px 8px (inherited from TextArea)
+- **Layout** Saving · .cds--text-area · height 102.94px → 99.94px (-3px) (inherited from TextArea)
+- **Layout** Saving · .cds--text-area · width 1248px → 1196px (-52px) (inherited from TextArea)
+- **Structure** Saving · .cds--layout element added _(2 stories)_
+
+### Web Terminal
+
+_Examples · max 0.0% pixels, 0/3 stories differ_
+
+- **API** Web Terminal · package @carbon/ibm-products → @carbon/react
+- **Visual** Web Terminal · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(3 stories)_
 
 ### Onboarding
 

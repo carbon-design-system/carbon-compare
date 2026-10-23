@@ -1,5 +1,5 @@
 {
- "capturedAt": "2026-10-09T03:01:35.231Z",
+ "capturedAt": "2026-10-23T01:45:07.716Z",
  "viewport": {
   "width": 1280,
   "height": 800
@@ -12,21 +12,21 @@
  "builds": {
   "v11": {
    "url": "https://react.carbondesignsystem.com",
-   "iframeCss": "https://react.carbondesignsystem.com/assets/iframe-BKxFTAXF.css",
-   "indexHash": "6c3d9fc0e686",
-   "fingerprint": "239f28b56836"
+   "iframeCss": "https://react.carbondesignsystem.com/assets/iframe-BW1rXJXz.css",
+   "indexHash": "2c5e5f3dc471",
+   "fingerprint": "4c6ba18b3c87"
   },
   "v12": {
    "url": "https://v12-react.carbondesignsystem.com",
-   "iframeCss": "https://v12-react.carbondesignsystem.com/assets/iframe-h7iUIlmo.css",
-   "indexHash": "f60c31642466",
-   "fingerprint": "1e44cee62fac"
+   "iframeCss": "https://v12-react.carbondesignsystem.com/assets/iframe-BkT22Zym.css",
+   "indexHash": "384b08f3ef18",
+   "fingerprint": "c3238a22e412"
   },
   "ibmp": {
    "url": "https://ibm-products.carbondesignsystem.com",
    "iframeCss": null,
-   "indexHash": "e65922cff334",
-   "fingerprint": "99958cb9e6ee"
+   "indexHash": "9abfb7fc88fe",
+   "fingerprint": "03c4cf49d722"
   }
  },
  "props": [
@@ -70,5 +70,5 @@
   "outline-color",
   "outline-offset"
  ],
- "buildKey": "239f28b56836:99958cb9e6ee:1e44cee62fac:75583222"
+ "buildKey": "4c6ba18b3c87:03c4cf49d722:c3238a22e412:75583222"
 }
