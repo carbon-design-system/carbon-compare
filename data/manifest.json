@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-23T01:45:02.892Z",
+ "generatedAt": "2026-11-06T03:31:37.476Z",
  "counts": {
-  "v11Stories": 508,
-  "v12Stories": 643,
-  "ibmpStories": 257,
-  "matched": 499,
-  "migrated": 109
+  "v11Stories": 509,
+  "v12Stories": 653,
+  "ibmpStories": 242,
+  "matched": 500,
+  "migrated": 116
  },
  "matched": [
   {
@@ -995,6 +995,16 @@
    "v12": "components-datatable-expansion--default",
    "title": "Components/DataTable/Expansion",
    "name": "Default",
+   "component": "DataTable",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-datatable-expansion--sticky-header",
+   "v11": "components-datatable-expansion--sticky-header",
+   "v12": "components-datatable-expansion--sticky-header",
+   "title": "Components/DataTable/Expansion",
+   "name": "Sticky Header",
    "component": "DataTable",
    "match": "exact"
   },
@@ -4484,7 +4494,7 @@
    "v11": "examples-emptystate--empty-state-in-ui",
    "v12": "examples-emptystate--empty-state-in-ui",
    "title": "Examples/EmptyState",
-   "name": "Empty State unit",
+   "name": "Empty State in a UI",
    "component": "EmptyState",
    "match": "exact"
   },
@@ -5552,6 +5562,26 @@
   },
   {
    "base": "ibmp",
+   "baseId": "patterns-about-modal--standard",
+   "v12": "examples-about-modal--standard",
+   "title": "Examples/About Modal",
+   "name": "Standard",
+   "component": "About Modal",
+   "match": "name",
+   "ibmpTitle": "Patterns/About Modal"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "components-aboutmodal--with-additional-content",
+   "v12": "examples-about-modal--with-additional-content",
+   "title": "Examples/About Modal",
+   "name": "With Additional Content",
+   "component": "About Modal",
+   "match": "name",
+   "ibmpTitle": "Components/AboutModal"
+  },
+  {
+   "base": "ibmp",
    "baseId": "patterns-add-and-select-multiaddselect--default",
    "v12": "examples-add-and-select-multiaddselect--default",
    "title": "Examples/Add and select/MultiAddSelect",
@@ -6002,6 +6032,56 @@
   },
   {
    "base": "ibmp",
+   "baseId": "preview-candidate-onboarding-getstartedcard--default",
+   "v12": "examples-getstartedcard--default-card",
+   "title": "Examples/GetStartedCard",
+   "name": "Default",
+   "component": "GetStartedCard",
+   "match": "name",
+   "ibmpTitle": "Preview Candidate/Onboarding/GetStartedCard"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "preview-candidate-onboarding-getstartedcard--with-disabled",
+   "v12": "examples-getstartedcard--with-disabled",
+   "title": "Examples/GetStartedCard",
+   "name": "With disabled",
+   "component": "GetStartedCard",
+   "match": "name",
+   "ibmpTitle": "Preview Candidate/Onboarding/GetStartedCard"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "preview-candidate-onboarding-getstartedcard--with-media-and-pictogram",
+   "v12": "examples-getstartedcard--with-media-and-pictogram",
+   "title": "Examples/GetStartedCard",
+   "name": "With media and pictogram",
+   "component": "GetStartedCard",
+   "match": "name",
+   "ibmpTitle": "Preview Candidate/Onboarding/GetStartedCard"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "preview-candidate-onboarding-getstartedcard--with-media-and-sequence",
+   "v12": "examples-getstartedcard--with-media-and-sequence",
+   "title": "Examples/GetStartedCard",
+   "name": "With media and sequence",
+   "component": "GetStartedCard",
+   "match": "name",
+   "ibmpTitle": "Preview Candidate/Onboarding/GetStartedCard"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "preview-candidate-onboarding-getstartedcard--with-sequence",
+   "v12": "examples-getstartedcard--with-sequence",
+   "title": "Examples/GetStartedCard",
+   "name": "With sequence",
+   "component": "GetStartedCard",
+   "match": "name",
+   "ibmpTitle": "Preview Candidate/Onboarding/GetStartedCard"
+  },
+  {
+   "base": "ibmp",
    "baseId": "patterns-saving--auto",
    "v12": "examples-saving--auto-saving",
    "title": "Examples/Saving",
@@ -6093,48 +6173,25 @@
  ],
  "migratedComponents": [
   {
+   "component": "About Modal",
+   "v12Title": "Examples/About Modal",
+   "ibmpTitles": [
+    "Components/AboutModal",
+    "Patterns/About Modal"
+   ],
+   "tagged": false,
+   "matched": 2,
+   "unmatched": []
+  },
+  {
    "component": "Add and select",
    "v12Title": "Examples/Add and select/MultiAddSelect",
    "ibmpTitles": [
-    "Patterns/Add and select/MultiAddSelect",
-    "Patterns/Prebuilt patterns/Add and select/MultiAddSelect"
+    "Patterns/Add and select/MultiAddSelect"
    ],
    "tagged": false,
    "matched": 13,
    "unmatched": []
-  },
-  {
-   "component": "AddSelect",
-   "v12Title": "Components/AddSelect",
-   "ibmpTitles": [],
-   "tagged": true,
-   "matched": 0,
-   "unmatched": [
-    {
-     "id": "components-addselect--add-select-body",
-     "name": "AddSelect.Body"
-    },
-    {
-     "id": "components-addselect--add-select-column",
-     "name": "AddSelect.Column"
-    },
-    {
-     "id": "components-addselect--add-select-item-panel",
-     "name": "AddSelect.ItemPanel"
-    },
-    {
-     "id": "components-addselect--add-select-row",
-     "name": "AddSelect.Row"
-    },
-    {
-     "id": "components-addselect--add-select-selection-summary",
-     "name": "AddSelect.SelectionSummary"
-    },
-    {
-     "id": "components-addselect--add-select-selection-summary-item",
-     "name": "AddSelect.SelectionSummaryItem"
-    }
-   ]
   },
   {
    "component": "Coachmark",
@@ -6142,7 +6199,7 @@
    "ibmpTitles": [
     "Preview/Onboarding/Coachmark"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 5,
    "unmatched": []
   },
@@ -6152,7 +6209,7 @@
    "ibmpTitles": [
     "Preview Candidate/ConditionBuilder"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 4,
    "unmatched": [
     {
@@ -6211,7 +6268,7 @@
    "ibmpTitles": [
     "Components/EditInPlace"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 4,
    "unmatched": []
   },
@@ -6231,7 +6288,7 @@
    "ibmpTitles": [
     "Components/FullPageError"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 1,
    "unmatched": [
     {
@@ -6255,6 +6312,25 @@
    "unmatched": []
   },
   {
+   "component": "GetStartedCard",
+   "v12Title": "Examples/GetStartedCard",
+   "ibmpTitles": [
+    "Preview Candidate/Onboarding/GetStartedCard"
+   ],
+   "tagged": false,
+   "matched": 5,
+   "unmatched": [
+    {
+     "id": "examples-getstartedcard--with-ai-label-and-actions",
+     "name": "With AI label and actions"
+    },
+    {
+     "id": "examples-getstartedcard--with-horizontal-media",
+     "name": "With horizontal media"
+    }
+   ]
+  },
+  {
    "component": "Import and upload",
    "v12Title": "Examples/Import and upload",
    "ibmpTitles": [
@@ -6275,7 +6351,7 @@
    "ibmpTitles": [
     "Components/Onboarding/InterstitialScreen"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 6,
    "unmatched": []
   },
@@ -6285,7 +6361,7 @@
    "ibmpTitles": [
     "Components/NotificationsPanel"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 1,
    "unmatched": []
   },
@@ -6295,7 +6371,7 @@
    "ibmpTitles": [
     "Preview Candidate/Onboarding/Guidebanner"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 2,
    "unmatched": [
     {
@@ -6310,7 +6386,7 @@
    "ibmpTitles": [
     "Components/OptionsTile"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 0,
    "unmatched": [
     {
@@ -6329,7 +6405,7 @@
    "ibmpTitles": [
     "Preview/PageHeader"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 9,
    "unmatched": []
   },
@@ -6339,53 +6415,12 @@
    "ibmpTitles": [
     "Preview Candidate/BigNumber"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 0,
    "unmatched": [
     {
      "id": "preview-preview-bignumber--default",
      "name": "Default"
-    }
-   ]
-  },
-  {
-   "component": "Resizer",
-   "v12Title": "Utilities/Resizer",
-   "ibmpTitles": [],
-   "tagged": true,
-   "matched": 0,
-   "unmatched": [
-    {
-     "id": "utilities-resizer--four-panels",
-     "name": "Four panels"
-    },
-    {
-     "id": "utilities-resizer--single-panel-bounded",
-     "name": "Single panel (bounded)"
-    },
-    {
-     "id": "utilities-resizer--single-panel-no-boundaries",
-     "name": "Single panel (no boundaries)"
-    },
-    {
-     "id": "utilities-resizer--single-panel-overlay",
-     "name": "Single panel (overlay)"
-    },
-    {
-     "id": "utilities-resizer--two-panels-horizontal",
-     "name": "Two panels (horizontal)"
-    },
-    {
-     "id": "utilities-resizer--two-panels-vertical",
-     "name": "Two panels (vertical)"
-    },
-    {
-     "id": "utilities-resizer--two-panels-vertical-grid",
-     "name": "Two panels vertical (grid)"
-    },
-    {
-     "id": "utilities-resizer--with-custom-handles",
-     "name": "With custom handles"
     }
    ]
   },
@@ -6405,7 +6440,7 @@
    "ibmpTitles": [
     "Utilities/ScrollGradient"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 0,
    "unmatched": [
     {
@@ -6424,7 +6459,7 @@
    "ibmpTitles": [
     "Components/SidePanel"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 8,
    "unmatched": []
   },
@@ -6434,7 +6469,7 @@
    "ibmpTitles": [
     "Utilities/TagOverflow"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 8,
    "unmatched": []
   },
@@ -6444,7 +6479,7 @@
    "ibmpTitles": [
     "Preview/Tearsheet"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 10,
    "unmatched": []
   },
@@ -6454,7 +6489,7 @@
    "ibmpTitles": [
     "Utilities/TruncatedText"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 2,
    "unmatched": []
   },
@@ -6464,7 +6499,7 @@
    "ibmpTitles": [
     "Components/UserAvatar"
    ],
-   "tagged": true,
+   "tagged": false,
    "matched": 2,
    "unmatched": []
   },
@@ -6560,8 +6595,9 @@
    "Elements/Motion/Custom surface",
    "Elements/Motion/Expand",
    "Elements/Motion/Invoke",
+   "Examples/About Modal",
+   "Examples/Add and select",
    "Examples/Add and select/MultiAddSelect",
-   "Examples/Add and select/Overview",
    "Examples/Add and select/SingleAddSelect",
    "Examples/Coachmark/Coachmark Fixed",
    "Examples/Coachmark/Coachmark Overlay Elements",
@@ -6574,6 +6610,7 @@
    "Examples/Delete and remove",
    "Examples/ExportModal",
    "Examples/Generate an API Key",
+   "Examples/GetStartedCard",
    "Examples/Import and upload",
    "Examples/Saving",
    "Examples/Web Terminal",
@@ -6704,6 +6741,16 @@
     "id": "preview-preview-bignumber--default",
     "title": "Preview/preview__BigNumber",
     "name": "Default"
+   },
+   {
+    "id": "examples-getstartedcard--with-ai-label-and-actions",
+    "title": "Examples/GetStartedCard",
+    "name": "With AI label and actions"
+   },
+   {
+    "id": "examples-getstartedcard--with-horizontal-media",
+    "title": "Examples/GetStartedCard",
+    "name": "With horizontal media"
    },
    {
     "id": "examples-import-and-upload--standard",

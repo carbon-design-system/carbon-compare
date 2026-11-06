@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-10-23T02:00:29.869Z",
+ "generatedAt": "2026-11-06T03:46:06.890Z",
  "counts": {
-  "components": 112,
+  "components": 114,
   "unchanged": 31,
-  "migrated": 26,
+  "new": 3,
   "changed": 33,
+  "migrated": 26,
   "inherited": 17,
   "removed": 4,
-  "new": 1,
-  "storiesCompared": 608,
-  "changes": 1495
+  "storiesCompared": 616,
+  "changes": 1569
  },
  "tokens": {
   "added": [
@@ -370,28 +370,14 @@
    "id": "addselect",
    "name": "AddSelect",
    "section": "Components",
-   "status": "migrated",
+   "status": "new",
    "inheritsFrom": [],
-   "base": "ibmp",
-   "migratedFrom": {
-    "ibmpTitles": [],
-    "matched": 0,
-    "unmatched": 6
-   },
+   "base": "v11",
+   "migratedFrom": null,
    "pixel": null,
    "stories": [],
    "notes": [],
    "changes": [
-    {
-     "type": "API",
-     "prop": "package",
-     "element": null,
-     "from": "@carbon/ibm-products",
-     "to": "@carbon/react",
-     "stories": [],
-     "note": "not in the IBM Products Storybook",
-     "text": "AddSelect · package @carbon/ibm-products → @carbon/react"
-    },
     {
      "type": "Story",
      "prop": "story added",
@@ -401,8 +387,8 @@
      "stories": [
       "components-addselect--add-select-body"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.Body (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.Body"
     },
     {
      "type": "Story",
@@ -413,8 +399,8 @@
      "stories": [
       "components-addselect--add-select-column"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.Column (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.Column"
     },
     {
      "type": "Story",
@@ -425,8 +411,8 @@
      "stories": [
       "components-addselect--add-select-item-panel"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.ItemPanel (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.ItemPanel"
     },
     {
      "type": "Story",
@@ -437,8 +423,8 @@
      "stories": [
       "components-addselect--add-select-row"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.Row (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.Row"
     },
     {
      "type": "Story",
@@ -449,8 +435,8 @@
      "stories": [
       "components-addselect--add-select-selection-summary"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.SelectionSummary (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.SelectionSummary"
     },
     {
      "type": "Story",
@@ -461,8 +447,8 @@
      "stories": [
       "components-addselect--add-select-selection-summary-item"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "AddSelect · story added: AddSelect.SelectionSummaryItem (no IBM Products equivalent)"
+     "note": null,
+     "text": "AddSelect · story added: AddSelect.SelectionSummaryItem"
     }
    ]
   },
@@ -2261,7 +2247,7 @@
    },
    "pixel": {
     "max": 0.45484,
-    "mean": 0.20682,
+    "mean": 0.20879,
     "storiesChanged": 5,
     "storiesCompared": 5
    },
@@ -2333,39 +2319,6 @@
      "changes": 41
     },
     {
-     "id": "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-     "base": "ibmp",
-     "baseId": "patterns-coachmark-overlay-elements--coachmark-overlay",
-     "v11Id": null,
-     "name": "Coachmark Overlay",
-     "title": "Examples/Coachmark/Coachmark Overlay Elements",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 114112,
-      "totalPixels": 750080,
-      "ratio": 0.15213,
-      "size": {
-       "before": [
-        1280,
-        586
-       ],
-       "v12": [
-        1280,
-        586
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 26,
-      "width": 1280,
-      "height": 586
-     },
-     "changes": 37
-    },
-    {
      "id": "components-coachmark--tooltip",
      "base": "ibmp",
      "baseId": "preview-onboarding-coachmark--tooltip",
@@ -2375,9 +2328,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 43678,
+      "diffPixels": 86873,
       "totalPixels": 779520,
-      "ratio": 0.05603,
+      "ratio": 0.11144,
       "size": {
        "before": [
         1280,
@@ -2397,6 +2350,39 @@
       "height": 609
      },
      "changes": 18
+    },
+    {
+     "id": "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+     "base": "ibmp",
+     "baseId": "patterns-coachmark-overlay-elements--coachmark-overlay",
+     "v11Id": null,
+     "name": "Coachmark Overlay",
+     "title": "Examples/Coachmark/Coachmark Overlay Elements",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 79905,
+      "totalPixels": 750080,
+      "ratio": 0.10653,
+      "size": {
+       "before": [
+        1280,
+        586
+       ],
+       "v12": [
+        1280,
+        586
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 26,
+      "width": 1280,
+      "height": 586
+     },
+     "changes": 37
     },
     {
      "id": "components-coachmark--floating",
@@ -7294,9 +7280,9 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.01647,
-    "mean": 0.00066,
+    "mean": 0.00063,
     "storiesChanged": 1,
-    "storiesCompared": 25
+    "storiesCompared": 26
    },
    "stories": [
     {
@@ -7560,6 +7546,39 @@
       "y": 28,
       "width": 1228,
       "height": 498
+     },
+     "changes": 0
+    },
+    {
+     "id": "components-datatable-expansion--sticky-header",
+     "base": "v11",
+     "baseId": "components-datatable-expansion--sticky-header",
+     "v11Id": "components-datatable-expansion--sticky-header",
+     "name": "Sticky Header",
+     "title": "Components/DataTable/Expansion",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 0,
+      "totalPixels": 702416,
+      "ratio": 0,
+      "size": {
+       "before": [
+        1228,
+        572
+       ],
+       "v12": [
+        1228,
+        572
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 28,
+      "width": 1228,
+      "height": 572
      },
      "changes": 0
     },
@@ -10717,7 +10736,7 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.05625,
-    "mean": 0.01324,
+    "mean": 0.0133,
     "storiesChanged": 28,
     "storiesCompared": 36
    },
@@ -10864,9 +10883,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 26137,
+      "diffPixels": 26123,
       "totalPixels": 880376,
-      "ratio": 0.02969,
+      "ratio": 0.02967,
       "size": {
        "before": [
         632,
@@ -10885,7 +10904,7 @@
       "width": 632,
       "height": 1393
      },
-     "changes": 111
+     "changes": 115
     },
     {
      "id": "components-fluid-components-fluidnumberinput--default",
@@ -10918,7 +10937,7 @@
       "width": 432,
       "height": 98
      },
-     "changes": 11
+     "changes": 15
     },
     {
      "id": "components-fluid-components-fluiddropdown--with-ai-label",
@@ -11260,9 +11279,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 391,
+      "diffPixels": 461,
       "totalPixels": 31872,
-      "ratio": 0.01227,
+      "ratio": 0.01446,
       "size": {
        "before": [
         332,
@@ -13720,11 +13739,11 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": {
-      "token": "$border-radius-04",
+      "token": "$border-radius-max",
       "sass": true
      },
      "stories": [
@@ -13736,7 +13755,7 @@
      "sources": [
       "NumberInput"
      ],
-     "text": "Fluid Components · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput)"
+     "text": "Fluid Components · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -13772,8 +13791,8 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -13786,7 +13805,7 @@
       "Button",
       "Tooltip"
      ],
-     "text": "Fluid Components · .cds--btn.cds--tooltip__trigger · border-radius 0px → 4px (inherited from Button, Tooltip)"
+     "text": "Fluid Components · .cds--btn.cds--tooltip__trigger · border-radius 0px → 999999px (pill) (inherited from Button, Tooltip)"
     },
     {
      "type": "Visual",
@@ -13928,16 +13947,18 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__controls",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__controls"
      ],
-     "prop": "display",
-     "from": "block",
-     "to": "none",
+     "prop": "gap",
+     "from": "normal normal undefined undefined",
+     "to": "4px 4px undefined undefined",
      "note": null,
      "fromToken": null,
-     "toToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
      "stories": [
       "components-fluid-components-fluidform--default",
       "components-fluid-components-fluidnumberinput--default"
@@ -13947,7 +13968,32 @@
      "sources": [
       "NumberInput"
      ],
-     "text": "Fluid Components · .cds--number__rule-divider · display block → none (inherited from NumberInput)"
+     "text": "Fluid Components · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
+     "stories": [
+      "components-fluid-components-fluidform--default",
+      "components-fluid-components-fluidnumberinput--default"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Fluid Components · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -14525,13 +14571,13 @@
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "height",
-     "from": "16px",
-     "to": "0px",
+     "from": "40px",
+     "to": "24px",
      "note": "-16px",
      "fromToken": null,
      "toToken": null,
@@ -14539,35 +14585,35 @@
       "components-fluid-components-fluidform--default",
       "components-fluid-components-fluidnumberinput--default"
      ],
-     "elements": 2,
+     "elements": 4,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Fluid Components · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput)"
+     "text": "Fluid Components · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "width",
-     "from": "1px",
-     "to": "0px",
-     "note": "-1px",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
       "components-fluid-components-fluidform--default",
       "components-fluid-components-fluidnumberinput--default"
      ],
-     "elements": 2,
+     "elements": 4,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Fluid Components · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput)"
+     "text": "Fluid Components · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
@@ -14920,6 +14966,23 @@
       "FormLabel"
      ],
      "text": "Fluid Components · .cds--label.cds--skeleton::before · width 75px → 74px (-1px) (inherited from FormLabel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--number__rule-divider",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "components-fluid-components-fluidform--default",
+      "components-fluid-components-fluidnumberinput--default"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Fluid Components · .cds--number__rule-divider element removed (inherited from NumberInput)"
     }
    ]
   },
@@ -14944,8 +15007,8 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.00965,
-    "mean": 0.00752,
+    "max": 0.00986,
+    "mean": 0.00764,
     "storiesChanged": 2,
     "storiesCompared": 2
    },
@@ -14960,42 +15023,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 9600,
+      "diffPixels": 9806,
       "totalPixels": 994443,
-      "ratio": 0.00965,
-      "size": {
-       "before": [
-        633,
-        1571
-       ],
-       "v12": [
-        633,
-        1571
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 25,
-      "y": 26,
-      "width": 633,
-      "height": 1571
-     },
-     "changes": 81
-    },
-    {
-     "id": "components-form--default",
-     "base": "v11",
-     "baseId": "components-form--default",
-     "v11Id": "components-form--default",
-     "name": "Default",
-     "title": "Components/Form",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 5350,
-      "totalPixels": 994443,
-      "ratio": 0.00538,
+      "ratio": 0.00986,
       "size": {
        "before": [
         633,
@@ -15015,6 +15045,39 @@
       "height": 1571
      },
      "changes": 89
+    },
+    {
+     "id": "components-form--default",
+     "base": "v11",
+     "baseId": "components-form--default",
+     "v11Id": "components-form--default",
+     "name": "Default",
+     "title": "Components/Form",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 5382,
+      "totalPixels": 994443,
+      "ratio": 0.00541,
+      "size": {
+       "before": [
+        633,
+        1571
+       ],
+       "v12": [
+        633,
+        1571
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 25,
+      "y": 26,
+      "width": 633,
+      "height": 1571
+     },
+     "changes": 93
     }
    ],
    "notes": [],
@@ -15510,11 +15573,11 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": {
-      "token": "$border-radius-04",
+      "token": "$border-radius-max",
       "sass": true
      },
      "stories": [
@@ -15526,7 +15589,7 @@
      "sources": [
       "NumberInput"
      ],
-     "text": "Form · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput)"
+     "text": "Form · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -15639,8 +15702,8 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -15653,7 +15716,7 @@
       "Button",
       "Tooltip"
      ],
-     "text": "Form · .cds--btn.cds--tooltip__trigger · border-radius 0px → 4px (inherited from Button, Tooltip)"
+     "text": "Form · .cds--btn.cds--tooltip__trigger · border-radius 0px → 999999px (pill) (inherited from Button, Tooltip)"
     },
     {
      "type": "Visual",
@@ -15976,6 +16039,56 @@
       "MultiSelect"
      ],
      "text": "Form · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "gap",
+     "from": "normal normal undefined undefined",
+     "to": "4px 4px undefined undefined",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
+     "stories": [
+      "components-form--default",
+      "components-form--with-ai-label"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Form · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
+     "stories": [
+      "components-form--default",
+      "components-form--with-ai-label"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Form · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -16604,25 +16717,47 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--ai-label",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--ai-label"
      ],
-     "prop": "display",
-     "from": "block",
-     "to": "none",
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
      "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-icon-gap-local"
+     },
+     "stories": [
+      "components-form--with-ai-label"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Form · .cds--ai-label · margin 0px → 0px 8px 0px 0px"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--number__control-btn",
+     "variants": [
+      "cds--number__control-btn"
+     ],
+     "prop": "height",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
-      "components-form--default"
+      "components-form--default",
+      "components-form--with-ai-label"
      ],
-     "elements": 2,
+     "elements": 4,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Form · .cds--number__rule-divider · display block → none (inherited from NumberInput)"
+     "text": "Form · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
@@ -16672,6 +16807,29 @@
     },
     {
      "type": "Layout",
+     "element": ".cds--number__control-btn",
+     "variants": [
+      "cds--number__control-btn"
+     ],
+     "prop": "width",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-form--default",
+      "components-form--with-ai-label"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Form · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput)"
+    },
+    {
+     "type": "Layout",
      "element": ".cds--text-input",
      "variants": [
       "cds--text-input cds--text-input--empty"
@@ -16717,48 +16875,20 @@
      "text": "Form · .cds--text-input · width 600px → 598px (-2px) (inherited from TextInput)"
     },
     {
-     "type": "Layout",
+     "type": "Structure",
      "element": ".cds--number__rule-divider",
-     "variants": [
-      "cds--number__rule-divider"
-     ],
-     "prop": "height",
-     "from": "16px",
-     "to": "0px",
-     "note": "-16px",
-     "fromToken": null,
-     "toToken": null,
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
      "stories": [
       "components-form--default"
      ],
-     "elements": 1,
+     "elements": 2,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Form · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--number__rule-divider",
-     "variants": [
-      "cds--number__rule-divider"
-     ],
-     "prop": "width",
-     "from": "1px",
-     "to": "0px",
-     "note": "-1px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-form--default"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "NumberInput"
-     ],
-     "text": "Form · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput)"
+     "text": "Form · .cds--number__rule-divider element removed (inherited from NumberInput)"
     },
     {
      "type": "Structure",
@@ -16769,7 +16899,7 @@
      "stories": [
       "components-form--with-ai-label"
      ],
-     "elements": 1,
+     "elements": 2,
      "inherited": true,
      "sources": [
       "NumberInput"
@@ -17843,78 +17973,12 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.01468,
-    "mean": 0.00945,
+    "max": 0.01368,
+    "mean": 0.0091,
     "storiesChanged": 4,
     "storiesCompared": 6
    },
    "stories": [
-    {
-     "id": "components-interstitialscreen--modal-with-multiple-steps",
-     "base": "ibmp",
-     "baseId": "components-onboarding-interstitialscreen--modal-with-multiple-steps",
-     "v11Id": null,
-     "name": "Modal With Multiple Steps",
-     "title": "Components/InterstitialScreen",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 15031,
-      "totalPixels": 1024000,
-      "ratio": 0.01468,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 19
-    },
-    {
-     "id": "components-interstitialscreen--with-asynchronous-action-callback",
-     "base": "ibmp",
-     "baseId": "components-onboarding-interstitialscreen--with-asynchronous-action-callback",
-     "v11Id": null,
-     "name": "With Asynchronous Action Callback",
-     "title": "Components/InterstitialScreen",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 15031,
-      "totalPixels": 1024000,
-      "ratio": 0.01468,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 19
-    },
     {
      "id": "components-interstitialscreen--modal",
      "base": "ibmp",
@@ -17947,6 +18011,72 @@
       "height": 800
      },
      "changes": 17
+    },
+    {
+     "id": "components-interstitialscreen--modal-with-multiple-steps",
+     "base": "ibmp",
+     "baseId": "components-onboarding-interstitialscreen--modal-with-multiple-steps",
+     "v11Id": null,
+     "name": "Modal With Multiple Steps",
+     "title": "Components/InterstitialScreen",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 13957,
+      "totalPixels": 1024000,
+      "ratio": 0.01363,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 19
+    },
+    {
+     "id": "components-interstitialscreen--with-asynchronous-action-callback",
+     "base": "ibmp",
+     "baseId": "components-onboarding-interstitialscreen--with-asynchronous-action-callback",
+     "v11Id": null,
+     "name": "With Asynchronous Action Callback",
+     "title": "Components/InterstitialScreen",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 13957,
+      "totalPixels": 1024000,
+      "ratio": 0.01363,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 19
     },
     {
      "id": "components-interstitialscreen--with-custom-action-buttons",
@@ -19568,9 +19698,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14787,
+      "diffPixels": 14772,
       "totalPixels": 768728,
-      "ratio": 0.01924,
+      "ratio": 0.01922,
       "size": {
        "before": [
         1228,
@@ -22844,8 +22974,8 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.0063,
-    "mean": 0.00123,
+    "max": 0.01045,
+    "mean": 0.00207,
     "storiesChanged": 1,
     "storiesCompared": 6
    },
@@ -22860,9 +22990,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 313,
+      "diffPixels": 519,
       "totalPixels": 49680,
-      "ratio": 0.0063,
+      "ratio": 0.01045,
       "size": {
        "before": [
         432,
@@ -22881,7 +23011,7 @@
       "width": 432,
       "height": 115
      },
-     "changes": 5
+     "changes": 13
     },
     {
      "id": "components-numberinput--default",
@@ -22893,9 +23023,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 69,
+      "diffPixels": 101,
       "totalPixels": 141220,
-      "ratio": 0.00049,
+      "ratio": 0.00072,
       "size": {
        "before": [
         1228,
@@ -22914,7 +23044,7 @@
       "width": 1228,
       "height": 115
      },
-     "changes": 8
+     "changes": 12
     },
     {
      "id": "components-numberinput--with-type-of-text",
@@ -22926,9 +23056,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 69,
+      "diffPixels": 101,
       "totalPixels": 141220,
-      "ratio": 0.00049,
+      "ratio": 0.00072,
       "size": {
        "before": [
         1228,
@@ -22947,7 +23077,73 @@
       "width": 1228,
       "height": 115
      },
-     "changes": 8
+     "changes": 12
+    },
+    {
+     "id": "components-numberinput--with-type-of-custom-validation",
+     "base": "v11",
+     "baseId": "components-numberinput--with-type-of-custom-validation",
+     "v11Id": "components-numberinput--with-type-of-custom-validation",
+     "name": "With Type Of Custom Validation",
+     "title": "Components/NumberInput",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 37,
+      "totalPixels": 171920,
+      "ratio": 0.00022,
+      "size": {
+       "before": [
+        1228,
+        140
+       ],
+       "v12": [
+        1228,
+        140
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 140
+     },
+     "changes": 12
+    },
+    {
+     "id": "components-numberinput--with-type-of-text-controlled",
+     "base": "v11",
+     "baseId": "components-numberinput--with-type-of-text-controlled",
+     "v11Id": "components-numberinput--with-type-of-text-controlled",
+     "name": "With Type Of Text Controlled",
+     "title": "Components/NumberInput",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 37,
+      "totalPixels": 171920,
+      "ratio": 0.00022,
+      "size": {
+       "before": [
+        1228,
+        140
+       ],
+       "v12": [
+        1228,
+        140
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 140
+     },
+     "changes": 12
     },
     {
      "id": "components-numberinput--skeleton",
@@ -22981,72 +23177,6 @@
       "height": 94
      },
      "changes": 2
-    },
-    {
-     "id": "components-numberinput--with-type-of-custom-validation",
-     "base": "v11",
-     "baseId": "components-numberinput--with-type-of-custom-validation",
-     "v11Id": "components-numberinput--with-type-of-custom-validation",
-     "name": "With Type Of Custom Validation",
-     "title": "Components/NumberInput",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 5,
-      "totalPixels": 171920,
-      "ratio": 0.00003,
-      "size": {
-       "before": [
-        1228,
-        140
-       ],
-       "v12": [
-        1228,
-        140
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 1228,
-      "height": 140
-     },
-     "changes": 8
-    },
-    {
-     "id": "components-numberinput--with-type-of-text-controlled",
-     "base": "v11",
-     "baseId": "components-numberinput--with-type-of-text-controlled",
-     "v11Id": "components-numberinput--with-type-of-text-controlled",
-     "name": "With Type Of Text Controlled",
-     "title": "Components/NumberInput",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 5,
-      "totalPixels": 171920,
-      "ratio": 0.00003,
-      "size": {
-       "before": [
-        1228,
-        140
-       ],
-       "v12": [
-        1228,
-        140
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 1228,
-      "height": 140
-     },
-     "changes": 8
     }
    ],
    "notes": [
@@ -23087,11 +23217,11 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": {
-      "token": "$border-radius-04",
+      "token": "$border-radius-max",
       "sass": true
      },
      "stories": [
@@ -23103,29 +23233,57 @@
      ],
      "elements": 10,
      "inherited": false,
-     "text": "NumberInput · .cds--number__control-btn · border-radius 0px → 4px"
+     "text": "NumberInput · .cds--number__control-btn · border-radius 0px → 999999px (pill)"
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__controls",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__controls"
      ],
-     "prop": "display",
-     "from": "block",
-     "to": "none",
+     "prop": "gap",
+     "from": "normal normal undefined undefined",
+     "to": "4px 4px undefined undefined",
      "note": null,
      "fromToken": null,
-     "toToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
      "stories": [
       "components-numberinput--default",
+      "components-numberinput--with-ai-label",
       "components-numberinput--with-type-of-custom-validation",
       "components-numberinput--with-type-of-text",
       "components-numberinput--with-type-of-text-controlled"
      ],
-     "elements": 8,
+     "elements": 5,
      "inherited": false,
-     "text": "NumberInput · .cds--number__rule-divider · display block → none"
+     "text": "NumberInput · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-height-local"
+     },
+     "stories": [
+      "components-numberinput--default",
+      "components-numberinput--with-ai-label",
+      "components-numberinput--with-type-of-custom-validation",
+      "components-numberinput--with-type-of-text",
+      "components-numberinput--with-type-of-text-controlled"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "NumberInput · .cds--number__controls · margin 0px → 0px 8px 0px 0px"
     },
     {
      "type": "Visual",
@@ -23175,48 +23333,87 @@
      "text": "NumberInput · .cds--number.cds--skeleton · border-radius 0px → 4px"
     },
     {
-     "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "type": "Visual",
+     "element": ".cds--ai-label",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--ai-label"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$layout-size-icon-gap-local"
+     },
+     "stories": [
+      "components-numberinput--with-ai-label"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "NumberInput · .cds--ai-label · margin 0px → 0px 8px 0px 0px"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--number__control-btn",
+     "variants": [
+      "cds--number__control-btn"
      ],
      "prop": "height",
-     "from": "16px",
-     "to": "0px",
+     "from": "40px",
+     "to": "24px",
      "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
       "components-numberinput--default",
+      "components-numberinput--with-ai-label",
       "components-numberinput--with-type-of-custom-validation",
       "components-numberinput--with-type-of-text",
       "components-numberinput--with-type-of-text-controlled"
      ],
-     "elements": 4,
+     "elements": 10,
      "inherited": false,
-     "text": "NumberInput · .cds--number__rule-divider · height 16px → 0px (-16px)"
+     "text": "NumberInput · .cds--number__control-btn · height 40px → 24px (-16px)"
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "width",
-     "from": "1px",
-     "to": "0px",
-     "note": "-1px",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
      "fromToken": null,
      "toToken": null,
+     "stories": [
+      "components-numberinput--default",
+      "components-numberinput--with-ai-label",
+      "components-numberinput--with-type-of-custom-validation",
+      "components-numberinput--with-type-of-text",
+      "components-numberinput--with-type-of-text-controlled"
+     ],
+     "elements": 10,
+     "inherited": false,
+     "text": "NumberInput · .cds--number__control-btn · width 40px → 24px (-16px)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--number__rule-divider",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
      "stories": [
       "components-numberinput--default",
       "components-numberinput--with-type-of-custom-validation",
       "components-numberinput--with-type-of-text",
       "components-numberinput--with-type-of-text-controlled"
      ],
-     "elements": 4,
+     "elements": 8,
      "inherited": false,
-     "text": "NumberInput · .cds--number__rule-divider · width 1px → 0px (-1px)"
+     "text": "NumberInput · .cds--number__rule-divider element removed"
     },
     {
      "type": "Structure",
@@ -23227,7 +23424,7 @@
      "stories": [
       "components-numberinput--with-ai-label"
      ],
-     "elements": 1,
+     "elements": 2,
      "inherited": false,
      "text": "NumberInput · .cds--number__control-btn element removed"
     }
@@ -28430,8 +28627,8 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -28443,7 +28640,7 @@
       "Button",
       "Tooltip"
      ],
-     "text": "PasswordInput · .cds--btn.cds--tooltip__trigger · border-radius 0px → 4px (inherited from Button, Tooltip)"
+     "text": "PasswordInput · .cds--btn.cds--tooltip__trigger · border-radius 0px → 999999px (pill) (inherited from Button, Tooltip)"
     },
     {
      "type": "Visual",
@@ -28795,8 +28992,8 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.01547,
-    "mean": 0.00389,
+    "max": 0.02244,
+    "mean": 0.00563,
     "storiesChanged": 1,
     "storiesCompared": 4
    },
@@ -28811,9 +29008,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1691,
+      "diffPixels": 2452,
       "totalPixels": 109292,
-      "ratio": 0.01547,
+      "ratio": 0.02244,
       "size": {
        "before": [
         1228,
@@ -30222,8 +30419,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.10764,
-    "mean": 0.09288,
+    "max": 0.10753,
+    "mean": 0.09386,
     "storiesChanged": 8,
     "storiesCompared": 8
    },
@@ -30238,9 +30435,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 110226,
+      "diffPixels": 110113,
       "totalPixels": 1024000,
-      "ratio": 0.10764,
+      "ratio": 0.10753,
       "size": {
        "before": [
         1280,
@@ -30259,7 +30456,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 73
+     "changes": 71
     },
     {
      "id": "components-sidepanel--without-title",
@@ -30271,9 +30468,42 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 95685,
+      "diffPixels": 97151,
       "totalPixels": 1024000,
-      "ratio": 0.09344,
+      "ratio": 0.09487,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 52
+    },
+    {
+     "id": "components-sidepanel--with-static-title",
+     "base": "ibmp",
+     "baseId": "components-sidepanel--with-static-title",
+     "v11Id": null,
+     "name": "With static title",
+     "title": "Components/SidePanel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 94522,
+      "totalPixels": 1024000,
+      "ratio": 0.09231,
       "size": {
        "before": [
         1280,
@@ -30293,6 +30523,72 @@
       "height": 800
      },
      "changes": 54
+    },
+    {
+     "id": "components-sidepanel--slide-over",
+     "base": "ibmp",
+     "baseId": "components-sidepanel--slide-over",
+     "v11Id": null,
+     "name": "Slide over",
+     "title": "Components/SidePanel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 94295,
+      "totalPixels": 1024000,
+      "ratio": 0.09208,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 54
+    },
+    {
+     "id": "components-sidepanel--specify-element-to-have-initial-focus",
+     "base": "ibmp",
+     "baseId": "components-sidepanel--specify-element-to-have-initial-focus",
+     "v11Id": null,
+     "name": "Specify element to have initial focus",
+     "title": "Components/SidePanel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 94036,
+      "totalPixels": 1024000,
+      "ratio": 0.09183,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 50
     },
     {
      "id": "components-sidepanel--panel-with-second-step",
@@ -30328,105 +30624,6 @@
      "changes": 22
     },
     {
-     "id": "components-sidepanel--with-static-title",
-     "base": "ibmp",
-     "baseId": "components-sidepanel--with-static-title",
-     "v11Id": null,
-     "name": "With static title",
-     "title": "Components/SidePanel",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 93181,
-      "totalPixels": 1024000,
-      "ratio": 0.091,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 56
-    },
-    {
-     "id": "components-sidepanel--slide-over",
-     "base": "ibmp",
-     "baseId": "components-sidepanel--slide-over",
-     "v11Id": null,
-     "name": "Slide over",
-     "title": "Components/SidePanel",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 92954,
-      "totalPixels": 1024000,
-      "ratio": 0.09078,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 56
-    },
-    {
-     "id": "components-sidepanel--specify-element-to-have-initial-focus",
-     "base": "ibmp",
-     "baseId": "components-sidepanel--specify-element-to-have-initial-focus",
-     "v11Id": null,
-     "name": "Specify element to have initial focus",
-     "title": "Components/SidePanel",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 92694,
-      "totalPixels": 1024000,
-      "ratio": 0.09052,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 52
-    },
-    {
      "id": "components-sidepanel--with-ai-label",
      "base": "ibmp",
      "baseId": "components-sidepanel--with-ai-label",
@@ -30436,42 +30633,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 91607,
+      "diffPixels": 92949,
       "totalPixels": 1024000,
-      "ratio": 0.08946,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 52
-    },
-    {
-     "id": "components-sidepanel--slide-in",
-     "base": "ibmp",
-     "baseId": "components-sidepanel--slide-in",
-     "v11Id": null,
-     "name": "Slide in",
-     "title": "Components/SidePanel",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 91064,
-      "totalPixels": 1024000,
-      "ratio": 0.08893,
+      "ratio": 0.09077,
       "size": {
        "before": [
         1280,
@@ -30491,6 +30655,39 @@
       "height": 800
      },
      "changes": 50
+    },
+    {
+     "id": "components-sidepanel--slide-in",
+     "base": "ibmp",
+     "baseId": "components-sidepanel--slide-in",
+     "v11Id": null,
+     "name": "Slide in",
+     "title": "Components/SidePanel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 92405,
+      "totalPixels": 1024000,
+      "ratio": 0.09024,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 48
     }
    ],
    "notes": [],
@@ -31159,34 +31356,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--text-area",
-     "variants": [
-      "cds--text-area"
-     ],
-     "prop": "padding",
-     "from": "11px 16px",
-     "to": "11px 16px 8px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-sidepanel--slide-in",
-      "components-sidepanel--slide-over",
-      "components-sidepanel--specify-element-to-have-initial-focus",
-      "components-sidepanel--with-action-toolbar",
-      "components-sidepanel--with-ai-label",
-      "components-sidepanel--with-static-title",
-      "components-sidepanel--without-title"
-     ],
-     "elements": 7,
-     "inherited": true,
-     "sources": [
-      "TextArea"
-     ],
-     "text": "SidePanel · .cds--text-area · padding 11px 16px → 11px 16px 8px (inherited from TextArea)"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--side-panel__title.cds--side-panel__title--no-label",
      "variants": [
       "cds--side-panel__title cds--side-panel__title--no-label"
@@ -31549,34 +31718,6 @@
       "Button"
      ],
      "text": "SidePanel · .cds--btn · width 186.56px → 155.77px (-30.79px) (inherited from Button)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--text-area",
-     "variants": [
-      "cds--text-area"
-     ],
-     "prop": "height",
-     "from": "102.94px",
-     "to": "99.94px",
-     "note": "-3px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-sidepanel--slide-in",
-      "components-sidepanel--slide-over",
-      "components-sidepanel--specify-element-to-have-initial-focus",
-      "components-sidepanel--with-action-toolbar",
-      "components-sidepanel--with-ai-label",
-      "components-sidepanel--with-static-title",
-      "components-sidepanel--without-title"
-     ],
-     "elements": 7,
-     "inherited": true,
-     "sources": [
-      "TextArea"
-     ],
-     "text": "SidePanel · .cds--text-area · height 102.94px → 99.94px (-3px) (inherited from TextArea)"
     },
     {
      "type": "Layout",
@@ -34139,8 +34280,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.02536,
-    "mean": 0.01757,
+    "max": 0.02529,
+    "mean": 0.01734,
     "storiesChanged": 8,
     "storiesCompared": 8
    },
@@ -34155,9 +34296,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13831,
+      "diffPixels": 13792,
       "totalPixels": 545280,
-      "ratio": 0.02536,
+      "ratio": 0.02529,
       "size": {
        "before": [
         1280,
@@ -34287,9 +34428,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 11021,
+      "diffPixels": 10943,
       "totalPixels": 545280,
-      "ratio": 0.02021,
+      "ratio": 0.02007,
       "size": {
        "before": [
         1280,
@@ -34309,39 +34450,6 @@
       "height": 426
      },
      "changes": 88
-    },
-    {
-     "id": "components-tagoverflow--tags-with-overflow-count",
-     "base": "ibmp",
-     "baseId": "utilities-tagoverflow--tags-with-overflow-count",
-     "v11Id": null,
-     "name": "Tags With Overflow Count",
-     "title": "Components/TagOverflow",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 6974,
-      "totalPixels": 545280,
-      "ratio": 0.01279,
-      "size": {
-       "before": [
-        1280,
-        426
-       ],
-       "v12": [
-        1280,
-        426
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 38,
-      "width": 1280,
-      "height": 426
-     },
-     "changes": 42
     },
     {
      "id": "components-tagoverflow--tags-with-truncation",
@@ -34375,6 +34483,39 @@
       "height": 501
      },
      "changes": 54
+    },
+    {
+     "id": "components-tagoverflow--tags-with-overflow-count",
+     "base": "ibmp",
+     "baseId": "utilities-tagoverflow--tags-with-overflow-count",
+     "v11Id": null,
+     "name": "Tags With Overflow Count",
+     "title": "Components/TagOverflow",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 6118,
+      "totalPixels": 545280,
+      "ratio": 0.01122,
+      "size": {
+       "before": [
+        1280,
+        426
+       ],
+       "v12": [
+        1280,
+        426
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 38,
+      "width": 1280,
+      "height": 426
+     },
+     "changes": 39
     },
     {
      "id": "components-tagoverflow--custom-components-with-overflow-modal",
@@ -34419,7 +34560,7 @@
      "from": "c4p--",
      "to": "cds--",
      "stories": [],
-     "note": "297 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
+     "note": "296 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
      "text": "TagOverflow · class prefix c4p-- → cds--"
     },
     {
@@ -35117,7 +35258,7 @@
       "components-tagoverflow--user-avatars-with-overflow-count",
       "components-tagoverflow--user-avatars-with-overflow-modal"
      ],
-     "elements": 48,
+     "elements": 47,
      "inherited": false,
      "text": "TagOverflow · .cds--tag-overflow__tag-container element removed"
     },
@@ -35223,7 +35364,7 @@
       "components-tagoverflow--user-avatars-with-overflow-count",
       "components-tagoverflow--user-avatars-with-overflow-modal"
      ],
-     "elements": 35,
+     "elements": 34,
      "inherited": true,
      "sources": [
       "Tag"
@@ -35315,7 +35456,7 @@
       "components-tagoverflow--tags-with-overflow-count",
       "components-tagoverflow--tags-with-overflow-modal"
      ],
-     "elements": 20,
+     "elements": 19,
      "inherited": false,
      "text": "TagOverflow · .cds--tag.cds--tag-overflow__item--tag element removed"
     },
@@ -35963,8 +36104,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.02017,
-    "mean": 0.01182,
+    "max": 0.0202,
+    "mean": 0.01184,
     "storiesChanged": 10,
     "storiesCompared": 10
    },
@@ -35979,9 +36120,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 20653,
+      "diffPixels": 20685,
       "totalPixels": 1024000,
-      "ratio": 0.02017,
+      "ratio": 0.0202,
       "size": {
        "before": [
         1280,
@@ -36000,7 +36141,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 148
+     "changes": 160
     },
     {
      "id": "components-tearsheet--with-custom-footer-actions",
@@ -36012,9 +36153,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 16130,
+      "diffPixels": 16162,
       "totalPixels": 1024000,
-      "ratio": 0.01575,
+      "ratio": 0.01578,
       "size": {
        "before": [
         1280,
@@ -36033,7 +36174,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 95
+     "changes": 101
     },
     {
      "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
@@ -36111,9 +36252,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14276,
+      "diffPixels": 14308,
       "totalPixels": 1024000,
-      "ratio": 0.01394,
+      "ratio": 0.01397,
       "size": {
        "before": [
         1280,
@@ -36132,7 +36273,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 139
+     "changes": 151
     },
     {
      "id": "components-tearsheet--with-influencer",
@@ -36144,9 +36285,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14278,
+      "diffPixels": 14310,
       "totalPixels": 1024000,
-      "ratio": 0.01394,
+      "ratio": 0.01397,
       "size": {
        "before": [
         1280,
@@ -36165,7 +36306,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 141
+     "changes": 153
     },
     {
      "id": "components-tearsheet--with-tabs",
@@ -36210,9 +36351,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 5369,
+      "diffPixels": 5401,
       "totalPixels": 1024000,
-      "ratio": 0.00524,
+      "ratio": 0.00527,
       "size": {
        "before": [
         1280,
@@ -36231,7 +36372,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 84
+     "changes": 87
     },
     {
      "id": "components-tearsheet--stacking-with-different-sizes",
@@ -36243,9 +36384,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 5369,
+      "diffPixels": 5401,
       "totalPixels": 1024000,
-      "ratio": 0.00524,
+      "ratio": 0.00527,
       "size": {
        "before": [
         1280,
@@ -36264,7 +36405,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 84
+     "changes": 87
     },
     {
      "id": "components-tearsheet--stacking-narrow-tearsheets",
@@ -36276,9 +36417,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 4284,
+      "diffPixels": 4316,
       "totalPixels": 1024000,
-      "ratio": 0.00418,
+      "ratio": 0.00421,
       "size": {
        "before": [
         1280,
@@ -36297,7 +36438,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 82
+     "changes": 85
     }
    ],
    "notes": [],
@@ -36661,34 +36802,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
-     "variants": [
-      "cds--number__rule-divider"
-     ],
-     "prop": "background-color",
-     "from": "#c6c6c6",
-     "to": "#e0e0e0",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer"
-     ],
-     "elements": 17,
-     "inherited": true,
-     "sources": [
-      "NumberInput"
-     ],
-     "text": "Tearsheet · .cds--number__rule-divider · background-color #c6c6c6 → #e0e0e0 (inherited from NumberInput)"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--number__control-btn",
      "variants": [
       "cds--number__control-btn"
@@ -36723,8 +36836,8 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -36741,7 +36854,7 @@
      "sources": [
       "NumberInput"
      ],
-     "text": "Tearsheet · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput)"
+     "text": "Tearsheet · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -36860,34 +36973,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
-     "variants": [
-      "cds--number__rule-divider"
-     ],
-     "prop": "display",
-     "from": "block",
-     "to": "none",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer"
-     ],
-     "elements": 34,
-     "inherited": true,
-     "sources": [
-      "NumberInput"
-     ],
-     "text": "Tearsheet · .cds--number__rule-divider · display block → none (inherited from NumberInput)"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--popover-caret",
      "variants": [
       "cds--popover--auto-align cds--popover-caret"
@@ -36972,6 +37057,34 @@
       "Tooltip"
      ],
      "text": "Tearsheet · .cds--popover-caret::after · font-size 16px → 14px (inherited from Popover, Tooltip)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "gap",
+     "from": "normal normal undefined undefined",
+     "to": "4px 4px undefined undefined",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer"
+     ],
+     "elements": 17,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Tearsheet · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput)"
     },
     {
      "type": "Visual",
@@ -37091,6 +37204,34 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer"
+     ],
+     "elements": 17,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Tearsheet · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--btn",
      "variants": [
       "cds--btn cds--btn--primary"
@@ -37180,13 +37321,13 @@
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "height",
-     "from": "16px",
-     "to": "0px",
+     "from": "40px",
+     "to": "24px",
      "note": "-16px",
      "fromToken": null,
      "toToken": null,
@@ -37199,12 +37340,12 @@
       "components-tearsheet--with-custom-footer-actions",
       "components-tearsheet--with-influencer"
      ],
-     "elements": 17,
+     "elements": 34,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Tearsheet · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput)"
+     "text": "Tearsheet · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
@@ -37236,14 +37377,14 @@
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "width",
-     "from": "1px",
-     "to": "0px",
-     "note": "-1px",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -37255,12 +37396,12 @@
       "components-tearsheet--with-custom-footer-actions",
       "components-tearsheet--with-influencer"
      ],
-     "elements": 17,
+     "elements": 34,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Tearsheet · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput)"
+     "text": "Tearsheet · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
@@ -38228,6 +38369,28 @@
      "elements": 7,
      "inherited": false,
      "text": "Tearsheet · .cds--tearsheet__next__header-actions-menuButton element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--number__rule-divider",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer"
+     ],
+     "elements": 34,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Tearsheet · .cds--number__rule-divider element removed (inherited from NumberInput)"
     },
     {
      "type": "Structure",
@@ -41127,9 +41290,9 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.17899,
-    "mean": 0.08974,
+    "mean": 0.05983,
     "storiesChanged": 1,
-    "storiesCompared": 2
+    "storiesCompared": 3
    },
    "stories": [
     {
@@ -41206,8 +41369,23 @@
      "name": "Default",
      "title": "Components/Toggletip",
      "captured": true,
-     "error": "v11: Storybook error: Failed to fetch dynamically imported module: https://react.carbondesignsystem.com/assets/Toggletip.stories-CC1RCM-5.js",
-     "pixel": null,
+     "error": null,
+     "pixel": {
+      "diffPixels": 0,
+      "totalPixels": 6672,
+      "ratio": 0,
+      "size": {
+       "before": [
+        139,
+        48
+       ],
+       "v12": [
+        139,
+        48
+       ]
+      },
+      "sizeChanged": false
+     },
      "clip": {
       "x": 26,
       "y": 26,
@@ -43987,6 +44165,536 @@
    ]
   },
   {
+   "id": "about-modal",
+   "name": "About Modal",
+   "section": "Examples",
+   "status": "migrated",
+   "inheritsFrom": [
+    "Button",
+    "IconButton",
+    "Link",
+    "Modal",
+    "Popover",
+    "Tooltip"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Components/AboutModal",
+     "Patterns/About Modal"
+    ],
+    "matched": 2,
+    "unmatched": 0
+   },
+   "pixel": {
+    "max": 0.64888,
+    "mean": 0.40417,
+    "storiesChanged": 2,
+    "storiesCompared": 2
+   },
+   "stories": [
+    {
+     "id": "examples-about-modal--with-additional-content",
+     "base": "ibmp",
+     "baseId": "components-aboutmodal--with-additional-content",
+     "v11Id": null,
+     "name": "With Additional Content",
+     "title": "Examples/About Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 664458,
+      "totalPixels": 1024000,
+      "ratio": 0.64888,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 33
+    },
+    {
+     "id": "examples-about-modal--standard",
+     "base": "ibmp",
+     "baseId": "patterns-about-modal--standard",
+     "v11Id": null,
+     "name": "Standard",
+     "title": "Examples/About Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 14986,
+      "totalPixels": 93978,
+      "ratio": 0.15946,
+      "size": {
+       "before": [
+        227,
+        414
+       ],
+       "v12": [
+        227,
+        414
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 26,
+      "width": 227,
+      "height": 414
+     },
+     "changes": 2
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "class prefix",
+     "element": null,
+     "from": "c4p--",
+     "to": "cds--",
+     "stories": [],
+     "note": "15 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
+     "text": "About Modal · class prefix c4p-- → cds--"
+    },
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Components/AboutModal, Patterns/About Modal",
+     "text": "About Modal · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-about-modal--standard"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "About Modal · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-about-modal--standard",
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "About Modal · .cds--layout element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--primary",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "About Modal · .cds--btn.cds--btn--primary element added (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--body--with-modal-open",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--body--with-modal-open element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--primary",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "About Modal · .cds--btn.cds--btn--primary element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal.cds--layer-one.cds--modal",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal.cds--layer-one.cds--modal element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--modal-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "About Modal · .cds--modal-container element removed (inherited from Modal)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__logo",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__logo element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__header.cds--modal-header",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__header.cds--modal-header element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__title.cds--modal-header__label.cds--type-delta",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__title.cds--modal-header__label.cds--type-delta element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--modal-close-button",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--modal-close-button element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--left.cds--popover--open.cds--popover-container.cds--tooltip",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "About Modal · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--left.cds--popover--open.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--tooltip-trigger__wrapper",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Tooltip"
+     ],
+     "text": "About Modal · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--icon-only.cds--btn--primary.cds--modal-close",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "About Modal · .cds--btn.cds--btn--icon-only.cds--btn--primary.cds--modal-close element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--modal-close__icon",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "About Modal · .cds--modal-close__icon element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "About Modal · .cds--popover element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover-content.cds--tooltip-content",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "About Modal · .cds--popover-content.cds--tooltip-content element removed (inherited from Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover-caret",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "About Modal · .cds--popover-caret element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__body.cds--layer-two.cds--modal-content.cds--modal-scroll-content--no-fade",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__body.cds--layer-two.cds--modal-content.cds--modal-scroll-content--no-fade element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__body-content",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__body-content element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__version",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__version element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__links-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__links-container element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--link",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Link"
+     ],
+     "text": "About Modal · .cds--link element removed (inherited from Link)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__content",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__content element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__copyright-text",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__copyright-text element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__footer.cds--btn-set.cds--modal-footer",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__footer.cds--btn-set.cds--modal-footer element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__footer-label",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__footer-label element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--about-modal__stories--tech-logo",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-about-modal--with-additional-content"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "About Modal · .cds--about-modal__stories--tech-logo element removed"
+    }
+   ]
+  },
+  {
    "id": "add-and-select",
    "name": "Add and select",
    "section": "Examples",
@@ -44004,8 +44712,7 @@
    "base": "ibmp",
    "migratedFrom": {
     "ibmpTitles": [
-     "Patterns/Add and select/MultiAddSelect",
-     "Patterns/Prebuilt patterns/Add and select/MultiAddSelect"
+     "Patterns/Add and select/MultiAddSelect"
     ],
     "matched": 13,
     "unmatched": 0
@@ -44466,7 +45173,7 @@
      "from": "@carbon/ibm-products",
      "to": "@carbon/react",
      "stories": [],
-     "note": "IBM Products Storybook: Patterns/Add and select/MultiAddSelect, Patterns/Prebuilt patterns/Add and select/MultiAddSelect",
+     "note": "IBM Products Storybook: Patterns/Add and select/MultiAddSelect",
      "text": "Add and select · package @carbon/ibm-products → @carbon/react"
     },
     {
@@ -44669,7 +45376,9 @@
      "from": "none",
      "to": "linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%)",
      "note": "now drawn with gradients",
-     "fromToken": null,
+     "fromToken": {
+      "token": "$field"
+     },
      "toToken": {
       "token": "$field"
      },
@@ -46422,7 +47131,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 43
+     "changes": 49
     },
     {
      "id": "examples-create-flows-create-full-page--create-full-page-with-global-header",
@@ -47134,28 +47843,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
-     "variants": [
-      "cds--number__rule-divider"
-     ],
-     "prop": "background-color",
-     "from": "#c6c6c6",
-     "to": "#e0e0e0",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-create-flows-create-full-page--create-full-page-with-sections"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "NumberInput"
-     ],
-     "text": "Create flows · .cds--number__rule-divider · background-color #c6c6c6 → #e0e0e0 (inherited from NumberInput)"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--number__control-btn",
      "variants": [
       "cds--number__control-btn"
@@ -47184,8 +47871,8 @@
      ],
      "prop": "border-radius",
      "from": "0px",
-     "to": "4px",
-     "note": null,
+     "to": "999999px",
+     "note": "pill",
      "fromToken": null,
      "toToken": null,
      "stories": [
@@ -47196,73 +47883,95 @@
      "sources": [
       "NumberInput"
      ],
-     "text": "Create flows · .cds--number__control-btn · border-radius 0px → 4px (inherited from NumberInput)"
+     "text": "Create flows · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput)"
     },
     {
      "type": "Visual",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__controls",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__controls"
      ],
-     "prop": "display",
-     "from": "block",
-     "to": "none",
+     "prop": "gap",
+     "from": "normal normal undefined undefined",
+     "to": "4px 4px undefined undefined",
      "note": null,
      "fromToken": null,
      "toToken": null,
      "stories": [
       "examples-create-flows-create-full-page--create-full-page-with-sections"
      ],
-     "elements": 4,
+     "elements": 2,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Create flows · .cds--number__rule-divider · display block → none (inherited from NumberInput)"
+     "text": "Create flows · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--number__controls",
+     "variants": [
+      "cds--number__controls"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 8px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-create-flows-create-full-page--create-full-page-with-sections"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Create flows · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput)"
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "height",
-     "from": "16px",
-     "to": "0px",
+     "from": "40px",
+     "to": "24px",
      "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
       "examples-create-flows-create-full-page--create-full-page-with-sections"
      ],
-     "elements": 2,
+     "elements": 4,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Create flows · .cds--number__rule-divider · height 16px → 0px (-16px) (inherited from NumberInput)"
+     "text": "Create flows · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Layout",
-     "element": ".cds--number__rule-divider",
+     "element": ".cds--number__control-btn",
      "variants": [
-      "cds--number__rule-divider"
+      "cds--number__control-btn"
      ],
      "prop": "width",
-     "from": "1px",
-     "to": "0px",
-     "note": "-1px",
+     "from": "40px",
+     "to": "24px",
+     "note": "-16px",
      "fromToken": null,
      "toToken": null,
      "stories": [
       "examples-create-flows-create-full-page--create-full-page-with-sections"
      ],
-     "elements": 2,
+     "elements": 4,
      "inherited": true,
      "sources": [
       "NumberInput"
      ],
-     "text": "Create flows · .cds--number__rule-divider · width 1px → 0px (-1px) (inherited from NumberInput)"
+     "text": "Create flows · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput)"
     },
     {
      "type": "Structure",
@@ -47424,6 +48133,22 @@
       "Button"
      ],
      "text": "Create flows · .cds--btn.cds--btn--2xl.cds--btn--disabled.cds--btn--expressive.cds--btn--primary.cds--layout--size-2xl element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--number__rule-divider",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-create-flows-create-full-page--create-full-page-with-sections"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "NumberInput"
+     ],
+     "text": "Create flows · .cds--number__rule-divider element removed (inherited from NumberInput)"
     }
    ]
   },
@@ -47689,11 +48414,44 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.00108,
-    "mean": 0.00065,
-    "storiesChanged": 1,
-    "storiesCompared": 2
+    "mean": 0.00079,
+    "storiesChanged": 2,
+    "storiesCompared": 3
    },
    "stories": [
+    {
+     "id": "examples-emptystate--empty-state-isometric",
+     "base": "v11",
+     "baseId": "examples-emptystate--empty-state-isometric",
+     "v11Id": "examples-emptystate--empty-state-isometric",
+     "name": "Empty State unit with isometric illustration",
+     "title": "Examples/EmptyState",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 106,
+      "totalPixels": 98366,
+      "ratio": 0.00108,
+      "size": {
+       "before": [
+        359,
+        274
+       ],
+       "v12": [
+        359,
+        274
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 359,
+      "height": 274
+     },
+     "changes": 1
+    },
     {
      "id": "examples-emptystate--empty-state-pictogram",
      "base": "v11",
@@ -47732,7 +48490,7 @@
      "base": "v11",
      "baseId": "examples-emptystate--empty-state-in-ui",
      "v11Id": "examples-emptystate--empty-state-in-ui",
-     "name": "Empty State unit",
+     "name": "Empty State in a UI",
      "title": "Examples/EmptyState",
      "captured": true,
      "error": null,
@@ -47759,24 +48517,6 @@
       "height": 737
      },
      "changes": 13
-    },
-    {
-     "id": "examples-emptystate--empty-state-isometric",
-     "base": "v11",
-     "baseId": "examples-emptystate--empty-state-isometric",
-     "v11Id": "examples-emptystate--empty-state-isometric",
-     "name": "Empty State unit with isometric illustration",
-     "title": "Examples/EmptyState",
-     "captured": true,
-     "error": "v12: page.waitForFunction: Timeout 20000ms exceeded.",
-     "pixel": null,
-     "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 359,
-      "height": 274
-     },
-     "changes": 0
     }
    ],
    "notes": [],
@@ -47799,9 +48539,10 @@
      },
      "stories": [
       "examples-emptystate--empty-state-in-ui",
+      "examples-emptystate--empty-state-isometric",
       "examples-emptystate--empty-state-pictogram"
      ],
-     "elements": 3,
+     "elements": 4,
      "inherited": false,
      "text": "EmptyState · .cds--btn.cds--empty-state__action · border-radius 0px → 999999px (pill)"
     },
@@ -48543,6 +49284,810 @@
    ]
   },
   {
+   "id": "getstartedcard",
+   "name": "GetStartedCard",
+   "section": "Examples",
+   "status": "migrated",
+   "inheritsFrom": [],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Preview Candidate/Onboarding/GetStartedCard"
+    ],
+    "matched": 5,
+    "unmatched": 2
+   },
+   "pixel": {
+    "max": 0.6855,
+    "mean": 0.52948,
+    "storiesChanged": 5,
+    "storiesCompared": 5
+   },
+   "stories": [
+    {
+     "id": "examples-getstartedcard--with-sequence",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-getstartedcard--with-sequence",
+     "v11Id": null,
+     "name": "With sequence",
+     "title": "Examples/GetStartedCard",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 412480,
+      "totalPixels": 601720,
+      "ratio": 0.6855,
+      "size": {
+       "before": [
+        1228,
+        490
+       ],
+       "v12": [
+        1228,
+        490
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 490
+     },
+     "changes": 32
+    },
+    {
+     "id": "examples-getstartedcard--default-card",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-getstartedcard--default",
+     "v11Id": null,
+     "name": "Default",
+     "title": "Examples/GetStartedCard",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 405820,
+      "totalPixels": 598036,
+      "ratio": 0.67859,
+      "size": {
+       "before": [
+        1228,
+        487
+       ],
+       "v12": [
+        1228,
+        487
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 487
+     },
+     "changes": 31
+    },
+    {
+     "id": "examples-getstartedcard--with-media-and-sequence",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-getstartedcard--with-media-and-sequence",
+     "v11Id": null,
+     "name": "With media and sequence",
+     "title": "Examples/GetStartedCard",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 416267,
+      "totalPixels": 648384,
+      "ratio": 0.64201,
+      "size": {
+       "before": [
+        1228,
+        528
+       ],
+       "v12": [
+        1228,
+        528
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 7,
+      "width": 1228,
+      "height": 528
+     },
+     "changes": 33
+    },
+    {
+     "id": "examples-getstartedcard--with-media-and-pictogram",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-getstartedcard--with-media-and-pictogram",
+     "v11Id": null,
+     "name": "With media and pictogram",
+     "title": "Examples/GetStartedCard",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 409366,
+      "totalPixels": 644700,
+      "ratio": 0.63497,
+      "size": {
+       "before": [
+        1228,
+        525
+       ],
+       "v12": [
+        1228,
+        525
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 7,
+      "width": 1228,
+      "height": 525
+     },
+     "changes": 32
+    },
+    {
+     "id": "examples-getstartedcard--with-disabled",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-getstartedcard--with-disabled",
+     "v11Id": null,
+     "name": "With disabled",
+     "title": "Examples/GetStartedCard",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 3804,
+      "totalPixels": 601720,
+      "ratio": 0.00632,
+      "size": {
+       "before": [
+        1228,
+        490
+       ],
+       "v12": [
+        1228,
+        490
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 490
+     },
+     "changes": 31
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "class prefix",
+     "element": null,
+     "from": "c4p--",
+     "to": "cds--",
+     "stories": [],
+     "note": "82 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
+     "text": "GetStartedCard · class prefix c4p-- → cds--"
+    },
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Preview Candidate/Onboarding/GetStartedCard",
+     "text": "GetStartedCard · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--layout element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header-top-row",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header-top-row element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header-media",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header-media element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__title",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__title element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__title-text",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__title-text element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__label",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__label element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__title-text-row",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__title-text-row element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__body",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__body element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--get-started-card__meta",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--get-started-card__meta element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--get-started-card__meta-item",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 10,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--get-started-card__meta-item element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__clickable-footer",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__clickable-footer element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--grid",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--grid element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__content-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__content-container element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header-body-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header-body-container element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header-wrapper",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header-wrapper element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header.cds--card__header-has-label",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header.cds--card__header-has-label element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__header-container.cds--card__header-container--large-tile-or-label",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__header-container.cds--card__header-container--large-tile-or-label element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__title-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__title-container element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__label",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__label element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__title",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__title element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__body",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__body element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__footer.cds--card__footer-no-button",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__footer.cds--card__footer-no-button element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__actions",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__actions element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__icon",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 10,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__icon element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__action-icon",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__action-icon element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card.cds--card__clickable.cds--card__get-started",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 4,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card.cds--card__clickable.cds--card__get-started element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__sequence",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--with-disabled",
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__sequence element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card.cds--card--clickable.cds--card--productive.cds--get-started-card",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card.cds--card--clickable.cds--card--productive.cds--get-started-card element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card.cds--card--clickable.cds--card--productive.cds--get-started-card.cds--get-started-card--with-media",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card.cds--card--clickable.cds--card--productive.cds--get-started-card.cds--get-started-card--with-media element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--get-started-card__sequence",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--with-media-and-sequence",
+      "examples-getstartedcard--with-sequence"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--get-started-card__sequence element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__pictogram",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--default-card",
+      "examples-getstartedcard--with-media-and-pictogram"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__pictogram element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card__media",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--with-media-and-pictogram",
+      "examples-getstartedcard--with-media-and-sequence"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card__media element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card.cds--card--disabled.cds--card--productive.cds--get-started-card",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-getstartedcard--with-disabled"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card.cds--card--disabled.cds--card--productive.cds--get-started-card element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--card.cds--card__clickable.cds--card__disabled.cds--card__get-started",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-getstartedcard--with-disabled"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "GetStartedCard · .cds--card.cds--card__clickable.cds--card__disabled.cds--card__get-started element removed"
+    },
+    {
+     "type": "Story",
+     "prop": "story added",
+     "element": null,
+     "from": "—",
+     "to": "With AI label and actions",
+     "stories": [
+      "examples-getstartedcard--with-ai-label-and-actions"
+     ],
+     "note": "no IBM Products equivalent",
+     "text": "GetStartedCard · story added: With AI label and actions (no IBM Products equivalent)"
+    },
+    {
+     "type": "Story",
+     "prop": "story added",
+     "element": null,
+     "from": "—",
+     "to": "With horizontal media",
+     "stories": [
+      "examples-getstartedcard--with-horizontal-media"
+     ],
+     "note": "no IBM Products equivalent",
+     "text": "GetStartedCard · story added: With horizontal media (no IBM Products equivalent)"
+    }
+   ]
+  },
+  {
    "id": "import-and-upload",
    "name": "Import and upload",
    "section": "Examples",
@@ -48652,16 +50197,16 @@
      "error": null,
      "pixel": {
       "diffPixels": 3535,
-      "totalPixels": 576000,
-      "ratio": 0.00614,
+      "totalPixels": 573440,
+      "ratio": 0.00616,
       "size": {
        "before": [
         1280,
-        450
+        448
        ],
        "v12": [
         1280,
-        450
+        448
        ]
       },
       "sizeChanged": false
@@ -48670,9 +50215,9 @@
       "x": 0,
       "y": 26,
       "width": 1280,
-      "height": 450
+      "height": 448
      },
-     "changes": 5
+     "changes": 3
     }
    ],
    "notes": [],
@@ -48731,50 +50276,6 @@
       "Button"
      ],
      "text": "Saving · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--text-area",
-     "variants": [
-      "cds--text-area"
-     ],
-     "prop": "padding",
-     "from": "11px 16px",
-     "to": "11px 16px 8px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-saving--auto-saving"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "TextArea"
-     ],
-     "text": "Saving · .cds--text-area · padding 11px 16px → 11px 16px 8px (inherited from TextArea)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--text-area",
-     "variants": [
-      "cds--text-area"
-     ],
-     "prop": "height",
-     "from": "102.94px",
-     "to": "99.94px",
-     "note": "-3px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-saving--auto-saving"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "TextArea"
-     ],
-     "text": "Saving · .cds--text-area · height 102.94px → 99.94px (-3px) (inherited from TextArea)"
     },
     {
      "type": "Layout",
@@ -50055,6 +51556,7 @@
    "inheritsFrom": [
     "AspectRatio",
     "Button",
+    "GetStartedCard",
     "IconButton",
     "OverflowMenu",
     "Popover",
@@ -50065,7 +51567,7 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.01595,
-    "mean": 0.00263,
+    "mean": 0.00264,
     "storiesChanged": 5,
     "storiesCompared": 17
    },
@@ -50246,16 +51748,16 @@
      "error": null,
      "pixel": {
       "diffPixels": 144,
-      "totalPixels": 180960,
-      "ratio": 0.0008,
+      "totalPixels": 175968,
+      "ratio": 0.00082,
       "size": {
        "before": [
         624,
-        290
+        282
        ],
        "v12": [
         624,
-        290
+        282
        ]
       },
       "sizeChanged": false
@@ -50264,7 +51766,7 @@
       "x": 16,
       "y": 16,
       "width": 624,
-      "height": 290
+      "height": 282
      },
      "changes": 10
     },
@@ -50278,17 +51780,17 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 216,
-      "totalPixels": 580320,
-      "ratio": 0.00037,
+      "diffPixels": 405,
+      "totalPixels": 552864,
+      "ratio": 0.00073,
       "size": {
        "before": [
         1248,
-        465
+        443
        ],
        "v12": [
         1248,
-        465
+        443
        ]
       },
       "sizeChanged": false
@@ -50297,9 +51799,9 @@
       "x": 16,
       "y": 16,
       "width": 1248,
-      "height": 465
+      "height": 443
      },
-     "changes": 22
+     "changes": 25
     },
     {
      "id": "preview-preview-card--with-horizontal-media",
@@ -50333,39 +51835,6 @@
       "height": 463
      },
      "changes": 11
-    },
-    {
-     "id": "preview-preview-card--with-flush-body",
-     "base": "v11",
-     "baseId": "preview-preview-card--with-flush-body",
-     "v11Id": "preview-preview-card--with-flush-body",
-     "name": "With Flush Body",
-     "title": "Preview/preview__Card",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 18,
-      "totalPixels": 104832,
-      "ratio": 0.00017,
-      "size": {
-       "before": [
-        624,
-        168
-       ],
-       "v12": [
-        624,
-        168
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 16,
-      "y": 16,
-      "width": 624,
-      "height": 168
-     },
-     "changes": 3
     },
     {
      "id": "preview-preview-card--disabled",
@@ -50467,6 +51936,39 @@
      "changes": 4
     },
     {
+     "id": "preview-preview-card--with-flush-body",
+     "base": "v11",
+     "baseId": "preview-preview-card--with-flush-body",
+     "v11Id": "preview-preview-card--with-flush-body",
+     "name": "With Flush Body",
+     "title": "Preview/preview__Card",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 0,
+      "totalPixels": 106080,
+      "ratio": 0,
+      "size": {
+       "before": [
+        624,
+        170
+       ],
+       "v12": [
+        624,
+        170
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 16,
+      "y": 16,
+      "width": 624,
+      "height": 170
+     },
+     "changes": 2
+    },
+    {
      "id": "preview-preview-card--with-header-media",
      "base": "v11",
      "baseId": "preview-preview-card--with-header-media",
@@ -50477,16 +51979,16 @@
      "error": null,
      "pixel": {
       "diffPixels": 0,
-      "totalPixels": 302016,
+      "totalPixels": 274560,
       "ratio": 0,
       "size": {
        "before": [
         1248,
-        242
+        220
        ],
        "v12": [
         1248,
-        242
+        220
        ]
       },
       "sizeChanged": false
@@ -50495,7 +51997,7 @@
       "x": 16,
       "y": 16,
       "width": 1248,
-      "height": 242
+      "height": 220
      },
      "changes": 7
     },
@@ -50543,16 +52045,16 @@
      "error": null,
      "pixel": {
       "diffPixels": 0,
-      "totalPixels": 364416,
+      "totalPixels": 324480,
       "ratio": 0,
       "size": {
        "before": [
         1248,
-        292
+        260
        ],
        "v12": [
         1248,
-        292
+        260
        ]
       },
       "sizeChanged": false
@@ -50561,7 +52063,7 @@
       "x": 16,
       "y": 16,
       "width": 1248,
-      "height": 292
+      "height": 260
      },
      "changes": 8
     },
@@ -50678,9 +52180,9 @@
      "elements": 47,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · border-radius 0px → 8px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · border-radius 0px → 8px (inherited from GetStartedCard)"
     },
     {
      "type": "Visual",
@@ -50799,9 +52301,10 @@
      "elements": 4,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "AspectRatio",
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px 8px 0px 0px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px 8px 0px 0px (inherited from AspectRatio, GetStartedCard)"
     },
     {
      "type": "Visual",
@@ -50828,6 +52331,35 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--tag",
+     "variants": [
+      "cds--tag cds--tag--blue"
+     ],
+     "prop": "border-radius",
+     "from": "16px",
+     "to": "4px",
+     "note": null,
+     "fromToken": {
+      "token": "$border-radius-16",
+      "sass": true
+     },
+     "toToken": {
+      "token": "$border-radius-04",
+      "sass": true
+     },
+     "stories": [
+      "preview-preview-card--with-header-actions",
+      "preview-preview-card--with-header-media"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Tag"
+     ],
+     "text": "preview__Card · .cds--tag · border-radius 16px → 4px (inherited from Tag)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--aspect-ratio.cds--card__media",
      "variants": [
       "cds--aspect-ratio cds--aspect-ratio--16x9 cds--card__media"
@@ -50846,9 +52378,10 @@
      "elements": 3,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "AspectRatio",
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 7px 7px 0px 0px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 7px 7px 0px 0px (inherited from AspectRatio, GetStartedCard)"
     },
     {
      "type": "Visual",
@@ -50875,60 +52408,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--card__body.cds--card__body--flush",
-     "variants": [
-      "cds--card__body cds--card__body--flush"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "0px 0px 8px 8px",
-     "note": null,
-     "fromToken": {
-      "literal": "inherit"
-     },
-     "toToken": {
-      "literal": "inherit"
-     },
-     "stories": [
-      "preview-preview-card--with-flush-body"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "AspectRatio"
-     ],
-     "text": "preview__Card · .cds--card__body.cds--card__body--flush · border-radius 0px → 0px 0px 8px 8px (inherited from AspectRatio)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--tag",
-     "variants": [
-      "cds--tag cds--tag--blue"
-     ],
-     "prop": "border-radius",
-     "from": "16px",
-     "to": "4px",
-     "note": null,
-     "fromToken": {
-      "token": "$border-radius-16",
-      "sass": true
-     },
-     "toToken": {
-      "token": "$border-radius-04",
-      "sass": true
-     },
-     "stories": [
-      "preview-preview-card--with-header-media"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Tag"
-     ],
-     "text": "preview__Card · .cds--tag · border-radius 16px → 4px (inherited from Tag)"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--card__media.cds--card__media--horizontal",
      "variants": [
       "cds--card__media cds--card__media--horizontal"
@@ -50948,9 +52427,9 @@
      "elements": 2,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 8px 0px 0px 8px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 8px 0px 0px 8px (inherited from GetStartedCard)"
     },
     {
      "type": "Visual",
@@ -50973,9 +52452,9 @@
      "elements": 2,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 0px 8px 8px 0px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 0px 8px 8px 0px (inherited from GetStartedCard)"
     },
     {
      "type": "Visual",
@@ -50998,9 +52477,10 @@
      "elements": 1,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "AspectRatio",
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px (inherited from AspectRatio, GetStartedCard)"
     },
     {
      "type": "Layout",
@@ -51020,9 +52500,9 @@
      "elements": 2,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · height 348.36px → 346.36px (-2px) (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · height 348.36px → 346.36px (-2px) (inherited from GetStartedCard)"
     },
     {
      "type": "Layout",
@@ -51042,9 +52522,9 @@
      "elements": 1,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · height 354.36px → 352.36px (-2px) (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · height 354.36px → 352.36px (-2px) (inherited from GetStartedCard)"
     },
     {
      "type": "Layout",
@@ -51064,9 +52544,31 @@
      "elements": 1,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · height 281.48px → 279.48px (-2px) (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · height 281.48px → 279.48px (-2px) (inherited from GetStartedCard)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm"
+     ],
+     "prop": "height",
+     "from": "0px",
+     "to": "32px",
+     "note": "+32px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-header-actions"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "preview__Card · .cds--btn · height 0px → 32px (+32px) (inherited from Button)"
     },
     {
      "type": "Layout",
@@ -51086,9 +52588,9 @@
      "elements": 1,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · height 340.47px → 338.47px (-2px) (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · height 340.47px → 338.47px (-2px) (inherited from GetStartedCard)"
     },
     {
      "type": "Layout",
@@ -51108,9 +52610,31 @@
      "elements": 1,
      "inherited": true,
      "sources": [
-      "AspectRatio"
+      "GetStartedCard"
      ],
-     "text": "preview__Card · .cds--card · height 462.98px → 460.98px (-2px) (inherited from AspectRatio)"
+     "text": "preview__Card · .cds--card · height 462.98px → 460.98px (-2px) (inherited from GetStartedCard)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm"
+     ],
+     "prop": "width",
+     "from": "0px",
+     "to": "121.97px",
+     "note": "+121.97px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-header-actions"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "preview__Card · .cds--btn · width 0px → 121.97px (+121.97px) (inherited from Button)"
     },
     {
      "type": "Structure",
@@ -52893,9 +54417,9 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.00168,
-    "mean": 0.00042,
+    "mean": 0.00056,
     "storiesChanged": 1,
-    "storiesCompared": 4
+    "storiesCompared": 3
    },
    "stories": [
     {
@@ -52940,22 +54464,7 @@
      "title": "Preview/preview_Text",
      "captured": true,
      "error": null,
-     "pixel": {
-      "diffPixels": 0,
-      "totalPixels": 16340,
-      "ratio": 0,
-      "size": {
-       "before": [
-        215,
-        76
-       ],
-       "v12": [
-        215,
-        76
-       ]
-      },
-      "sizeChanged": false
-     },
+     "pixel": null,
      "clip": {
       "x": 26,
       "y": 28,
@@ -53378,28 +54887,14 @@
    "id": "resizer",
    "name": "Resizer",
    "section": "Utilities",
-   "status": "migrated",
+   "status": "new",
    "inheritsFrom": [],
-   "base": "ibmp",
-   "migratedFrom": {
-    "ibmpTitles": [],
-    "matched": 0,
-    "unmatched": 8
-   },
+   "base": "v11",
+   "migratedFrom": null,
    "pixel": null,
    "stories": [],
    "notes": [],
    "changes": [
-    {
-     "type": "API",
-     "prop": "package",
-     "element": null,
-     "from": "@carbon/ibm-products",
-     "to": "@carbon/react",
-     "stories": [],
-     "note": "not in the IBM Products Storybook",
-     "text": "Resizer · package @carbon/ibm-products → @carbon/react"
-    },
     {
      "type": "Story",
      "prop": "story added",
@@ -53409,8 +54904,8 @@
      "stories": [
       "utilities-resizer--four-panels"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Four panels (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Four panels"
     },
     {
      "type": "Story",
@@ -53421,8 +54916,8 @@
      "stories": [
       "utilities-resizer--single-panel-bounded"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Single panel (bounded) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Single panel (bounded)"
     },
     {
      "type": "Story",
@@ -53433,8 +54928,8 @@
      "stories": [
       "utilities-resizer--single-panel-no-boundaries"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Single panel (no boundaries) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Single panel (no boundaries)"
     },
     {
      "type": "Story",
@@ -53445,8 +54940,8 @@
      "stories": [
       "utilities-resizer--single-panel-overlay"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Single panel (overlay) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Single panel (overlay)"
     },
     {
      "type": "Story",
@@ -53457,8 +54952,8 @@
      "stories": [
       "utilities-resizer--two-panels-horizontal"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Two panels (horizontal) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Two panels (horizontal)"
     },
     {
      "type": "Story",
@@ -53469,8 +54964,8 @@
      "stories": [
       "utilities-resizer--two-panels-vertical"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Two panels (vertical) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Two panels (vertical)"
     },
     {
      "type": "Story",
@@ -53481,8 +54976,8 @@
      "stories": [
       "utilities-resizer--two-panels-vertical-grid"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: Two panels vertical (grid) (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: Two panels vertical (grid)"
     },
     {
      "type": "Story",
@@ -53493,8 +54988,8 @@
      "stories": [
       "utilities-resizer--with-custom-handles"
      ],
-     "note": "no IBM Products equivalent",
-     "text": "Resizer · story added: With custom handles (no IBM Products equivalent)"
+     "note": null,
+     "text": "Resizer · story added: With custom handles"
     }
    ]
   },
