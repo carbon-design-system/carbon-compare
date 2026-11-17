@@ -184,6 +184,7 @@ code, .flag { @include type.type-style('code-01'); }
 .pane-ver { font-weight: 600; white-space: nowrap; }
 .pane-pkg { color: $text-helper; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .pane-link { flex: none; white-space: nowrap; }
+.compare-note { grid-column: 1 / -1; margin: 0; padding: $spacing-03 $spacing-05; @include type.type-style('helper-text-01'); color: $text-secondary; background: $layer-01; border-block-end: 1px solid $border-subtle-01; }
 // Story previews stay on white: they're the Storybooks' own rendering, not this site's theme.
 .stage { background: #fff; padding: $spacing-06; min-block-size: 12.5rem; display: flex; justify-content: center; align-items: center; overflow: auto;
   img { max-inline-size: 100%; block-size: auto; display: block; }

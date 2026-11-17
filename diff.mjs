@@ -162,7 +162,7 @@ for (const m of PAIRS) {
   const base = s.base ?? 'v11';
   c.base = base;
   if (base === 'ibmp') c.renamed = (c.renamed ?? 0) + (s.ibmp?.renamed ?? 0);
-  const row = { id: s.id, base, baseId: s.baseId ?? s.v11Id, v11Id: s.v11Id, name: s.name, title: s.title, captured: true, error: s.error ?? null, pixel: s.pixel ?? null, clip: s.v12?.clip ?? s.v11?.clip ?? null, changes: 0 };
+  const row = { id: s.id, base, baseId: s.baseId ?? s.v11Id, v11Id: s.v11Id, name: s.name, title: s.title, captured: true, error: s.error ?? null, pixel: s.pixel ?? null, clip: s.v12?.clip ?? s.v11?.clip ?? null, baseLayout: s[base]?.layout ?? null, changes: 0 };
   c.stories.push(row);
   if (s.error || !s[base]?.elements || !s.v12?.elements) continue;
 

@@ -115,7 +115,7 @@ async function main() {
 
     // Incremental: a story is fresh if it was captured against the same two builds.
     // Changing what gets recorded (PROPS, collectStyles) also invalidates earlier captures.
-    const schema = sha(PROPS.join() + collectStyles.toString()).slice(0, 8);
+    const schema = sha(PROPS.join() + collectStyles.toString() + normalizeLayout.toString()).slice(0, 8);
     const keyFor = (base) => `${builds[base].fingerprint}:${builds.v12.fingerprint}:${schema}`;
     const buildKey = `${builds.v11.fingerprint}:${builds.ibmp.fingerprint}:${builds.v12.fingerprint}:${schema}`;
     if (!args.force) {
@@ -385,7 +385,7 @@ async function checkOrCapture(ctx, m, buildKey) {
   const prepared = {};
   for (const v of stale) {
     try {
-      prepared[v] = await prepare(ctx[v], storyUrl(m, v));
+      prepared[v] = await prepare(ctx[v], storyUrl(m, v), v);
     } catch {
       return { result: await capturePair(ctx, m, buildKey, prepared), reused: false };
     }
@@ -402,7 +402,7 @@ async function capturePair(ctx, m, buildKey, already = {}) {
   for (const v of [m.base, 'v12']) {
     if (prepared[v]) continue; // loaded by the render check; the page is still on this story
     try {
-      prepared[v] = await prepare(ctx[v], storyUrl(m, v));
+      prepared[v] = await prepare(ctx[v], storyUrl(m, v), v);
     } catch (e) {
       result[v] = { error: e.message.split('\n')[0] };
       result.error = `${v}: ${result[v].error}`;
@@ -414,14 +414,14 @@ async function capturePair(ctx, m, buildKey, already = {}) {
   const clip = unionClip(Object.values(prepared).map((p) => p.bounds));
   const shots = {};
   for (const v of Object.keys(prepared)) {
-    const { styles, warnings, renamed } = prepared[v];
+    const { styles, warnings, renamed, layout } = prepared[v];
     try {
       shots[v] = await ctx[v].screenshot({ clip, fullPage: true, animations: 'disabled', caret: 'hide' });
       await fs.writeFile(path.join(DATA, 'shots', v, `${m.v12}.png`), shots[v]);
     } catch (e) {
       warnings.push(`screenshot failed: ${e.message.split('\n')[0]}`);
     }
-    result[v] = { clip, elementCount: styles.length, warnings, renamed, elements: styles };
+    result[v] = { clip, layout, elementCount: styles.length, warnings, renamed, elements: styles };
   }
   if (shots[m.base] && shots.v12) result.pixel = await pixelDiff(shots[m.base], shots.v12, path.join(DATA, 'shots', 'diff', `${m.v12}.png`));
   if (prepared[m.base] && prepared.v12) {
@@ -597,7 +597,7 @@ function unionClip(boundsList) {
   };
 }
 
-async function prepare(page, url) {
+async function prepare(page, url, v) {
   await page.goto(url, { waitUntil: 'load', timeout: RENDER_TIMEOUT * 2 });
   await page.addStyleTag({ content: FREEZE_CSS });
   // Storybook's preview signals readiness by filling #storybook-root (or showing an error panel).
@@ -619,8 +619,25 @@ async function prepare(page, url) {
   await page.waitForTimeout(SETTLE_MS);
   // Park the pointer and drop focus so hover/focus state doesn't leak between runs.
   await page.mouse.move(0, 0);
+  const layout = await page.evaluate(normalizeLayout, v);
 
-  return page.evaluate(collectStyles, PROPS);
+  return { ...(await page.evaluate(collectStyles, PROPS)), layout };
+}
+
+// Runs in the page. The IBM Products Storybook stages stories differently from V12's: some use
+// Storybook's centered layout, and every story sits on a gray (#f4f4f4) page. Left alone, that
+// moves the component and the pixel diff measures the staging, not the component. So IBM Products
+// pages are switched to V12's staging: the padded layout (both Storybooks define sb-main-padded the
+// same way) on white. Returns the story's original layout so the site can say it was centered.
+async function normalizeLayout(v) {
+  const body = document.body;
+  const layout = ['centered', 'padded', 'fullscreen'].find((l) => body.classList.contains(`sb-main-${l}`)) ?? null;
+  if (v === 'ibmp') {
+    if (layout === 'centered') body.classList.replace('sb-main-centered', 'sb-main-padded');
+    body.style.setProperty('background-color', '#ffffff', 'important');
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
+  return layout;
 }
 
 // Runs in the page. Keeps the keying logic in one place so both versions line up.

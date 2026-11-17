@@ -25,6 +25,10 @@ function PaneHead({ v, id, label }) {
 export function LiveCompare({ s, b, bid }) {
   return (
     <div className="compare">
+      {/* The capture restages these to match V12, but a live story can't be changed from here. */}
+      {s.baseLayout === 'centered' && b === 'ibmp' && (
+        <p className="compare-note">The IBM Products Storybook centers this story; V12 places it at the top left. Screenshots and pixel diffs use V12's placement for both.</p>
+      )}
       <div className="pane"><PaneHead v={b} id={bid} /><div className="stage live"><iframe loading="lazy" title={`${BASE[b].label} ${s.name}`} src={storyUrl(b, bid)} /></div></div>
       <div className="pane"><PaneHead v="v12" id={s.id} /><div className="stage live"><iframe loading="lazy" title={`V12 ${s.name}`} src={storyUrl('v12', s.id)} /></div></div>
     </div>
