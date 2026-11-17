@@ -14,7 +14,7 @@ body { background: $background; }
 // --- Shell ------------------------------------------------------------------
 .stamp {
   @include type.type-style('code-01');
-  color: $text-on-color-disabled;
+  color: $text-secondary; // meets 4.5:1 on the header in both themes
   align-self: center; padding-inline: $spacing-05; white-space: nowrap;
   @include bp.breakpoint-down(lg) { display: none; }
 }
