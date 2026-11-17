@@ -4,12 +4,17 @@ import { Launch } from '@carbon/react/icons';
 import { BASE, shot, storyUrl, sbUrl } from './lib.js';
 
 function PaneHead({ v, id, label }) {
+  // Version and package on the left (the package name truncates when space is short); a short,
+  // non-wrapping link on the right.
   return (
     <div className="pane-head">
-      <span className="pane-ver">{label ?? BASE[v].label.toUpperCase()}</span>
+      <span className="pane-title">
+        <span className="pane-ver">{label ?? BASE[v].label.toUpperCase()}</span>
+        {!label && <span className="pane-pkg">{BASE[v].pkg}</span>}
+      </span>
       {id && (
-        <Link href={sbUrl(v, id)} target="_blank" rel="noopener" size="sm" renderIcon={Launch}>
-          {BASE[v].pkg} · Open in Storybook
+        <Link href={sbUrl(v, id)} target="_blank" rel="noopener" size="sm" renderIcon={Launch} className="pane-link">
+          Open in Storybook
         </Link>
       )}
     </div>

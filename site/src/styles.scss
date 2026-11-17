@@ -12,10 +12,13 @@ body { background: $background; }
 .app { min-height: 100vh; background: $background; color: $text-primary; }
 
 // --- Shell ------------------------------------------------------------------
+.cds--header__name { white-space: nowrap; flex: none; } // the site name never wraps
+.cds--header__global { min-inline-size: 0; }
 .stamp {
   @include type.type-style('code-01');
   color: $text-secondary; // meets 4.5:1 on the header in both themes
   align-self: center; padding-inline: $spacing-05; white-space: nowrap;
+  min-inline-size: 0; overflow: hidden; text-overflow: ellipsis; // shortens with "…"; full text in the tooltip
   @include bp.breakpoint-down(lg) { display: none; }
 }
 .cds--side-nav__items { padding-block-end: $spacing-09; }
@@ -105,7 +108,10 @@ code, .flag { @include type.type-style('code-01'); }
   display: flex; justify-content: space-between; align-items: center; gap: $spacing-03;
   padding: $spacing-03 $spacing-04; background: $layer-01; border-block-end: 1px solid $border-subtle-01;
 }
-.pane-ver { font-weight: 600; }
+.pane-title { display: flex; align-items: baseline; gap: $spacing-03; min-inline-size: 0; }
+.pane-ver { font-weight: 600; white-space: nowrap; }
+.pane-pkg { color: $text-helper; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pane-link { flex: none; white-space: nowrap; }
 // Story previews stay on white: they're the Storybooks' own rendering, not this site's theme.
 .stage { background: #fff; padding: $spacing-06; min-block-size: 12.5rem; display: flex; justify-content: center; align-items: center; overflow: auto;
   img { max-inline-size: 100%; block-size: auto; display: block; }

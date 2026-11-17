@@ -104,7 +104,7 @@ export default function App() {
         <HeaderMenuButton aria-label={navOpen ? 'Close menu' : 'Open menu'} onClick={() => setNavOpen(!navOpen)} isActive={navOpen} aria-expanded={navOpen} />
         <HeaderName href="#overview" prefix="IBM">Carbon V12 Before &amp; After</HeaderName>
         <HeaderGlobalBar>
-          {data && <span className="stamp">{stampText(data.meta, data.changelog)}</span>}
+          {data && <span className="stamp" title={stampText(data.meta, data.changelog)}>{stampText(data.meta, data.changelog)}</span>}
           <ThemeToggle choice={choice} setChoice={setChoice} />
         </HeaderGlobalBar>
         <SideNav aria-label="Components" expanded={navOpen} onOverlayClick={() => setNavOpen(false)} onSideNavBlur={() => setNavOpen(false)} href="#main-content">
