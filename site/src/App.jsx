@@ -81,7 +81,7 @@ export default function App() {
 
   const { page, component } = data ? routeOf(hash, data.components) : { page: 'overview', component: null };
   useEffect(() => {
-    document.title = (component ? component.name + ' · ' : page === 'changelog' ? 'Changelog · ' : '') + 'Carbon V12 Before & After';
+    document.title = (component ? component.name + ' · ' : page === 'changelog' ? 'Changelog · ' : '') + 'Carbon Compare';
   }, [page, component]);
 
   const active = component ? component.id : page;
@@ -99,10 +99,10 @@ export default function App() {
 
   return (
     <Theme theme={dark ? 'g100' : 'white'} className="app">
-      <Header aria-label="Carbon V12 Before & After">
+      <Header aria-label="Carbon Compare">
         <SkipToContent />
         <HeaderMenuButton aria-label={navOpen ? 'Close menu' : 'Open menu'} onClick={() => setNavOpen(!navOpen)} isActive={navOpen} aria-expanded={navOpen} />
-        <HeaderName href="#overview" prefix="IBM">Carbon V12 Before &amp; After</HeaderName>
+        <HeaderName href="#overview" prefix="IBM">Carbon Compare</HeaderName>
         <HeaderGlobalBar>
           {data && <span className="stamp" title={stampText(data.meta, data.changelog)}>{stampText(data.meta, data.changelog)}</span>}
           <ThemeToggle choice={choice} setChoice={setChoice} />

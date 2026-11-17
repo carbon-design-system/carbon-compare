@@ -1,4 +1,4 @@
-# Carbon V12 Before & After
+# Carbon Compare
 
 A site that shows every Carbon React component in V11 and V12 side by side, plus a changelog of what changed, so product teams can see the impact before they upgrade.
 
