@@ -5,14 +5,24 @@
   "scripts": {
     "capture": "node capture.mjs",
     "diff": "node diff.mjs",
-    "build": "node capture.mjs && node diff.mjs",
-    "serve": "node serve.mjs"
+    "dev": "vite --config site/vite.config.js",
+    "build": "vite build --config site/vite.config.js",
+    "serve": "vite preview --config site/vite.config.js"
   },
   "type": "module",
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
     "pixelmatch": "^7.2.0",
     "playwright": "^1.63.0",
-    "pngjs": "^7.0.0"
+    "pngjs": "^7.0.0",
+    "sass-embedded": "^1.108.2",
+    "vite": "^8.3.8"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@carbon/react": "2.0.0-alpha.9",
+    "@ibm/plex": "6.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
 }

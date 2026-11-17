@@ -5,3 +5,4 @@ data/stories/
 # Screenshots are published to Pages by .github/workflows/refresh.yml, not committed.
 data/shots/
 _site/
+dist/

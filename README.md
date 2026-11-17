@@ -15,7 +15,8 @@ Nothing in this repo is hand-maintained content. Every screenshot, style value a
 npm install && npx playwright install chromium
 npm run capture     # load every story in the Storybooks, record styles + screenshots → data/
 npm run diff        # compare the captures → data/changelog.json + data/CHANGELOG.md
-npm run serve       # the site at http://localhost:4321
+npm run dev         # the site at http://localhost:4321, with hot reload
+npm run build       # build the site into dist/ (npm run serve previews the build)
 ```
 
 A full capture takes about 15 minutes, on a laptop or on GitHub Actions. Runs are incremental per Storybook build, not per story: when a Storybook's build changes, every story compared against it is recaptured. Every comparison includes a V12 story, so each V12 release means a full recapture, and in practice that's most runs. Useful flags:
@@ -27,7 +28,7 @@ A full capture takes about 15 minutes, on a laptop or on GitHub Actions. Runs ar
 | `--concurrency N` | Parallel story pairs (default 4; CI uses 6) |
 | `--limit N` | Stop after N stories (handy when changing the capture) |
 
-Screenshots and raw captures aren't committed (see [Only small files in git](#only-small-files-in-git)), so a fresh clone has no `data/shots/`. On localhost the site uses local screenshots, so images look broken until you run `npm run capture`. The changelog and the Live and Wipe modes work regardless.
+Screenshots and raw captures aren't committed (see [Only small files in git](#only-small-files-in-git)), so a fresh clone has no `data/shots/`. The dev server falls back to the published screenshots for any it can't find locally, so the site works on a fresh clone. Run `npm run capture` when you need screenshots that match local changes.
 
 ## How it fits together
 
@@ -40,13 +41,13 @@ flowchart LR
   end
   Sources -->|index.json + each story in Chromium| C[capture.mjs]
   C -->|data/stories/*.json<br/>data/shots/*| D[diff.mjs]
-  D -->|data/changelog.json| S[index.html]
+  D -->|data/changelog.json| S[site/ React app]
   S -->|Live mode iframes| Sources
 ```
 
 1. **`capture.mjs`** reads each Storybook's story list (`/index.json`) and pairs stories across versions. It opens every pair in headless Chromium and records three things for both sides: a screenshot, the computed styles of every Carbon element, and, for elements that changed, the CSS declaration (and so the Carbon token) that set each changed value. It also pixel-diffs the screenshots.
 2. **`diff.mjs`** lines up elements between the two sides, works out what changed and which component each change belongs to, and writes a per-component changelog.
-3. **`index.html`** is a static, dependency-free page that reads the changelog. Its **Live** and **Wipe** modes embed the real stories from the Storybooks in iframes; **Pixel diff** uses the captured images.
+3. **`site/`** is a small React app built with Carbon V12 itself (`@carbon/react`, pinned in `package.json`) that reads the changelog. Its **Live** and **Wipe** modes embed the real stories from the Storybooks in iframes; **Pixel diff** uses the captured images.
 4. **`.github/workflows/watch-releases.yml`** checks the Carbon monorepo hourly for a new release, and **`.github/workflows/refresh.yml`** then runs steps 1–2 and deploys the site (see [Automation](#automation)).
 
 ## What's in the repo
@@ -55,8 +56,8 @@ flowchart LR
 |---|---|
 | `capture.mjs` | The capture (Playwright). Everything that touches a browser lives here. |
 | `diff.mjs` | Turns captures into the changelog. Pure Node, no browser. |
-| `index.html` | The whole site: markup, CSS and JS in one file, no build step. |
-| `serve.mjs` | A tiny static server for local use (`npm run serve`). |
+| `site/` | The site: a Vite + React app on `@carbon/react` V12. `src/pages/` has one file per page; `src/lib.js` has the shared rules and labels; `src/styles.scss` loads Carbon and adds only this site's own pieces (wipe, thumbnails, status dots), using Carbon theme tokens. |
+| `site/vite.config.js` | Build config. The dev and preview servers serve `data/` at `/data`; the build goes to `dist/`. |
 | `.github/workflows/watch-releases.yml` | Hourly check for new Carbon releases; starts a refresh. |
 | `.github/workflows/refresh.yml` | Capture, changelog commit and Pages deploy. |
 | `.bobignore`, `.propelignore` | Ignore files for internal tools, matching `.gitignore`'s generated folders. Nothing in this project reads them. |
@@ -156,6 +157,13 @@ To know for sure, read the component's rule in the published `@carbon/styles` Sa
 ### Live components by default
 The site first showed screenshots. Live iframes of the real stories proved more useful: people can hover, open menus and tab through forms in both versions. **Wipe** stacks two live iframes and clips the top one. Clipping also limits where clicks land, so each side stays interactive: V12 left of the divider, the older version right, so dragging left reveals the older version. The page renders both stories at the capture's 1280×800 and shifts them together so the captured content sits centered. **Pixel diff** stays image-based because it has to match the data the changelog came from.
 
+### The site is built with Carbon V12 itself
+The first version was a single hand-written HTML file styled to *look* like Carbon. It's now a React app on `@carbon/react` V12: UI Shell header and side nav, PageHeader (one of the components migrating from IBM Products), Tiles, Tags, Dropdown, ContentSwitcher, DataTable, notifications and inline code snippets. The site shows V12 in use, behaviors included (floating styles and autoAlign are React-only), and an alpha regression that breaks a common component shows up here too. It follows Carbon's releases automatically (see [Automation](#automation)), and the header shows which version it's built with.
+
+The only custom styling is for things Carbon doesn't have, like the wipe, screenshot thumbnails and status dots. It uses Carbon theme tokens, so it follows the white and Gray 100 themes, which switch with the viewer's light/dark preference. Story previews stay on white because they're the Storybooks' own rendering.
+
+Carbon checks for accessibility mistakes in development. It refused an InlineNotification containing a link (notifications are announced to screen readers and mustn't contain interactive elements), so that link lives in the intro paragraph instead.
+
 ### Only small files in git
 Screenshots and raw captures are about 90 MB per run and change every run. Committing them would bloat history by that much on every run, and with release-triggered refreshes that's several times a week. The workflow keeps them in the Actions cache (so runs stay incremental) and publishes them in the Pages deploy. Only the small JSON outputs are committed, so git history doubles as a record of what changed between runs.
 
@@ -171,9 +179,10 @@ The site follows Carbon's releases. Two workflows handle it:
 - **Why polling:** it keeps this repo self-contained, with no secrets and no changes to Carbon's release workflows. A faster alternative is a step in the monorepo's `release.yml` that triggers this repo after the Storybook deploy. That needs a token stored as a monorepo secret and the Carbon maintainers' review.
 
 **`.github/workflows/refresh.yml`** does the capture and deploy:
-- **When it runs:** when `watch-releases.yml` starts it (passing the release versions), every other Thursday at 23:30 UTC (7:30pm EDT / 6:30pm EST) as a fallback that also catches IBM Products changes, on any push to `main` that changes `index.html`, `capture.mjs` or `diff.mjs`, and on demand via **Run workflow** in the Actions tab.
+- **When it runs:** when `watch-releases.yml` starts it (passing the release versions), every other Thursday at 23:30 UTC (7:30pm EDT / 6:30pm EST) as a fallback that also catches IBM Products changes, on any push to `main` that changes `site/`, `package.json`, `capture.mjs` or `diff.mjs`, and on demand via **Run workflow** in the Actions tab.
 - **Every other week:** GitHub cron has no biweekly option, so the job fires weekly and the first step skips odd epoch weeks.
-- **What it does:** restores the previous capture from the cache, runs capture and diff, saves the cache (and deletes older cache entries, since only the newest is ever restored), commits `data/*.json` and `data/CHANGELOG.md` if they changed, and deploys `index.html` plus data to GitHub Pages. Pages is configured to deploy from Actions, not from a branch.
+- **What it does:** restores the previous capture from the cache, runs capture and diff, saves the cache (and deletes older cache entries, since only the newest is ever restored), builds the site, commits `data/*.json` and `data/CHANGELOG.md` if they changed, and deploys the built site plus data to GitHub Pages.
+- **Keeping the site on the latest Carbon:** before building, it checks npm for the newest `@carbon/react` under `CARBON_DIST_TAG` (`v12-alpha` today) and upgrades the site if there's a newer one. The upgrade is committed only if the site still builds. If it doesn't, the site stays on the version it had and the run shows a "Carbon upgrade failed" warning. When Carbon publishes betas under a different npm tag, change `CARBON_DIST_TAG` in `refresh.yml`. Pages is configured to deploy from Actions, not from a branch.
 - **No loops:** the bot's own commits only touch `data/`, so they don't retrigger the workflow.
 
 ## Known limitations
@@ -191,7 +200,7 @@ The site follows Carbon's releases. Two workflows handle it:
 
 ## Working on it
 
-- **Copies hosted outside GitHub Pages** load screenshots from the public site (`GITHUB_PAGES_BASE` in `index.html`), since screenshots aren't committed. On Pages and on localhost the page uses its own `data/shots/`. A copy elsewhere shows the public site's latest screenshots next to its own changelog, so keep its `data/` in step with `main`.
+- **Copies hosted outside GitHub Pages** load screenshots from the public site (`GITHUB_PAGES_BASE` in `site/src/lib.js`), since screenshots aren't committed. On Pages and on localhost the page uses its own `data/shots/`. A copy elsewhere shows the public site's latest screenshots next to its own changelog, so keep its `data/` in step with `main`.
 - **Don't commit local `data/`.** CI owns the committed data. Before committing code, run `git checkout -- data/`, then `git pull` after the workflow's commit lands.
 - **Changing the capture** (`PROPS` or `collectStyles`) invalidates every capture and triggers a full recapture, locally and on CI. Test with `--only` first.
 - **A change is attributed to the wrong component:** look up its element classes in the story's JSON, then add the class family to `OWNER_OVERRIDES` in `diff.mjs`.
