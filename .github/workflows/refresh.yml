@@ -87,7 +87,9 @@ jobs:
 
       - name: Capture
         if: steps.gate.outputs.run == 'true'
-        run: node capture.mjs --concurrency 6
+        # Releases and pushes use the render check (only stories that actually rendered differently
+        # are fully recaptured). The every-other-Thursday run recaptures everything as a safety net.
+        run: node capture.mjs --concurrency 6 ${{ github.event_name == 'schedule' && '--force' || '' }}
         env:
           # Recorded in data/meta.json so the watcher knows what's been captured and the site can show it.
           V12_RELEASE: ${{ inputs.v12_release }}

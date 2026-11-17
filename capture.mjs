@@ -133,15 +133,17 @@ async function main() {
     }
 
     await writeJson('meta.json', { ...meta, buildKey });
-    log(`Capturing ${todo.length} stories with concurrency ${args.concurrency}…`);
-    let done = 0;
+    log(`Checking ${todo.length} stories with concurrency ${args.concurrency}…`);
+    let done = 0, reused = 0;
     await pool(todo, args.concurrency, browser, async (ctx, m) => {
-      const result = await capturePair(ctx, m, keyFor(m.base));
+      const { result, reused: same } = await checkOrCapture(ctx, m, keyFor(m.base));
       await writeJson(path.join('stories', `${m.v12}.json`), result);
       done++;
-      const pct = result.pixel ? `${(result.pixel.ratio * 100).toFixed(2)}% px` : 'ERR';
+      if (same) reused++;
+      const pct = same ? 'unchanged, reused' : result.pixel ? `${(result.pixel.ratio * 100).toFixed(2)}% px` : 'ERR';
       log(`[${done}/${todo.length}] ${m.v12}  ${pct}${result.error ? '  ' + result.error : ''}`);
     });
+    log(`${todo.length - reused} stories captured, ${reused} unchanged and reused`);
   } finally {
     await browser.close();
   }
@@ -356,12 +358,51 @@ async function captureDocs(browser) {
 // ---------------------------------------------------------------------------
 // Per-story capture
 
-async function capturePair(ctx, m, buildKey) {
-  const result = { id: m.v12, base: m.base, baseId: m.baseId, v11Id: m.v11 ?? null, title: m.title, name: m.name, component: m.component, match: m.match, buildKey, capturedAt: new Date().toISOString() };
+// ---------------------------------------------------------------------------
+// Render check. A new Storybook build doesn't mean every story changed: Carbon bundles nearly all
+// component CSS into one stylesheet, so any change anywhere produces a new build. Before doing a full
+// capture, load only the side(s) whose build changed and compare what rendered (every element's
+// key, visibility, text and computed styles) with the previous capture of that side. If nothing
+// differs, the previous result is still correct: reuse it and skip the other side's page load,
+// the screenshots and the token lookups. Otherwise do the full capture, reusing the pages already
+// loaded. --force skips the check and recaptures everything.
+
+// (Function declarations, not consts: main() runs at the top of the file, before consts down here exist.)
+function storyUrl(m, v) { return `${SOURCES[v]}/iframe.html?id=${v === 'v12' ? m.v12 : m.baseId}&viewMode=story`; }
+function renderSig(elements) { return sha(JSON.stringify(elements.map((e) => [e.key, e.visible, e.text, e.style]))); }
+
+async function checkOrCapture(ctx, m, buildKey) {
+  const prev = args.force ? null : await readJson(path.join('stories', `${m.v12}.json`));
+  // buildKey is "<base build>:<v12 build>:<schema>"; a different schema means the old capture is unusable.
+  const [prevBase, prevV12, prevSchema] = (prev?.buildKey ?? '').split(':');
+  const [, , schema] = buildKey.split(':');
+  const usable = prev && !prev.error && prevSchema === schema && prev.base === m.base && prev.baseId === m.baseId &&
+    prev[m.base]?.elements && prev.v12?.elements && existsSync(path.join(DATA, 'shots', 'diff', `${m.v12}.png`));
+  if (!usable) return { result: await capturePair(ctx, m, buildKey), reused: false };
+
+  const [curBase, curV12] = buildKey.split(':');
+  const stale = [...(prevBase !== curBase ? [m.base] : []), ...(prevV12 !== curV12 ? ['v12'] : [])];
   const prepared = {};
-  for (const v of [m.base, 'v12']) {
+  for (const v of stale) {
     try {
-      prepared[v] = await prepare(ctx[v], `${SOURCES[v]}/iframe.html?id=${v === 'v12' ? m.v12 : m.baseId}&viewMode=story`);
+      prepared[v] = await prepare(ctx[v], storyUrl(m, v));
+    } catch {
+      return { result: await capturePair(ctx, m, buildKey, prepared), reused: false };
+    }
+    if (renderSig(prepared[v].styles) !== renderSig(prev[v].elements)) {
+      return { result: await capturePair(ctx, m, buildKey, prepared), reused: false };
+    }
+  }
+  return { result: { ...prev, buildKey, checkedAt: new Date().toISOString() }, reused: true };
+}
+
+async function capturePair(ctx, m, buildKey, already = {}) {
+  const result = { id: m.v12, base: m.base, baseId: m.baseId, v11Id: m.v11 ?? null, title: m.title, name: m.name, component: m.component, match: m.match, buildKey, capturedAt: new Date().toISOString() };
+  const prepared = { ...already };
+  for (const v of [m.base, 'v12']) {
+    if (prepared[v]) continue; // loaded by the render check; the page is still on this story
+    try {
+      prepared[v] = await prepare(ctx[v], storyUrl(m, v));
     } catch (e) {
       result[v] = { error: e.message.split('\n')[0] };
       result.error = `${v}: ${result[v].error}`;
