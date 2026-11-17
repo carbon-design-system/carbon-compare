@@ -2,7 +2,7 @@
 
 A site that shows every Carbon React component in V11 and V12 side by side, plus a changelog of what changed, so product teams can see the impact before they upgrade.
 
-- **Live site:** https://sstrubberg.github.io/carbon-v12-compare/
+- **Live site:** https://carbon-design-system.github.io/carbon-compare/
 - **Status:** working prototype. It refreshes itself every other Thursday. This README is the handoff: what's here, how it works, and why it's built this way.
 
 Nothing in this repo is hand-maintained content. Every screenshot, style value and changelog row is captured from the live Storybooks and computed, so the site stays accurate as V12 keeps moving.

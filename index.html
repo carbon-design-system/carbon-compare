@@ -234,7 +234,7 @@ const pct = r=>r==null?"—":(r*100<0.1&&r>0?"<0.1":(r*100).toFixed(1))+"%";
 // Screenshots aren't committed, so copies hosted elsewhere (e.g. internally) load them from the
 // public GitHub Pages site. On Pages itself and on localhost, use the local ones so they match the
 // changelog being served.
-const GITHUB_PAGES_BASE = "https://sstrubberg.github.io/carbon-v12-compare";
+const GITHUB_PAGES_BASE = "https://carbon-design-system.github.io/carbon-compare";
 const SHOTS_BASE = /(^|\.)github\.io$|^localhost$|^127\.0\.0\.1$|^\[::1\]$/.test(location.hostname) ? "" : `${GITHUB_PAGES_BASE}/`;
 const shot = (v,id)=>`${SHOTS_BASE}data/shots/${v}/${encodeURIComponent(id)}.png`;
 const storyUrl = (v,id)=>`${SRC[v]}/iframe.html?id=${encodeURIComponent(id)}&viewMode=story`;
