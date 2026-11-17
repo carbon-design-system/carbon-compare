@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
-import { Button, Link, Search, ContentSwitcher, Switch, TileGroup, RadioTile, Toggletip, ToggletipButton, ToggletipContent } from '@carbon/react';
-import { Information } from '@carbon/react/icons';
+import { Button, Link, Search, ContentSwitcher, Switch, preview__Card, Toggletip, ToggletipButton, ToggletipContent } from '@carbon/react';
+import { Information, Filter, CheckmarkFilled } from '@carbon/react/icons';
 import { STATUS, STATUS_ORDER, prefs } from '../lib.js';
 import { StatusDot, Eyebrow } from '../bits.jsx';
 import { resolveTiers } from '../tiers.js';
@@ -22,6 +22,9 @@ const EXPLAIN = {
   new: <>New to Carbon in V12. There's no earlier version to compare with.</>,
   removed: <>In V11 but not in V12.</>,
 };
+
+// `preview__Card` is a namespace (Card, CardHeader, ...); Card also carries its parts as Card.Header etc.
+const { Card } = preview__Card;
 
 const VIEWS = ['tiers', 'cards'];
 const VIEW_LABELS = { tiers: 'Tiers', cards: 'Cards' };
@@ -57,25 +60,32 @@ export default function Overview({ data }) {
       <h1 className="page-title">See every component, before and after</h1>
       <p className="lede">Every Carbon component in V11 and V12, side by side, with exactly what changed.</p>
 
-      {/* Carbon's single-select tiles. The toggletip goes in the decorator slot, which sits outside
-          the tile's label, so it can be interactive. */}
-      <TileGroup name="status" legend="Filter components by status" className="stats" valueSelected={filter} onChange={setFilter}>
+      {/* V12's Card, clickable, one per status. Card has no selected state, so the chosen filter is
+          marked with aria-pressed and a border. The toggletip is a sibling, not a child, because a
+          clickable card is a button and can't contain another one. */}
+      <div className="stats" role="group" aria-label="Filter components by status">
         {TILES.map((k) => {
           const label = k === 'all' ? 'Components tracked' : STATUS[k].label;
+          const on = filter === k;
           return (
-            <RadioTile key={k} id={`stat-${k}`} value={k} className="stat"
-              decorator={
-                <Toggletip align="bottom" className="stat-info">
-                  <ToggletipButton label={`About "${label}"`}><Information /></ToggletipButton>
-                  <ToggletipContent><p>{EXPLAIN[k]}</p></ToggletipContent>
-                </Toggletip>
-              }>
-              <span className="stat-n">{count(k)}</span>
-              <span className="stat-l">{k !== 'all' && <StatusDot status={k} />}{label}</span>
-            </RadioTile>
+            <div key={k} className="stat">
+              <Card clickable aria-pressed={on} aria-label={`${count(k)} ${label}`} onClick={() => setFilter(k)}
+                className={on ? 'stat-card stat-card--selected' : 'stat-card'} renderFooterIcon={on ? CheckmarkFilled : Filter}>
+                <Card.Header>
+                  <Card.Title className="stat-title"
+                    description={<span className="stat-l">{k !== 'all' && <StatusDot status={k} />}{label}</span>}>
+                    {count(k)}
+                  </Card.Title>
+                </Card.Header>
+              </Card>
+              <Toggletip align="bottom" className="stat-info">
+                <ToggletipButton label={`About "${label}"`}><Information /></ToggletipButton>
+                <ToggletipContent><p>{EXPLAIN[k]}</p></ToggletipContent>
+              </Toggletip>
+            </div>
           );
         })}
-      </TileGroup>
+      </div>
 
       <div className="view-bar">
         <Search size="md" labelText="Search components" placeholder="Search components" className="view-search"
