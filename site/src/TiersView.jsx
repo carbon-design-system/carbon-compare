@@ -14,6 +14,26 @@ export default function TiersView({ tiers, drill, setDrill, matches }) {
   const byStatus = (a, b) => STATUS_ORDER[a.c.status] - STATUS_ORDER[b.c.status];
   const go = (next) => (e) => { e.preventDefault(); setDrill(next); };
 
+  const GroupHead = ({ t, kicker, onOpen }) => (
+    <button type="button" className="tier-head" onClick={onOpen}>
+      {kicker && <span className="tier-n">{kicker}</span>}
+      <span className="tier-name" id={`tier-${groupId(t)}`}>{t.name}</span>
+      <span className="tier-desc">{t.desc}</span>
+    </button>
+  );
+  const Cat = ({ x, onOpen }) => (
+    <div className="tier-cat">
+      <button type="button" className="tier-cat-head" onClick={onOpen}>
+        {x.name}<span className="tier-count">{x.items.length}</span>
+      </button>
+      {[...x.items].sort(byStatus).map(({ label, c }) => (
+        <a key={c.id} href={`#${c.id}`} className={`tier-item${matches(c, label) ? '' : ' tier-item--dim'}`}>
+          <StatusDot status={c.status} /><span>{label}</span>
+        </a>
+      ))}
+    </div>
+  );
+
   return (
     <div className="tiers">
       <div className="filters" role="group" aria-label="Tier">
@@ -32,29 +52,34 @@ export default function TiersView({ tiers, drill, setDrill, matches }) {
       </nav>
 
       {!tier && (
-        <div className="tier-grid">
-          {tiers.map((t) => (
-            <section className={`tier-col${t.key ? ' tier-col--extra' : ''}`} key={groupId(t)} aria-labelledby={`tier-${groupId(t)}`}>
-              <button type="button" className="tier-head" onClick={() => setDrill({ tier: groupId(t), cat: null })}>
-                <span className="tier-n">{t.key ? 'NOT A TIER' : `TIER ${t.n}`}</span>
-                <span className="tier-name" id={`tier-${groupId(t)}`}>{t.name}</span>
-                <span className="tier-desc">{t.desc}</span>
-              </button>
-              {t.cats.map((x) => (
-                <div className="tier-cat" key={x.name}>
-                  <button type="button" className="tier-cat-head" onClick={() => setDrill({ tier: groupId(t), cat: x.name })}>
-                    {x.name}<span className="tier-count">{x.items.length}</span>
-                  </button>
-                  {[...x.items].sort(byStatus).map(({ label, c }) => (
-                    <a key={c.id} href={`#${c.id}`} className={`tier-item${matches(c, label) ? '' : ' tier-item--dim'}`}>
-                      <StatusDot status={c.status} /><span>{label}</span>
-                    </a>
-                  ))}
-                </div>
-              ))}
+        <>
+          <div className="tier-grid">
+            {tiers.filter((t) => !t.key).map((t) => (
+              <section className="tier-col" key={groupId(t)} aria-labelledby={`tier-${groupId(t)}`}>
+                <GroupHead t={t} kicker={`TIER ${t.n}`} onOpen={() => setDrill({ tier: groupId(t), cat: null })} />
+                {t.cats.map((x) => <Cat key={x.name} x={x} onOpen={() => setDrill({ tier: groupId(t), cat: x.name })} />)}
+              </section>
+            ))}
+          </div>
+
+          {/* Utilities and Removed in V12 aren't tiers, so they get their own section below. Each
+              category is a column, so the section lines up with the five tiers above. */}
+          {tiers.some((t) => t.key) && (
+            <section className="tier-extras" aria-labelledby="tier-extras-title">
+              <h2 className="tier-extras-title" id="tier-extras-title">Outside the tiers</h2>
+              <div className="tier-extras-grid">
+                {tiers.filter((t) => t.key).map((t) => (
+                  <section className="tier-extra" key={groupId(t)} style={{ '--span': t.cats.length }} aria-labelledby={`tier-${groupId(t)}`}>
+                    <GroupHead t={t} onOpen={() => setDrill({ tier: groupId(t), cat: null })} />
+                    <div className="tier-extra-cats">
+                      {t.cats.map((x) => <Cat key={x.name} x={x} onOpen={() => setDrill({ tier: groupId(t), cat: x.name })} />)}
+                    </div>
+                  </section>
+                ))}
+              </div>
             </section>
-          ))}
-        </div>
+          )}
+        </>
       )}
 
       {tier && !cat && (
