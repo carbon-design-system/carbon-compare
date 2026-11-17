@@ -1,16 +1,17 @@
 import { useEffect, useMemo, useState } from 'react';
 import {
-  Theme, Header, HeaderName, HeaderMenuButton, HeaderGlobalBar, SkipToContent,
+  Theme, Header, HeaderName, HeaderMenuButton, HeaderGlobalBar, HeaderGlobalAction, SkipToContent,
   SideNav, SideNavItems, SideNavLink, SideNavDivider, Search, Content, Loading, InlineNotification,
 } from '@carbon/react';
-import { loadData, routeOf, STATUS } from './lib.js';
+import { Light, Asleep, Laptop } from '@carbon/react/icons';
+import { loadData, routeOf, STATUS, prefs } from './lib.js';
 import { StatusDot } from './bits.jsx';
 import Overview from './pages/Overview.jsx';
 import ComponentPage from './pages/ComponentPage.jsx';
 import Changelog from './pages/Changelog.jsx';
 import Notes from './pages/Notes.jsx';
 
-// Follow the viewer's light/dark preference with Carbon's white and Gray 100 themes.
+// The device's light/dark preference, for the "System" theme option.
 function usePrefersDark() {
   const mq = useMemo(() => window.matchMedia('(prefers-color-scheme: dark)'), []);
   const [dark, setDark] = useState(mq.matches);
@@ -20,6 +21,33 @@ function usePrefersDark() {
     return () => mq.removeEventListener('change', on);
   }, [mq]);
   return dark;
+}
+
+// Theme choice: "system" follows the device; "light" and "dark" are Carbon's white and Gray 100.
+// Remembered per browser.
+const THEMES = { system: { label: 'System', icon: Laptop }, light: { label: 'Light', icon: Light }, dark: { label: 'Dark', icon: Asleep } };
+function useTheme() {
+  const prefersDark = usePrefersDark();
+  const [choice, setChoiceState] = useState(() => (THEMES[prefs.get('theme')] ? prefs.get('theme') : 'system'));
+  const setChoice = (c) => { setChoiceState(c); prefs.set('theme', c); };
+  const dark = choice === 'dark' || (choice === 'system' && prefersDark);
+  // Native controls and scrollbars follow too.
+  useEffect(() => { document.documentElement.style.colorScheme = dark ? 'dark' : 'light'; }, [dark]);
+  return { choice, setChoice, dark };
+}
+
+// One click moves to the next option (System → Light → Dark → System). The icon shows the
+// current choice; the label says what the next click does, which screen readers announce.
+const THEME_ORDER = ['system', 'light', 'dark'];
+function ThemeToggle({ choice, setChoice }) {
+  const next = THEME_ORDER[(THEME_ORDER.indexOf(choice) + 1) % THEME_ORDER.length];
+  const Icon = THEMES[choice].icon;
+  return (
+    <HeaderGlobalAction aria-label={`Theme: ${THEMES[choice].label}. Switch to ${THEMES[next].label}`}
+      tooltipAlignment="end" onClick={() => setChoice(next)}>
+      <Icon size={20} />
+    </HeaderGlobalAction>
+  );
 }
 
 function useHash() {
@@ -41,7 +69,7 @@ function stampText(meta, changelog) {
 }
 
 export default function App() {
-  const dark = usePrefersDark();
+  const { choice, setChoice, dark } = useTheme();
   const hash = useHash();
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -77,6 +105,7 @@ export default function App() {
         <HeaderName href="#overview" prefix="IBM">Carbon V12 Before &amp; After</HeaderName>
         <HeaderGlobalBar>
           {data && <span className="stamp">{stampText(data.meta, data.changelog)}</span>}
+          <ThemeToggle choice={choice} setChoice={setChoice} />
         </HeaderGlobalBar>
         <SideNav aria-label="Components" expanded={navOpen} onOverlayClick={() => setNavOpen(false)} onSideNavBlur={() => setNavOpen(false)} href="#main-content">
           <SideNavItems>

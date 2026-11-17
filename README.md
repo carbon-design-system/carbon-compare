@@ -160,7 +160,7 @@ The site first showed screenshots. Live iframes of the real stories proved more 
 ### The site is built with Carbon V12 itself
 The first version was a single hand-written HTML file styled to *look* like Carbon. It's now a React app on `@carbon/react` V12: UI Shell header and side nav, PageHeader (one of the components migrating from IBM Products), Tiles, Tags, Dropdown, ContentSwitcher, DataTable, notifications and inline code snippets. The site shows V12 in use, behaviors included (floating styles and autoAlign are React-only), and an alpha regression that breaks a common component shows up here too. It follows Carbon's releases automatically (see [Automation](#automation)), and the header shows which version it's built with.
 
-The only custom styling is for things Carbon doesn't have, like the wipe, screenshot thumbnails and status dots. It uses Carbon theme tokens, so it follows the white and Gray 100 themes, which switch with the viewer's light/dark preference. Story previews stay on white because they're the Storybooks' own rendering.
+The only custom styling is for things Carbon doesn't have, like the wipe, screenshot thumbnails and status dots. It uses Carbon theme tokens, so it follows the white and Gray 100 themes. A theme button in the header cycles through System (follow the device's light/dark setting, the default), Light and Dark; its icon shows the current choice, and the choice is remembered per browser. Story previews stay on white because they're the Storybooks' own rendering.
 
 Carbon checks for accessibility mistakes in development. It refused an InlineNotification containing a link (notifications are announced to screen readers and mustn't contain interactive elements), so that link lives in the intro paragraph instead.
 
