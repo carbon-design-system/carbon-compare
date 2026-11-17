@@ -1,68 +1,93 @@
 import { useState } from 'react';
-import { ClickableTile, InlineNotification, SelectableTag, Link } from '@carbon/react';
-import { STATUS, STATUS_ORDER, STATUS_FILTERS, BASE, shot, plural, summaryLine, viaLine } from '../lib.js';
+import { ClickableTile, Button, Link, Toggletip, ToggletipButton, ToggletipContent } from '@carbon/react';
+import { Information } from '@carbon/react/icons';
+import { STATUS, STATUS_ORDER, BASE, shot, plural, pct, own, inherited, summaryLine, viaLine } from '../lib.js';
 import { StatusDot, StatusTag, Eyebrow } from '../bits.jsx';
+
+// The stat tiles double as the filters, and each carries its own explanation in a toggletip,
+// so the legend shows up where it's needed instead of in a block above the page.
+const TILES = ['all', 'changed', 'inherited', 'migrated', 'new', 'removed'];
+const EXPLAIN = {
+  all: <>Every component group in the V11, V12 and Carbon for IBM Products Storybooks. Screenshots and styles are captured in the white theme at 1280×800; open a component to try the live stories.</>,
+  changed: <>The component's own styles changed between V11 and V12. Shown with a solid dot.</>,
+  inherited: <>Only components nested inside it changed, such as a Button inside a Modal. Shown with a hollow ring. Review these at the source component.</>,
+  migrated: (
+    <>New to <code>@carbon/react</code> but not to Carbon: moving over
+      from <Link inline href="https://ibm-products.carbondesignsystem.com" target="_blank" rel="noopener">Carbon for IBM Products</Link>.
+      Compared with its IBM Products version instead of V11.</>
+  ),
+  new: <>New to Carbon in V12. There's no earlier version to compare with.</>,
+  removed: <>In V11 but not in V12.</>,
+};
+
+// One line per card; the full summary is on hover and on the component page.
+function cardLine(c) {
+  const px = c.pixel?.max > 0.001 ? ` · up to ${pct(c.pixel.max)} pixels` : '';
+  switch (c.status) {
+    case 'changed': return `${plural(own(c).length, 'change')}${px}`;
+    case 'inherited': return `Inherits ${plural(inherited(c).length, 'change')}${px}`;
+    case 'migrated': return c.captured.length ? `${plural(c.captured.length, 'story', 'stories')} compared${px}` : 'No matching IBM Products story';
+    case 'new': return plural(c.added.length, 'new story', 'new stories');
+    case 'removed': return `${plural(c.removed.length, 'story', 'stories')} dropped`;
+    default: return 'No visual change';
+  }
+}
 
 export default function Overview({ data }) {
   const { components } = data;
-  const [filter, setFilter] = useState('All');
-  const count = (k) => components.filter((c) => c.status === k).length;
+  const [filter, setFilter] = useState('all');
+  const [showUnchanged, setShowUnchanged] = useState(false);
+  const count = (k) => (k === 'all' ? components.length : components.filter((c) => c.status === k).length);
+  const unchanged = count('unchanged');
+
   let list = [...components].sort((a, b) =>
     STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || (b.pixel?.max ?? 0) - (a.pixel?.max ?? 0) || a.name.localeCompare(b.name));
-  if (filter !== 'All') list = list.filter((c) => c.status === filter);
+  // By default, show what changed; the unchanged components are one click away.
+  list = filter === 'all' ? list.filter((c) => showUnchanged || c.status !== 'unchanged') : list.filter((c) => c.status === filter);
 
   return (
     <>
       <Eyebrow>CARBON V12 · CAPTURED FROM THE LIVE STORYBOOKS</Eyebrow>
       <h1 className="page-title">See every component, before and after</h1>
-      <p className="lede">
-        Every story that exists in both the V11 and V12 Storybooks, screenshotted side by side, with the computed-style
-        differences behind each change. Open a component to try the real V11 and V12 stories side by side, drag a wipe
-        across them, or see the captured pixel diff. Components moving over from <Link href="https://ibm-products.carbondesignsystem.com"
-        target="_blank" rel="noopener" inline>Carbon for IBM Products</Link> are compared with their IBM Products version instead.
-      </p>
+      <p className="lede">Every Carbon component in V11 and V12, side by side, with exactly what changed.</p>
 
-      <InlineNotification kind="info" lowContrast hideCloseButton className="how-to-read" title="How to read this."
-        subtitle={
-          <>
-            Screenshots use the white theme at 1280×800. Change entries compare the computed styles of every <code>cds--</code> element.{' '}
-            <b>Changed</b> (solid dot) means the component's own styles changed; <b>Inherits changes</b> (hollow ring) means only
-            something nested inside it changed, such as a Button. Components marked <b>From IBM Products</b> are new
-            to <code>@carbon/react</code> but not to Carbon; they're compared with their Carbon for IBM Products version
-            instead of V11. A shift that no recorded style explains is marked as unexplained.
-          </>
-        } />
-
-      <div className="stats">
-        <div className="stat"><div className="stat-n">{components.length}</div><div className="stat-l">Components tracked</div></div>
-        {['changed', 'inherited', 'migrated', 'new', 'removed'].map((k) => (
-          <div className="stat" key={k}>
-            <div className="stat-n">{count(k)}</div>
-            <div className="stat-l"><StatusDot status={k} />{STATUS[k].label}</div>
+      <div className="stats" role="group" aria-label="Filter components by status">
+        {TILES.map((k) => (
+          <div key={k} className={`stat${filter === k ? ' stat--selected' : ''}`}>
+            <button type="button" className="stat-btn" aria-pressed={filter === k} onClick={() => setFilter(k)}>
+              <span className="stat-n">{count(k)}</span>
+              <span className="stat-l">{k !== 'all' && <StatusDot status={k} />}{k === 'all' ? 'Components tracked' : STATUS[k].label}</span>
+            </button>
+            <Toggletip align="bottom" className="stat-info">
+              <ToggletipButton label={`About "${k === 'all' ? 'Components tracked' : STATUS[k].label}"`}>
+                <Information />
+              </ToggletipButton>
+              <ToggletipContent><p>{EXPLAIN[k]}</p></ToggletipContent>
+            </Toggletip>
           </div>
         ))}
       </div>
 
-      <div className="filters" role="group" aria-label="Filter by status">
-        <SelectableTag text={`All ${components.length}`} selected={filter === 'All'} onChange={() => setFilter('All')} />
-        {STATUS_FILTERS.map((s) => (
-          <SelectableTag key={s} text={`${STATUS[s].label} ${count(s)}`} selected={filter === s}
-            onChange={(on) => setFilter(on ? s : 'All')} />
-        ))}
+      <div className="card-grid">
+        {list.map((c) => {
+          const full = [summaryLine(c), viaLine(c)].filter(Boolean).join('. ');
+          return (
+            <ClickableTile key={c.id} href={`#${c.id}`} className="card" title={full}>
+              <div className="thumbs"><Thumbs c={c} /></div>
+              <div className="card-meta">
+                <div className="card-row"><h3 className="card-title">{c.name}</h3><StatusTag status={c.status} size="sm" /></div>
+                <p>{cardLine(c)}</p>
+              </div>
+            </ClickableTile>
+          );
+        })}
       </div>
 
-      <div className="card-grid">
-        {list.map((c) => (
-          <ClickableTile key={c.id} href={`#${c.id}`} className="card">
-            <div className="thumbs"><Thumbs c={c} /></div>
-            <div className="card-meta">
-              <div className="card-row"><h3 className="card-title">{c.name}</h3><StatusTag status={c.status} size="sm" /></div>
-              <p>{summaryLine(c)}</p>
-              {viaLine(c) && <p className="via">{viaLine(c)}</p>}
-            </div>
-          </ClickableTile>
-        ))}
-      </div>
+      {filter === 'all' && unchanged > 0 && (
+        <Button kind="ghost" className="more" onClick={() => setShowUnchanged(!showUnchanged)}>
+          {showUnchanged ? `Hide the ${unchanged} unchanged components` : `Show ${unchanged} components with no visual change`}
+        </Button>
+      )}
     </>
   );
 }

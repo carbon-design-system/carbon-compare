@@ -10,7 +10,6 @@ export const STATUS = {
   unchanged: { label: 'No visual change', tag: 'gray' },
 };
 export const STATUS_ORDER = { changed: 0, inherited: 1, migrated: 2, new: 3, removed: 4, unchanged: 5 };
-export const STATUS_FILTERS = ['changed', 'inherited', 'migrated', 'new', 'removed', 'unchanged'];
 export const TYPES = ['API', 'Visual', 'Layout', 'Structure', 'Story', 'Flag'];
 
 export const SRC = {
