@@ -103,14 +103,15 @@ code, .flag { @include type.type-style('code-01'); }
   .sep { color: $text-helper; }
   [aria-current] { color: $text-primary; }
 }
-.tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1px; background: $border-subtle-01; border: 1px solid $border-subtle-01; }
+.tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+// No borders between columns, so pull the grids out by the column padding to line text up with the page.
+.tier-grid, .tier-extras-grid { margin-inline: calc(-1 * #{$spacing-05}); }
 .tier-col { background: $background; padding: $spacing-05 $spacing-05 $spacing-06; display: flex; flex-direction: column; gap: $spacing-06; min-inline-size: 0; }
 // Utilities and Removed in V12: a section of their own under the tiers, on the same five columns.
 .tier-extras { margin-block-start: $spacing-09; }
 .tier-extras-title { @include type.type-style('heading-03'); margin-block-end: $spacing-05; }
 .tier-extras-grid {
-  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px;
-  background: $border-subtle-01; border: 1px solid $border-subtle-01;
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr));
   @include bp.breakpoint-down(lg) { grid-template-columns: minmax(0, 1fr); }
 }
 .tier-extra {
