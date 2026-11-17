@@ -7,7 +7,7 @@
 
 export const TIERS = [
   { n: 1, name: 'Foundational', desc: 'Forms, inputs and actions: on every create, edit and settings flow, and the most repeated components across products.', cats: [
-    { name: 'Forms & inputs', items: [['Checkbox', 'Checkbox'], ['Radio button', 'RadioButton'], ['Combo box', 'ComboBox'], ['Dropdown', 'Dropdown'], ['Multiselect', 'MultiSelect'], ['Form', 'Form'], ['Select', 'Select'], ['Text input', 'TextInput'], ['Number input', 'NumberInput'], ['Search', 'Search'], ['Date picker', 'DatePicker'], ['Date picker (preview)', 'preview__DatePicker'], ['Time picker', 'TimePicker'], ['Text area', 'TextArea'], ['Password input', 'PasswordInput'], ['File uploader', 'FileUploader'], ['Slider', 'Slider'], ['Toggle', 'Toggle'], ['Fluid components', 'Fluid Components'], ['Form group', 'FormGroup'], ['Form label', 'FormLabel'], ['Edit in place', 'EditInPlace'], ['Add select', 'AddSelect']] },
+    { name: 'Forms & inputs', items: [['Checkbox', 'Checkbox'], ['Radio button', 'RadioButton'], ['Combo box', 'ComboBox'], ['Dropdown', 'Dropdown'], ['Multiselect', 'MultiSelect'], ['Form', 'Form'], ['Select', 'Select'], ['Text input', 'TextInput'], ['Number input', 'NumberInput'], ['Search', 'Search'], ['Date picker', 'DatePicker'], ['Date picker (preview)', 'preview__DatePicker'], ['Time picker', 'TimePicker'], ['Text area', 'TextArea'], ['Password input', 'PasswordInput'], ['File uploader', 'FileUploader'], ['Slider', 'Slider'], ['Toggle', 'Toggle'], ['Fluid components', 'Fluid Components'], ['Form group', 'FormGroup'], ['Form label', 'FormLabel'], ['Edit in place', 'EditInPlace']] },
     { name: 'Buttons & actions', items: [['Button', 'Button'], ['Icon button', 'IconButton'], ['Copy button', 'CopyButton'], ['Chat button (preview)', 'preview__ChatButton'], ['Menu', 'Menu'], ['Menu button', 'MenuButton'], ['Combo button', 'ComboButton'], ['Overflow menu', 'OverflowMenu'], ['Overflow menu V2 (preview)', 'preview__OverflowMenuV2'], ['Link', 'Link']] },
   ] },
   { n: 2, name: 'Surface & elevation', desc: 'Overlays, dialogs and the containers that structure nearly every page, landing view and detail view.', cats: [
@@ -24,7 +24,7 @@ export const TIERS = [
   ] },
   { n: 5, name: 'Context-specific', desc: 'Onboarding and niche patterns: high value where present, but confined to first-run, education or specialist flows.', cats: [
     { name: 'Onboarding', items: [['Coachmark', 'Coachmark'], ['Guidebanner', 'Onboarding'], ['Interstitial screen', 'InterstitialScreen']] },
-    { name: 'Niche', items: [['Condition builder', 'ConditionBuilder']] },
+    { name: 'Niche', items: [['Condition builder', 'ConditionBuilder'], ['Add select', 'AddSelect']] },
   ] },
   { key: 'utilities', name: 'Utilities', desc: 'What products build with rather than place on screen: theming, type, icons, layout primitives and hooks.', cats: [
     { name: 'Theming & setup', items: [['Theme', 'Theme'], ['Layer', 'Layer'], ['Class prefix', 'ClassPrefix'], ['ID prefix', 'IdPrefix']] },
