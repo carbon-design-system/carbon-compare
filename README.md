@@ -155,17 +155,17 @@ Screenshots and raw captures are about 90 MB per run and change every run. Commi
 
 The site follows Carbon's releases. Two workflows handle it:
 
-**`.github/workflows/watch-releases.yml`** checks the [Carbon monorepo](https://github.com/carbon-design-system/carbon) every 30 minutes for a new release and starts a refresh when it finds one:
+**`.github/workflows/watch-releases.yml`** checks the [Carbon monorepo](https://github.com/carbon-design-system/carbon) hourly for a new release and starts a refresh when it finds one:
 - **V12:** a `v12.0.0-alpha.N` tag cut from the `next` branch.
 - **V11:** a stable `v11.x.y` tag from `main`; release candidates are ignored.
-- **Timing:** a merge to `next` runs the monorepo's `next-release.yml`, which tags the release. The tag runs `release.yml`, which publishes to npm and redeploys the hosted V12 Storybook. The watcher waits until that tag's `release.yml` run has finished; capturing earlier would record the previous Storybook. Expect the site to update roughly 30–60 minutes after a release, including the capture.
+- **Timing:** a merge to `next` runs the monorepo's `next-release.yml`, which tags the release. The tag runs `release.yml`, which publishes to npm and redeploys the hosted V12 Storybook. The watcher waits until that tag's `release.yml` run has finished; capturing earlier would record the previous Storybook. Expect the site to update within about 90 minutes of a release: up to an hour until the next check, plus about 15 minutes of capture.
 - **State:** the last captured versions are in `data/meta.json` under `releases`; the site header shows them. The watcher skips its check while a refresh is already running.
 - **Why polling:** it keeps this repo self-contained, with no secrets and no changes to Carbon's release workflows. A faster alternative is a step in the monorepo's `release.yml` that triggers this repo after the Storybook deploy. That needs a token stored as a monorepo secret and the Carbon maintainers' review.
 
 **`.github/workflows/refresh.yml`** does the capture and deploy:
 - **When it runs:** when `watch-releases.yml` starts it (passing the release versions), every other Thursday at 23:30 UTC (7:30pm EDT / 6:30pm EST) as a fallback that also catches IBM Products changes, on any push to `main` that changes `index.html`, `capture.mjs` or `diff.mjs`, and on demand via **Run workflow** in the Actions tab.
 - **Every other week:** GitHub cron has no biweekly option, so the job fires weekly and the first step skips odd epoch weeks.
-- **What it does:** restores the previous capture from the cache, runs capture and diff, saves the cache, commits `data/*.json` and `data/CHANGELOG.md` if they changed, and deploys `index.html` plus data to GitHub Pages. Pages is configured to deploy from Actions, not from a branch.
+- **What it does:** restores the previous capture from the cache, runs capture and diff, saves the cache (and deletes older cache entries, since only the newest is ever restored), commits `data/*.json` and `data/CHANGELOG.md` if they changed, and deploys `index.html` plus data to GitHub Pages. Pages is configured to deploy from Actions, not from a branch.
 - **No loops:** the bot's own commits only touch `data/`, so they don't retrigger the workflow.
 
 ## Known limitations

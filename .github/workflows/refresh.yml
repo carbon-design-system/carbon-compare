@@ -33,6 +33,7 @@ permissions:
   contents: write   # commit the refreshed changelog
   pages: write
   id-token: write
+  actions: write    # delete superseded capture caches
 
 concurrency:
   group: refresh
@@ -104,6 +105,25 @@ jobs:
             data/stories
             data/shots
           key: capture-${{ github.run_id }}
+
+      # Each run saves a new cache entry and only the newest is ever restored, so drop the older
+      # ones rather than letting them sit until GitHub evicts them after 7 days.
+      - name: Delete older capture caches
+        if: steps.gate.outputs.run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          keep="capture-${{ github.run_id }}"
+          caches=$(gh api "repos/${{ github.repository }}/actions/caches?key=capture-&per_page=100" --paginate \
+            --jq '.actions_caches[] | "\(.id) \(.key)"')
+          # Never delete the older ones unless this run's entry was actually saved.
+          if ! grep -q " $keep$" <<<"$caches"; then echo "New cache not found; keeping the old ones."; exit 0; fi
+          while read -r id key; do
+            if [ "$key" != "$keep" ]; then
+              echo "Deleting $key"
+              gh api -X DELETE "repos/${{ github.repository }}/actions/caches/$id" || true
+            fi
+          done <<<"$caches"
 
       # Only the small text outputs go into git, so the history shows what changed run to run.
       - name: Commit changelog

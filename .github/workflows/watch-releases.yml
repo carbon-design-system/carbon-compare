@@ -15,7 +15,8 @@ name: Watch Carbon releases
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    # Hourly, at :17 to avoid the top-of-hour rush when GitHub delays scheduled runs.
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:
