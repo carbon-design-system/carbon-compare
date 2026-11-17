@@ -59,12 +59,18 @@ code, .flag { @include type.type-style('code-01'); }
 // The stat tiles are V12 Cards and double as the status filters (see Overview.jsx).
 .stats {
   display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: $spacing-03; margin-block-end: $spacing-07;
-  @include bp.breakpoint-down(lg) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  @include bp.breakpoint-down(xlg) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @include bp.breakpoint-down(md) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 .stat { position: relative; }
 .stat-card { block-size: 100%; display: flex; flex-direction: column; justify-content: space-between; }
-.stat-card .cds--card__header { padding-block-start: $spacing-05; padding-inline-end: $spacing-08; } // room for the info button
+.stat-card .cds--card__header { padding-block: $spacing-05; }
+.stat-card .cds--card__title { margin-block-start: 0; }
+// Only the number's row needs to clear the info button; the label can run full width.
+.stat-title .cds--card__title-text-row { padding-inline-end: $spacing-07; }
+.stat-title .stat-l, .stat-title .cds--card__title-text-row { white-space: nowrap; }
+// The footer icon would add a 48px row; tuck it into the bottom corner instead.
+.stat-card .cds--card__clickable-footer { position: absolute; inset-block-end: 0; inset-inline-end: 0; padding: $spacing-04; }
 .stat-title .cds--card__title-text-row { @include type.type-style('heading-05'); font-variant-numeric: tabular-nums; }
 .stat-card--selected.cds--card--clickable { border-color: $layer-selected-inverse; box-shadow: inset 0 0 0 1px $layer-selected-inverse; }
 .stat-info { position: absolute; inset-block-start: $spacing-03; inset-inline-end: $spacing-03; }
