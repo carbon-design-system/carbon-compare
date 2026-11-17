@@ -3,7 +3,7 @@
   "v12": "v12.0.0-alpha.10",
   "v11": "v11.120.0"
  },
- "capturedAt": "2026-11-17T20:03:25.873Z",
+ "capturedAt": "2026-11-17T21:36:35.681Z",
  "viewport": {
   "width": 1280,
   "height": 800
@@ -74,5 +74,5 @@
   "outline-color",
   "outline-offset"
  ],
- "buildKey": "0cae384f53b4:e154aa2a9ed3:0df8fff75e2b:75583222"
+ "buildKey": "0cae384f53b4:e154aa2a9ed3:0df8fff75e2b:64b07d8a"
 }
