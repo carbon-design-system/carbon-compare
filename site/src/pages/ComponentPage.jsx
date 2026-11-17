@@ -4,6 +4,7 @@ import { BASE, SRC, pct, own, inherited, summaryLine, defaultFirst, prefs } from
 import { StatusTag } from '../bits.jsx';
 import { LiveCompare, Wipe, PixelDiff, OneSided } from '../Compare.jsx';
 import ChangeTable from '../ChangeTable.jsx';
+import { resolveTiers, placeOf } from '../tiers.js';
 
 const MODES = ['live', 'wipe', 'diff'];
 const MODE_LABELS = { live: 'Live', wipe: 'Wipe', diff: 'Pixel diff' };
@@ -30,15 +31,25 @@ export default function ComponentPage({ c, data }) {
   const inhRows = scope(inherited(c)).map((ch) => ({ c, ch }));
   const flags = c.changes.filter((ch) => ch.type === 'Flag');
   const firstBase = c.captured[0]?.baseId || '';
+  const place = prefs.get('view') !== 'cards' ? placeOf(resolveTiers(data.components), c) : null;
 
   return (
     <>
       <PageHeader.Root className="comp-header">
         <PageHeader.BreadcrumbBar>
-          <Breadcrumb noTrailingSlash>
-            <BreadcrumbItem href="#overview">Overview</BreadcrumbItem>
-            <BreadcrumbItem isCurrentPage>{c.section}</BreadcrumbItem>
-          </Breadcrumb>
+          {place ? (
+            // Came from the tiers view: each crumb returns to that level of the drill-down.
+            <Breadcrumb noTrailingSlash>
+              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: null, cat: null })}>All tiers</Link></BreadcrumbItem>
+              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: place.tier.n, cat: null })}>Tier {place.tier.n} · {place.tier.name}</Link></BreadcrumbItem>
+              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: place.tier.n, cat: place.cat.name })}>{place.cat.name}</Link></BreadcrumbItem>
+            </Breadcrumb>
+          ) : (
+            <Breadcrumb noTrailingSlash>
+              <BreadcrumbItem href="#overview">Overview</BreadcrumbItem>
+              <BreadcrumbItem isCurrentPage>{c.section}</BreadcrumbItem>
+            </Breadcrumb>
+          )}
         </PageHeader.BreadcrumbBar>
         <PageHeader.Content title={c.name} contextualActions={<StatusTag status={c.status} />}>
           <PageHeader.ContentText>

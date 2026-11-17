@@ -94,6 +94,50 @@ code, .flag { @include type.type-style('code-01'); }
 .card-row { display: flex; justify-content: space-between; align-items: center; gap: $spacing-03; }
 .card-title { @include type.type-style('heading-02'); margin: 0; overflow-wrap: anywhere; }
 
+// --- Overview: view bar and tiers view --------------------------------------------
+.view-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: $spacing-05; margin-block-end: $spacing-06; }
+.view-search { flex: 0 1 24rem; }
+.view-switch { inline-size: auto; min-inline-size: 12rem; }
+.drill-path { @include type.type-style('body-01'); display: flex; flex-wrap: wrap; align-items: center; gap: $spacing-03; margin-block-end: $spacing-05;
+  .sep { color: $text-helper; }
+  [aria-current] { color: $text-primary; }
+}
+.tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1px; background: $border-subtle-01; border: 1px solid $border-subtle-01; }
+.tier-col { background: $background; padding: $spacing-05 $spacing-05 $spacing-06; display: flex; flex-direction: column; gap: $spacing-06; min-inline-size: 0; }
+.tier-head { all: unset; cursor: pointer; display: flex; flex-direction: column; gap: $spacing-02;
+  &:hover .tier-name { text-decoration: underline; }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: 2px; }
+}
+.tier-n { @include type.type-style('code-01'); color: $text-helper; }
+.tier-name { @include type.type-style('heading-03'); }
+.tier-desc { @include type.type-style('label-01'); color: $text-secondary; }
+.tier-cat { display: flex; flex-direction: column; gap: 2px; }
+.tier-cat-head { all: unset; cursor: pointer; @include type.type-style('heading-compact-01'); display: flex; justify-content: space-between; padding-block-end: $spacing-02;
+  &:hover { text-decoration: underline; }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: 2px; }
+}
+.tier-count { @include type.type-style('code-01'); color: $text-helper; }
+.tier-item { @include type.type-style('body-compact-01'); display: flex; align-items: center; gap: $spacing-03; padding: $spacing-02 $spacing-03; margin-inline: (-$spacing-03); color: $text-primary; text-decoration: none; border-radius: 4px;
+  span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  &:hover { background: $layer-hover-01; }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: -2px; }
+}
+.tier-item--dim { opacity: .3; }
+.tier-lede { @include type.type-style('body-02'); color: $text-secondary; max-inline-size: 72ch; margin: 0 0 $spacing-06; }
+.tier-panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: $spacing-05; }
+.tier-panel { display: flex; flex-direction: column; gap: $spacing-03; }
+.tier-panel-head { all: unset; cursor: pointer; display: flex; justify-content: space-between; align-items: baseline; gap: $spacing-03; margin-block-end: $spacing-03;
+  span:first-child { @include type.type-style('heading-03'); }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: 2px; }
+}
+.tier-open { @include type.type-style('body-compact-01'); color: $link-primary; white-space: nowrap; }
+.tier-row { display: flex; align-items: center; gap: $spacing-03; padding: $spacing-04; background: $layer-02; color: $text-primary; text-decoration: none; border-radius: 4px;
+  &:hover { background: $layer-hover-02; }
+  &:focus-visible { outline: 2px solid $focus; outline-offset: -2px; }
+}
+.tier-row-name { @include type.type-style('body-compact-01'); flex: 1 1 auto; min-inline-size: 0; }
+.tier-row-meta { @include type.type-style('label-01'); color: $text-secondary; text-align: end; }
+
 // --- Component page -----------------------------------------------------------
 .comp-header { // full-bleed: cancel .main's padding, which is smaller on small screens
   margin: (-$spacing-07) (-$spacing-07) $spacing-06;

@@ -102,3 +102,16 @@ export const prefs = {
     } catch { /* storage unavailable */ }
   },
 };
+
+// One line per card; the full summary is on hover and on the component page.
+export function cardLine(c) {
+  const px = c.pixel?.max > 0.001 ? ` · up to ${pct(c.pixel.max)} pixels` : '';
+  switch (c.status) {
+    case 'changed': return `${plural(own(c).length, 'change')}${px}`;
+    case 'inherited': return `Inherits ${plural(inherited(c).length, 'change')}${px}`;
+    case 'migrated': return c.captured.length ? `${plural(c.captured.length, 'story', 'stories')} compared${px}` : 'No matching IBM Products story';
+    case 'new': return plural(c.added.length, 'new story', 'new stories');
+    case 'removed': return `${plural(c.removed.length, 'story', 'stories')} dropped`;
+    default: return 'No visual change';
+  }
+}
