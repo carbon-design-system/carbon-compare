@@ -412,9 +412,15 @@ async function recordAuthored(pageA, pageB, elsA, elsB) {
   }
   if (!work.length) return;
   const lookA = await authoredLookup(pageA), lookB = await authoredLookup(pageB);
-  for (const [a, b, props] of work.slice(0, AUTHORED_MAX)) {
-    a.authored = await lookA(a.i, props);
-    b.authored = await lookB(b.i, props);
+  try {
+    for (const [a, b, props] of work.slice(0, AUTHORED_MAX)) {
+      a.authored = await lookA(a.i, props);
+      b.authored = await lookB(b.i, props);
+    }
+  } finally {
+    // Each session keeps Chrome tracking every stylesheet until it's detached. The same tab is
+    // reused for hundreds of stories, so leaving them open steadily eats the runner's memory.
+    await Promise.all([lookA.close(), lookB.close()]);
   }
 }
 
@@ -423,7 +429,7 @@ async function authoredLookup(page) {
   await cdp.send('DOM.enable');
   await cdp.send('CSS.enable');
   const { root } = await cdp.send('DOM.getDocument', { depth: 0 });
-  return async (i, props) => {
+  const lookup = async (i, props) => {
     const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: root.nodeId, selector: `[data-cmp-i="${i}"]` });
     if (!nodeId) return null;
     const m = await cdp.send('CSS.getMatchedStylesForNode', { nodeId });
@@ -434,6 +440,11 @@ async function authoredLookup(page) {
     }
     return out;
   };
+  lookup.close = async () => {
+    try { await cdp.send('CSS.disable'); await cdp.send('DOM.disable'); } catch {}
+    try { await cdp.detach(); } catch {}
+  };
+  return lookup;
 }
 
 

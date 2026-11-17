@@ -59,8 +59,11 @@ jobs:
           fi
 
           # A refresh that's already queued or running will record what it captured; wait for it.
-          busy=$(gh run list --workflow refresh.yml --json status \
-            --jq '[.[] | select(.status == "queued" or .status == "in_progress" or .status == "waiting")] | length')
+          # Runs older than 2 hours don't count: a runner that died mid-job can leave its run
+          # listed as in progress for a long time, and that mustn't block release checks.
+          since=$(date -u -d '2 hours ago' +%Y-%m-%dT%H:%M:%SZ)
+          busy=$(gh run list --workflow refresh.yml --json status,createdAt \
+            --jq "[.[] | select((.status == \"queued\" or .status == \"in_progress\" or .status == \"waiting\") and .createdAt > \"$since\")] | length")
           if [ "$busy" -gt 0 ]; then echo "A refresh is already running; checking again next time."; exit 0; fi
 
           # The release's own release.yml run deploys its Storybook. Wait until it has finished.
