@@ -3,7 +3,9 @@
 A site that shows every Carbon React component in V11 and V12 side by side, plus a changelog of what changed, so product teams can see the impact before they upgrade.
 
 - **Live site:** https://carbon-design-system.github.io/carbon-compare/
-- **Status:** working prototype. It refreshes itself every other Thursday. This README is the handoff: what's here, how it works, and why it's built this way.
+- **Status:** working prototype, not an official Carbon deliverable. It refreshes itself whenever Carbon cuts a V12 or V11 release, with an every-other-Thursday run as a fallback. This README is the handoff: what's here, how it works, and why it's built this way.
+- **Owner:** Scott Strubberg
+- **History:** this repo started as `sstrubberg/carbon-v12-compare` and moved to the Carbon org as `carbon-design-system/carbon-compare` in November 2026. Git redirects the old repo address, but the old site (`sstrubberg.github.io/carbon-v12-compare`) no longer exists; update any links to it.
 
 Nothing in this repo is hand-maintained content. Every screenshot, style value and changelog row is captured from the live Storybooks and computed, so the site stays accurate as V12 keeps moving.
 
@@ -16,7 +18,7 @@ npm run diff        # compare the captures → data/changelog.json + data/CHANGE
 npm run serve       # the site at http://localhost:4321
 ```
 
-A full capture takes about 15 minutes on a laptop, or 6–10 minutes on GitHub Actions. After that it's incremental: only stories whose Storybook build changed are recaptured. Useful flags:
+A full capture takes about 15 minutes, on a laptop or on GitHub Actions. Runs are incremental per Storybook build, not per story: when a Storybook's build changes, every story compared against it is recaptured. Every comparison includes a V12 story, so each V12 release means a full recapture, and in practice that's most runs. Useful flags:
 
 | Flag | What it does |
 |---|---|
@@ -24,6 +26,8 @@ A full capture takes about 15 minutes on a laptop, or 6–10 minutes on GitHub A
 | `--force` | Recapture even if the builds haven't changed |
 | `--concurrency N` | Parallel story pairs (default 4; CI uses 6) |
 | `--limit N` | Stop after N stories (handy when changing the capture) |
+
+Screenshots and raw captures aren't committed (see [Only small files in git](#only-small-files-in-git)), so a fresh clone has no `data/shots/`. On localhost the site uses local screenshots, so images look broken until you run `npm run capture`. The changelog and the Live and Wipe modes work regardless.
 
 ## How it fits together
 
@@ -43,7 +47,7 @@ flowchart LR
 1. **`capture.mjs`** reads each Storybook's story list (`/index.json`) and pairs stories across versions. It opens every pair in headless Chromium and records three things for both sides: a screenshot, the computed styles of every Carbon element, and, for elements that changed, the CSS declaration (and so the Carbon token) that set each changed value. It also pixel-diffs the screenshots.
 2. **`diff.mjs`** lines up elements between the two sides, works out what changed and which component each change belongs to, and writes a per-component changelog.
 3. **`index.html`** is a static, dependency-free page that reads the changelog. Its **Live** and **Wipe** modes embed the real stories from the Storybooks in iframes; **Pixel diff** uses the captured images.
-4. **`.github/workflows/refresh.yml`** runs steps 1–2 on a schedule and deploys the site.
+4. **`.github/workflows/watch-releases.yml`** checks the Carbon monorepo hourly for a new release, and **`.github/workflows/refresh.yml`** then runs steps 1–2 and deploys the site (see [Automation](#automation)).
 
 ## What's in the repo
 
@@ -53,7 +57,9 @@ flowchart LR
 | `diff.mjs` | Turns captures into the changelog. Pure Node, no browser. |
 | `index.html` | The whole site: markup, CSS and JS in one file, no build step. |
 | `serve.mjs` | A tiny static server for local use (`npm run serve`). |
-| `.github/workflows/refresh.yml` | Scheduled capture, changelog commit and Pages deploy. |
+| `.github/workflows/watch-releases.yml` | Hourly check for new Carbon releases; starts a refresh. |
+| `.github/workflows/refresh.yml` | Capture, changelog commit and Pages deploy. |
+| `.bobignore`, `.propelignore` | Ignore files for internal tools, matching `.gitignore`'s generated folders. Nothing in this project reads them. |
 | `data/*.json`, `data/CHANGELOG.md` | Committed outputs (small). See below. |
 | `data/stories/`, `data/shots/` | Raw captures and screenshots (large). **Not committed**; they live in the Actions cache and the Pages deploy. |
 
@@ -62,7 +68,7 @@ flowchart LR
 | File | Written by | Contents |
 |---|---|---|
 | `manifest.json` | capture | Story pairing: `matched` (V11↔V12), `migrated` (IBM Products↔V12), plus stories and titles found in only one version |
-| `meta.json` | capture | When and against which builds the capture ran |
+| `meta.json` | capture | When and against which Storybook builds the capture ran, and under `releases` which Carbon versions were compared (e.g. `v12.0.0-alpha.10`). The release watcher compares against `releases`. |
 | `docs.json` | capture | The V12 Storybook's *Changelog* and *Feature Flags* pages, parsed |
 | `tokens.json` | capture | `--cds-*` custom properties that differ between the V11 and V12 compiled CSS |
 | `captures.json` | capture | One summary row per captured story: pixel diff, element counts, errors |
@@ -107,7 +113,7 @@ flowchart LR
 These are the calls that shaped the prototype. Most came out of looking at real output and finding it misleading.
 
 ### Measure the live Storybooks, don't install packages
-The Storybooks are the source of truth Carbon publishes for each version. Parts of V12 (the migrated IBM Products components) aren't in any published package yet, and the Storybook is where V12 changes first. Measuring rendered pages also captures the net effect of Sass, tokens, theming and JS, which reading source can't.
+The Storybooks are the source of truth Carbon publishes for each version, and Carbon redeploys the V12 Storybook with every V12 release. V12 alphas are also on npm now (`@carbon/react@2.0.0-alpha.N`, under the `v12-alpha` tag), but installing two major versions side by side and building stories for them would mean recreating what the Storybooks already render. Measuring rendered pages also captures the net effect of Sass, tokens, theming and JS, which reading source can't.
 
 ### Computed styles *and* screenshots
 Styles say exactly what changed ("radius 0 → 999999px"). Screenshots catch what the recorded properties miss. The first version didn't record margins; Toggle's label gap changed from 16px to 8px and only the pixel diff noticed. The site flags any story where pixels changed but no recorded style explains it. That list is currently empty, and should stay that way.
@@ -131,9 +137,11 @@ How ownership is decided:
 **Evidence rule.** A change stays inherited unless the source component's own V12 stories *contradict* it: the same kind of element with a different value for that property. Evidence is keyed by the exact element kind (`cds--popover-content.cds--tooltip-content`), not the broader family, and border sides are compared individually. Toggletip's popover corners end at 4px while Popover's own end at 8px, so Toggletip is overriding them, which makes it direct.
 
 ### Components from Carbon for IBM Products are "migrated", not "new"
-About 17 components are new to `@carbon/react` but not to Carbon; they come from Carbon for IBM Products, which will be deprecated when V12 goes GA. Calling them "new" would hide that teams already use them. They get their own status, and they're compared against their [IBM Products Storybook](https://ibm-products.carbondesignsystem.com) version instead of V11.
+About 26 component groups are new to `@carbon/react` but not to Carbon. They come from Carbon for IBM Products, which will be deprecated when V12 goes GA, and include patterns as well as components; V12 shows the patterns under its "Examples" section (Create flows, Saving and others). Calling them "new" would hide that teams already use them. They get their own status, and they're compared against their [IBM Products Storybook](https://ibm-products.carbondesignsystem.com) version instead of V11.
 - **Detection:** IBM Products has a non-deprecated story group with the same name, or V12 tags the stories `ibm-products-migrated`. (NotificationsPanel isn't tagged but is in IBM Products.)
 - **Story pairing:** same id, else same story name. Stories with neither stay **V12 only**, labeled "No IBM Products equivalent". We chose that over pairing them with the "closest" story, because mismatched pairs would make the pixel diff meaningless.
+- **When a component reaches V11:** if a migrated component also appears in the V11 Storybook, it's compared V11 → V12 like any core component and gets a normal status. EmptyState did this in October.
+- **Tags matter:** a component V12 doesn't tag as migrated, and that isn't in the IBM Products Storybook under the same name, counts as **new**. AddSelect (whose stories V12 now groups under "Add and select") and Resizer are in that state.
 - **Class prefix:** IBM Products prefixes its own classes `c4p--` (see `prefix: "c4p"` in `@carbon/ibm-products`' `package-settings.js`); V12 uses `cds--`. The capture normalizes `c4p--` to `cds--` so elements line up, and the changelog reports the rename, since CSS overrides and test selectors on `c4p--` will break.
 
 ### Carbon tokens from the authored CSS, not reverse-mapped values
@@ -149,7 +157,7 @@ To know for sure, read the component's rule in the published `@carbon/styles` Sa
 The site first showed screenshots. Live iframes of the real stories proved more useful: people can hover, open menus and tab through forms in both versions. **Wipe** stacks two live iframes and clips the top one. Clipping also limits where clicks land, so each side stays interactive: V12 left of the divider, the older version right, so dragging left reveals the older version. The page renders both stories at the capture's 1280×800 and shifts them together so the captured content sits centered. **Pixel diff** stays image-based because it has to match the data the changelog came from.
 
 ### Only small files in git
-Screenshots and raw captures are about 90 MB per run and change every run. Committing them would bloat history by that much every two weeks. The workflow keeps them in the Actions cache (so runs stay incremental) and publishes them in the Pages deploy. Only the small JSON outputs are committed, so git history doubles as a record of what changed between runs.
+Screenshots and raw captures are about 90 MB per run and change every run. Committing them would bloat history by that much on every run, and with release-triggered refreshes that's several times a week. The workflow keeps them in the Actions cache (so runs stay incremental) and publishes them in the Pages deploy. Only the small JSON outputs are committed, so git history doubles as a record of what changed between runs.
 
 ## Automation
 
@@ -176,6 +184,7 @@ The site follows Carbon's releases. Two workflows handle it:
 - **Token lookup has limits.** It only covers elements matched by identical key (up to 250 per story side), assumes left-to-right writing, and doesn't resolve `calc()` expressions. Other changes show computed values only. Values set by the browser's own stylesheet show no token. Sass-only tokens are invisible in compiled CSS, apart from the radius scale, which is matched by value.
 - **Releases mean full recaptures.** Every V12 release changes the V12 Storybook, which invalidates every comparison, so each release costs a full capture (about 15 minutes on Actions). At the current pace that's several runs a week.
 - **Token lookups are slow.** They roughly doubled a full capture (7 → 14½ minutes on CI).
+- **Statuses can go backwards.** As V11 releases pick up V12 changes, components drop from "Changed" to "Unchanged". TextArea and the ChatButton preview did this in October. That's correct, since there's no longer a difference to upgrade through, but it surprises people who remember the earlier status.
 - **Rendering varies by platform.** CI runs on Linux, where text renders slightly differently from macOS. Both versions are always captured on the same machine, so comparisons stay fair, but CI and local numbers can differ by a few changes.
 - **The IBM Products Storybook goes away after V12 GA.** Migrated comparisons will fail once it's gone; freeze the last good `data/stories` for those components before then, or drop the source.
 - **Scheduled workflows go dormant.** GitHub disables scheduled workflows after 60 days without repo activity. The bot's commits count as activity, but a quiet stretch in Carbon could still trip it; re-enable it from the Actions tab.
