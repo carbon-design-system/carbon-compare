@@ -1,0 +1,83 @@
+name: Watch Carbon releases
+
+# Starts a refresh whenever the Carbon monorepo publishes a new release:
+#   - V12: a v12.0.0-alpha.N tag cut from the `next` branch
+#   - V11: a stable v11.x.y tag from `main` (release candidates are ignored)
+#
+# How a V12 release reaches the hosted Storybook: a merge to `next` runs next-release.yml,
+# which tags v12.0.0-alpha.N; the tag runs release.yml, which publishes to npm and then
+# redeploys https://v12-react.carbondesignsystem.com. So we wait until that tag's release.yml
+# run has finished before capturing; otherwise we'd capture the previous Storybook.
+#
+# The last release each refresh captured is recorded in data/meta.json ("releases"), which is
+# what this compares against. Polling (rather than a hook in the monorepo) keeps this repo
+# self-contained: no secrets and no changes to Carbon's release workflows.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write # to start refresh.yml
+
+concurrency:
+  group: watch-releases
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      MONOREPO: carbon-design-system/carbon
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: data/meta.json
+          sparse-checkout-cone-mode: false
+
+      - name: Check for new releases
+        run: |
+          set -euo pipefail
+
+          # Newest tag matching a pattern, by version order.
+          latest() { gh api "repos/$MONOREPO/git/matching-refs/tags/$1" --paginate --jq '.[].ref' \
+            | sed 's|refs/tags/||' | grep -E "$2" | sort -V | tail -1; }
+          v12=$(latest v12 '^v12\.[0-9]+\.[0-9]+(-alpha\.[0-9]+)?$')
+          v11=$(latest v11 '^v11\.[0-9]+\.[0-9]+$')
+          seen12=$(jq -r '.releases.v12 // ""' data/meta.json)
+          seen11=$(jq -r '.releases.v11 // ""' data/meta.json)
+          echo "Latest:   v12=$v12  v11=$v11"
+          echo "Captured: v12=${seen12:-none}  v11=${seen11:-none}"
+
+          if [ "$v12" = "$seen12" ] && [ "$v11" = "$seen11" ]; then
+            echo "Nothing new."; exit 0
+          fi
+
+          # A refresh that's already queued or running will record what it captured; wait for it.
+          busy=$(gh run list --workflow refresh.yml --json status \
+            --jq '[.[] | select(.status == "queued" or .status == "in_progress" or .status == "waiting")] | length')
+          if [ "$busy" -gt 0 ]; then echo "A refresh is already running; checking again next time."; exit 0; fi
+
+          # The release's own release.yml run deploys its Storybook. Wait until it has finished.
+          ready() {
+            local tag=$1 status
+            status=$(gh api "repos/$MONOREPO/actions/workflows/release.yml/runs?branch=$tag&event=push&per_page=1" \
+              --jq '.workflow_runs[0].status // "none"')
+            echo "release.yml for $tag: $status" >&2
+            # No run found at all (e.g. a tag pushed some other way): don't block on it.
+            [ "$status" = "completed" ] || [ "$status" = "none" ]
+          }
+          new12=""; new11=""
+          if [ "$v12" != "$seen12" ]; then ready "$v12" && new12=$v12 || true; fi
+          if [ "$v11" != "$seen11" ]; then ready "$v11" && new11=$v11 || true; fi
+          if [ -z "$new12" ] && [ -z "$new11" ]; then echo "New release still deploying; checking again next time."; exit 0; fi
+
+          # Pass both versions so meta.json ends up recording what this run compared.
+          gh workflow run refresh.yml --repo "$GITHUB_REPOSITORY" \
+            -f v12_release="${new12:-$seen12}" -f v11_release="${new11:-$seen11}" \
+            -f reason="New Carbon release: ${new12:+$new12 }${new11:+$new11}"
+          echo "Started a refresh for ${new12:+$new12 }${new11:+$new11}"

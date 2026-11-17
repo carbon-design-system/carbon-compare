@@ -257,7 +257,9 @@ async function load(){
     const removed = x.changes.filter(ch=>ch.prop==="story removed").map(ch=>ch.stories[0]);
     return {...x, captured, added, removed, lead: captured[0] || null};
   });
-  $("#stamp").textContent = `Captured ${new Date(m.capturedAt).toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})} · ${c.counts.storiesCompared} stories`;
+  // The Carbon releases compared (set when a release triggered the capture; see watch-releases.yml).
+  const rel = m.releases?.v12 ? ` · ${m.releases.v11 ? m.releases.v11 + " vs " : ""}${m.releases.v12}` : "";
+  $("#stamp").textContent = `Captured ${new Date(m.capturedAt).toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"})}${rel} · ${c.counts.storiesCompared} stories`;
   route();
 }
 

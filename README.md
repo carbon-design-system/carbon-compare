@@ -153,8 +153,17 @@ Screenshots and raw captures are about 90 MB per run and change every run. Commi
 
 ## Automation
 
-`.github/workflows/refresh.yml`:
-- **When it runs:** every other Thursday at 23:30 UTC (7:30pm EDT / 6:30pm EST), on any push to `main` that changes `index.html`, `capture.mjs` or `diff.mjs`, and on demand via **Run workflow** in the Actions tab.
+The site follows Carbon's releases. Two workflows handle it:
+
+**`.github/workflows/watch-releases.yml`** checks the [Carbon monorepo](https://github.com/carbon-design-system/carbon) every 30 minutes for a new release and starts a refresh when it finds one:
+- **V12:** a `v12.0.0-alpha.N` tag cut from the `next` branch.
+- **V11:** a stable `v11.x.y` tag from `main`; release candidates are ignored.
+- **Timing:** a merge to `next` runs the monorepo's `next-release.yml`, which tags the release. The tag runs `release.yml`, which publishes to npm and redeploys the hosted V12 Storybook. The watcher waits until that tag's `release.yml` run has finished; capturing earlier would record the previous Storybook. Expect the site to update roughly 30–60 minutes after a release, including the capture.
+- **State:** the last captured versions are in `data/meta.json` under `releases`; the site header shows them. The watcher skips its check while a refresh is already running.
+- **Why polling:** it keeps this repo self-contained, with no secrets and no changes to Carbon's release workflows. A faster alternative is a step in the monorepo's `release.yml` that triggers this repo after the Storybook deploy. That needs a token stored as a monorepo secret and the Carbon maintainers' review.
+
+**`.github/workflows/refresh.yml`** does the capture and deploy:
+- **When it runs:** when `watch-releases.yml` starts it (passing the release versions), every other Thursday at 23:30 UTC (7:30pm EDT / 6:30pm EST) as a fallback that also catches IBM Products changes, on any push to `main` that changes `index.html`, `capture.mjs` or `diff.mjs`, and on demand via **Run workflow** in the Actions tab.
 - **Every other week:** GitHub cron has no biweekly option, so the job fires weekly and the first step skips odd epoch weeks.
 - **What it does:** restores the previous capture from the cache, runs capture and diff, saves the cache, commits `data/*.json` and `data/CHANGELOG.md` if they changed, and deploys `index.html` plus data to GitHub Pages. Pages is configured to deploy from Actions, not from a branch.
 - **No loops:** the bot's own commits only touch `data/`, so they don't retrigger the workflow.
@@ -165,6 +174,7 @@ Screenshots and raw captures are about 90 MB per run and change every run. Commi
 - **Hidden content isn't captured.** Tooltips, menus and other content that appears only on hover or click isn't in the default render. Tooltip's own stories never show their bubble, so the ownership rule has less evidence for it.
 - **Ownership is a heuristic.** It's right for everything we've checked, but a new component with unusual class names can be misfiled. Fix it with a line in `OWNER_OVERRIDES`.
 - **Token lookup has limits.** It only covers elements matched by identical key (up to 250 per story side), assumes left-to-right writing, and doesn't resolve `calc()` expressions. Other changes show computed values only. Values set by the browser's own stylesheet show no token. Sass-only tokens are invisible in compiled CSS, apart from the radius scale, which is matched by value.
+- **Releases mean full recaptures.** Every V12 release changes the V12 Storybook, which invalidates every comparison, so each release costs a full capture (about 15 minutes on Actions). At the current pace that's several runs a week.
 - **Token lookups are slow.** They roughly doubled a full capture (7 → 14½ minutes on CI).
 - **Rendering varies by platform.** CI runs on Linux, where text renders slightly differently from macOS. Both versions are always captured on the same machine, so comparisons stay fair, but CI and local numbers can differ by a few changes.
 - **The IBM Products Storybook goes away after V12 GA.** Migrated comparisons will fail once it's gone; freeze the last good `data/stories` for those components before then, or drop the source.

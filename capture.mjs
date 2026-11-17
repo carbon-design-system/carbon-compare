@@ -85,7 +85,15 @@ async function main() {
   try {
     const builds = await fingerprintBuilds(browser, { v11: idx11, v12: idx12, ibmp: idxP });
     const prevMeta = await readJson('meta.json');
+    // Which Carbon releases these builds correspond to. watch-releases.yml passes them in when a
+    // release triggers the run; other runs (schedule, push) keep the last known values.
+    const releases = {
+      ...(prevMeta?.releases ?? {}),
+      ...(process.env.V12_RELEASE ? { v12: process.env.V12_RELEASE } : {}),
+      ...(process.env.V11_RELEASE ? { v11: process.env.V11_RELEASE } : {}),
+    };
     await writeJson('meta.json', {
+      releases,
       capturedAt: new Date().toISOString(),
       viewport: VIEWPORT,
       sources: SOURCES,
