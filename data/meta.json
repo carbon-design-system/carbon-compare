@@ -1,5 +1,9 @@
 {
- "capturedAt": "2026-11-06T03:31:40.557Z",
+ "releases": {
+  "v12": "v12.0.0-alpha.10",
+  "v11": "v11.120.0"
+ },
+ "capturedAt": "2026-11-17T16:51:42.985Z",
  "viewport": {
   "width": 1280,
   "height": 800
@@ -18,9 +22,9 @@
   },
   "v12": {
    "url": "https://v12-react.carbondesignsystem.com",
-   "iframeCss": "https://v12-react.carbondesignsystem.com/assets/iframe-B_uuoEkC.css",
-   "indexHash": "3076a36642e8",
-   "fingerprint": "34cdf5a44d6c"
+   "iframeCss": "https://v12-react.carbondesignsystem.com/assets/iframe-5W_B9ErV.css",
+   "indexHash": "04475709baf4",
+   "fingerprint": "0df8fff75e2b"
   },
   "ibmp": {
    "url": "https://ibm-products.carbondesignsystem.com",
@@ -70,5 +74,5 @@
   "outline-color",
   "outline-offset"
  ],
- "buildKey": "0cae384f53b4:e154aa2a9ed3:34cdf5a44d6c:75583222"
+ "buildKey": "0cae384f53b4:e154aa2a9ed3:0df8fff75e2b:75583222"
 }

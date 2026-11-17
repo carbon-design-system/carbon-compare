@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-06T03:31:37.476Z",
+ "generatedAt": "2026-11-17T16:51:40.724Z",
  "counts": {
   "v11Stories": 509,
-  "v12Stories": 653,
+  "v12Stories": 658,
   "ibmpStories": 242,
   "matched": 500,
-  "migrated": 116
+  "migrated": 121
  },
  "matched": [
   {
@@ -5712,6 +5712,26 @@
   },
   {
    "base": "ibmp",
+   "baseId": "utilities-carousel--standard-carousel",
+   "v12": "examples-carousel--standard-carousel",
+   "title": "Examples/Carousel",
+   "name": "Carousel with navigation",
+   "component": "Carousel",
+   "match": "name",
+   "ibmpTitle": "Utilities/Carousel"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "utilities-carousel--view-stack",
+   "v12": "examples-carousel--view-stack",
+   "title": "Examples/Carousel",
+   "name": "ViewStack navigation",
+   "component": "Carousel",
+   "match": "name",
+   "ibmpTitle": "Utilities/Carousel"
+  },
+  {
+   "base": "ibmp",
    "baseId": "patterns-coachmark-fixed--coachmark-fixed",
    "v12": "examples-coachmark-coachmark-fixed--coachmark-fixed",
    "title": "Examples/Coachmark/Coachmark Fixed",
@@ -5879,6 +5899,16 @@
    "component": "Create flows",
    "match": "name",
    "ibmpTitle": "Patterns/Create flows/CreateTearsheetNarrow"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "utilities-date-time-format--date-time-format",
+   "v12": "examples-date-time-format--date-time-format",
+   "title": "Examples/Date Time Format",
+   "name": "Date Time Format",
+   "component": "Date Time Format",
+   "match": "name",
+   "ibmpTitle": "Utilities/Date Time Format"
   },
   {
    "base": "ibmp",
@@ -6152,6 +6182,26 @@
   },
   {
    "base": "ibmp",
+   "baseId": "utilities-makedraggable--draggable-custom-div",
+   "v12": "utilities-makedraggable--draggable-custom-div",
+   "title": "Utilities/makeDraggable",
+   "name": "Draggable Custom Div",
+   "component": "makeDraggable",
+   "match": "exact",
+   "ibmpTitle": "Utilities/makeDraggable"
+  },
+  {
+   "base": "ibmp",
+   "baseId": "utilities-makedraggable--draggable-popover",
+   "v12": "utilities-makedraggable--draggable-popover",
+   "title": "Utilities/makeDraggable",
+   "name": "Draggable Popover",
+   "component": "makeDraggable",
+   "match": "exact",
+   "ibmpTitle": "Utilities/makeDraggable"
+  },
+  {
+   "base": "ibmp",
    "baseId": "utilities-truncatedtext--with-expand",
    "v12": "utilities-truncatedtext--with-expand",
    "title": "Utilities/TruncatedText",
@@ -6191,6 +6241,16 @@
    ],
    "tagged": false,
    "matched": 13,
+   "unmatched": []
+  },
+  {
+   "component": "Carousel",
+   "v12Title": "Examples/Carousel",
+   "ibmpTitles": [
+    "Utilities/Carousel"
+   ],
+   "tagged": false,
+   "matched": 2,
    "unmatched": []
   },
   {
@@ -6250,6 +6310,16 @@
    ],
    "tagged": false,
    "matched": 14,
+   "unmatched": []
+  },
+  {
+   "component": "Date Time Format",
+   "v12Title": "Examples/Date Time Format",
+   "ibmpTitles": [
+    "Utilities/Date Time Format"
+   ],
+   "tagged": false,
+   "matched": 1,
    "unmatched": []
   },
   {
@@ -6353,6 +6423,16 @@
    ],
    "tagged": false,
    "matched": 6,
+   "unmatched": []
+  },
+  {
+   "component": "makeDraggable",
+   "v12Title": "Utilities/makeDraggable",
+   "ibmpTitles": [
+    "Utilities/makeDraggable"
+   ],
+   "tagged": true,
+   "matched": 2,
    "unmatched": []
   },
   {
@@ -6599,6 +6679,7 @@
    "Examples/Add and select",
    "Examples/Add and select/MultiAddSelect",
    "Examples/Add and select/SingleAddSelect",
+   "Examples/Carousel",
    "Examples/Coachmark/Coachmark Fixed",
    "Examples/Coachmark/Coachmark Overlay Elements",
    "Examples/Coachmark/Coachmark Stacked",
@@ -6607,6 +6688,7 @@
    "Examples/Create flows/Create Side Panel",
    "Examples/Create flows/Create Tearsheet",
    "Examples/Create flows/Create Tearsheet Narrow",
+   "Examples/Date Time Format",
    "Examples/Delete and remove",
    "Examples/ExportModal",
    "Examples/Generate an API Key",
@@ -6619,7 +6701,8 @@
    "Preview/preview__BigNumber",
    "Utilities/Resizer",
    "Utilities/ScrollGradient",
-   "Utilities/TruncatedText"
+   "Utilities/TruncatedText",
+   "Utilities/makeDraggable"
   ],
   "stories": [
    {

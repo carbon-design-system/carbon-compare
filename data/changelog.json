@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-06T03:46:06.890Z",
+ "generatedAt": "2026-11-17T17:02:29.880Z",
  "counts": {
-  "components": 114,
-  "unchanged": 31,
+  "components": 117,
+  "unchanged": 30,
   "new": 3,
-  "changed": 33,
-  "migrated": 26,
-  "inherited": 17,
+  "changed": 37,
+  "migrated": 29,
+  "inherited": 14,
   "removed": 4,
-  "storiesCompared": 616,
-  "changes": 1569
+  "storiesCompared": 621,
+  "changes": 1656
  },
  "tokens": {
   "added": [
@@ -2247,7 +2247,7 @@
    },
    "pixel": {
     "max": 0.45484,
-    "mean": 0.20879,
+    "mean": 0.1977,
     "storiesChanged": 5,
     "storiesCompared": 5
    },
@@ -2319,39 +2319,6 @@
      "changes": 41
     },
     {
-     "id": "components-coachmark--tooltip",
-     "base": "ibmp",
-     "baseId": "preview-onboarding-coachmark--tooltip",
-     "v11Id": null,
-     "name": "Tooltip",
-     "title": "Components/Coachmark",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 86873,
-      "totalPixels": 779520,
-      "ratio": 0.11144,
-      "size": {
-       "before": [
-        1280,
-        609
-       ],
-       "v12": [
-        1280,
-        609
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 3,
-      "width": 1280,
-      "height": 609
-     },
-     "changes": 18
-    },
-    {
      "id": "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
      "base": "ibmp",
      "baseId": "patterns-coachmark-overlay-elements--coachmark-overlay",
@@ -2383,6 +2350,39 @@
       "height": 586
      },
      "changes": 37
+    },
+    {
+     "id": "components-coachmark--tooltip",
+     "base": "ibmp",
+     "baseId": "preview-onboarding-coachmark--tooltip",
+     "v11Id": null,
+     "name": "Tooltip",
+     "title": "Components/Coachmark",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 43678,
+      "totalPixels": 779520,
+      "ratio": 0.05603,
+      "size": {
+       "before": [
+        1280,
+        609
+       ],
+       "v12": [
+        1280,
+        609
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 3,
+      "width": 1280,
+      "height": 609
+     },
+     "changes": 18
     },
     {
      "id": "components-coachmark--floating",
@@ -3477,8 +3477,10 @@
    "id": "codesnippet",
    "name": "CodeSnippet",
    "section": "Components",
-   "status": "unchanged",
-   "inheritsFrom": [],
+   "status": "changed",
+   "inheritsFrom": [
+    "Button"
+   ],
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
@@ -3585,7 +3587,7 @@
       "width": 1103,
       "height": 495
      },
-     "changes": 0
+     "changes": 2
     },
     {
      "id": "components-codesnippet--multiline-with-layer",
@@ -3618,7 +3620,7 @@
       "width": 1280,
       "height": 1054
      },
-     "changes": 0
+     "changes": 6
     },
     {
      "id": "components-codesnippet--singleline",
@@ -3651,7 +3653,7 @@
       "width": 861,
       "height": 72
      },
-     "changes": 0
+     "changes": 2
     },
     {
      "id": "components-codesnippet--singleline-with-layer",
@@ -3684,7 +3686,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 0
+     "changes": 6
     },
     {
      "id": "components-codesnippet--skeleton",
@@ -3721,7 +3723,56 @@
     }
    ],
    "notes": [],
-   "changes": []
+   "changes": [
+    {
+     "type": "Visual",
+     "element": ".cds--snippet__icon",
+     "variants": [
+      "cds--snippet__icon"
+     ],
+     "prop": "color",
+     "from": "#ffffff",
+     "to": "#000000",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-codesnippet--multiline",
+      "components-codesnippet--multiline-with-layer",
+      "components-codesnippet--singleline",
+      "components-codesnippet--singleline-with-layer"
+     ],
+     "elements": 8,
+     "inherited": false,
+     "text": "CodeSnippet · .cds--snippet__icon · color #ffffff → #000000"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--copy.cds--copy-btn",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--copy cds--copy-btn cds--layout--size-md",
+      "cds--btn cds--btn--icon-only cds--btn--sm cds--copy cds--copy-btn cds--layout--size-sm"
+     ],
+     "prop": "color",
+     "from": "#ffffff",
+     "to": "#000000",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-codesnippet--multiline",
+      "components-codesnippet--multiline-with-layer",
+      "components-codesnippet--singleline",
+      "components-codesnippet--singleline-with-layer"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "CodeSnippet · .cds--btn.cds--copy.cds--copy-btn · color #ffffff → #000000 (inherited from Button)"
+    }
+   ]
   },
   {
    "id": "combobox",
@@ -4945,25 +4996,126 @@
    "id": "composedmodal",
    "name": "ComposedModal",
    "section": "Components",
-   "status": "inherited",
+   "status": "changed",
    "inheritsFrom": [
     "Button",
     "Dropdown",
+    "Modal",
     "MultiSelect",
     "Popover",
     "Select",
     "TextInput",
-    "Tooltip"
+    "Tooltip",
+    "preview__Dialog"
    ],
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.02541,
-    "mean": 0.00522,
-    "storiesChanged": 8,
+    "max": 0.03534,
+    "mean": 0.02527,
+    "storiesChanged": 10,
     "storiesCompared": 10
    },
    "stories": [
+    {
+     "id": "components-composedmodal--with-ai-label",
+     "base": "v11",
+     "baseId": "components-composedmodal--with-ai-label",
+     "v11Id": "components-composedmodal--with-ai-label",
+     "name": "With AI Label",
+     "title": "Components/ComposedModal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 36187,
+      "totalPixels": 1024000,
+      "ratio": 0.03534,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 27
+    },
+    {
+     "id": "components-composedmodal--full-width",
+     "base": "v11",
+     "baseId": "components-composedmodal--full-width",
+     "v11Id": "components-composedmodal--full-width",
+     "name": "Full Width",
+     "title": "Components/ComposedModal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 34122,
+      "totalPixels": 1024000,
+      "ratio": 0.03332,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 12
+    },
+    {
+     "id": "components-composedmodal--with-scrolling-content",
+     "base": "v11",
+     "baseId": "components-composedmodal--with-scrolling-content",
+     "v11Id": "components-composedmodal--with-scrolling-content",
+     "name": "With Scrolling Content",
+     "title": "Components/ComposedModal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 31208,
+      "totalPixels": 1024000,
+      "ratio": 0.03048,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 32
+    },
     {
      "id": "components-composedmodal--with-state-manager",
      "base": "v11",
@@ -4998,72 +5150,6 @@
      "changes": 1
     },
     {
-     "id": "components-composedmodal--with-scrolling-content",
-     "base": "v11",
-     "baseId": "components-composedmodal--with-scrolling-content",
-     "v11Id": "components-composedmodal--with-scrolling-content",
-     "name": "With Scrolling Content",
-     "title": "Components/ComposedModal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 14182,
-      "totalPixels": 1024000,
-      "ratio": 0.01385,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 21
-    },
-    {
-     "id": "components-composedmodal-feature-flags--enable-dialog-element",
-     "base": "v11",
-     "baseId": "components-composedmodal-feature-flags--enable-dialog-element",
-     "v11Id": "components-composedmodal-feature-flags--enable-dialog-element",
-     "name": "enable-dialog-element",
-     "title": "Components/ComposedModal/Feature Flags",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 2897,
-      "totalPixels": 1024000,
-      "ratio": 0.00283,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 14
-    },
-    {
      "id": "components-composedmodal--default",
      "base": "v11",
      "baseId": "components-composedmodal--default",
@@ -5073,9 +5159,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1824,
+      "diffPixels": 24807,
       "totalPixels": 1024000,
-      "ratio": 0.00178,
+      "ratio": 0.02423,
       "size": {
        "before": [
         1280,
@@ -5094,7 +5180,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 11
+     "changes": 22
     },
     {
      "id": "components-composedmodal--with-inline-loading",
@@ -5106,9 +5192,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1824,
+      "diffPixels": 24807,
       "totalPixels": 1024000,
-      "ratio": 0.00178,
+      "ratio": 0.02423,
       "size": {
        "before": [
         1280,
@@ -5127,7 +5213,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 11
+     "changes": 22
     },
     {
      "id": "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels",
@@ -5139,9 +5225,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1824,
+      "diffPixels": 24807,
       "totalPixels": 1024000,
-      "ratio": 0.00178,
+      "ratio": 0.02423,
       "size": {
        "before": [
         1280,
@@ -5160,7 +5246,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 11
+     "changes": 22
     },
     {
      "id": "components-composedmodal-feature-flags--enable-presence",
@@ -5172,9 +5258,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1824,
+      "diffPixels": 24807,
       "totalPixels": 1024000,
-      "ratio": 0.00178,
+      "ratio": 0.02423,
       "size": {
        "before": [
         1280,
@@ -5196,18 +5282,18 @@
      "changes": 1
     },
     {
-     "id": "components-composedmodal--with-ai-label",
+     "id": "components-composedmodal-feature-flags--enable-dialog-element",
      "base": "v11",
-     "baseId": "components-composedmodal--with-ai-label",
-     "v11Id": "components-composedmodal--with-ai-label",
-     "name": "With AI Label",
-     "title": "Components/ComposedModal",
+     "baseId": "components-composedmodal-feature-flags--enable-dialog-element",
+     "v11Id": "components-composedmodal-feature-flags--enable-dialog-element",
+     "name": "enable-dialog-element",
+     "title": "Components/ComposedModal/Feature Flags",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1622,
+      "diffPixels": 22037,
       "totalPixels": 1024000,
-      "ratio": 0.00158,
+      "ratio": 0.02152,
       "size": {
        "before": [
         1280,
@@ -5226,7 +5312,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 16
+     "changes": 27
     },
     {
      "id": "components-composedmodal--passive-modal",
@@ -5238,9 +5324,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 983,
+      "diffPixels": 9951,
       "totalPixels": 1024000,
-      "ratio": 0.00096,
+      "ratio": 0.00972,
       "size": {
        "before": [
         1280,
@@ -5259,40 +5345,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 4
-    },
-    {
-     "id": "components-composedmodal--full-width",
-     "base": "v11",
-     "baseId": "components-composedmodal--full-width",
-     "v11Id": "components-composedmodal--full-width",
-     "name": "Full Width",
-     "title": "Components/ComposedModal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 420,
-      "totalPixels": 1024000,
-      "ratio": 0.00041,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 1
+     "changes": 13
     }
    ],
    "notes": [],
@@ -5331,6 +5384,257 @@
       "Button"
      ],
      "text": "ComposedModal · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "ComposedModal · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header",
+     "variants": [
+      "cds--modal-header"
+     ],
+     "prop": "margin",
+     "from": "0px 0px 8px",
+     "to": "0px 0px 16px",
+     "note": null,
+     "fromToken": {
+      "literal": ".5rem"
+     },
+     "toToken": {
+      "literal": "1rem"
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-header · margin 0px 0px 8px → 0px 0px 16px (inherited from Modal)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header",
+     "variants": [
+      "cds--modal-header"
+     ],
+     "prop": "padding",
+     "from": "16px 48px 0px 16px",
+     "to": "16px 64px 0px 16px",
+     "note": null,
+     "fromToken": {
+      "literal": "3rem"
+     },
+     "toToken": {
+      "literal": "4rem"
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-header · padding 16px 48px 0px 16px → 16px 64px 0px 16px (inherited from Modal)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header__heading.cds--type-beta",
+     "variants": [
+      "cds--modal-header__heading cds--type-beta"
+     ],
+     "prop": "padding",
+     "from": "0px 92.3906px 0px 0px",
+     "to": "0px 73.1875px 0px 0px",
+     "note": null,
+     "fromToken": {
+      "literal": "calc(20% - 3rem)"
+     },
+     "toToken": {
+      "literal": "calc(20% - 4rem)"
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Modal",
+      "preview__Dialog"
+     ],
+     "text": "ComposedModal · .cds--modal-header__heading.cds--type-beta · padding 0px 92.3906px 0px 0px → 0px 73.1875px 0px 0px (inherited from Modal, preview__Dialog)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "padding",
+     "from": "12px",
+     "to": "0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "ComposedModal · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container",
+      "cds--modal-container cds--modal-container--full-width"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$border-radius-08",
+      "sass": true
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-container · border-radius 0px → 8px (inherited from Modal)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--secondary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 0px 7px",
+     "note": null,
+     "fromToken": {
+      "token": "$button-radius-es"
+     },
+     "toToken": {
+      "token": "$button-radius-es"
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "ComposedModal · .cds--btn · border-radius 0px → 0px 0px 0px 7px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 7px",
+     "note": null,
+     "fromToken": {
+      "token": "$button-radius-ee"
+     },
+     "toToken": {
+      "token": "$button-radius-ee"
+     },
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "ComposedModal · .cds--btn · border-radius 0px → 0px 0px 7px (inherited from Button)"
     },
     {
      "type": "Visual",
@@ -5828,6 +6132,32 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--dialog.cds--modal-container",
+     "variants": [
+      "cds--dialog cds--dialog--modal cds--modal-container"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$border-radius-08",
+      "sass": true
+     },
+     "stories": [
+      "components-composedmodal-feature-flags--enable-dialog-element"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal",
+      "preview__Dialog"
+     ],
+     "text": "ComposedModal · .cds--dialog.cds--modal-container · border-radius 0px → 8px (inherited from Modal, preview__Dialog)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--autoalign.cds--dropdown.cds--list-box",
      "variants": [
       "cds--autoalign cds--dropdown cds--list-box"
@@ -5869,6 +6199,223 @@
       "MultiSelect"
      ],
      "text": "ComposedModal · .cds--autoalign.cds--list-box.cds--multi-select · border-top/right/left none → 1px solid transparent (inherited from MultiSelect)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--dialog.cds--modal-container",
+     "variants": [
+      "cds--dialog cds--dialog--modal cds--modal-container"
+     ],
+     "prop": "margin",
+     "from": "193.031px 256px",
+     "to": "189.031px 256px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal-feature-flags--enable-dialog-element"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal",
+      "preview__Dialog"
+     ],
+     "text": "ComposedModal · .cds--dialog.cds--modal-container · margin 193.031px 256px → 189.031px 256px (inherited from Modal, preview__Dialog)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "height",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "ComposedModal · .cds--btn.cds--modal-close · height 48px → 40px (-8px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "width",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--full-width",
+      "components-composedmodal--passive-modal",
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal--with-scrolling-content",
+      "components-composedmodal-feature-flags--enable-dialog-element",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 8,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "ComposedModal · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "413.94px",
+     "to": "421.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--default",
+      "components-composedmodal--with-inline-loading",
+      "components-composedmodal-feature-flags--enable-focus-wrap-without-sentinels"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-container · height 413.94px → 421.94px (+8px) (inherited from Modal)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--layer-two.cds--modal-content.cds--modal-scroll-content",
+     "variants": [
+      "cds--layer-two cds--modal-content cds--modal-scroll-content"
+     ],
+     "prop": "height",
+     "from": "534.02px",
+     "to": "526.02px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--with-ai-label",
+      "components-composedmodal--with-scrolling-content"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--layer-two.cds--modal-content.cds--modal-scroll-content · height 534.02px → 526.02px (-8px) (inherited from Modal)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container cds--modal-container--full-width"
+     ],
+     "prop": "height",
+     "from": "483.84px",
+     "to": "491.84px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--full-width"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-container · height 483.84px → 491.84px (+8px) (inherited from Modal)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "129.98px",
+     "to": "137.98px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal--passive-modal"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "ComposedModal · .cds--modal-container · height 129.98px → 137.98px (+8px) (inherited from Modal)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--dialog.cds--modal-container",
+     "variants": [
+      "cds--dialog cds--dialog--modal cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "413.94px",
+     "to": "421.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal-feature-flags--enable-dialog-element"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Modal",
+      "preview__Dialog"
+     ],
+     "text": "ComposedModal · .cds--dialog.cds--modal-container · height 413.94px → 421.94px (+8px) (inherited from Modal, preview__Dialog)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--dialog-container",
+     "variants": [
+      "cds--dialog-container"
+     ],
+     "prop": "height",
+     "from": "413.94px",
+     "to": "421.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-composedmodal-feature-flags--enable-dialog-element"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "preview__Dialog"
+     ],
+     "text": "ComposedModal · .cds--dialog-container · height 413.94px → 421.94px (+8px) (inherited from preview__Dialog)"
     },
     {
      "type": "Structure",
@@ -10366,7 +10913,7 @@
    "id": "fileuploader",
    "name": "FileUploader",
    "section": "Components",
-   "status": "inherited",
+   "status": "changed",
    "inheritsFrom": [
     "Button"
    ],
@@ -10648,31 +11195,24 @@
    "changes": [
     {
      "type": "Visual",
-     "element": ".cds--btn",
+     "element": ".cds--btn.cds--file-uploader-button",
      "variants": [
-      "cds--btn cds--btn--md cds--btn--primary cds--layout--size-md"
+      "cds--btn cds--btn--md cds--btn--primary cds--file-uploader-button cds--layout--size-md"
      ],
      "prop": "border-radius",
      "from": "0px",
      "to": "999999px",
      "note": "pill",
-     "fromToken": {
-      "token": "$button-radius-ss/se/ee/es"
-     },
-     "toToken": {
-      "token": "$button-radius-ss/se/ee/es"
-     },
+     "fromToken": null,
+     "toToken": null,
      "stories": [
       "components-fileuploader--default",
       "components-fileuploader-feature-flag--controlled-file-state",
       "components-fileuploader-feature-flag--enhanced-callbacks"
      ],
      "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "FileUploader · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+     "inherited": false,
+     "text": "FileUploader · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill)"
     },
     {
      "type": "Visual",
@@ -10722,6 +11262,7 @@
     "ComboBox",
     "DatePicker",
     "Dropdown",
+    "FileUploader",
     "FormLabel",
     "MultiSelect",
     "NumberInput",
@@ -14278,7 +14819,6 @@
      "type": "Visual",
      "element": ".cds--btn",
      "variants": [
-      "cds--btn cds--btn--md cds--btn--primary cds--layout--size-md",
       "cds--btn cds--btn--primary"
      ],
      "prop": "border-radius",
@@ -14294,12 +14834,34 @@
      "stories": [
       "components-fluid-components-fluidform--default"
      ],
-     "elements": 2,
+     "elements": 1,
      "inherited": true,
      "sources": [
       "Button"
      ],
      "text": "Fluid Components · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--file-uploader-button",
+     "variants": [
+      "cds--btn cds--btn--md cds--btn--primary cds--file-uploader-button cds--layout--size-md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-fluid-components-fluidform--default"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "FileUploader"
+     ],
+     "text": "Fluid Components · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill) (inherited from FileUploader)"
     },
     {
      "type": "Visual",
@@ -14996,6 +15558,7 @@
     "ComboBox",
     "DatePicker",
     "Dropdown",
+    "FileUploader",
     "MultiSelect",
     "NumberInput",
     "PasswordInput",
@@ -15647,7 +16210,6 @@
      "type": "Visual",
      "element": ".cds--btn",
      "variants": [
-      "cds--btn cds--btn--md cds--btn--primary cds--layout--size-md",
       "cds--btn cds--btn--primary"
      ],
      "prop": "border-radius",
@@ -15664,7 +16226,7 @@
       "components-form--default",
       "components-form--with-ai-label"
      ],
-     "elements": 4,
+     "elements": 2,
      "inherited": true,
      "sources": [
       "Button"
@@ -15786,6 +16348,29 @@
       "MultiSelect"
      ],
      "text": "Form · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--file-uploader-button",
+     "variants": [
+      "cds--btn cds--btn--md cds--btn--primary cds--file-uploader-button cds--layout--size-md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-form--default",
+      "components-form--with-ai-label"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "FileUploader"
+     ],
+     "text": "Form · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill) (inherited from FileUploader)"
     },
     {
      "type": "Visual",
@@ -17973,25 +18558,25 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.01368,
-    "mean": 0.0091,
+    "max": 0.01932,
+    "mean": 0.0128,
     "storiesChanged": 4,
     "storiesCompared": 6
    },
    "stories": [
     {
-     "id": "components-interstitialscreen--modal",
+     "id": "components-interstitialscreen--with-custom-action-buttons",
      "base": "ibmp",
-     "baseId": "components-onboarding-interstitialscreen--modal",
+     "baseId": "components-onboarding-interstitialscreen--with-custom-action-buttons",
      "v11Id": null,
-     "name": "Modal",
+     "name": "With Custom Action Buttons",
      "title": "Components/InterstitialScreen",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14009,
+      "diffPixels": 19788,
       "totalPixels": 1024000,
-      "ratio": 0.01368,
+      "ratio": 0.01932,
       "size": {
        "before": [
         1280,
@@ -18010,7 +18595,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 17
+     "changes": 27
     },
     {
      "id": "components-interstitialscreen--modal-with-multiple-steps",
@@ -18022,9 +18607,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13957,
+      "diffPixels": 19703,
       "totalPixels": 1024000,
-      "ratio": 0.01363,
+      "ratio": 0.01924,
       "size": {
        "before": [
         1280,
@@ -18043,7 +18628,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 19
+     "changes": 27
     },
     {
      "id": "components-interstitialscreen--with-asynchronous-action-callback",
@@ -18055,9 +18640,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13957,
+      "diffPixels": 19703,
       "totalPixels": 1024000,
-      "ratio": 0.01363,
+      "ratio": 0.01924,
       "size": {
        "before": [
         1280,
@@ -18076,21 +18661,21 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 19
+     "changes": 27
     },
     {
-     "id": "components-interstitialscreen--with-custom-action-buttons",
+     "id": "components-interstitialscreen--modal",
      "base": "ibmp",
-     "baseId": "components-onboarding-interstitialscreen--with-custom-action-buttons",
+     "baseId": "components-onboarding-interstitialscreen--modal",
      "v11Id": null,
-     "name": "With Custom Action Buttons",
+     "name": "Modal",
      "title": "Components/InterstitialScreen",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13957,
+      "diffPixels": 19382,
       "totalPixels": 1024000,
-      "ratio": 0.01363,
+      "ratio": 0.01893,
       "size": {
        "before": [
         1280,
@@ -18109,7 +18694,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 19
+     "changes": 24
     },
     {
      "id": "components-interstitialscreen--full-screen",
@@ -18121,7 +18706,7 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 48,
+      "diffPixels": 56,
       "totalPixels": 1024000,
       "ratio": 0.00005,
       "size": {
@@ -18142,7 +18727,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 9
+     "changes": 10
     },
     {
      "id": "components-interstitialscreen--full-screen-with-multiple-steps",
@@ -18154,7 +18739,7 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 0,
+      "diffPixels": 3,
       "totalPixels": 1024000,
       "ratio": 0,
       "size": {
@@ -18175,7 +18760,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 11
+     "changes": 13
     }
    ],
    "notes": [],
@@ -18423,6 +19008,53 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--ghost cds--btn--lg cds--interstitial-screen--skip-btn cds--layout--size-lg"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 0px 7px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--full-screen-with-multiple-steps",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": false,
+     "text": "InterstitialScreen · .cds--btn · border-radius 0px → 0px 0px 0px 7px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--lg cds--btn--primary cds--interstitial-screen--next-btn cds--layout--size-lg"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 7px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--full-screen-with-multiple-steps",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "InterstitialScreen · .cds--btn · border-radius 0px → 0px 0px 7px (inherited from Button)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--popover-content.cds--tooltip-content",
      "variants": [
       "cds--popover-content cds--tooltip-content"
@@ -18446,6 +19078,56 @@
       "Tooltip"
      ],
      "text": "InterstitialScreen · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container cds--modal-container--lg"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Modal"
+     ],
+     "text": "InterstitialScreen · .cds--modal-container · border-radius 0px → 8px (inherited from Modal)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "InterstitialScreen · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button)"
     },
     {
      "type": "Visual",
@@ -18476,7 +19158,7 @@
      "type": "Visual",
      "element": ".cds--btn.cds--modal-close",
      "variants": [
-      "cds--btn cds--btn--icon-only cds--btn--primary cds--modal-close"
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
      ],
      "prop": "box-shadow",
      "from": "#0f62fe 0px 0px 0px 1px inset, #f4f4f4 0px 0px 0px 2px inset",
@@ -18520,6 +19202,53 @@
      "elements": 4,
      "inherited": false,
      "text": "InterstitialScreen · .cds--body--with-modal-open · padding 0px → 42px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header",
+     "variants": [
+      "cds--interstitial-screen--internal-header cds--interstitial-screen--internal-header--has-title cds--modal-header"
+     ],
+     "prop": "padding",
+     "from": "24px 48px 0px 32px",
+     "to": "24px 64px 0px 32px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": false,
+     "text": "InterstitialScreen · .cds--modal-header · padding 24px 48px 0px 32px → 24px 64px 0px 32px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "padding",
+     "from": "12px",
+     "to": "0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "InterstitialScreen · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button)"
     },
     {
      "type": "Visual",
@@ -18606,6 +19335,26 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--disabled cds--btn--lg cds--btn--primary cds--interstitial-screen--start-btn cds--layout--size-lg"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 7px 7px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--full-screen",
+      "components-interstitialscreen--modal"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "InterstitialScreen · .cds--btn · border-radius 0px → 0px 0px 7px 7px"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--modal-footer",
      "variants": [
       "cds--interstitial-screen--footer cds--modal-footer"
@@ -18667,6 +19416,56 @@
       "Tag"
      ],
      "text": "InterstitialScreen · .cds--tag · background-color #f4f4f4 → #ffffff (inherited from Tag)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "height",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "InterstitialScreen · .cds--btn.cds--modal-close · height 48px → 40px (-8px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "width",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-interstitialscreen--modal",
+      "components-interstitialscreen--modal-with-multiple-steps",
+      "components-interstitialscreen--with-asynchronous-action-callback",
+      "components-interstitialscreen--with-custom-action-buttons"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "InterstitialScreen · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button)"
     },
     {
      "type": "Structure",
@@ -19649,12 +20448,78 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.02612,
-    "mean": 0.0057,
-    "storiesChanged": 7,
+    "max": 0.04547,
+    "mean": 0.01958,
+    "storiesChanged": 11,
     "storiesCompared": 11
    },
    "stories": [
+    {
+     "id": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
+     "base": "v11",
+     "baseId": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
+     "v11Id": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
+     "name": "enable-focus-wrap-without-sentinels",
+     "title": "Components/Modal/Feature Flags",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 35403,
+      "totalPixels": 778552,
+      "ratio": 0.04547,
+      "size": {
+       "before": [
+        1228,
+        634
+       ],
+       "v12": [
+        1228,
+        634
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 634
+     },
+     "changes": 1
+    },
+    {
+     "id": "components-modal--with-scrolling-content",
+     "base": "v11",
+     "baseId": "components-modal--with-scrolling-content",
+     "v11Id": "components-modal--with-scrolling-content",
+     "name": "With Scrolling Content",
+     "title": "Components/Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 30042,
+      "totalPixels": 1024000,
+      "ratio": 0.02934,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 36
+    },
     {
      "id": "components-modal--with-state-manager",
      "base": "v11",
@@ -19689,37 +20554,37 @@
      "changes": 1
     },
     {
-     "id": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
+     "id": "components-modal--with-ai-label",
      "base": "v11",
-     "baseId": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
-     "v11Id": "components-modal-feature-flags--enable-focus-wrap-without-sentinels",
-     "name": "enable-focus-wrap-without-sentinels",
-     "title": "Components/Modal/Feature Flags",
+     "baseId": "components-modal--with-ai-label",
+     "v11Id": "components-modal--with-ai-label",
+     "name": "With AI Label",
+     "title": "Components/Modal",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14772,
-      "totalPixels": 768728,
-      "ratio": 0.01922,
+      "diffPixels": 24636,
+      "totalPixels": 1024000,
+      "ratio": 0.02406,
       "size": {
        "before": [
-        1228,
-        626
+        1280,
+        800
        ],
        "v12": [
-        1228,
-        626
+        1280,
+        800
        ]
       },
       "sizeChanged": false
      },
      "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 1228,
-      "height": 626
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
      },
-     "changes": 1
+     "changes": 23
     },
     {
      "id": "components-modal--default",
@@ -19731,9 +20596,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 4916,
+      "diffPixels": 24281,
       "totalPixels": 1024000,
-      "ratio": 0.0048,
+      "ratio": 0.02371,
       "size": {
        "before": [
         1280,
@@ -19752,21 +20617,21 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 30
+     "changes": 41
     },
     {
-     "id": "components-modal--with-scrolling-content",
+     "id": "components-modal--full-width",
      "base": "v11",
-     "baseId": "components-modal--with-scrolling-content",
-     "v11Id": "components-modal--with-scrolling-content",
-     "name": "With Scrolling Content",
+     "baseId": "components-modal--full-width",
+     "v11Id": "components-modal--full-width",
+     "name": "Full Width",
      "title": "Components/Modal",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 3896,
+      "diffPixels": 22275,
       "totalPixels": 1024000,
-      "ratio": 0.0038,
+      "ratio": 0.02175,
       "size": {
        "before": [
         1280,
@@ -19785,7 +20650,106 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 25
+     "changes": 12
+    },
+    {
+     "id": "components-modal--danger-modal",
+     "base": "v11",
+     "baseId": "components-modal--danger-modal",
+     "v11Id": "components-modal--danger-modal",
+     "name": "Danger Modal",
+     "title": "Components/Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 19867,
+      "totalPixels": 1024000,
+      "ratio": 0.0194,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 12
+    },
+    {
+     "id": "components-modal--with-inline-loading",
+     "base": "v11",
+     "baseId": "components-modal--with-inline-loading",
+     "v11Id": "components-modal--with-inline-loading",
+     "name": "With Inline Loading",
+     "title": "Components/Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 13906,
+      "totalPixels": 1024000,
+      "ratio": 0.01358,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 12
+    },
+    {
+     "id": "components-modal--passive-modal",
+     "base": "v11",
+     "baseId": "components-modal--passive-modal",
+     "v11Id": "components-modal--passive-modal",
+     "name": "Passive Modal",
+     "title": "Components/Modal",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 7819,
+      "totalPixels": 1024000,
+      "ratio": 0.00764,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 13
     },
     {
      "id": "components-modal-feature-flags--enable-presence",
@@ -19821,39 +20785,6 @@
      "changes": 1
     },
     {
-     "id": "components-modal--with-ai-label",
-     "base": "v11",
-     "baseId": "components-modal--with-ai-label",
-     "v11Id": "components-modal--with-ai-label",
-     "name": "With AI Label",
-     "title": "Components/Modal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 2306,
-      "totalPixels": 1024000,
-      "ratio": 0.00225,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 12
-    },
-    {
      "id": "components-modal-feature-flags--enable-dialog-element",
      "base": "v11",
      "baseId": "components-modal-feature-flags--enable-dialog-element",
@@ -19863,17 +20794,17 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1632,
-      "totalPixels": 768728,
-      "ratio": 0.00212,
+      "diffPixels": 1402,
+      "totalPixels": 778552,
+      "ratio": 0.0018,
       "size": {
        "before": [
         1228,
-        626
+        634
        ],
        "v12": [
         1228,
-        626
+        634
        ]
       },
       "sizeChanged": false
@@ -19882,139 +20813,7 @@
       "x": 26,
       "y": 26,
       "width": 1228,
-      "height": 626
-     },
-     "changes": 1
-    },
-    {
-     "id": "components-modal--passive-modal",
-     "base": "v11",
-     "baseId": "components-modal--passive-modal",
-     "v11Id": "components-modal--passive-modal",
-     "name": "Passive Modal",
-     "title": "Components/Modal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 693,
-      "totalPixels": 1024000,
-      "ratio": 0.00068,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 4
-    },
-    {
-     "id": "components-modal--danger-modal",
-     "base": "v11",
-     "baseId": "components-modal--danger-modal",
-     "v11Id": "components-modal--danger-modal",
-     "name": "Danger Modal",
-     "title": "Components/Modal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 420,
-      "totalPixels": 1024000,
-      "ratio": 0.00041,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 1
-    },
-    {
-     "id": "components-modal--full-width",
-     "base": "v11",
-     "baseId": "components-modal--full-width",
-     "v11Id": "components-modal--full-width",
-     "name": "Full Width",
-     "title": "Components/Modal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 420,
-      "totalPixels": 1024000,
-      "ratio": 0.00041,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 1
-    },
-    {
-     "id": "components-modal--with-inline-loading",
-     "base": "v11",
-     "baseId": "components-modal--with-inline-loading",
-     "v11Id": "components-modal--with-inline-loading",
-     "name": "With Inline Loading",
-     "title": "Components/Modal",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 420,
-      "totalPixels": 1024000,
-      "ratio": 0.00041,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
+      "height": 634
      },
      "changes": 1
     }
@@ -20056,6 +20855,238 @@
       "Button"
      ],
      "text": "Modal · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container",
+      "cds--modal-container cds--modal-container--full-width"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$border-radius-08",
+      "sass": true
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · border-radius 0px → 8px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Modal · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header",
+     "variants": [
+      "cds--modal-header"
+     ],
+     "prop": "margin",
+     "from": "0px 0px 8px",
+     "to": "0px 0px 16px",
+     "note": null,
+     "fromToken": {
+      "literal": ".5rem"
+     },
+     "toToken": {
+      "literal": "1rem"
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "Modal · .cds--modal-header · margin 0px 0px 8px → 0px 0px 16px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header",
+     "variants": [
+      "cds--modal-header"
+     ],
+     "prop": "padding",
+     "from": "16px 48px 0px 16px",
+     "to": "16px 64px 0px 16px",
+     "note": null,
+     "fromToken": {
+      "literal": "3rem"
+     },
+     "toToken": {
+      "literal": "4rem"
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "Modal · .cds--modal-header · padding 16px 48px 0px 16px → 16px 64px 0px 16px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-header__heading",
+     "variants": [
+      "cds--modal-header__heading"
+     ],
+     "prop": "padding",
+     "from": "0px 92.3906px 0px 0px",
+     "to": "0px 73.1875px 0px 0px",
+     "note": null,
+     "fromToken": {
+      "literal": "calc(20% - 3rem)"
+     },
+     "toToken": {
+      "literal": "calc(20% - 4rem)"
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "Modal · .cds--modal-header__heading · padding 0px 92.3906px 0px 0px → 0px 73.1875px 0px 0px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "padding",
+     "from": "12px",
+     "to": "0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Modal · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--secondary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 0px 7px",
+     "note": null,
+     "fromToken": {
+      "token": "$button-radius-es"
+     },
+     "toToken": {
+      "token": "$button-radius-es"
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 6,
+     "inherited": false,
+     "text": "Modal · .cds--btn · border-radius 0px → 0px 0px 0px 7px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--danger",
+      "cds--btn cds--btn--primary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "0px 0px 7px",
+     "note": null,
+     "fromToken": {
+      "token": "$button-radius-ee"
+     },
+     "toToken": {
+      "token": "$button-radius-ee"
+     },
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 6,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Modal · .cds--btn · border-radius 0px → 0px 0px 7px (inherited from Button)"
     },
     {
      "type": "Visual",
@@ -20742,6 +21773,62 @@
     },
     {
      "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "height",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Modal · .cds--btn.cds--modal-close · height 48px → 40px (-8px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--md cds--btn--primary cds--layout--size-md cds--modal-close"
+     ],
+     "prop": "width",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--danger-modal",
+      "components-modal--default",
+      "components-modal--full-width",
+      "components-modal--passive-modal",
+      "components-modal--with-ai-label",
+      "components-modal--with-inline-loading",
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Modal · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
      "element": ".cds--text-input",
      "variants": [
       "cds--text-input cds--text-input--empty"
@@ -20785,6 +21872,139 @@
       "TextInput"
      ],
      "text": "Modal · .cds--text-input · width 734px → 732px (-2px) (inherited from TextInput)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "253.94px",
+     "to": "261.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--danger-modal"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · height 253.94px → 261.94px (+8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--layer-two.cds--modal-content.cds--modal-scroll-content",
+     "variants": [
+      "cds--layer-two cds--modal-content cds--modal-scroll-content"
+     ],
+     "prop": "height",
+     "from": "554px",
+     "to": "546px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--default"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--layer-two.cds--modal-content.cds--modal-scroll-content · height 554px → 546px (-8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container cds--modal-container--full-width"
+     ],
+     "prop": "height",
+     "from": "411.94px",
+     "to": "419.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--full-width"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · height 411.94px → 419.94px (+8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "110px",
+     "to": "118px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--passive-modal"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · height 110px → 118px (+8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "565.94px",
+     "to": "573.94px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--with-ai-label"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · height 565.94px → 573.94px (+8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--modal-container",
+     "variants": [
+      "cds--modal-container"
+     ],
+     "prop": "height",
+     "from": "193.98px",
+     "to": "201.98px",
+     "note": "+8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--with-inline-loading"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--modal-container · height 193.98px → 201.98px (+8px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--layer-two.cds--modal-content.cds--modal-scroll-content",
+     "variants": [
+      "cds--layer-two cds--modal-content cds--modal-scroll-content"
+     ],
+     "prop": "height",
+     "from": "534.02px",
+     "to": "526.02px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-modal--with-scrolling-content"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Modal · .cds--layer-two.cds--modal-content.cds--modal-scroll-content · height 534.02px → 526.02px (-8px)"
     },
     {
      "type": "Structure",
@@ -24305,7 +25525,7 @@
       "width": 1280,
       "height": 131
      },
-     "changes": 175
+     "changes": 173
     },
     {
      "id": "components-pageheader--tab-bar-with-tabs-and-tags",
@@ -24404,7 +25624,7 @@
       "width": 1280,
       "height": 365
      },
-     "changes": 196
+     "changes": 194
     },
     {
      "id": "components-pageheader--with-disabled-sticky-tab-bar",
@@ -25713,7 +26933,7 @@
       "components-pageheader--custom-render-with-callbacks",
       "components-pageheader--default"
      ],
-     "elements": 12,
+     "elements": 10,
      "inherited": true,
      "sources": [
       "Button"
@@ -25740,7 +26960,7 @@
       "components-pageheader--custom-render-with-callbacks",
       "components-pageheader--default"
      ],
-     "elements": 10,
+     "elements": 8,
      "inherited": true,
      "sources": [
       "Button"
@@ -28992,45 +30212,12 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.02244,
-    "mean": 0.00563,
-    "storiesChanged": 1,
+    "max": 0.00004,
+    "mean": 0.00003,
+    "storiesChanged": 0,
     "storiesCompared": 4
    },
    "stories": [
-    {
-     "id": "components-progressbar--determinate",
-     "base": "v11",
-     "baseId": "components-progressbar--determinate",
-     "v11Id": "components-progressbar--determinate",
-     "name": "Determinate",
-     "title": "Components/ProgressBar",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 2452,
-      "totalPixels": 109292,
-      "ratio": 0.02244,
-      "size": {
-       "before": [
-        1228,
-        89
-       ],
-       "v12": [
-        1228,
-        89
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 1228,
-      "height": 89
-     },
-     "changes": 5
-    },
     {
      "id": "components-progressbar--default",
      "base": "v11",
@@ -29063,6 +30250,39 @@
       "height": 89
      },
      "changes": 2
+    },
+    {
+     "id": "components-progressbar--determinate",
+     "base": "v11",
+     "baseId": "components-progressbar--determinate",
+     "v11Id": "components-progressbar--determinate",
+     "name": "Determinate",
+     "title": "Components/ProgressBar",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 4,
+      "totalPixels": 109292,
+      "ratio": 0.00004,
+      "size": {
+       "before": [
+        1228,
+        89
+       ],
+       "v12": [
+        1228,
+        89
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 89
+     },
+     "changes": 5
     },
     {
      "id": "components-progressbar--indeterminate",
@@ -34280,8 +35500,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.02529,
-    "mean": 0.01734,
+    "max": 0.02537,
+    "mean": 0.01735,
     "storiesChanged": 8,
     "storiesCompared": 8
    },
@@ -34296,9 +35516,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13792,
+      "diffPixels": 13832,
       "totalPixels": 545280,
-      "ratio": 0.02529,
+      "ratio": 0.02537,
       "size": {
        "before": [
         1280,
@@ -34428,9 +35648,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 10943,
+      "diffPixels": 10937,
       "totalPixels": 545280,
-      "ratio": 0.02007,
+      "ratio": 0.02006,
       "size": {
        "before": [
         1280,
@@ -36104,8 +37324,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.0202,
-    "mean": 0.01184,
+    "max": 0.02417,
+    "mean": 0.01673,
     "storiesChanged": 10,
     "storiesCompared": 10
    },
@@ -36120,9 +37340,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 20685,
+      "diffPixels": 24755,
       "totalPixels": 1024000,
-      "ratio": 0.0202,
+      "ratio": 0.02417,
       "size": {
        "before": [
         1280,
@@ -36141,7 +37361,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 160
+     "changes": 164
     },
     {
      "id": "components-tearsheet--with-custom-footer-actions",
@@ -36153,9 +37373,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 16162,
+      "diffPixels": 20927,
       "totalPixels": 1024000,
-      "ratio": 0.01578,
+      "ratio": 0.02044,
       "size": {
        "before": [
         1280,
@@ -36174,40 +37394,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 101
-    },
-    {
-     "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-     "base": "ibmp",
-     "baseId": "preview-tearsheet--with-steps-and-horizontal-progress-indicator",
-     "v11Id": null,
-     "name": "With Steps And Horizontal Progress Indicator",
-     "title": "Components/Tearsheet",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 15145,
-      "totalPixels": 1024000,
-      "ratio": 0.01479,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 78
+     "changes": 105
     },
     {
      "id": "components-tearsheet--with-steps",
@@ -36219,9 +37406,42 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14697,
+      "diffPixels": 19268,
       "totalPixels": 1024000,
-      "ratio": 0.01435,
+      "ratio": 0.01882,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 86
+    },
+    {
+     "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+     "base": "ibmp",
+     "baseId": "preview-tearsheet--with-steps-and-horizontal-progress-indicator",
+     "v11Id": null,
+     "name": "With Steps And Horizontal Progress Indicator",
+     "title": "Components/Tearsheet",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 19071,
+      "totalPixels": 1024000,
+      "ratio": 0.01862,
       "size": {
        "before": [
         1280,
@@ -36252,9 +37472,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14308,
+      "diffPixels": 18755,
       "totalPixels": 1024000,
-      "ratio": 0.01397,
+      "ratio": 0.01832,
       "size": {
        "before": [
         1280,
@@ -36273,7 +37493,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 151
+     "changes": 155
     },
     {
      "id": "components-tearsheet--with-influencer",
@@ -36285,9 +37505,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14310,
+      "diffPixels": 17131,
       "totalPixels": 1024000,
-      "ratio": 0.01397,
+      "ratio": 0.01673,
       "size": {
        "before": [
         1280,
@@ -36306,7 +37526,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 153
+     "changes": 157
     },
     {
      "id": "components-tearsheet--with-tabs",
@@ -36318,9 +37538,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 10861,
+      "diffPixels": 16309,
       "totalPixels": 1024000,
-      "ratio": 0.01061,
+      "ratio": 0.01593,
       "size": {
        "before": [
         1280,
@@ -36339,7 +37559,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 83
+     "changes": 87
     },
     {
      "id": "components-tearsheet--stacking-tearsheet",
@@ -36351,9 +37571,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 5401,
+      "diffPixels": 12625,
       "totalPixels": 1024000,
-      "ratio": 0.00527,
+      "ratio": 0.01233,
       "size": {
        "before": [
         1280,
@@ -36372,7 +37592,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 87
+     "changes": 91
     },
     {
      "id": "components-tearsheet--stacking-with-different-sizes",
@@ -36384,9 +37604,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 5401,
+      "diffPixels": 12625,
       "totalPixels": 1024000,
-      "ratio": 0.00527,
+      "ratio": 0.01233,
       "size": {
        "before": [
         1280,
@@ -36405,7 +37625,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 87
+     "changes": 91
     },
     {
      "id": "components-tearsheet--stacking-narrow-tearsheets",
@@ -36417,9 +37637,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 4316,
+      "diffPixels": 9845,
       "totalPixels": 1024000,
-      "ratio": 0.00421,
+      "ratio": 0.00961,
       "size": {
        "before": [
         1280,
@@ -36438,7 +37658,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 85
+     "changes": 89
     }
    ],
    "notes": [],
@@ -36591,6 +37811,37 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--primary cds--modal-close"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer",
+      "components-tearsheet--with-steps",
+      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+      "components-tearsheet--with-tabs"
+     ],
+     "elements": 10,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Tearsheet · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--btn.cds--menu-button__trigger",
      "variants": [
       "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm cds--menu-button__trigger"
@@ -36622,6 +37873,35 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--modal-container.cds--tearsheet__container",
+     "variants": [
+      "cds--modal-container cds--modal-container--full-width cds--modal-container--sm cds--tearsheet__container",
+      "cds--modal-container cds--modal-container--full-width cds--tearsheet__container"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer",
+      "components-tearsheet--with-steps",
+      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+      "components-tearsheet--with-tabs"
+     ],
+     "elements": 10,
+     "inherited": false,
+     "text": "Tearsheet · .cds--modal-container.cds--tearsheet__container · border-radius 0px → 8px"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--body--with-modal-open",
      "variants": [
       "cds--body--with-modal-open"
@@ -36649,6 +37929,37 @@
      "elements": 10,
      "inherited": false,
      "text": "Tearsheet · .cds--body--with-modal-open · padding 0px → 42px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--primary cds--modal-close"
+     ],
+     "prop": "padding",
+     "from": "12px",
+     "to": "0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer",
+      "components-tearsheet--with-steps",
+      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+      "components-tearsheet--with-tabs"
+     ],
+     "elements": 10,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Tearsheet · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button)"
     },
     {
      "type": "Visual",
@@ -37318,6 +38629,37 @@
      "elements": 1,
      "inherited": false,
      "text": "Tearsheet · .cds--btn.cds--tearsheet__scroller-button · border-radius 0px → 999999px (pill)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--modal-close",
+     "variants": [
+      "cds--btn cds--btn--icon-only cds--btn--primary cds--modal-close"
+     ],
+     "prop": "width",
+     "from": "48px",
+     "to": "40px",
+     "note": "-8px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--stacking-narrow-tearsheets",
+      "components-tearsheet--stacking-tearsheet",
+      "components-tearsheet--stacking-with-different-sizes",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer",
+      "components-tearsheet--with-steps",
+      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+      "components-tearsheet--with-tabs"
+     ],
+     "elements": 10,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Tearsheet · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button)"
     },
     {
      "type": "Layout",
@@ -42072,7 +43414,7 @@
    "id": "ui-shell",
    "name": "UI Shell",
    "section": "Components",
-   "status": "inherited",
+   "status": "changed",
    "inheritsFrom": [
     "Button"
    ],
@@ -42182,7 +43524,7 @@
       "width": 1280,
       "height": 888
      },
-     "changes": 1
+     "changes": 2
     },
     {
      "id": "components-ui-shell-header--header-w-navigation-actions-and-side-nav",
@@ -42215,7 +43557,7 @@
       "width": 1280,
       "height": 888
      },
-     "changes": 1
+     "changes": 2
     },
     {
      "id": "components-ui-shell-header--header-w-navigation-and-actions",
@@ -42248,7 +43590,7 @@
       "width": 1280,
       "height": 888
      },
-     "changes": 1
+     "changes": 2
     },
     {
      "id": "components-ui-shell-header--header-w-side-nav",
@@ -42314,7 +43656,7 @@
       "width": 1280,
       "height": 888
      },
-     "changes": 1
+     "changes": 2
     },
     {
      "id": "components-ui-shell-sidenav--side-nav-w-large-side-nav-items",
@@ -42520,6 +43862,22 @@
       "Button"
      ],
      "text": "UI Shell · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--text-truncate--end",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "components-ui-shell-header--header-w-navigation",
+      "components-ui-shell-header--header-w-navigation-actions-and-side-nav",
+      "components-ui-shell-header--header-w-navigation-and-actions",
+      "components-ui-shell-sidenav--side-nav-rail-w-header"
+     ],
+     "elements": 4,
+     "inherited": false,
+     "text": "UI Shell · .cds--text-truncate--end element added"
     }
    ]
   },
@@ -44718,8 +46076,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.03152,
-    "mean": 0.02255,
+    "max": 0.03293,
+    "mean": 0.02396,
     "storiesChanged": 13,
     "storiesCompared": 13
    },
@@ -44734,9 +46092,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 32272,
+      "diffPixels": 33724,
       "totalPixels": 1024000,
-      "ratio": 0.03152,
+      "ratio": 0.03293,
       "size": {
        "before": [
         1280,
@@ -44755,40 +46113,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 87
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--with-scroll",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-scroll",
-     "v11Id": null,
-     "name": "With Scroll (progressive loading)",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 29848,
-      "totalPixels": 1024000,
-      "ratio": 0.02915,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 64
+     "changes": 88
     },
     {
      "id": "examples-add-and-select-multiaddselect--with-data-table",
@@ -44800,9 +46125,306 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 29693,
+      "diffPixels": 33262,
       "totalPixels": 1024000,
-      "ratio": 0.029,
+      "ratio": 0.03248,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 41
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-scroll",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-scroll",
+     "v11Id": null,
+     "name": "With Scroll (progressive loading)",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 32562,
+      "totalPixels": 1024000,
+      "ratio": 0.0318,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 65
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
+     "v11Id": null,
+     "name": "With Modifiers and Bulk Actions",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 30084,
+      "totalPixels": 1024000,
+      "ratio": 0.02938,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 88
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-modifiers",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-modifiers",
+     "v11Id": null,
+     "name": "With Modifiers",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 29272,
+      "totalPixels": 1024000,
+      "ratio": 0.02859,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 88
+    },
+    {
+     "id": "examples-add-and-select-singleaddselect--with-hierarchy",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-singleaddselect--with-hierarchy",
+     "v11Id": null,
+     "name": "With Hierarchy",
+     "title": "Examples/Add and select/SingleAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 27652,
+      "totalPixels": 1024000,
+      "ratio": 0.027,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 29
+    },
+    {
+     "id": "examples-add-and-select-singleaddselect--default",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-singleaddselect--default",
+     "v11Id": null,
+     "name": "Default",
+     "title": "Examples/Add and select/SingleAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 27206,
+      "totalPixels": 1024000,
+      "ratio": 0.02657,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 29
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-column-actions",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-column-actions",
+     "v11Id": null,
+     "name": "With Column Actions",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 19543,
+      "totalPixels": 1024000,
+      "ratio": 0.01908,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 43
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--default",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--default",
+     "v11Id": null,
+     "name": "Default",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 19300,
+      "totalPixels": 1024000,
+      "ratio": 0.01885,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 34
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-global-actions",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-global-actions",
+     "v11Id": null,
+     "name": "With Global Actions",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 18509,
+      "totalPixels": 1024000,
+      "ratio": 0.01808,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "changes": 50
+    },
+    {
+     "id": "examples-add-and-select-multiaddselect--with-hierarchy-no-select-all",
+     "base": "ibmp",
+     "baseId": "patterns-add-and-select-multiaddselect--with-hierarchy-no-select-all",
+     "v11Id": null,
+     "name": "With Hierarchy (No Select All)",
+     "title": "Examples/Add and select/MultiAddSelect",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 18246,
+      "totalPixels": 1024000,
+      "ratio": 0.01782,
       "size": {
        "before": [
         1280,
@@ -44824,270 +46446,6 @@
      "changes": 40
     },
     {
-     "id": "examples-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
-     "v11Id": null,
-     "name": "With Modifiers and Bulk Actions",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 29207,
-      "totalPixels": 1024000,
-      "ratio": 0.02852,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 87
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--with-modifiers",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-modifiers",
-     "v11Id": null,
-     "name": "With Modifiers",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 28395,
-      "totalPixels": 1024000,
-      "ratio": 0.02773,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 87
-    },
-    {
-     "id": "examples-add-and-select-singleaddselect--with-hierarchy",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-singleaddselect--with-hierarchy",
-     "v11Id": null,
-     "name": "With Hierarchy",
-     "title": "Examples/Add and select/SingleAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 27014,
-      "totalPixels": 1024000,
-      "ratio": 0.02638,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 28
-    },
-    {
-     "id": "examples-add-and-select-singleaddselect--default",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-singleaddselect--default",
-     "v11Id": null,
-     "name": "Default",
-     "title": "Examples/Add and select/SingleAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 26551,
-      "totalPixels": 1024000,
-      "ratio": 0.02593,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 28
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--default",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--default",
-     "v11Id": null,
-     "name": "Default",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 17818,
-      "totalPixels": 1024000,
-      "ratio": 0.0174,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 33
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--with-column-actions",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-column-actions",
-     "v11Id": null,
-     "name": "With Column Actions",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 17768,
-      "totalPixels": 1024000,
-      "ratio": 0.01735,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 42
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--with-global-actions",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-global-actions",
-     "v11Id": null,
-     "name": "With Global Actions",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 17172,
-      "totalPixels": 1024000,
-      "ratio": 0.01677,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 49
-    },
-    {
-     "id": "examples-add-and-select-multiaddselect--with-hierarchy-no-select-all",
-     "base": "ibmp",
-     "baseId": "patterns-add-and-select-multiaddselect--with-hierarchy-no-select-all",
-     "v11Id": null,
-     "name": "With Hierarchy (No Select All)",
-     "title": "Examples/Add and select/MultiAddSelect",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 16557,
-      "totalPixels": 1024000,
-      "ratio": 0.01617,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "changes": 39
-    },
-    {
      "id": "examples-add-and-select-multiaddselect--with-hierarchy",
      "base": "ibmp",
      "baseId": "patterns-add-and-select-multiaddselect--with-hierarchy",
@@ -45097,9 +46455,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 14517,
+      "diffPixels": 15613,
       "totalPixels": 1024000,
-      "ratio": 0.01418,
+      "ratio": 0.01525,
       "size": {
        "before": [
         1280,
@@ -45118,7 +46476,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 37
+     "changes": 38
     },
     {
      "id": "examples-add-and-select-singleaddselect--with-hierarchy-and-side-panel",
@@ -45130,9 +46488,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 13393,
+      "diffPixels": 14024,
       "totalPixels": 1024000,
-      "ratio": 0.01308,
+      "ratio": 0.0137,
       "size": {
        "before": [
         1280,
@@ -45151,7 +46509,7 @@
       "width": 1280,
       "height": 800
      },
-     "changes": 35
+     "changes": 36
     }
    ],
    "notes": [],
@@ -45552,6 +46910,45 @@
       "Search"
      ],
      "text": "Add and select · .cds--search-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Search)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--modal-container.cds--tearsheet__next__container",
+     "variants": [
+      "cds--modal-container cds--modal-container--full-width cds--modal-container--sm cds--tearsheet__next__container",
+      "cds--modal-container cds--modal-container--full-width cds--tearsheet__next__container"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": {
+      "token": "$border-radius-08",
+      "sass": true
+     },
+     "stories": [
+      "examples-add-and-select-multiaddselect--default",
+      "examples-add-and-select-multiaddselect--non-hierarchical-with-peek-inside-item",
+      "examples-add-and-select-multiaddselect--with-column-actions",
+      "examples-add-and-select-multiaddselect--with-data-table",
+      "examples-add-and-select-multiaddselect--with-global-actions",
+      "examples-add-and-select-multiaddselect--with-hierarchy",
+      "examples-add-and-select-multiaddselect--with-hierarchy-no-select-all",
+      "examples-add-and-select-multiaddselect--with-modifiers",
+      "examples-add-and-select-multiaddselect--with-modifiers-and-bulk-actions",
+      "examples-add-and-select-multiaddselect--with-scroll",
+      "examples-add-and-select-singleaddselect--default",
+      "examples-add-and-select-singleaddselect--with-hierarchy",
+      "examples-add-and-select-singleaddselect--with-hierarchy-and-side-panel"
+     ],
+     "elements": 13,
+     "inherited": true,
+     "sources": [
+      "Modal",
+      "Tearsheet"
+     ],
+     "text": "Add and select · .cds--modal-container.cds--tearsheet__next__container · border-radius 0px → 8px (inherited from Modal, Tearsheet)"
     },
     {
      "type": "Visual",
@@ -46838,6 +48235,150 @@
      "elements": 13,
      "inherited": false,
      "text": "Add and select · .cds--layout element added"
+    }
+   ]
+  },
+  {
+   "id": "carousel",
+   "name": "Carousel",
+   "section": "Examples",
+   "status": "migrated",
+   "inheritsFrom": [
+    "Button"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Utilities/Carousel"
+    ],
+    "matched": 2,
+    "unmatched": 0
+   },
+   "pixel": {
+    "max": 0.64128,
+    "mean": 0.36441,
+    "storiesChanged": 2,
+    "storiesCompared": 2
+   },
+   "stories": [
+    {
+     "id": "examples-carousel--standard-carousel",
+     "base": "ibmp",
+     "baseId": "utilities-carousel--standard-carousel",
+     "v11Id": null,
+     "name": "Carousel with navigation",
+     "title": "Examples/Carousel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 499484,
+      "totalPixels": 778880,
+      "ratio": 0.64128,
+      "size": {
+       "before": [
+        1217,
+        640
+       ],
+       "v12": [
+        1217,
+        640
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 31,
+      "y": 26,
+      "width": 1217,
+      "height": 640
+     },
+     "changes": 3
+    },
+    {
+     "id": "examples-carousel--view-stack",
+     "base": "ibmp",
+     "baseId": "utilities-carousel--view-stack",
+     "v11Id": null,
+     "name": "ViewStack navigation",
+     "title": "Examples/Carousel",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 55802,
+      "totalPixels": 637431,
+      "ratio": 0.08754,
+      "size": {
+       "before": [
+        1007,
+        633
+       ],
+       "v12": [
+        1007,
+        633
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 127,
+      "y": 74,
+      "width": 1007,
+      "height": 633
+     },
+     "changes": 17
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Utilities/Carousel",
+     "text": "Carousel · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only",
+      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--sm cds--layout--size-sm",
+      "cds--btn cds--btn--ghost cds--btn--icon-only",
+      "cds--btn cds--btn--ghost cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-carousel--standard-carousel",
+      "examples-carousel--view-stack"
+     ],
+     "elements": 18,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Carousel · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-carousel--standard-carousel",
+      "examples-carousel--view-stack"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Carousel · .cds--layout element added"
     }
    ]
   },
@@ -48153,6 +49694,429 @@
    ]
   },
   {
+   "id": "date-time-format",
+   "name": "Date Time Format",
+   "section": "Examples",
+   "status": "migrated",
+   "inheritsFrom": [
+    "DatePicker",
+    "Dropdown",
+    "TextInput"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Utilities/Date Time Format"
+    ],
+    "matched": 1,
+    "unmatched": 0
+   },
+   "pixel": {
+    "max": 0.00253,
+    "mean": 0.00253,
+    "storiesChanged": 1,
+    "storiesCompared": 1
+   },
+   "stories": [
+    {
+     "id": "examples-date-time-format--date-time-format",
+     "base": "ibmp",
+     "baseId": "utilities-date-time-format--date-time-format",
+     "v11Id": null,
+     "name": "Date Time Format",
+     "title": "Examples/Date Time Format",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 1874,
+      "totalPixels": 739840,
+      "ratio": 0.00253,
+      "size": {
+       "before": [
+        1280,
+        578
+       ],
+       "v12": [
+        1280,
+        578
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 578
+     },
+     "changes": 24
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Utilities/Date Time Format",
+     "text": "Date Time Format · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--date-picker__input.cds--date-picker__input--md",
+     "variants": [
+      "cds--date-picker__input cds--date-picker__input--md"
+     ],
+     "prop": "background-color",
+     "from": "#f4f4f4",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Date Time Format · .cds--date-picker__input.cds--date-picker__input--md · background-color #f4f4f4 → #ffffff"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--date-picker-input__wrapper",
+     "variants": [
+      "cds--date-picker-input__wrapper"
+     ],
+     "prop": "background-color",
+     "from": "#f4f4f4",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Date Time Format · .cds--date-picker-input__wrapper · background-color #f4f4f4 → #ffffff"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--text-input",
+     "variants": [
+      "cds--text-input"
+     ],
+     "prop": "background-color",
+     "from": "#f4f4f4",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Date Time Format · .cds--text-input · background-color #f4f4f4 → #ffffff"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--list-box__field",
+     "variants": [
+      "cds--list-box__field"
+     ],
+     "prop": "background-color",
+     "from": "#f4f4f4",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Date Time Format · .cds--list-box__field · background-color #f4f4f4 → #ffffff"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--dropdown.cds--list-box",
+     "variants": [
+      "cds--autoalign cds--dropdown cds--list-box"
+     ],
+     "prop": "background-color",
+     "from": "#f4f4f4",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Date Time Format · .cds--autoalign.cds--dropdown.cds--list-box · background-color #f4f4f4 → #ffffff"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--date-picker__input.cds--date-picker__input--md",
+     "variants": [
+      "cds--date-picker__input cds--date-picker__input--md"
+     ],
+     "prop": "border-bottom",
+     "from": "1px solid #8d8d8d",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "DatePicker"
+     ],
+     "text": "Date Time Format · .cds--date-picker__input.cds--date-picker__input--md · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from DatePicker)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--text-input",
+     "variants": [
+      "cds--text-input"
+     ],
+     "prop": "border-bottom",
+     "from": "1px solid #8d8d8d",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "TextInput"
+     ],
+     "text": "Date Time Format · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--dropdown.cds--list-box",
+     "variants": [
+      "cds--autoalign cds--dropdown cds--list-box"
+     ],
+     "prop": "border-bottom",
+     "from": "1px solid #8d8d8d",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Dropdown"
+     ],
+     "text": "Date Time Format · .cds--autoalign.cds--dropdown.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from Dropdown)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--date-picker__input.cds--date-picker__input--md",
+     "variants": [
+      "cds--date-picker__input cds--date-picker__input--md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "4px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "DatePicker"
+     ],
+     "text": "Date Time Format · .cds--date-picker__input.cds--date-picker__input--md · border-radius 0px → 4px (inherited from DatePicker)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--text-input",
+     "variants": [
+      "cds--text-input"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "4px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "TextInput"
+     ],
+     "text": "Date Time Format · .cds--text-input · border-radius 0px → 4px (inherited from TextInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--dropdown.cds--list-box",
+     "variants": [
+      "cds--autoalign cds--dropdown cds--list-box"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "4px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Dropdown"
+     ],
+     "text": "Date Time Format · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--date-picker__input.cds--date-picker__input--md",
+     "variants": [
+      "cds--date-picker__input cds--date-picker__input--md"
+     ],
+     "prop": "border-top/right/left",
+     "from": "none",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "DatePicker"
+     ],
+     "text": "Date Time Format · .cds--date-picker__input.cds--date-picker__input--md · border-top/right/left none → 1px solid transparent (inherited from DatePicker)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--text-input",
+     "variants": [
+      "cds--text-input"
+     ],
+     "prop": "border-top/right/left",
+     "from": "none",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "TextInput"
+     ],
+     "text": "Date Time Format · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--dropdown.cds--list-box",
+     "variants": [
+      "cds--autoalign cds--dropdown cds--list-box"
+     ],
+     "prop": "border-top/right/left",
+     "from": "none",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Dropdown"
+     ],
+     "text": "Date Time Format · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--list-box__field",
+     "variants": [
+      "cds--list-box__field"
+     ],
+     "prop": "height",
+     "from": "40px",
+     "to": "38px",
+     "note": "-2px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Dropdown"
+     ],
+     "text": "Date Time Format · .cds--list-box__field · height 40px → 38px (-2px) (inherited from Dropdown)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--list-box__field",
+     "variants": [
+      "cds--list-box__field"
+     ],
+     "prop": "width",
+     "from": "288px",
+     "to": "286px",
+     "note": "-2px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Dropdown"
+     ],
+     "text": "Date Time Format · .cds--list-box__field · width 288px → 286px (-2px) (inherited from Dropdown)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-date-time-format--date-time-format"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Date Time Format · .cds--layout element added"
+    }
+   ]
+  },
+  {
    "id": "delete-and-remove",
    "name": "Delete and remove",
    "section": "Examples",
@@ -49446,9 +51410,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 3804,
+      "diffPixels": 3794,
       "totalPixels": 601720,
-      "ratio": 0.00632,
+      "ratio": 0.00631,
       "size": {
        "before": [
         1228,
@@ -50705,6 +52669,7 @@
    "status": "migrated",
    "inheritsFrom": [
     "Button",
+    "Carousel",
     "IconButton",
     "Popover",
     "Tooltip"
@@ -51229,8 +53194,11 @@
       "preview-onboarding-preview-guidebanner--many-insights"
      ],
      "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--carousel__elements-container element removed"
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container element removed (inherited from Carousel)"
     },
     {
      "type": "Structure",
@@ -51243,8 +53211,11 @@
       "preview-onboarding-preview-guidebanner--many-insights"
      ],
      "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--carousel__elements element removed"
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements element removed (inherited from Carousel)"
     },
     {
      "type": "Structure",
@@ -51257,8 +53228,11 @@
       "preview-onboarding-preview-guidebanner--many-insights"
      ],
      "elements": 10,
-     "inherited": false,
-     "text": "Onboarding · .cds--carousel__item element removed"
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__item element removed (inherited from Carousel)"
     },
     {
      "type": "Structure",
@@ -51271,8 +53245,11 @@
       "preview-onboarding-preview-guidebanner--many-insights"
      ],
      "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--carousel__elements-container--scrolled element removed"
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container--scrolled element removed (inherited from Carousel)"
     },
     {
      "type": "Structure",
@@ -51285,8 +53262,11 @@
       "preview-onboarding-preview-guidebanner--many-insights"
      ],
      "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--carousel__elements-container--scroll-max element removed"
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container--scroll-max element removed (inherited from Carousel)"
     },
     {
      "type": "Structure",
@@ -51567,8 +53547,8 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.01595,
-    "mean": 0.00264,
-    "storiesChanged": 5,
+    "mean": 0.00339,
+    "storiesChanged": 6,
     "storiesCompared": 17
    },
    "stories": [
@@ -51615,9 +53595,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 11745,
+      "diffPixels": 11793,
       "totalPixels": 957216,
-      "ratio": 0.01227,
+      "ratio": 0.01232,
       "size": {
        "before": [
         1248,
@@ -51670,6 +53650,39 @@
       "height": 314
      },
      "changes": 8
+    },
+    {
+     "id": "preview-preview-card--with-title-trailing-icon",
+     "base": "v11",
+     "baseId": "preview-preview-card--with-title-trailing-icon",
+     "v11Id": "preview-preview-card--with-title-trailing-icon",
+     "name": "With Title Trailing Icon",
+     "title": "Preview/preview__Card",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 2177,
+      "totalPixels": 185328,
+      "ratio": 0.01175,
+      "size": {
+       "before": [
+        936,
+        198
+       ],
+       "v12": [
+        936,
+        198
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 16,
+      "y": 16,
+      "width": 936,
+      "height": 198
+     },
+     "changes": 10
     },
     {
      "id": "preview-preview-card--with-ai-label",
@@ -51736,6 +53749,39 @@
       "height": 330
      },
      "changes": 5
+    },
+    {
+     "id": "preview-preview-card--with-flush-body",
+     "base": "v11",
+     "baseId": "preview-preview-card--with-flush-body",
+     "v11Id": "preview-preview-card--with-flush-body",
+     "name": "With Flush Body",
+     "title": "Preview/preview__Card",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 97,
+      "totalPixels": 106080,
+      "ratio": 0.00091,
+      "size": {
+       "before": [
+        624,
+        170
+       ],
+       "v12": [
+        624,
+        170
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 16,
+      "y": 16,
+      "width": 624,
+      "height": 170
+     },
+     "changes": 2
     },
     {
      "id": "preview-preview-card--with-icon",
@@ -51936,39 +53982,6 @@
      "changes": 4
     },
     {
-     "id": "preview-preview-card--with-flush-body",
-     "base": "v11",
-     "baseId": "preview-preview-card--with-flush-body",
-     "v11Id": "preview-preview-card--with-flush-body",
-     "name": "With Flush Body",
-     "title": "Preview/preview__Card",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 0,
-      "totalPixels": 106080,
-      "ratio": 0,
-      "size": {
-       "before": [
-        624,
-        170
-       ],
-       "v12": [
-        624,
-        170
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 16,
-      "y": 16,
-      "width": 624,
-      "height": 170
-     },
-     "changes": 2
-    },
-    {
      "id": "preview-preview-card--with-header-media",
      "base": "v11",
      "baseId": "preview-preview-card--with-header-media",
@@ -52066,39 +54079,6 @@
       "height": 260
      },
      "changes": 8
-    },
-    {
-     "id": "preview-preview-card--with-title-trailing-icon",
-     "base": "v11",
-     "baseId": "preview-preview-card--with-title-trailing-icon",
-     "v11Id": "preview-preview-card--with-title-trailing-icon",
-     "name": "With Title Trailing Icon",
-     "title": "Preview/preview__Card",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 0,
-      "totalPixels": 185328,
-      "ratio": 0,
-      "size": {
-       "before": [
-        936,
-        198
-       ],
-       "v12": [
-        936,
-        198
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 16,
-      "y": 16,
-      "width": 936,
-      "height": 198
-     },
-     "changes": 3
     },
     {
      "id": "preview-preview-card--with-truncated-title",
@@ -52483,6 +54463,72 @@
      "text": "preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px (inherited from AspectRatio, GetStartedCard)"
     },
     {
+     "type": "Visual",
+     "element": ".cds--card__title-end-icon",
+     "variants": [
+      "cds--card__title-end-icon"
+     ],
+     "prop": "display",
+     "from": "flex",
+     "to": "inline-flex",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-title-trailing-icon"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "GetStartedCard"
+     ],
+     "text": "preview__Card · .cds--card__title-end-icon · display flex → inline-flex (inherited from GetStartedCard)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--card__title-text-row.cds--card__title-text-row--truncate-multi",
+     "variants": [
+      "cds--card__title-text-row cds--card__title-text-row--truncate-multi"
+     ],
+     "prop": "display",
+     "from": "flex",
+     "to": "flow-root",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-title-trailing-icon"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "GetStartedCard"
+     ],
+     "text": "preview__Card · .cds--card__title-text-row.cds--card__title-text-row--truncate-multi · display flex → flow-root (inherited from GetStartedCard)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--card__title-text-row",
+     "variants": [
+      "cds--card__title-text-row"
+     ],
+     "prop": "display",
+     "from": "flex",
+     "to": "block",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-title-trailing-icon"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "GetStartedCard"
+     ],
+     "text": "preview__Card · .cds--card__title-text-row · display flex → block (inherited from GetStartedCard)"
+    },
+    {
      "type": "Layout",
      "element": ".cds--card",
      "variants": [
@@ -52613,6 +54659,28 @@
       "GetStartedCard"
      ],
      "text": "preview__Card · .cds--card · height 462.98px → 460.98px (-2px) (inherited from GetStartedCard)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--card",
+     "variants": [
+      "cds--card cds--card--productive"
+     ],
+     "prop": "height",
+     "from": "166px",
+     "to": "144px",
+     "note": "-22px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-preview-card--with-title-trailing-icon"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "GetStartedCard"
+     ],
+     "text": "preview__Card · .cds--card · height 166px → 144px (-22px) (inherited from GetStartedCard)"
     },
     {
      "type": "Layout",
@@ -54417,9 +56485,9 @@
    "migratedFrom": null,
    "pixel": {
     "max": 0.00168,
-    "mean": 0.00056,
+    "mean": 0.00042,
     "storiesChanged": 1,
-    "storiesCompared": 3
+    "storiesCompared": 4
    },
    "stories": [
     {
@@ -54464,7 +56532,22 @@
      "title": "Preview/preview_Text",
      "captured": true,
      "error": null,
-     "pixel": null,
+     "pixel": {
+      "diffPixels": 0,
+      "totalPixels": 16340,
+      "ratio": 0,
+      "size": {
+       "before": [
+        215,
+        76
+       ],
+       "v12": [
+        215,
+        76
+       ]
+      },
+      "sizeChanged": false
+     },
      "clip": {
       "x": 26,
       "y": 28,
@@ -54830,6 +56913,256 @@
    ],
    "notes": [],
    "changes": []
+  },
+  {
+   "id": "makedraggable",
+   "name": "makeDraggable",
+   "section": "Utilities",
+   "status": "migrated",
+   "inheritsFrom": [
+    "Button",
+    "Popover"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Utilities/makeDraggable"
+    ],
+    "matched": 2,
+    "unmatched": 0
+   },
+   "pixel": {
+    "max": 0.07026,
+    "mean": 0.05826,
+    "storiesChanged": 2,
+    "storiesCompared": 2
+   },
+   "stories": [
+    {
+     "id": "utilities-makedraggable--draggable-custom-div",
+     "base": "ibmp",
+     "baseId": "utilities-makedraggable--draggable-custom-div",
+     "v11Id": null,
+     "name": "Draggable Custom Div",
+     "title": "Utilities/makeDraggable",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 3359,
+      "totalPixels": 47808,
+      "ratio": 0.07026,
+      "size": {
+       "before": [
+        332,
+        144
+       ],
+       "v12": [
+        332,
+        144
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 474,
+      "y": 90,
+      "width": 332,
+      "height": 144
+     },
+     "changes": 2
+    },
+    {
+     "id": "utilities-makedraggable--draggable-popover",
+     "base": "ibmp",
+     "baseId": "utilities-makedraggable--draggable-popover",
+     "v11Id": null,
+     "name": "Draggable Popover",
+     "title": "Utilities/makeDraggable",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 4145,
+      "totalPixels": 89600,
+      "ratio": 0.04626,
+      "size": {
+       "before": [
+        400,
+        224
+       ],
+       "v12": [
+        400,
+        224
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 440,
+      "y": 90,
+      "width": 400,
+      "height": 224
+     },
+     "changes": 9
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Utilities/makeDraggable",
+     "text": "makeDraggable · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--ghost",
+      "cds--btn cds--btn--primary"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-custom-div",
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "makeDraggable · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--popover-content",
+     "variants": [
+      "cds--popover-content"
+     ],
+     "prop": "background-color",
+     "from": "#ffffff",
+     "to": "#f4f4f4",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "makeDraggable · .cds--popover-content · background-color #ffffff → #f4f4f4 (inherited from Popover)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--ghost"
+     ],
+     "prop": "border",
+     "from": "1px solid transparent",
+     "to": "none",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "makeDraggable · .cds--btn · border 1px solid transparent → none"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--popover-content",
+     "variants": [
+      "cds--popover-content"
+     ],
+     "prop": "border-radius",
+     "from": "2px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "makeDraggable · .cds--popover-content · border-radius 2px → 8px (inherited from Popover)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--popover-content",
+     "variants": [
+      "cds--popover-content"
+     ],
+     "prop": "height",
+     "from": "140px",
+     "to": "136px",
+     "note": "-4px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "makeDraggable · .cds--popover-content · height 140px → 136px (-4px) (inherited from Popover)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--ghost"
+     ],
+     "prop": "width",
+     "from": "48px",
+     "to": "46px",
+     "note": "-2px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "makeDraggable · .cds--btn · width 48px → 46px (-2px) (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "utilities-makedraggable--draggable-custom-div",
+      "utilities-makedraggable--draggable-popover"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "makeDraggable · .cds--layout element added"
+    }
+   ]
   },
   {
    "id": "overflowhandler",
