@@ -56,23 +56,21 @@ code, .flag { @include type.type-style('code-01'); }
 .flag { background: $layer-01; padding: 0 $spacing-02; color: $text-primary; margin-inline-end: $spacing-02; }
 
 // --- Overview -----------------------------------------------------------------
+// The stat tiles are Carbon RadioTiles in a TileGroup and double as the status filters
+// (see Overview.jsx). Only the layout is ours.
 .stats {
-  display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1px;
-  background: $border-subtle-01; border: 1px solid $border-subtle-01; margin-block-end: $spacing-07;
-  @include bp.breakpoint-down(lg) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  @include bp.breakpoint-down(md) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  border: 0; padding: 0; min-inline-size: 0;
+  margin-block-end: $spacing-07;
+  > div { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: $spacing-03; }
+  > legend { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @include bp.breakpoint-down(lg) { > div { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @include bp.breakpoint-down(md) { > div { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 }
-// Stat tiles are also the status filters (see Overview.jsx).
-.stat { position: relative; background: $background; }
-.stat-btn {
-  display: flex; flex-direction: column; gap: $spacing-02; inline-size: 100%; block-size: 100%;
-  padding: $spacing-05; padding-inline-end: $spacing-08; // room for the info button
-  background: none; border: 0; color: inherit; text-align: start; cursor: pointer;
-  &:hover { background: $layer-hover-01; }
-  &:focus-visible { outline: 2px solid $focus; outline-offset: -2px; }
-}
-.stat--selected .stat-btn { background: $layer-selected-01; box-shadow: inset 0 -3px 0 $interactive; }
-.stat-info { position: absolute; inset-block-start: $spacing-03; inset-inline-end: $spacing-03; }
+.stats .cds--radio-tile__wrapper { block-size: 100%; }
+.stats .stat.cds--tile { block-size: 100%; padding-inline-end: $spacing-05; } // the icons sit above the label, so it can run full width
+.stats .cds--tile-content { display: flex; flex-direction: column; gap: $spacing-02; }
+// The decorator slot is placed for an AI label; move the info button left of the checkmark.
+.stats .cds--radio-tile__wrapper--decorator > .cds--tile--inner-decorator > .stat-info { inset-block-start: $spacing-04; inset-inline-end: $spacing-08; }
 .stat-n { @include type.type-style('heading-05'); font-variant-numeric: tabular-nums; }
 .stat-l { @include type.type-style('label-01'); color: $text-secondary; display: flex; align-items: center; gap: $spacing-03; }
 .filters { display: flex; flex-wrap: wrap; gap: $spacing-03; align-items: center; margin-block-end: $spacing-05; }
@@ -104,6 +102,7 @@ code, .flag { @include type.type-style('code-01'); }
 }
 .tier-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1px; background: $border-subtle-01; border: 1px solid $border-subtle-01; }
 .tier-col { background: $background; padding: $spacing-05 $spacing-05 $spacing-06; display: flex; flex-direction: column; gap: $spacing-06; min-inline-size: 0; }
+.tier-col.tier-col--extra { background: $layer-01; } // Utilities and Removed sit apart from the numbered tiers
 .tier-head { all: unset; cursor: pointer; display: flex; flex-direction: column; gap: $spacing-02;
   &:hover .tier-name { text-decoration: underline; }
   &:focus-visible { outline: 2px solid $focus; outline-offset: 2px; }

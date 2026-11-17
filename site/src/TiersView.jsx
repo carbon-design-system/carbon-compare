@@ -2,13 +2,14 @@ import { SelectableTag, Tile, Link } from '@carbon/react';
 import { STATUS_ORDER, cardLine } from './lib.js';
 import { StatusDot } from './bits.jsx';
 import CompCard from './CompCard.jsx';
+import { groupId, groupTitle } from './tiers.js';
 
 // The tiers view: all tiers → one tier → one category, then a component's own page.
 // `drill` ({tier, cat}) is kept by the overview so it survives a visit to a component page.
 // At the top level, components that don't match the search or status filter fade out; deeper in
 // they're hidden.
 export default function TiersView({ tiers, drill, setDrill, matches }) {
-  const tier = tiers.find((t) => t.n === drill.tier) ?? null;
+  const tier = tiers.find((t) => groupId(t) === drill.tier) ?? null;
   const cat = tier?.cats.find((x) => x.name === drill.cat) ?? null;
   const byStatus = (a, b) => STATUS_ORDER[a.c.status] - STATUS_ORDER[b.c.status];
   const go = (next) => (e) => { e.preventDefault(); setDrill(next); };
@@ -18,30 +19,30 @@ export default function TiersView({ tiers, drill, setDrill, matches }) {
       <div className="filters" role="group" aria-label="Tier">
         <SelectableTag text="All tiers" selected={!tier} onChange={() => setDrill({ tier: null, cat: null })} />
         {tiers.map((t) => (
-          <SelectableTag key={t.n} text={`${t.n} · ${t.name}`} selected={tier?.n === t.n}
-            onChange={(on) => setDrill({ tier: on ? t.n : null, cat: null })} />
+          <SelectableTag key={groupId(t)} text={t.key ? t.name : `${t.n} · ${t.name}`} selected={tier === t}
+            onChange={(on) => setDrill({ tier: on ? groupId(t) : null, cat: null })} />
         ))}
       </div>
 
       <nav className="drill-path" aria-label="Tier path">
         {tier ? <Link href="#overview" onClick={go({ tier: null, cat: null })}>All tiers</Link> : <span aria-current="page">All tiers</span>}
         {tier && <span className="sep" aria-hidden="true">/</span>}
-        {tier && (cat ? <Link href="#overview" onClick={go({ tier: tier.n, cat: null })}>Tier {tier.n} · {tier.name}</Link> : <span aria-current="page">Tier {tier.n} · {tier.name}</span>)}
+        {tier && (cat ? <Link href="#overview" onClick={go({ tier: groupId(tier), cat: null })}>{groupTitle(tier)}</Link> : <span aria-current="page">{groupTitle(tier)}</span>)}
         {cat && <><span className="sep" aria-hidden="true">/</span><span aria-current="page">{cat.name}</span></>}
       </nav>
 
       {!tier && (
         <div className="tier-grid">
           {tiers.map((t) => (
-            <section className="tier-col" key={t.n} aria-labelledby={`tier-${t.n}`}>
-              <button type="button" className="tier-head" onClick={() => setDrill({ tier: t.n, cat: null })}>
-                <span className="tier-n">TIER {t.n}</span>
-                <span className="tier-name" id={`tier-${t.n}`}>{t.name}</span>
+            <section className={`tier-col${t.key ? ' tier-col--extra' : ''}`} key={groupId(t)} aria-labelledby={`tier-${groupId(t)}`}>
+              <button type="button" className="tier-head" onClick={() => setDrill({ tier: groupId(t), cat: null })}>
+                <span className="tier-n">{t.key ? 'NOT A TIER' : `TIER ${t.n}`}</span>
+                <span className="tier-name" id={`tier-${groupId(t)}`}>{t.name}</span>
                 <span className="tier-desc">{t.desc}</span>
               </button>
               {t.cats.map((x) => (
                 <div className="tier-cat" key={x.name}>
-                  <button type="button" className="tier-cat-head" onClick={() => setDrill({ tier: t.n, cat: x.name })}>
+                  <button type="button" className="tier-cat-head" onClick={() => setDrill({ tier: groupId(t), cat: x.name })}>
                     {x.name}<span className="tier-count">{x.items.length}</span>
                   </button>
                   {[...x.items].sort(byStatus).map(({ label, c }) => (
@@ -64,7 +65,7 @@ export default function TiersView({ tiers, drill, setDrill, matches }) {
               const items = [...x.items].filter(({ c, label }) => matches(c, label)).sort(byStatus);
               return (
                 <Tile key={x.name} className="tier-panel">
-                  <button type="button" className="tier-panel-head" onClick={() => setDrill({ tier: tier.n, cat: x.name })}>
+                  <button type="button" className="tier-panel-head" onClick={() => setDrill({ tier: groupId(tier), cat: x.name })}>
                     <span>{x.name}</span><span className="tier-open">Open all {x.items.length} →</span>
                   </button>
                   {items.length ? items.map(({ label, c }) => (

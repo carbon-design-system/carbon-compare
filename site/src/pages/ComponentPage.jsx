@@ -4,7 +4,7 @@ import { BASE, SRC, pct, own, inherited, summaryLine, defaultFirst, prefs } from
 import { StatusTag } from '../bits.jsx';
 import { LiveCompare, Wipe, PixelDiff, OneSided } from '../Compare.jsx';
 import ChangeTable from '../ChangeTable.jsx';
-import { resolveTiers, placeOf } from '../tiers.js';
+import { resolveTiers, placeOf, groupId, groupTitle } from '../tiers.js';
 
 const MODES = ['live', 'wipe', 'diff'];
 const MODE_LABELS = { live: 'Live', wipe: 'Wipe', diff: 'Pixel diff' };
@@ -41,8 +41,8 @@ export default function ComponentPage({ c, data }) {
             // Came from the tiers view: each crumb returns to that level of the drill-down.
             <Breadcrumb noTrailingSlash>
               <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: null, cat: null })}>All tiers</Link></BreadcrumbItem>
-              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: place.tier.n, cat: null })}>Tier {place.tier.n} · {place.tier.name}</Link></BreadcrumbItem>
-              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: place.tier.n, cat: place.cat.name })}>{place.cat.name}</Link></BreadcrumbItem>
+              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: groupId(place.tier), cat: null })}>{groupTitle(place.tier)}</Link></BreadcrumbItem>
+              <BreadcrumbItem><Link href="#overview" onClick={() => prefs.set('drill', { tier: groupId(place.tier), cat: place.cat.name })}>{place.cat.name}</Link></BreadcrumbItem>
             </Breadcrumb>
           ) : (
             <Breadcrumb noTrailingSlash>

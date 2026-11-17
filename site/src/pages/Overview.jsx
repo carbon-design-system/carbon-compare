@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Button, Link, Search, ContentSwitcher, Switch, Toggletip, ToggletipButton, ToggletipContent } from '@carbon/react';
+import { Button, Link, Search, ContentSwitcher, Switch, TileGroup, RadioTile, Toggletip, ToggletipButton, ToggletipContent } from '@carbon/react';
 import { Information } from '@carbon/react/icons';
 import { STATUS, STATUS_ORDER, prefs } from '../lib.js';
 import { StatusDot, Eyebrow } from '../bits.jsx';
@@ -57,22 +57,25 @@ export default function Overview({ data }) {
       <h1 className="page-title">See every component, before and after</h1>
       <p className="lede">Every Carbon component in V11 and V12, side by side, with exactly what changed.</p>
 
-      <div className="stats" role="group" aria-label="Filter components by status">
-        {TILES.map((k) => (
-          <div key={k} className={`stat${filter === k ? ' stat--selected' : ''}`}>
-            <button type="button" className="stat-btn" aria-pressed={filter === k} onClick={() => setFilter(k)}>
+      {/* Carbon's single-select tiles. The toggletip goes in the decorator slot, which sits outside
+          the tile's label, so it can be interactive. */}
+      <TileGroup name="status" legend="Filter components by status" className="stats" valueSelected={filter} onChange={setFilter}>
+        {TILES.map((k) => {
+          const label = k === 'all' ? 'Components tracked' : STATUS[k].label;
+          return (
+            <RadioTile key={k} id={`stat-${k}`} value={k} className="stat"
+              decorator={
+                <Toggletip align="bottom" className="stat-info">
+                  <ToggletipButton label={`About "${label}"`}><Information /></ToggletipButton>
+                  <ToggletipContent><p>{EXPLAIN[k]}</p></ToggletipContent>
+                </Toggletip>
+              }>
               <span className="stat-n">{count(k)}</span>
-              <span className="stat-l">{k !== 'all' && <StatusDot status={k} />}{k === 'all' ? 'Components tracked' : STATUS[k].label}</span>
-            </button>
-            <Toggletip align="bottom" className="stat-info">
-              <ToggletipButton label={`About "${k === 'all' ? 'Components tracked' : STATUS[k].label}"`}>
-                <Information />
-              </ToggletipButton>
-              <ToggletipContent><p>{EXPLAIN[k]}</p></ToggletipContent>
-            </Toggletip>
-          </div>
-        ))}
-      </div>
+              <span className="stat-l">{k !== 'all' && <StatusDot status={k} />}{label}</span>
+            </RadioTile>
+          );
+        })}
+      </TileGroup>
 
       <div className="view-bar">
         <Search size="md" labelText="Search components" placeholder="Search components" className="view-search"
