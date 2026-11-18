@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-18T11:22:37.654Z",
+ "generatedAt": "2026-11-18T15:26:01.096Z",
  "count": 621,
  "stories": [
   {
@@ -1711,7 +1711,7 @@
    "name": "Multiline",
    "component": "CodeSnippet",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:37:11.550Z",
+   "capturedAt": "2026-11-18T15:22:45.499Z",
    "error": null,
    "elements": {
     "before": 15,
@@ -1748,7 +1748,7 @@
    "name": "Multiline With Layer",
    "component": "CodeSnippet",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:37:12.052Z",
+   "capturedAt": "2026-11-18T15:22:46.013Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -1785,7 +1785,7 @@
    "name": "Singleline",
    "component": "CodeSnippet",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:37:12.985Z",
+   "capturedAt": "2026-11-18T15:22:46.018Z",
    "error": null,
    "elements": {
     "before": 12,
@@ -1822,7 +1822,7 @@
    "name": "Singleline With Layer",
    "component": "CodeSnippet",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:37:13.794Z",
+   "capturedAt": "2026-11-18T15:22:46.756Z",
    "error": null,
    "elements": {
     "before": 36,
@@ -4375,7 +4375,7 @@
    "name": "Default",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:14.887Z",
+   "capturedAt": "2026-11-18T15:23:13.522Z",
    "error": null,
    "elements": {
     "before": 62,
@@ -4412,7 +4412,7 @@
    "name": "Range With Calendar",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:16.404Z",
+   "capturedAt": "2026-11-18T15:23:14.078Z",
    "error": null,
    "elements": {
     "before": 67,
@@ -4449,7 +4449,7 @@
    "name": "Range With Calendar With Layer",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:16.422Z",
+   "capturedAt": "2026-11-18T15:23:14.401Z",
    "error": null,
    "elements": {
     "before": 201,
@@ -4560,7 +4560,7 @@
    "name": "Single With Calendar",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:18.493Z",
+   "capturedAt": "2026-11-18T15:23:15.392Z",
    "error": null,
    "elements": {
     "before": 62,
@@ -4597,7 +4597,7 @@
    "name": "Single With Calendar With Layer",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:22.064Z",
+   "capturedAt": "2026-11-18T15:23:17.043Z",
    "error": null,
    "elements": {
     "before": 186,
@@ -4671,7 +4671,7 @@
    "name": "With AI Label",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:26.453Z",
+   "capturedAt": "2026-11-18T15:23:18.599Z",
    "error": null,
    "elements": {
     "before": 97,
@@ -5189,7 +5189,7 @@
    "name": "Default",
    "component": "FileUploader",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:40.525Z",
+   "capturedAt": "2026-11-18T15:23:32.590Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -5337,7 +5337,7 @@
    "name": "File Uploader Item",
    "component": "FileUploader",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:44.202Z",
+   "capturedAt": "2026-11-18T15:23:34.471Z",
    "error": null,
    "elements": {
     "before": 14,
@@ -5411,7 +5411,7 @@
    "name": "Controlled File State",
    "component": "FileUploader",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:44.823Z",
+   "capturedAt": "2026-11-18T15:23:35.212Z",
    "error": null,
    "elements": {
     "before": 8,
@@ -5448,7 +5448,7 @@
    "name": "Enhanced Callbacks",
    "component": "FileUploader",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:45.727Z",
+   "capturedAt": "2026-11-18T15:23:36.083Z",
    "error": null,
    "elements": {
     "before": 8,
@@ -5633,7 +5633,7 @@
    "name": "Range With Calendar",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:48.325Z",
+   "capturedAt": "2026-11-18T15:23:39.204Z",
    "error": null,
    "elements": {
     "before": 74,
@@ -5707,7 +5707,7 @@
    "name": "Single",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:49.922Z",
+   "capturedAt": "2026-11-18T15:23:39.751Z",
    "error": null,
    "elements": {
     "before": 69,
@@ -5929,7 +5929,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:38:55.508Z",
+   "capturedAt": "2026-11-18T15:23:43.234Z",
    "error": null,
    "elements": {
     "before": 251,
@@ -6817,7 +6817,7 @@
    "name": "Default",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:39:13.886Z",
+   "capturedAt": "2026-11-18T15:23:54.034Z",
    "error": null,
    "elements": {
     "before": 252,
@@ -6854,7 +6854,7 @@
    "name": "With AI Label",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:39:14.554Z",
+   "capturedAt": "2026-11-18T15:23:56.987Z",
    "error": null,
    "elements": {
     "before": 750,
@@ -7187,7 +7187,7 @@
    "name": "Default",
    "component": "InlineLoading",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:39:23.985Z",
+   "capturedAt": "2026-11-18T15:23:56.458Z",
    "error": null,
    "elements": {
     "before": 8,
@@ -7631,7 +7631,7 @@
    "name": "Default",
    "component": "Menu",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:39:33.650Z",
+   "capturedAt": "2026-11-18T15:24:03.031Z",
    "error": null,
    "elements": {
     "before": 77,
@@ -9694,6 +9694,339 @@
     "before": "shots/v11/components-overflowmenu--with-menu-alignment.png",
     "v12": "shots/v12/components-overflowmenu--with-menu-alignment.png",
     "diff": "shots/diff/components-overflowmenu--with-menu-alignment.png"
+   }
+  },
+  {
+   "id": "components-pageheader--compact",
+   "v11Id": "components-pageheader--compact",
+   "title": "Components/PageHeader",
+   "name": "Compact",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:19.429Z",
+   "error": null,
+   "elements": {
+    "before": 177,
+    "v12": 177
+   },
+   "pixel": {
+    "diffPixels": 122,
+    "totalPixels": 167680,
+    "ratio": 0.00073,
+    "size": {
+     "before": [
+      1280,
+      131
+     ],
+     "v12": [
+      1280,
+      131
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--compact",
+   "shots": {
+    "before": "shots/v11/components-pageheader--compact.png",
+    "v12": "shots/v12/components-pageheader--compact.png",
+    "diff": "shots/diff/components-pageheader--compact.png"
+   }
+  },
+  {
+   "id": "components-pageheader--content-with-contextual-actions",
+   "v11Id": "components-pageheader--content-with-contextual-actions",
+   "title": "Components/PageHeader",
+   "name": "Content With Contextual Actions",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:19.844Z",
+   "error": null,
+   "elements": {
+    "before": 83,
+    "v12": 83
+   },
+   "pixel": {
+    "diffPixels": 0,
+    "totalPixels": 335360,
+    "ratio": 0,
+    "size": {
+     "before": [
+      1280,
+      262
+     ],
+     "v12": [
+      1280,
+      262
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-contextual-actions",
+   "shots": {
+    "before": "shots/v11/components-pageheader--content-with-contextual-actions.png",
+    "v12": "shots/v12/components-pageheader--content-with-contextual-actions.png",
+    "diff": "shots/diff/components-pageheader--content-with-contextual-actions.png"
+   }
+  },
+  {
+   "id": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "v11Id": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "title": "Components/PageHeader",
+   "name": "Content With Contextual Actions And Page Actions",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:19.894Z",
+   "error": null,
+   "elements": {
+    "before": 117,
+    "v12": 117
+   },
+   "pixel": {
+    "diffPixels": 282,
+    "totalPixels": 335360,
+    "ratio": 0.00084,
+    "size": {
+     "before": [
+      1280,
+      262
+     ],
+     "v12": [
+      1280,
+      262
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "shots": {
+    "before": "shots/v11/components-pageheader--content-with-contextual-actions-and-page-actions.png",
+    "v12": "shots/v12/components-pageheader--content-with-contextual-actions-and-page-actions.png",
+    "diff": "shots/diff/components-pageheader--content-with-contextual-actions-and-page-actions.png"
+   }
+  },
+  {
+   "id": "components-pageheader--content-with-hero-image",
+   "v11Id": "components-pageheader--content-with-hero-image",
+   "title": "Components/PageHeader",
+   "name": "Content With Hero Image",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:20.088Z",
+   "error": null,
+   "elements": {
+    "before": 45,
+    "v12": 45
+   },
+   "pixel": {
+    "diffPixels": 0,
+    "totalPixels": 403200,
+    "ratio": 0,
+    "size": {
+     "before": [
+      1280,
+      315
+     ],
+     "v12": [
+      1280,
+      315
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-hero-image",
+   "shots": {
+    "before": "shots/v11/components-pageheader--content-with-hero-image.png",
+    "v12": "shots/v12/components-pageheader--content-with-hero-image.png",
+    "diff": "shots/diff/components-pageheader--content-with-hero-image.png"
+   }
+  },
+  {
+   "id": "components-pageheader--content-with-icon",
+   "v11Id": "components-pageheader--content-with-icon",
+   "title": "Components/PageHeader",
+   "name": "Content With Icon",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:20.553Z",
+   "error": null,
+   "elements": {
+    "before": 73,
+    "v12": 73
+   },
+   "pixel": {
+    "diffPixels": 0,
+    "totalPixels": 372480,
+    "ratio": 0,
+    "size": {
+     "before": [
+      1280,
+      291
+     ],
+     "v12": [
+      1280,
+      291
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-icon",
+   "shots": {
+    "before": "shots/v11/components-pageheader--content-with-icon.png",
+    "v12": "shots/v12/components-pageheader--content-with-icon.png",
+    "diff": "shots/diff/components-pageheader--content-with-icon.png"
+   }
+  },
+  {
+   "id": "components-pageheader--custom-render-with-callbacks",
+   "v11Id": "components-pageheader--custom-render-with-callbacks",
+   "title": "Components/PageHeader",
+   "name": "Custom Render With Callbacks",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:20.557Z",
+   "error": null,
+   "elements": {
+    "before": 158,
+    "v12": 158
+   },
+   "pixel": {
+    "diffPixels": 282,
+    "totalPixels": 467200,
+    "ratio": 0.0006,
+    "size": {
+     "before": [
+      1280,
+      365
+     ],
+     "v12": [
+      1280,
+      365
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--custom-render-with-callbacks",
+   "shots": {
+    "before": "shots/v11/components-pageheader--custom-render-with-callbacks.png",
+    "v12": "shots/v12/components-pageheader--custom-render-with-callbacks.png",
+    "diff": "shots/diff/components-pageheader--custom-render-with-callbacks.png"
+   }
+  },
+  {
+   "id": "components-pageheader--default",
+   "v11Id": "components-pageheader--default",
+   "title": "Components/PageHeader",
+   "name": "Default",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:25.552Z",
+   "error": null,
+   "elements": {
+    "before": 198,
+    "v12": 198
+   },
+   "pixel": {
+    "diffPixels": 294,
+    "totalPixels": 467200,
+    "ratio": 0.00063,
+    "size": {
+     "before": [
+      1280,
+      365
+     ],
+     "v12": [
+      1280,
+      365
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--default",
+   "shots": {
+    "before": "shots/v11/components-pageheader--default.png",
+    "v12": "shots/v12/components-pageheader--default.png",
+    "diff": "shots/diff/components-pageheader--default.png"
+   }
+  },
+  {
+   "id": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "v11Id": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "title": "Components/PageHeader",
+   "name": "Tab Bar With Tabs And Tags",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:25.902Z",
+   "error": null,
+   "elements": {
+    "before": 235,
+    "v12": 235
+   },
+   "pixel": {
+    "diffPixels": 404,
+    "totalPixels": 528640,
+    "ratio": 0.00076,
+    "size": {
+     "before": [
+      1280,
+      413
+     ],
+     "v12": [
+      1280,
+      413
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "shots": {
+    "before": "shots/v11/components-pageheader--tab-bar-with-tabs-and-tags.png",
+    "v12": "shots/v12/components-pageheader--tab-bar-with-tabs-and-tags.png",
+    "diff": "shots/diff/components-pageheader--tab-bar-with-tabs-and-tags.png"
+   }
+  },
+  {
+   "id": "components-pageheader--with-disabled-sticky-tab-bar",
+   "v11Id": "components-pageheader--with-disabled-sticky-tab-bar",
+   "title": "Components/PageHeader",
+   "name": "With Disabled Sticky Tab Bar",
+   "component": "PageHeader",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:26.503Z",
+   "error": null,
+   "elements": {
+    "before": 198,
+    "v12": 198
+   },
+   "pixel": {
+    "diffPixels": 294,
+    "totalPixels": 467200,
+    "ratio": 0.00063,
+    "size": {
+     "before": [
+      1280,
+      365
+     ],
+     "v12": [
+      1280,
+      365
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-pageheader--with-disabled-sticky-tab-bar",
+   "shots": {
+    "before": "shots/v11/components-pageheader--with-disabled-sticky-tab-bar.png",
+    "v12": "shots/v12/components-pageheader--with-disabled-sticky-tab-bar.png",
+    "diff": "shots/diff/components-pageheader--with-disabled-sticky-tab-bar.png"
    }
   },
   {
@@ -12657,6 +12990,376 @@
    }
   },
   {
+   "id": "components-tearsheet--default",
+   "v11Id": "components-tearsheet--default",
+   "title": "Components/Tearsheet",
+   "name": "Default",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:52.566Z",
+   "error": null,
+   "elements": {
+    "before": 163,
+    "v12": 153
+   },
+   "pixel": {
+    "diffPixels": 5477,
+    "totalPixels": 1024000,
+    "ratio": 0.00535,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--default",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--default.png",
+    "v12": "shots/v12/components-tearsheet--default.png",
+    "diff": "shots/diff/components-tearsheet--default.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--narrow-tearsheet",
+   "v11Id": "components-tearsheet--narrow-tearsheet",
+   "title": "Components/Tearsheet",
+   "name": "Narrow Tearsheet",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:52.570Z",
+   "error": null,
+   "elements": {
+    "before": 163,
+    "v12": 153
+   },
+   "pixel": {
+    "diffPixels": 5566,
+    "totalPixels": 1024000,
+    "ratio": 0.00544,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--narrow-tearsheet",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--narrow-tearsheet.png",
+    "v12": "shots/v12/components-tearsheet--narrow-tearsheet.png",
+    "diff": "shots/diff/components-tearsheet--narrow-tearsheet.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--stacking-narrow-tearsheets",
+   "v11Id": "components-tearsheet--stacking-narrow-tearsheets",
+   "title": "Components/Tearsheet",
+   "name": "Stacking Narrow Tearsheets",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:52.617Z",
+   "error": null,
+   "elements": {
+    "before": 80,
+    "v12": 76
+   },
+   "pixel": {
+    "diffPixels": 7089,
+    "totalPixels": 1024000,
+    "ratio": 0.00692,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-narrow-tearsheets",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--stacking-narrow-tearsheets.png",
+    "v12": "shots/v12/components-tearsheet--stacking-narrow-tearsheets.png",
+    "diff": "shots/diff/components-tearsheet--stacking-narrow-tearsheets.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--stacking-tearsheet",
+   "v11Id": "components-tearsheet--stacking-tearsheet",
+   "title": "Components/Tearsheet",
+   "name": "Stacking Tearsheet",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:52.862Z",
+   "error": null,
+   "elements": {
+    "before": 81,
+    "v12": 77
+   },
+   "pixel": {
+    "diffPixels": 9312,
+    "totalPixels": 1024000,
+    "ratio": 0.00909,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-tearsheet",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--stacking-tearsheet.png",
+    "v12": "shots/v12/components-tearsheet--stacking-tearsheet.png",
+    "diff": "shots/diff/components-tearsheet--stacking-tearsheet.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--stacking-with-different-sizes",
+   "v11Id": "components-tearsheet--stacking-with-different-sizes",
+   "title": "Components/Tearsheet",
+   "name": "Stacking With Different Sizes",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:53.074Z",
+   "error": null,
+   "elements": {
+    "before": 81,
+    "v12": 77
+   },
+   "pixel": {
+    "diffPixels": 9312,
+    "totalPixels": 1024000,
+    "ratio": 0.00909,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-with-different-sizes",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--stacking-with-different-sizes.png",
+    "v12": "shots/v12/components-tearsheet--stacking-with-different-sizes.png",
+    "diff": "shots/diff/components-tearsheet--stacking-with-different-sizes.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--with-custom-footer-actions",
+   "v11Id": "components-tearsheet--with-custom-footer-actions",
+   "title": "Components/Tearsheet",
+   "name": "With Custom Footer Actions",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:24:53.662Z",
+   "error": null,
+   "elements": {
+    "before": 111,
+    "v12": 105
+   },
+   "pixel": {
+    "diffPixels": 7993,
+    "totalPixels": 1024000,
+    "ratio": 0.00781,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--with-custom-footer-actions",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--with-custom-footer-actions.png",
+    "v12": "shots/v12/components-tearsheet--with-custom-footer-actions.png",
+    "diff": "shots/diff/components-tearsheet--with-custom-footer-actions.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--with-influencer",
+   "v11Id": "components-tearsheet--with-influencer",
+   "title": "Components/Tearsheet",
+   "name": "With Influencer",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:25:02.168Z",
+   "error": null,
+   "elements": {
+    "before": 185,
+    "v12": 175
+   },
+   "pixel": {
+    "diffPixels": 3863,
+    "totalPixels": 1024000,
+    "ratio": 0.00377,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--with-influencer",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--with-influencer.png",
+    "v12": "shots/v12/components-tearsheet--with-influencer.png",
+    "diff": "shots/diff/components-tearsheet--with-influencer.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--with-steps",
+   "v11Id": "components-tearsheet--with-steps",
+   "title": "Components/Tearsheet",
+   "name": "With Steps",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:25:02.326Z",
+   "error": null,
+   "elements": {
+    "before": 91,
+    "v12": 89
+   },
+   "pixel": {
+    "diffPixels": 6827,
+    "totalPixels": 1024000,
+    "ratio": 0.00667,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--with-steps",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--with-steps.png",
+    "v12": "shots/v12/components-tearsheet--with-steps.png",
+    "diff": "shots/diff/components-tearsheet--with-steps.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "v11Id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "title": "Components/Tearsheet",
+   "name": "With Steps And Horizontal Progress Indicator",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:25:02.902Z",
+   "error": null,
+   "elements": {
+    "before": 89,
+    "v12": 87
+   },
+   "pixel": {
+    "diffPixels": 6203,
+    "totalPixels": 1024000,
+    "ratio": 0.00606,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--with-steps-and-horizontal-progress-indicator.png",
+    "v12": "shots/v12/components-tearsheet--with-steps-and-horizontal-progress-indicator.png",
+    "diff": "shots/diff/components-tearsheet--with-steps-and-horizontal-progress-indicator.png"
+   }
+  },
+  {
+   "id": "components-tearsheet--with-tabs",
+   "v11Id": "components-tearsheet--with-tabs",
+   "title": "Components/Tearsheet",
+   "name": "With Tabs",
+   "component": "Tearsheet",
+   "match": "exact",
+   "capturedAt": "2026-11-18T15:25:09.223Z",
+   "error": null,
+   "elements": {
+    "before": 119,
+    "v12": 117
+   },
+   "pixel": {
+    "diffPixels": 6591,
+    "totalPixels": 1024000,
+    "ratio": 0.00644,
+    "size": {
+     "before": [
+      1280,
+      800
+     ],
+     "v12": [
+      1280,
+      800
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-tearsheet--with-tabs",
+   "shots": {
+    "before": "shots/v11/components-tearsheet--with-tabs.png",
+    "v12": "shots/v12/components-tearsheet--with-tabs.png",
+    "diff": "shots/diff/components-tearsheet--with-tabs.png"
+   }
+  },
+  {
    "id": "components-textarea--default",
    "v11Id": "components-textarea--default",
    "title": "Components/TextArea",
@@ -14920,10 +15623,10 @@
    "name": "Header with Navigation",
    "component": "UI Shell",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:41:50.473Z",
+   "capturedAt": "2026-11-18T15:25:31.244Z",
    "error": null,
    "elements": {
-    "before": 74,
+    "before": 76,
     "v12": 74
    },
    "pixel": {
@@ -14957,10 +15660,10 @@
    "name": "Header with Navigation, Actions and Side Nav",
    "component": "UI Shell",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:41:50.488Z",
+   "capturedAt": "2026-11-18T15:25:32.172Z",
    "error": null,
    "elements": {
-    "before": 148,
+    "before": 150,
     "v12": 148
    },
    "pixel": {
@@ -14994,10 +15697,10 @@
    "name": "Header with Navigation and Actions",
    "component": "UI Shell",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:41:50.658Z",
+   "capturedAt": "2026-11-18T15:25:32.016Z",
    "error": null,
    "elements": {
-    "before": 93,
+    "before": 95,
     "v12": 93
    },
    "pixel": {
@@ -15216,10 +15919,10 @@
    "name": "Side Nav Rail with Header",
    "component": "UI Shell",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:41:58.881Z",
+   "capturedAt": "2026-11-18T15:25:35.194Z",
    "error": null,
    "elements": {
-    "before": 130,
+    "before": 131,
     "v12": 129
    },
    "pixel": {
@@ -17251,7 +17954,7 @@
    "name": "With Icon",
    "component": "preview__Card",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:42:33.760Z",
+   "capturedAt": "2026-11-18T15:25:50.663Z",
    "error": null,
    "elements": {
     "before": 113,
@@ -17288,7 +17991,7 @@
    "name": "With Media",
    "component": "preview__Card",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:42:34.274Z",
+   "capturedAt": "2026-11-18T15:25:50.383Z",
    "error": null,
    "elements": {
     "before": 38,
@@ -17399,24 +18102,24 @@
    "name": "With Title Trailing Icon",
    "component": "preview__Card",
    "match": "exact",
-   "capturedAt": "2026-11-17T21:42:39.055Z",
+   "capturedAt": "2026-11-18T15:25:51.896Z",
    "error": null,
    "elements": {
     "before": 26,
     "v12": 26
    },
    "pixel": {
-    "diffPixels": 2177,
-    "totalPixels": 185328,
-    "ratio": 0.01175,
+    "diffPixels": 0,
+    "totalPixels": 164736,
+    "ratio": 0,
     "size": {
      "before": [
       936,
-      198
+      176
      ],
      "v12": [
       936,
-      198
+      176
      ]
     },
     "sizeChanged": false
@@ -19169,339 +19872,6 @@
    }
   },
   {
-   "id": "components-pageheader--compact",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Compact",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:14.081Z",
-   "error": null,
-   "elements": {
-    "before": 179,
-    "v12": 177
-   },
-   "pixel": {
-    "diffPixels": 20489,
-    "totalPixels": 221440,
-    "ratio": 0.09253,
-    "size": {
-     "before": [
-      1280,
-      173
-     ],
-     "v12": [
-      1280,
-      173
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--compact",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--compact.png",
-    "v12": "shots/v12/components-pageheader--compact.png",
-    "diff": "shots/diff/components-pageheader--compact.png"
-   }
-  },
-  {
-   "id": "components-pageheader--content-with-contextual-actions",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Content With Contextual Actions",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:14.725Z",
-   "error": null,
-   "elements": {
-    "before": 83,
-    "v12": 83
-   },
-   "pixel": {
-    "diffPixels": 20313,
-    "totalPixels": 389120,
-    "ratio": 0.0522,
-    "size": {
-     "before": [
-      1280,
-      304
-     ],
-     "v12": [
-      1280,
-      304
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-contextual-actions",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--content-with-contextual-actions.png",
-    "v12": "shots/v12/components-pageheader--content-with-contextual-actions.png",
-    "diff": "shots/diff/components-pageheader--content-with-contextual-actions.png"
-   }
-  },
-  {
-   "id": "components-pageheader--content-with-contextual-actions-and-page-actions",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Content With Contextual Actions And Page Actions",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:16.213Z",
-   "error": null,
-   "elements": {
-    "before": 117,
-    "v12": 117
-   },
-   "pixel": {
-    "diffPixels": 33281,
-    "totalPixels": 389120,
-    "ratio": 0.08553,
-    "size": {
-     "before": [
-      1280,
-      304
-     ],
-     "v12": [
-      1280,
-      304
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-contextual-actions-and-page-actions",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--content-with-contextual-actions-and-page-actions.png",
-    "v12": "shots/v12/components-pageheader--content-with-contextual-actions-and-page-actions.png",
-    "diff": "shots/diff/components-pageheader--content-with-contextual-actions-and-page-actions.png"
-   }
-  },
-  {
-   "id": "components-pageheader--content-with-hero-image",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Content With Hero Image",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:16.214Z",
-   "error": null,
-   "elements": {
-    "before": 45,
-    "v12": 45
-   },
-   "pixel": {
-    "diffPixels": 152013,
-    "totalPixels": 451840,
-    "ratio": 0.33643,
-    "size": {
-     "before": [
-      1280,
-      353
-     ],
-     "v12": [
-      1280,
-      353
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-hero-image",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--content-with-hero-image.png",
-    "v12": "shots/v12/components-pageheader--content-with-hero-image.png",
-    "diff": "shots/diff/components-pageheader--content-with-hero-image.png"
-   }
-  },
-  {
-   "id": "components-pageheader--content-with-icon",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Content With Icon",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:18.957Z",
-   "error": null,
-   "elements": {
-    "before": 73,
-    "v12": 73
-   },
-   "pixel": {
-    "diffPixels": 21809,
-    "totalPixels": 426240,
-    "ratio": 0.05117,
-    "size": {
-     "before": [
-      1280,
-      333
-     ],
-     "v12": [
-      1280,
-      333
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-icon",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--content-with-icon.png",
-    "v12": "shots/v12/components-pageheader--content-with-icon.png",
-    "diff": "shots/diff/components-pageheader--content-with-icon.png"
-   }
-  },
-  {
-   "id": "components-pageheader--custom-render-with-callbacks",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Custom Render With Callbacks",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:20.957Z",
-   "error": null,
-   "elements": {
-    "before": 124,
-    "v12": 158
-   },
-   "pixel": {
-    "diffPixels": 30907,
-    "totalPixels": 520960,
-    "ratio": 0.05933,
-    "size": {
-     "before": [
-      1280,
-      407
-     ],
-     "v12": [
-      1280,
-      407
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--custom-render-with-callbacks",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--custom-render-with-callbacks.png",
-    "v12": "shots/v12/components-pageheader--custom-render-with-callbacks.png",
-    "diff": "shots/diff/components-pageheader--custom-render-with-callbacks.png"
-   }
-  },
-  {
-   "id": "components-pageheader--default",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Default",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:22.272Z",
-   "error": null,
-   "elements": {
-    "before": 198,
-    "v12": 198
-   },
-   "pixel": {
-    "diffPixels": 36983,
-    "totalPixels": 520960,
-    "ratio": 0.07099,
-    "size": {
-     "before": [
-      1280,
-      407
-     ],
-     "v12": [
-      1280,
-      407
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--default",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--default.png",
-    "v12": "shots/v12/components-pageheader--default.png",
-    "diff": "shots/diff/components-pageheader--default.png"
-   }
-  },
-  {
-   "id": "components-pageheader--tab-bar-with-tabs-and-tags",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "Tab Bar With Tabs And Tags",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:24.455Z",
-   "error": null,
-   "elements": {
-    "before": 237,
-    "v12": 235
-   },
-   "pixel": {
-    "diffPixels": 47577,
-    "totalPixels": 582400,
-    "ratio": 0.08169,
-    "size": {
-     "before": [
-      1280,
-      455
-     ],
-     "v12": [
-      1280,
-      455
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--tab-bar-with-tabs-and-tags",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--tab-bar-with-tabs-and-tags.png",
-    "v12": "shots/v12/components-pageheader--tab-bar-with-tabs-and-tags.png",
-    "diff": "shots/diff/components-pageheader--tab-bar-with-tabs-and-tags.png"
-   }
-  },
-  {
-   "id": "components-pageheader--with-disabled-sticky-tab-bar",
-   "v11Id": null,
-   "title": "Components/PageHeader",
-   "name": "With Disabled Sticky Tab Bar",
-   "component": "PageHeader",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:24.787Z",
-   "error": null,
-   "elements": {
-    "before": 198,
-    "v12": 198
-   },
-   "pixel": {
-    "diffPixels": 35063,
-    "totalPixels": 520960,
-    "ratio": 0.0673,
-    "size": {
-     "before": [
-      1280,
-      407
-     ],
-     "v12": [
-      1280,
-      407
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-pageheader--with-disabled-sticky-tab-bar",
-   "shots": {
-    "before": "shots/ibmp/components-pageheader--with-disabled-sticky-tab-bar.png",
-    "v12": "shots/v12/components-pageheader--with-disabled-sticky-tab-bar.png",
-    "diff": "shots/diff/components-pageheader--with-disabled-sticky-tab-bar.png"
-   }
-  },
-  {
    "id": "components-sidepanel--panel-with-second-step",
    "v11Id": null,
    "title": "Components/SidePanel",
@@ -20091,376 +20461,6 @@
     "before": "shots/ibmp/components-tagoverflow--user-avatars-with-overflow-modal.png",
     "v12": "shots/v12/components-tagoverflow--user-avatars-with-overflow-modal.png",
     "diff": "shots/diff/components-tagoverflow--user-avatars-with-overflow-modal.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--default",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "Default",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:47.502Z",
-   "error": null,
-   "elements": {
-    "before": 159,
-    "v12": 153
-   },
-   "pixel": {
-    "diffPixels": 9562,
-    "totalPixels": 1024000,
-    "ratio": 0.00934,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--default",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--default.png",
-    "v12": "shots/v12/components-tearsheet--default.png",
-    "diff": "shots/diff/components-tearsheet--default.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--narrow-tearsheet",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "Narrow Tearsheet",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:48.749Z",
-   "error": null,
-   "elements": {
-    "before": 159,
-    "v12": 153
-   },
-   "pixel": {
-    "diffPixels": 9158,
-    "totalPixels": 1024000,
-    "ratio": 0.00894,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--narrow-tearsheet",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--narrow-tearsheet.png",
-    "v12": "shots/v12/components-tearsheet--narrow-tearsheet.png",
-    "diff": "shots/diff/components-tearsheet--narrow-tearsheet.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--stacking-narrow-tearsheets",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "Stacking Narrow Tearsheets",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:49.083Z",
-   "error": null,
-   "elements": {
-    "before": 76,
-    "v12": 76
-   },
-   "pixel": {
-    "diffPixels": 9845,
-    "totalPixels": 1024000,
-    "ratio": 0.00961,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-narrow-tearsheets",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--stacking-narrow-tearsheets.png",
-    "v12": "shots/v12/components-tearsheet--stacking-narrow-tearsheets.png",
-    "diff": "shots/diff/components-tearsheet--stacking-narrow-tearsheets.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--stacking-tearsheet",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "Stacking Tearsheet",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:51.437Z",
-   "error": null,
-   "elements": {
-    "before": 77,
-    "v12": 77
-   },
-   "pixel": {
-    "diffPixels": 12625,
-    "totalPixels": 1024000,
-    "ratio": 0.01233,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-tearsheet",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--stacking-tearsheet.png",
-    "v12": "shots/v12/components-tearsheet--stacking-tearsheet.png",
-    "diff": "shots/diff/components-tearsheet--stacking-tearsheet.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--stacking-with-different-sizes",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "Stacking With Different Sizes",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:51.794Z",
-   "error": null,
-   "elements": {
-    "before": 77,
-    "v12": 77
-   },
-   "pixel": {
-    "diffPixels": 12625,
-    "totalPixels": 1024000,
-    "ratio": 0.01233,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-with-different-sizes",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--stacking-with-different-sizes.png",
-    "v12": "shots/v12/components-tearsheet--stacking-with-different-sizes.png",
-    "diff": "shots/diff/components-tearsheet--stacking-with-different-sizes.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--with-custom-footer-actions",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "With Custom Footer Actions",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:55.938Z",
-   "error": null,
-   "elements": {
-    "before": 108,
-    "v12": 105
-   },
-   "pixel": {
-    "diffPixels": 11734,
-    "totalPixels": 1024000,
-    "ratio": 0.01146,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-custom-footer-actions",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--with-custom-footer-actions.png",
-    "v12": "shots/v12/components-tearsheet--with-custom-footer-actions.png",
-    "diff": "shots/diff/components-tearsheet--with-custom-footer-actions.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--with-influencer",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "With Influencer",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:57.283Z",
-   "error": null,
-   "elements": {
-    "before": 181,
-    "v12": 175
-   },
-   "pixel": {
-    "diffPixels": 7938,
-    "totalPixels": 1024000,
-    "ratio": 0.00775,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-influencer",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--with-influencer.png",
-    "v12": "shots/v12/components-tearsheet--with-influencer.png",
-    "diff": "shots/diff/components-tearsheet--with-influencer.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--with-steps",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "With Steps",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:58.429Z",
-   "error": null,
-   "elements": {
-    "before": 87,
-    "v12": 89
-   },
-   "pixel": {
-    "diffPixels": 10075,
-    "totalPixels": 1024000,
-    "ratio": 0.00984,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-steps",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--with-steps.png",
-    "v12": "shots/v12/components-tearsheet--with-steps.png",
-    "diff": "shots/diff/components-tearsheet--with-steps.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "With Steps And Horizontal Progress Indicator",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:58.727Z",
-   "error": null,
-   "elements": {
-    "before": 85,
-    "v12": 87
-   },
-   "pixel": {
-    "diffPixels": 9878,
-    "totalPixels": 1024000,
-    "ratio": 0.00965,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-steps-and-horizontal-progress-indicator",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--with-steps-and-horizontal-progress-indicator.png",
-    "v12": "shots/v12/components-tearsheet--with-steps-and-horizontal-progress-indicator.png",
-    "diff": "shots/diff/components-tearsheet--with-steps-and-horizontal-progress-indicator.png"
-   }
-  },
-  {
-   "id": "components-tearsheet--with-tabs",
-   "v11Id": null,
-   "title": "Components/Tearsheet",
-   "name": "With Tabs",
-   "component": "Tearsheet",
-   "match": "name",
-   "capturedAt": "2026-11-17T21:43:59.597Z",
-   "error": null,
-   "elements": {
-    "before": 115,
-    "v12": 117
-   },
-   "pixel": {
-    "diffPixels": 7116,
-    "totalPixels": 1024000,
-    "ratio": 0.00695,
-    "size": {
-     "before": [
-      1280,
-      800
-     ],
-     "v12": [
-      1280,
-      800
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-tabs",
-   "shots": {
-    "before": "shots/ibmp/components-tearsheet--with-tabs.png",
-    "v12": "shots/v12/components-tearsheet--with-tabs.png",
-    "diff": "shots/diff/components-tearsheet--with-tabs.png"
    }
   },
   {

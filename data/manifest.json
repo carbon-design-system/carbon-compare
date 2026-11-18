@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-18T11:22:31.785Z",
+ "generatedAt": "2026-11-18T15:22:24.520Z",
  "counts": {
-  "v11Stories": 509,
+  "v11Stories": 530,
   "v12Stories": 658,
   "ibmpStories": 242,
-  "matched": 500,
-  "migrated": 121
+  "matched": 519,
+  "migrated": 102
  },
  "matched": [
   {
@@ -2630,6 +2630,96 @@
   },
   {
    "base": "v11",
+   "baseId": "components-pageheader--compact",
+   "v11": "components-pageheader--compact",
+   "v12": "components-pageheader--compact",
+   "title": "Components/PageHeader",
+   "name": "Compact",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-contextual-actions",
+   "v11": "components-pageheader--content-with-contextual-actions",
+   "v12": "components-pageheader--content-with-contextual-actions",
+   "title": "Components/PageHeader",
+   "name": "Content With Contextual Actions",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "v11": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "v12": "components-pageheader--content-with-contextual-actions-and-page-actions",
+   "title": "Components/PageHeader",
+   "name": "Content With Contextual Actions And Page Actions",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-hero-image",
+   "v11": "components-pageheader--content-with-hero-image",
+   "v12": "components-pageheader--content-with-hero-image",
+   "title": "Components/PageHeader",
+   "name": "Content With Hero Image",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--content-with-icon",
+   "v11": "components-pageheader--content-with-icon",
+   "v12": "components-pageheader--content-with-icon",
+   "title": "Components/PageHeader",
+   "name": "Content With Icon",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--custom-render-with-callbacks",
+   "v11": "components-pageheader--custom-render-with-callbacks",
+   "v12": "components-pageheader--custom-render-with-callbacks",
+   "title": "Components/PageHeader",
+   "name": "Custom Render With Callbacks",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--default",
+   "v11": "components-pageheader--default",
+   "v12": "components-pageheader--default",
+   "title": "Components/PageHeader",
+   "name": "Default",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "v11": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "v12": "components-pageheader--tab-bar-with-tabs-and-tags",
+   "title": "Components/PageHeader",
+   "name": "Tab Bar With Tabs And Tags",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-pageheader--with-disabled-sticky-tab-bar",
+   "v11": "components-pageheader--with-disabled-sticky-tab-bar",
+   "v12": "components-pageheader--with-disabled-sticky-tab-bar",
+   "title": "Components/PageHeader",
+   "name": "With Disabled Sticky Tab Bar",
+   "component": "PageHeader",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
    "baseId": "components-pagination--default",
    "v11": "components-pagination--default",
    "v12": "components-pagination--default",
@@ -3426,6 +3516,106 @@
    "title": "Components/Tag",
    "name": "With AI Label",
    "component": "Tag",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--default",
+   "v11": "components-tearsheet--default",
+   "v12": "components-tearsheet--default",
+   "title": "Components/Tearsheet",
+   "name": "Default",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--narrow-tearsheet",
+   "v11": "components-tearsheet--narrow-tearsheet",
+   "v12": "components-tearsheet--narrow-tearsheet",
+   "title": "Components/Tearsheet",
+   "name": "Narrow Tearsheet",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-narrow-tearsheets",
+   "v11": "components-tearsheet--stacking-narrow-tearsheets",
+   "v12": "components-tearsheet--stacking-narrow-tearsheets",
+   "title": "Components/Tearsheet",
+   "name": "Stacking Narrow Tearsheets",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-tearsheet",
+   "v11": "components-tearsheet--stacking-tearsheet",
+   "v12": "components-tearsheet--stacking-tearsheet",
+   "title": "Components/Tearsheet",
+   "name": "Stacking Tearsheet",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--stacking-with-different-sizes",
+   "v11": "components-tearsheet--stacking-with-different-sizes",
+   "v12": "components-tearsheet--stacking-with-different-sizes",
+   "title": "Components/Tearsheet",
+   "name": "Stacking With Different Sizes",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--with-custom-footer-actions",
+   "v11": "components-tearsheet--with-custom-footer-actions",
+   "v12": "components-tearsheet--with-custom-footer-actions",
+   "title": "Components/Tearsheet",
+   "name": "With Custom Footer Actions",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--with-influencer",
+   "v11": "components-tearsheet--with-influencer",
+   "v12": "components-tearsheet--with-influencer",
+   "title": "Components/Tearsheet",
+   "name": "With Influencer",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--with-steps",
+   "v11": "components-tearsheet--with-steps",
+   "v12": "components-tearsheet--with-steps",
+   "title": "Components/Tearsheet",
+   "name": "With Steps",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "v11": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "v12": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+   "title": "Components/Tearsheet",
+   "name": "With Steps And Horizontal Progress Indicator",
+   "component": "Tearsheet",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-tearsheet--with-tabs",
+   "v11": "components-tearsheet--with-tabs",
+   "v12": "components-tearsheet--with-tabs",
+   "title": "Components/Tearsheet",
+   "name": "With Tabs",
+   "component": "Tearsheet",
    "match": "exact"
   },
   {
@@ -5192,96 +5382,6 @@
   },
   {
    "base": "ibmp",
-   "baseId": "preview-pageheader--compact",
-   "v12": "components-pageheader--compact",
-   "title": "Components/PageHeader",
-   "name": "Compact",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-contextual-actions",
-   "v12": "components-pageheader--content-with-contextual-actions",
-   "title": "Components/PageHeader",
-   "name": "Content With Contextual Actions",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-contextual-actions-and-page-actions",
-   "v12": "components-pageheader--content-with-contextual-actions-and-page-actions",
-   "title": "Components/PageHeader",
-   "name": "Content With Contextual Actions And Page Actions",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-hero-image",
-   "v12": "components-pageheader--content-with-hero-image",
-   "title": "Components/PageHeader",
-   "name": "Content With Hero Image",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--content-with-icon",
-   "v12": "components-pageheader--content-with-icon",
-   "title": "Components/PageHeader",
-   "name": "Content With Icon",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--custom-render-with-callbacks",
-   "v12": "components-pageheader--custom-render-with-callbacks",
-   "title": "Components/PageHeader",
-   "name": "Custom Render With Callbacks",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--default",
-   "v12": "components-pageheader--default",
-   "title": "Components/PageHeader",
-   "name": "Default",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--tab-bar-with-tabs-and-tags",
-   "v12": "components-pageheader--tab-bar-with-tabs-and-tags",
-   "title": "Components/PageHeader",
-   "name": "Tab Bar With Tabs And Tags",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-pageheader--with-disabled-sticky-tab-bar",
-   "v12": "components-pageheader--with-disabled-sticky-tab-bar",
-   "title": "Components/PageHeader",
-   "name": "With Disabled Sticky Tab Bar",
-   "component": "PageHeader",
-   "match": "name",
-   "ibmpTitle": "Preview/PageHeader"
-  },
-  {
-   "base": "ibmp",
    "baseId": "components-sidepanel--panel-with-second-step",
    "v12": "components-sidepanel--panel-with-second-step",
    "title": "Components/SidePanel",
@@ -5439,106 +5539,6 @@
    "component": "TagOverflow",
    "match": "name",
    "ibmpTitle": "Utilities/TagOverflow"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--default",
-   "v12": "components-tearsheet--default",
-   "title": "Components/Tearsheet",
-   "name": "Default",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--narrow-tearsheet",
-   "v12": "components-tearsheet--narrow-tearsheet",
-   "title": "Components/Tearsheet",
-   "name": "Narrow Tearsheet",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-narrow-tearsheets",
-   "v12": "components-tearsheet--stacking-narrow-tearsheets",
-   "title": "Components/Tearsheet",
-   "name": "Stacking Narrow Tearsheets",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-tearsheet",
-   "v12": "components-tearsheet--stacking-tearsheet",
-   "title": "Components/Tearsheet",
-   "name": "Stacking Tearsheet",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--stacking-with-different-sizes",
-   "v12": "components-tearsheet--stacking-with-different-sizes",
-   "title": "Components/Tearsheet",
-   "name": "Stacking With Different Sizes",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-custom-footer-actions",
-   "v12": "components-tearsheet--with-custom-footer-actions",
-   "title": "Components/Tearsheet",
-   "name": "With Custom Footer Actions",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-influencer",
-   "v12": "components-tearsheet--with-influencer",
-   "title": "Components/Tearsheet",
-   "name": "With Influencer",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-steps",
-   "v12": "components-tearsheet--with-steps",
-   "title": "Components/Tearsheet",
-   "name": "With Steps",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-steps-and-horizontal-progress-indicator",
-   "v12": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-   "title": "Components/Tearsheet",
-   "name": "With Steps And Horizontal Progress Indicator",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-tearsheet--with-tabs",
-   "v12": "components-tearsheet--with-tabs",
-   "title": "Components/Tearsheet",
-   "name": "With Tabs",
-   "component": "Tearsheet",
-   "match": "name",
-   "ibmpTitle": "Preview/Tearsheet"
   },
   {
    "base": "ibmp",
@@ -6480,16 +6480,6 @@
    ]
   },
   {
-   "component": "PageHeader",
-   "v12Title": "Components/PageHeader",
-   "ibmpTitles": [
-    "Preview/PageHeader"
-   ],
-   "tagged": false,
-   "matched": 9,
-   "unmatched": []
-  },
-  {
    "component": "preview__BigNumber",
    "v12Title": "Preview/preview__BigNumber",
    "ibmpTitles": [
@@ -6554,16 +6544,6 @@
    "unmatched": []
   },
   {
-   "component": "Tearsheet",
-   "v12Title": "Components/Tearsheet",
-   "ibmpTitles": [
-    "Preview/Tearsheet"
-   ],
-   "tagged": false,
-   "matched": 10,
-   "unmatched": []
-  },
-  {
    "component": "TruncatedText",
    "v12Title": "Utilities/TruncatedText",
    "ibmpTitles": [
@@ -6599,6 +6579,7 @@
    "Components/ComboBox/Feature Flag",
    "Components/ComboButton/Feature Flag",
    "Components/Dropdown/Feature Flag",
+   "Components/Onboarding/Coachmark",
    "Components/OverflowMenu/Feature Flag",
    "Components/Popover/Feature Flag",
    "Components/StructuredList/Feature Flag",
@@ -6610,6 +6591,16 @@
    "Deprecated/preview__StaticNotification"
   ],
   "stories": [
+   {
+    "id": "components-onboarding-coachmark--floating",
+    "title": "Components/Onboarding/Coachmark",
+    "name": "Floating"
+   },
+   {
+    "id": "components-onboarding-coachmark--tooltip",
+    "title": "Components/Onboarding/Coachmark",
+    "name": "Tooltip"
+   },
    {
     "id": "components-overflowmenu-feature-flag--default",
     "title": "Components/OverflowMenu/Feature Flag",
@@ -6667,10 +6658,8 @@
    "Components/InterstitialScreen",
    "Components/NotificationsPanel",
    "Components/OptionsTile",
-   "Components/PageHeader",
    "Components/SidePanel",
    "Components/TagOverflow",
-   "Components/Tearsheet",
    "Components/UserAvatar",
    "Elements/Motion/Custom surface",
    "Elements/Motion/Expand",

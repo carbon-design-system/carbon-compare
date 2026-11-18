@@ -1,8 +1,8 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-11-18T11:22:39.792Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-11-18T15:26:03.093Z from the live V11 and V12 Storybooks. Values are computed styles.
 
-Components: 30 unchanged · 3 new · 37 changed · 29 migrated · 14 inherited · 4 removed
+Components: 31 unchanged · 3 new · 37 changed · 27 migrated · 15 inherited · 4 removed
 
 ## Tokens
 
@@ -47,13 +47,6 @@ _Components · max 6.6% pixels, 7/25 stories differ_
 
 - **Visual** Button · .cds--btn · border-radius 0px → 999999px (pill) _(9 stories)_
 - **Visual** Button · .cds--btn.cds--skeleton · border-radius 0px → 999999px (pill)
-
-### CodeSnippet
-
-_Components · max 0.0% pixels, 0/7 stories differ_
-
-- **Visual** CodeSnippet · .cds--snippet__icon · color #ffffff → #000000 _(4 stories)_
-- **Visual** CodeSnippet · .cds--btn.cds--copy.cds--copy-btn · color #ffffff → #000000 (inherited from Button) _(4 stories)_
 
 ### ComboBox
 
@@ -333,8 +326,8 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--list-box__wrapper.cds--list-box__wrapper--decorator.cds--list-box__wrapper--fluid · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** Fluid Components · .cds--dropdown__wrapper.cds--list-box__wrapper.cds--list-box__wrapper--fluid.cds--list-box__wrapper--fluid--condensed · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** Fluid Components · .cds--dropdown__wrapper.cds--list-box__wrapper.cds--list-box__wrapper--decorator.cds--list-box__wrapper--fluid · border-radius 0px → 4px (inherited from Dropdown)
-- **Visual** Fluid Components · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
 - **Visual** Fluid Components · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill) (inherited from FileUploader)
+- **Visual** Fluid Components · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
 - **Visual** Fluid Components · .cds--list-box__wrapper.cds--list-box__wrapper--fluid.cds--list-box__wrapper--fluid--condensed.cds--multi-select__wrapper · border-radius 0px → 4px (inherited from Dropdown, MultiSelect)
 - **Visual** Fluid Components · .cds--list-box__wrapper.cds--list-box__wrapper--decorator.cds--list-box__wrapper--fluid.cds--multi-select__wrapper · border-radius 0px → 4px (inherited from Dropdown, MultiSelect)
 - **Visual** Fluid Components · .cds--select-input · border-top/left none → 1px solid transparent (inherited from Select)
@@ -392,13 +385,13 @@ _Components · max 1.0% pixels, 2/2 stories differ_
 - **Visual** Form · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput) _(2 stories)_
 - **Visual** Form · .cds--select-input · border-radius 0px → 4px (inherited from Select) _(2 stories)_
 - **Visual** Form · .cds--password-input.cds--text-input · border-radius 0px → 4px (inherited from PasswordInput) _(2 stories)_
+- **Visual** Form · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill) (inherited from FileUploader) _(2 stories)_
 - **Visual** Form · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
 - **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
 - **Visual** Form · .cds--btn.cds--tooltip__trigger · border-radius 0px → 999999px (pill) (inherited from Button, Tooltip) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · border-radius 0px → 4px (inherited from ComboBox) _(2 stories)_
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · border-radius 0px → 4px (inherited from MultiSelect) _(2 stories)_
-- **Visual** Form · .cds--btn.cds--file-uploader-button · border-radius 0px → 999999px (pill) (inherited from FileUploader) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-top/left none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-top/right none → 1px solid transparent (inherited from DatePicker) _(2 stories)_
 - **Visual** Form · .cds--search-input · border-top/right/left none → 1px solid transparent (inherited from Search) _(2 stories)_
@@ -612,6 +605,21 @@ _Components · max 7.4% pixels, 1/6 stories differ_
 - **Flag** OverflowMenu · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12
 - **Flag** OverflowMenu · feature flag enable-v12-overflowmenu: off in V11 → on by default in V12
 
+### PageHeader
+
+_Components · max 0.1% pixels, 0/9 stories differ_
+
+- **Visual** PageHeader · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(8 stories)_
+- **Visual** PageHeader · .cds--tag · border-radius 16px → 4px (inherited from Tag) _(4 stories)_
+- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 18.0001px _(2 stories)_
+- **Visual** PageHeader · .cds--popover · line-height 0px → 18.0001px _(2 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--left.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(7 stories)_
+- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(7 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--overflow-menu__container element added (inherited from OverflowMenu) _(2 stories)_
+- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--right.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
+- **Structure** PageHeader · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu) _(2 stories)_
+- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(2 stories)_
+
 ### PasswordInput
 
 _Components · max 0.9% pixels, 1/1 stories differ_
@@ -716,6 +724,47 @@ _Components · max 1.2% pixels, 6/6 stories differ_
 - **Visual** Tag · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
 - **Visual** Tag · .cds--skeleton.cds--tag · border-radius 16px → 4px
 
+### Tearsheet
+
+_Components · max 0.9% pixels, 10/10 stories differ_
+
+- **Visual** Tearsheet · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
+- **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · border-radius 0px → 8px _(10 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(10 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button) _(10 stories)_
+- **Visual** Tearsheet · .cds--text-input · background-color #f4f4f4 → transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(9 stories)_
+- **Visual** Tearsheet · .cds--number__control-btn · border none → 1px solid transparent (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret::after · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--tearsheet__header-action-item · display none → block _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret · display block → none (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret::after · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret · letter-spacing normal → 0.16px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret::after · letter-spacing normal → 0.16px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--popover-caret::after · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
+- **Visual** Tearsheet · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--btn · background-color #0050e6 → #0f62fe (inherited from Button) _(3 stories)_
+- **Visual** Tearsheet · .cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden · display none → block _(3 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--tearsheet__scroller-button · border-radius 0px → 999999px (pill)
+- **Layout** Tearsheet · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button) _(10 stories)_
+- **Layout** Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button) _(7 stories)_
+- **Layout** Tearsheet · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
+- **Layout** Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button) _(7 stories)_
+- **Layout** Tearsheet · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
+- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · height 0px → 32px (+32px) (inherited from Button, MenuButton) _(3 stories)_
+- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · width 0px → 192px (+192px) (inherited from Button, MenuButton) _(3 stories)_
+- **Structure** Tearsheet · .cds--number__rule-divider element removed (inherited from NumberInput) _(7 stories)_
+
 ### TextInput
 
 _Components · max 1.9% pixels, 5/7 stories differ_
@@ -797,13 +846,6 @@ _Components · max 4.4% pixels, 4/5 stories differ_
 - **Story** Tooltip · story graduated from Feature Flag: components-tooltip--floating-styles
 - **Flag** Tooltip · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12
 
-### UI Shell
-
-_Components · max 0.0% pixels, 0/12 stories differ_
-
-- **Visual** UI Shell · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(12 stories)_
-- **Structure** UI Shell · .cds--text-truncate--end element added _(4 stories)_
-
 ### EmptyState
 
 _Examples · max 0.1% pixels, 2/3 stories differ_
@@ -823,7 +865,7 @@ _Examples · max 0.1% pixels, 2/3 stories differ_
 
 ### preview__Card
 
-_Preview · max 1.6% pixels, 6/17 stories differ_
+_Preview · max 1.6% pixels, 5/17 stories differ_
 
 - **Visual** preview__Card · .cds--card · border-radius 0px → 8px (inherited from GetStartedCard) _(17 stories)_
 - **Visual** preview__Card · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(7 stories)_
@@ -837,16 +879,12 @@ _Preview · max 1.6% pixels, 6/17 stories differ_
 - **Visual** preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 8px 0px 0px 8px (inherited from GetStartedCard)
 - **Visual** preview__Card · .cds--card__media.cds--card__media--horizontal · border-radius 0px → 0px 8px 8px 0px (inherited from GetStartedCard)
 - **Visual** preview__Card · .cds--aspect-ratio.cds--card__media · border-radius 0px → 8px (inherited from AspectRatio, GetStartedCard)
-- **Visual** preview__Card · .cds--card__title-end-icon · display flex → inline-flex (inherited from GetStartedCard)
-- **Visual** preview__Card · .cds--card__title-text-row.cds--card__title-text-row--truncate-multi · display flex → flow-root (inherited from GetStartedCard)
-- **Visual** preview__Card · .cds--card__title-text-row · display flex → block (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--card · height 348.36px → 346.36px (-2px) (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--card · height 354.36px → 352.36px (-2px) (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--card · height 281.48px → 279.48px (-2px) (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--btn · height 0px → 32px (+32px) (inherited from Button)
 - **Layout** preview__Card · .cds--card · height 340.47px → 338.47px (-2px) (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--card · height 462.98px → 460.98px (-2px) (inherited from GetStartedCard)
-- **Layout** preview__Card · .cds--card · height 166px → 144px (-22px) (inherited from GetStartedCard)
 - **Layout** preview__Card · .cds--btn · width 0px → 121.97px (+121.97px) (inherited from Button)
 - **Structure** preview__Card · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--right.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
 - **Structure** preview__Card · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(2 stories)_
@@ -865,7 +903,7 @@ _Preview · max 0.6% pixels, 1/1 stories differ_
 - **Visual** preview__Layout · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput)
 - **Layout** preview__Layout · .cds--text-input · width 230.47px → 231.8px (+1.33px) (inherited from TextInput)
 
-## Inherited (14)
+## Inherited (15)
 
 ### CopyButton
 
@@ -946,6 +984,12 @@ _Components · max 0.3% pixels, 1/6 stories differ_
 - **Visual** TreeView · .cds--btn.cds--tree-node__label__text-button · border-radius 0px → 999999px (pill) (inherited from Button)
 - **Flag** TreeView · feature flag enable-treeview-controllable: off in V11 → opt-in
 
+### UI Shell
+
+_Components · max 0.0% pixels, 0/12 stories differ_
+
+- **Visual** UI Shell · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(12 stories)_
+
 ### preview__DatePicker
 
 _Preview · max 1.7% pixels, 8/9 stories differ_
@@ -1004,7 +1048,7 @@ _Preview · max 0.2% pixels, 1/4 stories differ_
 - **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
 
-## Migrated (29)
+## Migrated (27)
 
 ### Coachmark
 
@@ -1211,210 +1255,6 @@ _Components_
 - **Story** OptionsTile · story added: Default (no IBM Products equivalent)
 - **Story** OptionsTile · story added: Static (no IBM Products equivalent)
 
-### PageHeader
-
-_Components · max 33.6% pixels, 9/9 stories differ_
-
-- **API** PageHeader · class prefix c4p-- → cds--
-- **API** PageHeader · package @carbon/ibm-products → @carbon/react
-- **Visual** PageHeader · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(8 stories)_
-- **Visual** PageHeader · .cds--btn · display flex → inline-flex (inherited from Button) _(5 stories)_
-- **Visual** PageHeader · .cds--btn · border none → 1px solid transparent (inherited from Button) _(4 stories)_
-- **Visual** PageHeader · .cds--btn · font-size 16px → 14px (inherited from Button) _(4 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · letter-spacing 0.16px → normal (inherited from Tooltip) _(4 stories)_
-- **Visual** PageHeader · .cds--popover · letter-spacing 0.16px → normal (inherited from Popover) _(4 stories)_
-- **Visual** PageHeader · .cds--btn · line-height 20.5715px → 18.0001px (inherited from Button) _(4 stories)_
-- **Visual** PageHeader · .cds--btn · outline 2px solid transparent → none (inherited from Button) _(4 stories)_
-- **Visual** PageHeader · .cds--btn · outline-offset -2px → 0px (inherited from Button) _(4 stories)_
-- **Visual** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border · background-color #ffffff → #f4f4f4 _(2 stories)_
-- **Visual** PageHeader · .cds--page-header__content · background-color #ffffff → #f4f4f4 _(2 stories)_
-- **Visual** PageHeader · .cds--page-header__tab-bar · background-color #ffffff → #f4f4f4 _(2 stories)_
-- **Visual** PageHeader · .cds--page-header.cds--page-header__next · background-color #ffffff → #f4f4f4 _(2 stories)_
-- **Visual** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-link · border-bottom 2px solid #c6c6c6 → 2px solid #e0e0e0 (inherited from Tabs) _(2 stories)_
-- **Visual** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 _(2 stories)_
-- **Visual** PageHeader · .cds--page-header.cds--page-header__next · border-bottom 1px solid #e0e0e0 → 1px solid #c6c6c6 _(2 stories)_
-- **Visual** PageHeader · .cds--btn.cds--overflow-menu · border-radius 0px → 999999px (pill) (inherited from OverflowMenu) _(2 stories)_
-- **Visual** PageHeader · .cds--tag · border-radius 16px → 4px (inherited from Tag) _(2 stories)_
-- **Visual** PageHeader · .cds--page-header.cds--page-header__next · display inline-block → block _(2 stories)_
-- **Visual** PageHeader · .cds--btn.cds--overflow-menu · font-size 14px → 16px (inherited from OverflowMenu) _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · font-size 14px → 16px (inherited from Tooltip) _(2 stories)_
-- **Visual** PageHeader · .cds--popover · font-size 14px → 16px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--btn__icon.cds--overflow-menu__icon · font-size 14px → 16px (inherited from OverflowMenu) _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · font-size 14px → 28px _(2 stories)_
-- **Visual** PageHeader · .cds--popover · font-size 14px → 28px _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · font-size 28px → 16px (inherited from Tooltip) _(2 stories)_
-- **Visual** PageHeader · .cds--popover · font-size 28px → 16px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--autoalign.cds--popover-container.cds--tooltip · font-size 14px → 28px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--autoalign.cds--popover-container.cds--tooltip · letter-spacing 0.16px → normal (inherited from Tooltip) _(2 stories)_
-- **Visual** PageHeader · .cds--btn.cds--overflow-menu · line-height 18.0001px → 20.5715px (inherited from OverflowMenu) _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 16px (inherited from Tooltip) _(2 stories)_
-- **Visual** PageHeader · .cds--popover · line-height 0px → 16px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--btn__icon.cds--overflow-menu__icon · line-height 18.0001px → 20.5715px (inherited from OverflowMenu) _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 36.0002px _(2 stories)_
-- **Visual** PageHeader · .cds--popover · line-height 0px → 36.0002px _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 36.0002px → 16px (inherited from Tooltip) _(2 stories)_
-- **Visual** PageHeader · .cds--popover · line-height 36.0002px → 16px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--autoalign.cds--popover-container.cds--tooltip · line-height 0px → 36.0002px (inherited from Popover) _(2 stories)_
-- **Visual** PageHeader · .cds--tooltip-trigger__wrapper · line-height 0px → 18.0001px _(2 stories)_
-- **Visual** PageHeader · .cds--popover · line-height 0px → 18.0001px _(2 stories)_
-- **Visual** PageHeader · .cds--tag · background-color #e0e0e0 → #d0e2ff (inherited from Tag)
-- **Visual** PageHeader · .cds--header · background-color #f4f4f4 → #ffffff (inherited from UI Shell)
-- **Visual** PageHeader · .cds--tag · border 1px solid #a8a8a8 → 1px solid #78a9ff (inherited from Tag)
-- **Visual** PageHeader · .cds--header · border-bottom 1px solid #c6c6c6 → 1px solid #e0e0e0 (inherited from UI Shell)
-- **Visual** PageHeader · .cds--tag__label · color #161616 → #0043ce (inherited from Tag)
-- **Visual** PageHeader · .cds--tag · color #161616 → #0043ce (inherited from Tag)
-- **Visual** PageHeader · .cds--tag · display inline-flex → flex (inherited from Tag)
-- **Visual** PageHeader · .cds--link · display inline-flex → flex
-- **Visual** PageHeader · .cds--breadcrumb-item · display none → flex (inherited from Breadcrumb)
-- **Visual** PageHeader · .cds--breadcrumb-item::after · display inline → block (inherited from Breadcrumb)
-- **Visual** PageHeader · .cds--tag · display none → flex (inherited from Tag)
-- **Visual** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item · display flex → none (inherited from Breadcrumb)
-- **Visual** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item::after · display block → inline (inherited from Breadcrumb)
-- **Layout** PageHeader · .cds--btn · height 0px → 40px (+40px) (inherited from Button) _(6 stories)_
-- **Layout** PageHeader · .cds--btn · width 0px → 40px (+40px) (inherited from Button) _(6 stories)_
-- **Layout** PageHeader · .cds--btn · width 0px → 172.25px (+172.25px) (inherited from Button) _(2 stories)_
-- **Layout** PageHeader · .cds--page-header__content · width 1196px → 1280px (+84px) _(2 stories)_
-- **Layout** PageHeader · .cds--page-header__tab-bar · width 1196px → 1280px (+84px) _(2 stories)_
-- **Layout** PageHeader · .cds--page-header.cds--page-header__next · width 1196px → 1280px (+84px) _(2 stories)_
-- **Layout** PageHeader · .cds--tag · height 0px → 24px (+24px) (inherited from Tag)
-- **Layout** PageHeader · .cds--tag · width 32.64px → 47.61px (+14.97px) (inherited from Tag)
-- **Layout** PageHeader · .cds--tag · width 0px → 45.61px (+45.61px) (inherited from Tag)
-- **Layout** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border · width 1196px → 1280px (+84px)
-- **Structure** PageHeader · .cds--layout element added _(9 stories)_
-- **Structure** PageHeader · .cds--page-header.cds--page-header__next element removed _(8 stories)_
-- **Structure** PageHeader · .cds--page-header.cds--page-header__next element added _(7 stories)_
-- **Structure** PageHeader · .cds--css-grid element added _(7 stories)_
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-16.cds--md:col-span-8.cds--sm:col-span-4 element added (inherited from AspectRatio, Grid, preview__Card) _(7 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-container element added _(7 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-wrapper element added _(7 stories)_
-- **Structure** PageHeader · .cds--page-header-breadcrumb-overflow element added _(7 stories)_
-- **Structure** PageHeader · .cds--breadcrumb.cds--breadcrumb--no-trailing-slash element added (inherited from Breadcrumb) _(7 stories)_
-- **Structure** PageHeader · .cds--breadcrumb-item element added (inherited from Breadcrumb) _(7 stories)_
-- **Structure** PageHeader · .cds--link element added (inherited from Link) _(7 stories)_
-- **Structure** PageHeader · .cds--truncated-text__text-content element added (inherited from TruncatedText) _(7 stories)_
-- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--left.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(7 stories)_
-- **Structure** PageHeader · .cds--css-grid element removed _(7 stories)_
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-16.cds--md:col-span-8.cds--sm:col-span-4 element removed (inherited from AspectRatio, Grid, preview__Card) _(7 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-container element removed _(7 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-wrapper element removed _(7 stories)_
-- **Structure** PageHeader · .cds--page-header-breadcrumb-overflow element removed _(7 stories)_
-- **Structure** PageHeader · .cds--breadcrumb.cds--breadcrumb--no-trailing-slash element removed (inherited from Breadcrumb) _(7 stories)_
-- **Structure** PageHeader · .cds--link element removed (inherited from Link) _(7 stories)_
-- **Structure** PageHeader · .cds--truncated-text__text-content element removed (inherited from TruncatedText) _(7 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb__actions element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-page-actions element added _(6 stories)_
-- **Structure** PageHeader · .cds--popover element added (inherited from Popover) _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-wrapper element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__start element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-container element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-text.cds--truncated-text element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__body element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__subtitle element added _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-bar.cds--page-header__breadcrumb-bar-border element removed _(6 stories)_
-- **Structure** PageHeader · .cds--breadcrumb-item element removed (inherited from Breadcrumb) _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb__actions element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb-page-actions element removed _(6 stories)_
-- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-wrapper element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__start element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-container element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__title-text.cds--truncated-text element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__body element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__content__subtitle element removed _(6 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb__icon element added _(5 stories)_
-- **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element added (inherited from Button) _(5 stories)_
-- **Structure** PageHeader · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip) _(5 stories)_
-- **Structure** PageHeader · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip) _(5 stories)_
-- **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button) _(5 stories)_
-- **Structure** PageHeader · .cds--popover element removed (inherited from Popover) _(5 stories)_
-- **Structure** PageHeader · .cds--page-header__breadcrumb__icon element removed _(5 stories)_
-- **Structure** PageHeader · .cds--overflow-menu__wrapper element removed (inherited from OverflowMenu) _(4 stories)_
-- **Structure** PageHeader · .cds--icon-tooltip.cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(4 stories)_
-- **Structure** PageHeader · .cds--page-header__tab-bar element added _(3 stories)_
-- **Structure** PageHeader · .cds--css-grid.cds--css-grid--condensed element added _(3 stories)_
-- **Structure** PageHeader · .cds--tabs element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tab--list element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-item--selected.cds--tabs__nav-link element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item-label-wrapper element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item-label element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item--close--hidden element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-link element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tag__label element added (inherited from Tag) _(3 stories)_
-- **Structure** PageHeader · .cds--tab-content element added (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--page-header__content__page-actions element added _(3 stories)_
-- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
-- **Structure** PageHeader · .cds--page-header__tab-bar element removed _(3 stories)_
-- **Structure** PageHeader · .cds--css-grid.cds--css-grid--condensed element removed _(3 stories)_
-- **Structure** PageHeader · .cds--tabs element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tab--list element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-item--selected.cds--tabs__nav-link element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item-label-wrapper element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item-label element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item--close--hidden element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tabs__nav-item.cds--tabs__nav-link element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--tag__label element removed (inherited from Tag) _(3 stories)_
-- **Structure** PageHeader · .cds--tab-content element removed (inherited from Tabs) _(3 stories)_
-- **Structure** PageHeader · .cds--truncated-text__tooltip-trigger element added (inherited from TruncatedText) _(2 stories)_
-- **Structure** PageHeader · .cds--page-header__content__contextual-actions element added _(2 stories)_
-- **Structure** PageHeader · .cds--layout--size-lg.cds--tag.cds--tag--blue.cds--tag--lg element added (inherited from Tag) _(2 stories)_
-- **Structure** PageHeader · .cds--autoalign.cds--overflow-menu__container element added (inherited from OverflowMenu) _(2 stories)_
-- **Structure** PageHeader · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--right.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item.cds--page-header-overflow-breadcrumb-item-with-items element removed (inherited from Breadcrumb) _(2 stories)_
-- **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--overflow-menu element removed (inherited from OverflowMenu) _(2 stories)_
-- **Structure** PageHeader · .cds--popover--bottom.cds--popover--caret.cds--popover--high-contrast.cds--popover-container.cds--tooltip element removed (inherited from Popover, Tooltip) _(2 stories)_
-- **Structure** PageHeader · .cds--truncated-text__tooltip-trigger element removed (inherited from TruncatedText) _(2 stories)_
-- **Structure** PageHeader · .cds--page-header__content__contextual-actions element removed _(2 stories)_
-- **Structure** PageHeader · .cds--layout--size-lg.cds--tag.cds--tag--blue.cds--tag--lg element removed (inherited from Tag) _(2 stories)_
-- **Structure** PageHeader · .cds--page-header__content__page-actions element removed _(2 stories)_
-- **Structure** PageHeader · .cds--btn.cds--btn--md.cds--btn--primary.cds--layout--size-md element removed (inherited from Button) _(2 stories)_
-- **Structure** PageHeader · .cds--btn__icon element removed (inherited from Button) _(2 stories)_
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show.cds--page-header-title-breadcrumb-show__without-content-element element added (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--link.cds--truncated-text element added (inherited from Link, TruncatedText)
-- **Structure** PageHeader · .cds--page-header__breadcrumb__content-actions element added
-- **Structure** PageHeader · .cds--page-header__tab-bar--tablist element added
-- **Structure** PageHeader · .cds--page-header--tag-overflow-container element added
-- **Structure** PageHeader · .cds--tag.cds--tag--blue element added (inherited from Tag)
-- **Structure** PageHeader · .cds--tag.cds--tag--purple element added (inherited from Tag)
-- **Structure** PageHeader · .cds--tag.cds--tag--red element added (inherited from Tag)
-- **Structure** PageHeader · .cds--autoalign.cds--page-header--tag-overflow-popover.cds--popover--auto-align.cds--popover--bottom.cds--popover--drop-shadow.cds--popover-container element added (inherited from Popover)
-- **Structure** PageHeader · .cds--tag.cds--tag--gray.cds--tag--operational element added (inherited from Tag)
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-8.cds--md:col-span-4.cds--sm:col-span-4 element added (inherited from AspectRatio, Grid, preview__Card)
-- **Structure** PageHeader · .cds--page-header__breadcrumb-bar element added
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-8.cds--md:col-span-4.cds--sm:col-span-0 element added (inherited from AspectRatio, Grid, preview__Card)
-- **Structure** PageHeader · .cds--aspect-ratio.cds--aspect-ratio--2x1.cds--page-header__hero-image.cds--page-header__hero-image--object-fit-cover element added
-- **Structure** PageHeader · .cds--page-header__content__icon element added
-- **Structure** PageHeader · .cds--btn.cds--btn--md.cds--btn--primary.cds--layout--size-md element added (inherited from Button)
-- **Structure** PageHeader · .cds--btn__icon element added (inherited from Button)
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--page-header-breadcrumb-overflow-item.cds--page-header-overflow-breadcrumb-item-with-items element added (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--overflow-menu element added (inherited from OverflowMenu)
-- **Structure** PageHeader · .cds--overflow-menu__icon element added (inherited from OverflowMenu)
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show__with-content-element element added (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--page-header__breadcrumb__content-actions.cds--page-header__breadcrumb__content-actions-with-global-actions element added
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show.cds--page-header-title-breadcrumb-show__without-content-element element removed (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--link.cds--truncated-text element removed (inherited from Link, TruncatedText)
-- **Structure** PageHeader · .cds--page-header__breadcrumb__content-actions element removed
-- **Structure** PageHeader · .cds--page-header__tab-bar--tablist element removed
-- **Structure** PageHeader · .cds--page-header--tag-overflow-container element removed
-- **Structure** PageHeader · .cds--tag.cds--tag--blue element removed (inherited from Tag)
-- **Structure** PageHeader · .cds--tag.cds--tag--purple element removed (inherited from Tag)
-- **Structure** PageHeader · .cds--tag.cds--tag--red element removed (inherited from Tag)
-- **Structure** PageHeader · .cds--tag.cds--tag--blue.cds--tag--operational element removed (inherited from Tag)
-- **Structure** PageHeader · .cds--page-header--tag-overflow-popover.cds--popover--bottom.cds--popover--caret.cds--popover--drop-shadow.cds--popover-container element removed (inherited from Popover)
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-8.cds--md:col-span-4.cds--sm:col-span-4 element removed (inherited from AspectRatio, Grid, preview__Card)
-- **Structure** PageHeader · .cds--page-header__breadcrumb-bar element removed
-- **Structure** PageHeader · .cds--subgrid.cds--subgrid--wide element removed
-- **Structure** PageHeader · .cds--css-grid-column.cds--lg:col-span-8.cds--md:col-span-4.cds--sm:col-span-0 element removed (inherited from AspectRatio, Grid, preview__Card)
-- **Structure** PageHeader · .cds--aspect-ratio.cds--aspect-ratio--2x1.cds--page-header__hero-image.cds--page-header__hero-image--object-fit-cover element removed
-- **Structure** PageHeader · .cds--page-header__content__icon element removed
-- **Structure** PageHeader · .cds--breadcrumb-item.cds--breadcrumb-item--current.cds--page-header-title-breadcrumb.cds--page-header-title-breadcrumb-show__with-content-element element removed (inherited from Breadcrumb)
-- **Structure** PageHeader · .cds--page-header__breadcrumb__content-actions.cds--page-header__breadcrumb__content-actions-with-global-actions element removed
-- **Structure** PageHeader · .cds--page-header.cds--page-header--disable-sticky-tab-bar.cds--page-header__next element removed
-
 ### SidePanel
 
 _Components · max 10.8% pixels, 8/8 stories differ_
@@ -1565,125 +1405,6 @@ _Components · max 0.4% pixels, 2/8 stories differ_
 - **Structure** TagOverflow · .cds--tag.cds--tag--purple.cds--tag-overflow__item--tag element removed
 - **Structure** TagOverflow · .cds--tag-overflow__item.cds--user-avatar.cds--user-avatar--md.cds--user-avatar--order-7-cyan element removed
 - **Structure** TagOverflow · .cds--tag-overflow__item.cds--user-avatar.cds--user-avatar--md.cds--user-avatar--order-8-gray element removed
-
-### Tearsheet
-
-_Components · max 1.2% pixels, 10/10 stories differ_
-
-- **API** Tearsheet · class prefix c4p-- → cds--
-- **API** Tearsheet · package @carbon/ibm-products → @carbon/react
-- **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · background-color #ffffff → #f4f4f4 _(10 stories)_
-- **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · border 1px solid #e0e0e0 → 1px solid #c6c6c6 _(10 stories)_
-- **Visual** Tearsheet · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(10 stories)_
-- **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · border-radius 0px → 8px _(10 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button) _(10 stories)_
-- **Visual** Tearsheet · .cds--text-input · background-color #ffffff → transparent (inherited from TextInput) _(9 stories)_
-- **Visual** Tearsheet · .cds--text-input · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from TextInput) _(9 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput) _(9 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(9 stories)_
-- **Visual** Tearsheet · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(9 stories)_
-- **Visual** Tearsheet · .cds--number__control-btn · border none → 1px solid transparent (inherited from NumberInput) _(7 stories)_
-- **Visual** Tearsheet · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--modal-close · box-shadow #0f62fe 0px 0px 0px 1px inset, #f4f4f4 0px 0px 0px 2px inset → #0f62fe 0px 0px 0px 1px inset, #ffffff 0px 0px 0px 2px inset (inherited from Button) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret::after · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret · display block → none (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret::after · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret · letter-spacing normal → 0.16px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret::after · letter-spacing normal → 0.16px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--popover-caret::after · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput) _(7 stories)_
-- **Visual** Tearsheet · .cds--btn · background-color #0050e6 → #0f62fe (inherited from Button) _(3 stories)_
-- **Visual** Tearsheet · .cds--progress-line · background-color #c6c6c6 → #e0e0e0 (inherited from ProgressIndicator) _(3 stories)_
-- **Visual** Tearsheet · .cds--tabs__nav-item.cds--tabs__nav-link · border-bottom 2px solid #c6c6c6 → 2px solid #e0e0e0 (inherited from Tabs)
-- **Visual** Tearsheet · .cds--btn.cds--tearsheet__scroller-button · border-radius 0px → 999999px (pill)
-- **Layout** Tearsheet · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button) _(10 stories)_
-- **Layout** Tearsheet · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
-- **Layout** Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button) _(7 stories)_
-- **Layout** Tearsheet · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
-- **Layout** Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button) _(7 stories)_
-- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · height 0px → 32px (+32px) (inherited from Button, MenuButton) _(3 stories)_
-- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · width 0px → 192px (+192px) (inherited from Button, MenuButton) _(3 stories)_
-- **Layout** Tearsheet · .cds--text-input · width 415px → 830px (+415px) (inherited from TextInput)
-- **Layout** Tearsheet · .cds--text-input · width 543px → 1086px (+543px) (inherited from TextInput)
-- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__header.cds--tearsheet__header--with-close-icon element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-content-wrapper element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-actions element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__content__header-actions element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-action-item element added _(10 stories)_
-- **Structure** Tearsheet · .cds--modal-close-button.cds--tearsheet__close-button element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-content element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-label element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__content__title-wrapper element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-title element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__content__title.cds--truncated-text element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-description element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__body element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__main-content element added _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__footer element added _(10 stories)_
-- **Structure** Tearsheet · .cds--modal-header.cds--tearsheet__next__header.cds--tearsheet__next__header--with-close-icon element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-content-wrapper element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-actions element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__header-actions element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-action-item element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--modal-close-button.cds--tearsheet__next__close-button element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-content element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-label element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__title-wrapper element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-title element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__content__title.cds--truncated-text element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-description element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__body element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__main-content element removed _(10 stories)_
-- **Structure** Tearsheet · .cds--btn-set.cds--btn-set--fluid.cds--tearsheet__footer-button-set element added _(9 stories)_
-- **Structure** Tearsheet · .cds--btn-set__fluid-inner.cds--btn-set__fluid-inner--auto-stack element added (inherited from Button) _(9 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__footer.cds--tearsheet__next__footer--three-actions element removed _(9 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--wide element added _(8 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet__next.cds--tearsheet__next--wide element removed _(8 stories)_
-- **Structure** Tearsheet · .cds--layout element added _(7 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-actions-menuButton element added _(7 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--ghost.cds--layout--size-2xl element added (inherited from Button) _(7 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--primary.cds--layout--size-2xl element added (inherited from Button) _(7 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__header-actions-menuButton element removed _(7 stories)_
-- **Structure** Tearsheet · .cds--number__rule-divider element removed (inherited from NumberInput) _(7 stories)_
-- **Structure** Tearsheet · .cds--action-set.cds--action-set--2xl.cds--action-set--row-triple.cds--btn-set element removed (inherited from Button) _(7 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--action-set__action-button--ghost.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--ghost.cds--layout--size-2xl element removed (inherited from Button) _(7 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--primary.cds--layout--size-2xl element removed (inherited from Button) _(7 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--secondary.cds--layout--size-2xl element added (inherited from Button) _(5 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--expressive.cds--btn--secondary.cds--layout--size-2xl element removed (inherited from Button) _(5 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__summary-content element added _(4 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__summary-content element removed _(4 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden element added _(3 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__title-start element added _(2 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet.cds--tearsheet--narrow element added _(2 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--ghost.cds--btn--xl.cds--layout--size-xl element added (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--secondary.cds--btn--xl.cds--layout--size-xl element added (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--primary.cds--btn--xl.cds--layout--size-xl element added (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal-content.cds--tearsheet__body-layout.cds--tearsheet__body-layout--has-influencer element added _(2 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__influencer element added _(2 stories)_
-- **Structure** Tearsheet · .cds--btn.cds--btn--2xl.cds--btn--disabled.cds--btn--secondary.cds--layout--size-2xl element added (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__title-start element removed _(2 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal.cds--tearsheet__next.cds--tearsheet__next--narrow element removed _(2 stories)_
-- **Structure** Tearsheet · .cds--action-set.cds--action-set--lg.cds--action-set--row-triple.cds--btn-set element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--action-set__action-button--ghost.cds--btn.cds--btn--expressive.cds--btn--ghost.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--expressive.cds--btn--secondary.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--expressive.cds--btn--primary.cds--btn--xl.cds--layout--size-xl element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--layer-one.cds--modal-content.cds--tearsheet__next__body-layout.cds--tearsheet__next__body-layout--has-influencer element removed _(2 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__next__influencer element removed _(2 stories)_
-- **Structure** Tearsheet · .cds--action-set__action-button.cds--action-set__action-button--expressive.cds--btn.cds--btn--2xl.cds--btn--disabled.cds--btn--expressive.cds--btn--secondary.cds--layout--size-2xl element removed (inherited from Button) _(2 stories)_
-- **Structure** Tearsheet · .cds--tearsheet__navigation-bar element added
-- **Structure** Tearsheet · .cds--tearsheet__scroller-container element added
-- **Structure** Tearsheet · .cds--tearsheet__scroller-button-icon element added
-- **Structure** Tearsheet · .cds--tearsheet__next__footer element removed
-- **Structure** Tearsheet · .cds--tearsheet__next__navigation-bar element removed
-- **Structure** Tearsheet · .cds--tearsheet__next__scroller-container element removed
-- **Structure** Tearsheet · .cds--tearsheet__next__scroller-button-icon element removed
 
 ### UserAvatar
 
@@ -2009,6 +1730,8 @@ _Preview · max 60.1% pixels, 2/2 stories differ_
 - **Structure** Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
 - **Structure** Onboarding · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)
 - **Story** Onboarding · story added: Default (no IBM Products equivalent)
+- **Story** Onboarding · story removed: Floating
+- **Story** Onboarding · story removed: Tooltip
 
 ### preview__BigNumber
 
@@ -2131,7 +1854,7 @@ _Deprecated_
 - **Story** preview_Pagination · story removed: with no sizer, child input, or child selector
 - **Story** preview_Pagination · story removed: Playground
 
-## Unchanged (30)
+## Unchanged (31)
 
 ### Accordion
 
@@ -2156,6 +1879,11 @@ _Components · max 0.0% pixels, 0/5 stories differ_
 ### ClassPrefix
 
 _Components · max 0.0% pixels, 0/1 stories differ_
+
+
+### CodeSnippet
+
+_Components · max 0.0% pixels, 0/7 stories differ_
 
 
 ### ContentSwitcher
