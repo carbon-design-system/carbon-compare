@@ -46,18 +46,21 @@ export function PixelDiff({ s, b }) {
   );
 }
 
-// For stories that exist on one side only.
+// For stories that exist on one side only: the one story, full width, with a line saying why
+// there's nothing beside it. (An empty half-pane read as part of the page failing to load.)
 export function OneSided({ c, sid }) {
   const v = c.status === 'removed' ? 'v11' : 'v12';
-  const other = c.status === 'migrated' ? 'IBM Products' : v === 'v12' ? 'V11' : 'V12';
-  const why = c.status === 'migrated' ? 'No IBM Products equivalent' : `Not in ${other}`;
-  const live = (
-    <div className="pane"><PaneHead v={v} id={sid} /><div className="stage live"><iframe loading="lazy" title={c.name} src={storyUrl(v, sid)} /></div></div>
+  const why =
+    c.status === 'removed' ? 'Removed in V12, so there\'s only the V11 version to show.' :
+    c.status === 'migrated' ? 'This story has no IBM Products equivalent, so there\'s only the V12 version to show.' :
+    c.status === 'new' ? 'New in V12, so there\'s no V11 version to compare with.' :
+    'This story is only in V12, so there\'s no V11 version to compare with.';
+  return (
+    <div className="compare single">
+      <p className="compare-note">{why}</p>
+      <div className="pane"><PaneHead v={v} id={sid} /><div className="stage live"><iframe loading="lazy" title={c.name} src={storyUrl(v, sid)} /></div></div>
+    </div>
   );
-  const missing = (
-    <div className="pane"><PaneHead v={v} label={other.toUpperCase()} /><div className="stage"><span className="empty">{why}</span></div></div>
-  );
-  return <div className="compare">{v === 'v12' ? <>{missing}{live}</> : <>{live}{missing}</>}</div>;
 }
 
 // Wipe: two live stories stacked, the older version clipped on top. Clipping also limits where
