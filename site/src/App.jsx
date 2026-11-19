@@ -3,7 +3,7 @@ import {
   Theme, Header, HeaderName, HeaderMenuButton, HeaderGlobalBar, HeaderGlobalAction, SkipToContent,
   SideNav, SideNavItems, SideNavLink, SideNavDivider, Search, Content, Loading, InlineNotification,
 } from '@carbon/react';
-import { Light, Asleep, Laptop } from '@carbon/react/icons';
+import { Light, Asleep, Laptop, LogoGithub } from '@carbon/react/icons';
 import { loadData, routeOf, STATUS, prefs } from './lib.js';
 import { StatusDot } from './bits.jsx';
 import Overview from './pages/Overview.jsx';
@@ -106,6 +106,10 @@ export default function App() {
         <HeaderGlobalBar>
           {data && <span className="stamp" title={stampText(data.meta, data.changelog)}>{stampText(data.meta, data.changelog)}</span>}
           <ThemeToggle choice={choice} setChoice={setChoice} />
+          <HeaderGlobalAction aria-label="Source on GitHub" tooltipAlignment="end"
+            href="https://github.com/carbon-design-system/carbon-compare" target="_blank" rel="noopener">
+            <LogoGithub size={20} />
+          </HeaderGlobalAction>
         </HeaderGlobalBar>
         <SideNav aria-label="Components" expanded={navOpen} onOverlayClick={() => setNavOpen(false)} onSideNavBlur={() => setNavOpen(false)} href="#main-content">
           <SideNavItems>
