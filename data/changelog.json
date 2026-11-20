@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-19T16:20:34.769Z",
+ "generatedAt": "2026-11-20T04:19:07.551Z",
  "counts": {
   "components": 117,
   "unchanged": 31,
@@ -2291,7 +2291,7 @@
    },
    "pixel": {
     "max": 0.45484,
-    "mean": 0.19896,
+    "mean": 0.22116,
     "storiesChanged": 5,
     "storiesCompared": 5
    },
@@ -2365,6 +2365,40 @@
      "changes": 41
     },
     {
+     "id": "components-coachmark--tooltip",
+     "base": "ibmp",
+     "baseId": "preview-onboarding-coachmark--tooltip",
+     "v11Id": null,
+     "name": "Tooltip",
+     "title": "Components/Coachmark",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 43428,
+      "totalPixels": 332788,
+      "ratio": 0.1305,
+      "size": {
+       "before": [
+        1228,
+        271
+       ],
+       "v12": [
+        1228,
+        271
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 0,
+      "width": 1228,
+      "height": 271
+     },
+     "baseLayout": "centered",
+     "changes": 18
+    },
+    {
      "id": "components-coachmark--floating",
      "base": "ibmp",
      "baseId": "preview-onboarding-coachmark--floating",
@@ -2431,40 +2465,6 @@
      },
      "baseLayout": "centered",
      "changes": 37
-    },
-    {
-     "id": "components-coachmark--tooltip",
-     "base": "ibmp",
-     "baseId": "preview-onboarding-coachmark--tooltip",
-     "v11Id": null,
-     "name": "Tooltip",
-     "title": "Components/Coachmark",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 6493,
-      "totalPixels": 332788,
-      "ratio": 0.01951,
-      "size": {
-       "before": [
-        1228,
-        271
-       ],
-       "v12": [
-        1228,
-        271
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 0,
-      "width": 1228,
-      "height": 271
-     },
-     "baseLayout": "centered",
-     "changes": 18
     }
    ],
    "notes": [],
@@ -32385,8 +32385,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.00409,
-    "mean": 0.00104,
+    "max": 0.00474,
+    "mean": 0.0011,
     "storiesChanged": 2,
     "storiesCompared": 8
    },
@@ -32401,9 +32401,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 645,
+      "diffPixels": 747,
       "totalPixels": 157696,
-      "ratio": 0.00409,
+      "ratio": 0.00474,
       "size": {
        "before": [
         1232,
@@ -32435,9 +32435,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 529,
+      "diffPixels": 498,
       "totalPixels": 157696,
-      "ratio": 0.00335,
+      "ratio": 0.00316,
       "size": {
        "before": [
         1232,
@@ -45195,8 +45195,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.00253,
-    "mean": 0.00253,
+    "max": 0.00262,
+    "mean": 0.00262,
     "storiesChanged": 1,
     "storiesCompared": 1
    },
@@ -45211,9 +45211,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1869,
+      "diffPixels": 1937,
       "totalPixels": 739840,
-      "ratio": 0.00253,
+      "ratio": 0.00262,
       "size": {
        "before": [
         1280,
@@ -49115,9 +49115,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 11793,
+      "diffPixels": 11745,
       "totalPixels": 957216,
-      "ratio": 0.01232,
+      "ratio": 0.01227,
       "size": {
        "before": [
         1248,
