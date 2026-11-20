@@ -1,8 +1,8 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-11-20T04:19:07.565Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-11-20T12:33:44.694Z from the live V11 and V12 Storybooks. Values are computed styles.
 
-Components: 31 unchanged · 3 new · 37 changed · 27 migrated · 15 inherited · 4 removed
+Components: 31 unchanged · 4 new · 38 changed · 26 migrated · 15 inherited · 4 removed
 
 ## Tokens
 
@@ -19,7 +19,7 @@ Components: 31 unchanged · 3 new · 37 changed · 27 migrated · 15 inherited �
 - **August 5, 2026**: A new preview DatePicker has been added to @carbon/react as preview__DatePicker. It is built on the Temporal API and a framework-agnostic state machine shared with @carbon/web-components, replacing the Flatpickr-based implementation. Stories and documentation can be found in the Components/Preview/preview__DatePicker section of Storybook.
 - **July 22, 2026**: Initial motion API has been added to @carbon/motion and @carbon/react packages. Stories along with documentation in the Overview page can be viewed in the Elements/Motion section of Storybook. The initial work covers definition of "surfaces" which are different motion animations we want to standardize (currently examples!) and new React wrapper components that implement the Motion library under the hood. There is an option to also utilize native CSS for the "reveal" surfaces.
 
-## Changed (37)
+## Changed (38)
 
 ### Breadcrumb
 
@@ -577,6 +577,62 @@ _Components · max 1.0% pixels, 1/6 stories differ_
 - **Structure** NumberInput · .cds--number__rule-divider element removed _(4 stories)_
 - **Structure** NumberInput · .cds--number__control-btn element removed
 
+### Onboarding
+
+_Components · max 60.1% pixels, 4/4 stories differ_
+
+- **API** Onboarding · class prefix c4p-- → cds--
+- **API** Onboarding · package @carbon/ibm-products → @carbon/react
+- **Visual** Onboarding · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(3 stories)_
+- **Visual** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · background-image linear-gradient(90deg, #001d6c, #6929c4) → linear-gradient(90deg, #001d6c 0%, #6929c4 100%) _(2 stories)_
+- **Visual** Onboarding · .cds--popover-content · border-radius 2px → 8px (inherited from Popover) _(2 stories)_
+- **Visual** Onboarding · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(2 stories)_
+- **Visual** Onboarding · .cds--btn.cds--guidebanner__toggle-button · border-radius 0px → 999999px (pill) _(2 stories)_
+- **Visual** Onboarding · .cds--btn.cds--guidebanner__element-button · border-radius 0px → 999999px (pill) _(2 stories)_
+- **Visual** Onboarding · .cds--guidebanner__navigation · border-top none → 1px solid #8a3ffc
+- **Visual** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · display none → block
+- **Visual** Onboarding · .cds--guidebanner__next-button · display none → block
+- **Visual** Onboarding · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · margin 0px → 0px 226px 0px 0px (inherited from Popover, Tooltip)
+- **Visual** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · margin 0px 0px 0px auto → 0px 0px 0px 1071.55px
+- **Visual** Onboarding · .cds--guidebanner__element · margin 0px → 16px 0px 0px
+- **Visual** Onboarding · .cds--guidebanner__element · padding 0px 0px 0px 52px → 0px 52px
+- **Layout** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 320.91px → 280.94px (-39.97px)
+- **Layout** Onboarding · .cds--btn · height 0px → 40px (+40px) (inherited from Button)
+- **Layout** Onboarding · .cds--guidebanner__navigation · height 40px → 41px (+1px)
+- **Layout** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 102px → 320.91px (+218.91px)
+- **Layout** Onboarding · .cds--btn · width 0px → 40px (+40px) (inherited from Button)
+- **Layout** Onboarding · .cds--btn.cds--guidebanner__toggle-button · width 101.45px → 94.45px (-7px)
+- **Structure** Onboarding · .cds--layout element added _(2 stories)_
+- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container element added _(2 stories)_
+- **Structure** Onboarding · .cds--guidebanner__carousel-elements element added _(2 stories)_
+- **Structure** Onboarding · .cds--guidebanner__item element added _(2 stories)_
+- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container--scrolled element added _(2 stories)_
+- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container--scroll-max element added _(2 stories)_
+- **Structure** Onboarding · .cds--popover-caret element removed (inherited from Popover) _(2 stories)_
+- **Structure** Onboarding · .cds--carousel__elements-container element removed (inherited from Carousel) _(2 stories)_
+- **Structure** Onboarding · .cds--carousel__elements element removed (inherited from Carousel) _(2 stories)_
+- **Structure** Onboarding · .cds--carousel__item element removed (inherited from Carousel) _(2 stories)_
+- **Structure** Onboarding · .cds--carousel__elements-container--scrolled element removed (inherited from Carousel) _(2 stories)_
+- **Structure** Onboarding · .cds--carousel__elements-container--scroll-max element removed (inherited from Carousel) _(2 stories)_
+- **Structure** Onboarding · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
+- **Structure** Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
+- **Structure** Onboarding · .cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md element removed
+- **Structure** Onboarding · .cds--guidebanner__element element removed
+- **Structure** Onboarding · .cds--guidebanner__element-title element removed
+- **Structure** Onboarding · .cds--guidebanner__element-content element removed
+- **Structure** Onboarding · .cds--guidebanner__element-buttons element removed
+- **Structure** Onboarding · .cds--guidebanner__element-link.cds--link.cds--link--md element removed
+- **Structure** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled element removed
+- **Structure** Onboarding · .cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
+- **Structure** Onboarding · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)
+- **Structure** Onboarding · .cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)
+- **Structure** Onboarding · .cds--popover element removed (inherited from Popover)
+- **Structure** Onboarding · .cds--guidebanner__next-button element removed
+- **Structure** Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
+- **Structure** Onboarding · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)
+- **Story** Onboarding · story added: Default (no IBM Products equivalent)
+- **Flag** Onboarding · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12
+
 ### OverflowMenu
 
 _Components · max 7.4% pixels, 1/6 stories differ_
@@ -726,11 +782,10 @@ _Components · max 1.2% pixels, 6/6 stories differ_
 
 ### Tearsheet
 
-_Components · max 0.9% pixels, 10/10 stories differ_
+_Components · max 0.8% pixels, 10/10 stories differ_
 
 - **Visual** Tearsheet · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
 - **Visual** Tearsheet · .cds--modal-container.cds--tearsheet__container · border-radius 0px → 8px _(10 stories)_
-- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(10 stories)_
 - **Visual** Tearsheet · .cds--btn.cds--modal-close · border-radius 0px → 999999px (pill) (inherited from Button) _(10 stories)_
 - **Visual** Tearsheet · .cds--btn.cds--modal-close · padding 12px → 0px (inherited from Button) _(10 stories)_
 - **Visual** Tearsheet · .cds--text-input · background-color #f4f4f4 → transparent (inherited from TextInput) _(9 stories)_
@@ -739,11 +794,11 @@ _Components · max 0.9% pixels, 10/10 stories differ_
 - **Visual** Tearsheet · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(9 stories)_
 - **Visual** Tearsheet · .cds--text-input · border-top/right/left none → 1px solid transparent (inherited from TextInput) _(9 stories)_
 - **Visual** Tearsheet · .cds--number__control-btn · border none → 1px solid transparent (inherited from NumberInput) _(7 stories)_
+- **Visual** Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton) _(7 stories)_
 - **Visual** Tearsheet · .cds--number__control-btn · border-radius 0px → 999999px (pill) (inherited from NumberInput) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret::after · color #161616 → #ffffff (inherited from Popover, Tooltip) _(7 stories)_
-- **Visual** Tearsheet · .cds--tearsheet__header-action-item · display none → block _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · display block → none (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--popover-caret::after · font-size 16px → 14px (inherited from Popover, Tooltip) _(7 stories)_
@@ -754,15 +809,10 @@ _Components · max 0.9% pixels, 10/10 stories differ_
 - **Visual** Tearsheet · .cds--popover-caret::after · line-height 16px → 18.0001px (inherited from Popover, Tooltip) _(7 stories)_
 - **Visual** Tearsheet · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput) _(7 stories)_
 - **Visual** Tearsheet · .cds--btn · background-color #0050e6 → #0f62fe (inherited from Button) _(3 stories)_
-- **Visual** Tearsheet · .cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden · display none → block _(3 stories)_
 - **Visual** Tearsheet · .cds--btn.cds--tearsheet__scroller-button · border-radius 0px → 999999px (pill)
 - **Layout** Tearsheet · .cds--btn.cds--modal-close · width 48px → 40px (-8px) (inherited from Button) _(10 stories)_
-- **Layout** Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button) _(7 stories)_
 - **Layout** Tearsheet · .cds--number__control-btn · height 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
-- **Layout** Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button) _(7 stories)_
 - **Layout** Tearsheet · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput) _(7 stories)_
-- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · height 0px → 32px (+32px) (inherited from Button, MenuButton) _(3 stories)_
-- **Layout** Tearsheet · .cds--btn.cds--menu-button__trigger · width 0px → 192px (+192px) (inherited from Button, MenuButton) _(3 stories)_
 - **Structure** Tearsheet · .cds--number__rule-divider element removed (inherited from NumberInput) _(7 stories)_
 
 ### TextInput
@@ -1048,74 +1098,7 @@ _Preview · max 0.2% pixels, 1/4 stories differ_
 - **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-radius 0px → 4px (inherited from Dropdown)
 - **Visual** preview_Text · .cds--autoalign.cds--dropdown.cds--list-box · border-top/right/left none → 1px solid transparent (inherited from Dropdown)
 
-## Migrated (27)
-
-### Coachmark
-
-_Components · max 45.5% pixels, 5/5 stories differ_
-
-- **API** Coachmark · class prefix c4p-- → cds--
-- **API** Coachmark · package @carbon/ibm-products → @carbon/react
-- **Visual** Coachmark · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip) _(2 stories)_
-- **Visual** Coachmark · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
-- **Visual** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton) _(2 stories)_
-- **Visual** Coachmark · .cds--btn · outline none → 1px solid transparent _(2 stories)_
-- **Visual** Coachmark · .cds--btn · background-color transparent → #0f62fe (inherited from Button)
-- **Visual** Coachmark · .cds--btn · color #0f62fe → #ffffff (inherited from Button)
-- **Visual** Coachmark · .cds--btn · display inline-flex → flex (inherited from Button)
-- **Visual** Coachmark · .cds--btn · margin 0px → 16px 0px 0px
-- **Visual** Coachmark · .cds--btn · padding 0px → 5.99996px 63px 5.99996px 15px
-- **Layout** Coachmark · .cds--btn · width 32px → 116.81px (+84.81px) (inherited from Button)
-- **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element removed _(5 stories)_
-- **Structure** Coachmark · .cds--coachmark__next--content-header element removed _(5 stories)_
-- **Structure** Coachmark · .cds--coachmark__next--content-body element removed _(5 stories)_
-- **Structure** Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(4 stories)_
-- **Structure** Coachmark · .cds--layout element added _(3 stories)_
-- **Structure** Coachmark · .cds--layer-one.cds--white element added _(3 stories)_
-- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(3 stories)_
-- **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element added _(3 stories)_
-- **Structure** Coachmark · .cds--coachmark__next--content-header element added _(3 stories)_
-- **Structure** Coachmark · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip) _(3 stories)_
-- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element added _(3 stories)_
-- **Structure** Coachmark · .cds--popover element added (inherited from Popover) _(3 stories)_
-- **Structure** Coachmark · .cds--coachmark__next--content-body element added _(3 stories)_
-- **Structure** Coachmark · .cds--g10.cds--layer-one element removed _(3 stories)_
-- **Structure** Coachmark · .cds--popover-caret element removed (inherited from Popover) _(3 stories)_
-- **Structure** Coachmark · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip) _(3 stories)_
-- **Structure** Coachmark · .cds--popover element removed (inherited from Popover) _(3 stories)_
-- **Structure** Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button) _(3 stories)_
-- **Structure** Coachmark · .cds--coachmark--coachmark-content.cds--popover-content element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark--content-header element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark--content-body element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline__cta element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline__idea element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline--close-btn-container element added (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element added (inherited from Button) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark__next element removed _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element removed (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline__cta element removed (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline__idea element removed (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark-tagline--close-btn-container element removed (inherited from Popover) _(2 stories)_
-- **Structure** Coachmark · .cds--coachmark.cds--coachmark--floating element added
-- **Structure** Coachmark · .cds--coachmark element added
-- **Structure** Coachmark · .cds--link element added (inherited from Link)
-- **Structure** Coachmark · .cds--coachmark__next element added
-- **Structure** Coachmark · .cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element added (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon__target element added (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon__center element added (inherited from Popover)
-- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
-- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)
-- **Structure** Coachmark · .cds--coachmark__next.cds--coachmark__next--floating element removed
-- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm element removed (inherited from Button)
-- **Structure** Coachmark · .cds--link element removed (inherited from Link)
-- **Structure** Coachmark · .cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element removed (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element removed (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon__target element removed (inherited from Popover)
-- **Structure** Coachmark · .cds--coachmark-beacon__center element removed (inherited from Popover)
-- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element removed
-- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)
+## Migrated (26)
 
 ### ConditionBuilder
 
@@ -1318,7 +1301,7 @@ _Components · max 10.8% pixels, 8/8 stories differ_
 
 ### TagOverflow
 
-_Components · max 0.5% pixels, 2/8 stories differ_
+_Components · max 0.4% pixels, 2/8 stories differ_
 
 - **API** TagOverflow · class prefix c4p-- → cds--
 - **API** TagOverflow · package @carbon/ibm-products → @carbon/react
@@ -1526,6 +1509,66 @@ _Examples · max 0.3% pixels, 1/2 stories differ_
 - **Visual** Carousel · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
 - **Structure** Carousel · .cds--layout element added _(2 stories)_
 
+### Coachmark
+
+_Examples · max 45.5% pixels, 3/3 stories differ_
+
+- **API** Coachmark · class prefix c4p-- → cds--
+- **API** Coachmark · package @carbon/ibm-products → @carbon/react
+- **Visual** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton) _(2 stories)_
+- **Visual** Coachmark · .cds--btn · outline none → 1px solid transparent _(2 stories)_
+- **Visual** Coachmark · .cds--btn · background-color transparent → #0f62fe (inherited from Button)
+- **Visual** Coachmark · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
+- **Visual** Coachmark · .cds--btn · color #0f62fe → #ffffff (inherited from Button)
+- **Visual** Coachmark · .cds--btn · display inline-flex → flex (inherited from Button)
+- **Visual** Coachmark · .cds--btn · margin 0px → 16px 0px 0px
+- **Visual** Coachmark · .cds--btn · padding 0px → 5.99996px 63px 5.99996px 15px
+- **Layout** Coachmark · .cds--btn · width 32px → 116.81px (+84.81px) (inherited from Button)
+- **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element added _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark__next--content-header element added _(3 stories)_
+- **Structure** Coachmark · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip) _(3 stories)_
+- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element added _(3 stories)_
+- **Structure** Coachmark · .cds--popover element added (inherited from Popover) _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark__next--content-body element added _(3 stories)_
+- **Structure** Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip) _(3 stories)_
+- **Structure** Coachmark · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip) _(3 stories)_
+- **Structure** Coachmark · .cds--popover element removed (inherited from Popover) _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element removed _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark__next--content-header element removed _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark__next--content-body element removed _(3 stories)_
+- **Structure** Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button) _(3 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element added (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline__cta element added (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline__idea element added (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline--close-btn-container element added (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip) _(2 stories)_
+- **Structure** Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element added (inherited from Button) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element removed (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline__cta element removed (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline__idea element removed (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--coachmark-tagline--close-btn-container element removed (inherited from Popover) _(2 stories)_
+- **Structure** Coachmark · .cds--link element added (inherited from Link)
+- **Structure** Coachmark · .cds--layout element added
+- **Structure** Coachmark · .cds--layer-one.cds--white element added
+- **Structure** Coachmark · .cds--coachmark__next element added
+- **Structure** Coachmark · .cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element added (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon__target element added (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon__center element added (inherited from Popover)
+- **Structure** Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)
+- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)
+- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm element removed (inherited from Button)
+- **Structure** Coachmark · .cds--link element removed (inherited from Link)
+- **Structure** Coachmark · .cds--g10.cds--layer-one element removed
+- **Structure** Coachmark · .cds--coachmark__next element removed
+- **Structure** Coachmark · .cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element removed (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element removed (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon__target element removed (inherited from Popover)
+- **Structure** Coachmark · .cds--coachmark-beacon__center element removed (inherited from Popover)
+- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element removed
+- **Structure** Coachmark · .cds--popover-caret element removed (inherited from Popover)
+- **Structure** Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)
+
 ### Create flows
 
 _Examples · max 2.6% pixels, 11/14 stories differ_
@@ -1682,57 +1725,6 @@ _Examples · max 0.0% pixels, 0/3 stories differ_
 - **API** Web Terminal · package @carbon/ibm-products → @carbon/react
 - **Visual** Web Terminal · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(3 stories)_
 
-### Onboarding
-
-_Preview · max 60.1% pixels, 2/2 stories differ_
-
-- **API** Onboarding · class prefix c4p-- → cds--
-- **API** Onboarding · package @carbon/ibm-products → @carbon/react
-- **Visual** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · background-image linear-gradient(90deg, #001d6c, #6929c4) → linear-gradient(90deg, #001d6c 0%, #6929c4 100%) _(2 stories)_
-- **Visual** Onboarding · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button) _(2 stories)_
-- **Visual** Onboarding · .cds--btn.cds--guidebanner__toggle-button · border-radius 0px → 999999px (pill) _(2 stories)_
-- **Visual** Onboarding · .cds--btn.cds--guidebanner__element-button · border-radius 0px → 999999px (pill) _(2 stories)_
-- **Visual** Onboarding · .cds--guidebanner__navigation · border-top none → 1px solid #8a3ffc
-- **Visual** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · display none → block
-- **Visual** Onboarding · .cds--guidebanner__next-button · display none → block
-- **Visual** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · margin 0px 0px 0px auto → 0px 0px 0px 1071.55px
-- **Visual** Onboarding · .cds--guidebanner__element · margin 0px → 16px 0px 0px
-- **Visual** Onboarding · .cds--guidebanner__element · padding 0px 0px 0px 52px → 0px 52px
-- **Layout** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 320.91px → 280.94px (-39.97px)
-- **Layout** Onboarding · .cds--btn · height 0px → 40px (+40px) (inherited from Button)
-- **Layout** Onboarding · .cds--guidebanner__navigation · height 40px → 41px (+1px)
-- **Layout** Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 102px → 320.91px (+218.91px)
-- **Layout** Onboarding · .cds--btn · width 0px → 40px (+40px) (inherited from Button)
-- **Layout** Onboarding · .cds--btn.cds--guidebanner__toggle-button · width 101.45px → 94.45px (-7px)
-- **Structure** Onboarding · .cds--layout element added _(2 stories)_
-- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container element added _(2 stories)_
-- **Structure** Onboarding · .cds--guidebanner__carousel-elements element added _(2 stories)_
-- **Structure** Onboarding · .cds--guidebanner__item element added _(2 stories)_
-- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container--scrolled element added _(2 stories)_
-- **Structure** Onboarding · .cds--guidebanner__carousel-elements-container--scroll-max element added _(2 stories)_
-- **Structure** Onboarding · .cds--carousel__elements-container element removed (inherited from Carousel) _(2 stories)_
-- **Structure** Onboarding · .cds--carousel__elements element removed (inherited from Carousel) _(2 stories)_
-- **Structure** Onboarding · .cds--carousel__item element removed (inherited from Carousel) _(2 stories)_
-- **Structure** Onboarding · .cds--carousel__elements-container--scrolled element removed (inherited from Carousel) _(2 stories)_
-- **Structure** Onboarding · .cds--carousel__elements-container--scroll-max element removed (inherited from Carousel) _(2 stories)_
-- **Structure** Onboarding · .cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md element removed
-- **Structure** Onboarding · .cds--guidebanner__element element removed
-- **Structure** Onboarding · .cds--guidebanner__element-title element removed
-- **Structure** Onboarding · .cds--guidebanner__element-content element removed
-- **Structure** Onboarding · .cds--guidebanner__element-buttons element removed
-- **Structure** Onboarding · .cds--guidebanner__element-link.cds--link.cds--link--md element removed
-- **Structure** Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled element removed
-- **Structure** Onboarding · .cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
-- **Structure** Onboarding · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)
-- **Structure** Onboarding · .cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)
-- **Structure** Onboarding · .cds--popover element removed (inherited from Popover)
-- **Structure** Onboarding · .cds--guidebanner__next-button element removed
-- **Structure** Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)
-- **Structure** Onboarding · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)
-- **Story** Onboarding · story added: Default (no IBM Products equivalent)
-- **Story** Onboarding · story removed: Floating
-- **Story** Onboarding · story removed: Tooltip
-
 ### preview__BigNumber
 
 _Preview_
@@ -1788,7 +1780,7 @@ _Utilities · max 2.6% pixels, 2/2 stories differ_
 - **Visual** TruncatedText · .cds--autoalign.cds--popover-container.cds--tooltip · line-height 20px → 16px (inherited from Tooltip)
 - **Structure** TruncatedText · .cds--layout element added _(2 stories)_
 
-## New (3)
+## New (4)
 
 ### AddSelect
 
@@ -1800,6 +1792,12 @@ _Components_
 - **Story** AddSelect · story added: AddSelect.Row
 - **Story** AddSelect · story added: AddSelect.SelectionSummary
 - **Story** AddSelect · story added: AddSelect.SelectionSummaryItem
+
+### Theming
+
+_Components_
+
+- **Story** Theming · story added: 🚀 Generated Themes
 
 ### Motion
 

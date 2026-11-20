@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T04:19:05.535Z",
+ "generatedAt": "2026-11-20T12:33:42.345Z",
  "count": 621,
  "stories": [
   {
@@ -1896,7 +1896,7 @@
    "name": "Allow Custom Value",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:46.575Z",
+   "capturedAt": "2026-11-20T12:28:53.203Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -1933,7 +1933,7 @@
    "name": "Autocomplete With Typeahead",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:47.121Z",
+   "capturedAt": "2026-11-20T12:28:53.587Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -1970,7 +1970,7 @@
    "name": "Controlled",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:47.379Z",
+   "capturedAt": "2026-11-20T12:28:54.207Z",
    "error": null,
    "elements": {
     "before": 15,
@@ -2007,7 +2007,7 @@
    "name": "Default",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:47.900Z",
+   "capturedAt": "2026-11-20T12:28:53.930Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -2044,7 +2044,7 @@
    "name": "Experimental Auto Align",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:49.900Z",
+   "capturedAt": "2026-11-20T12:28:54.271Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -2081,7 +2081,7 @@
    "name": "🚀 Floating Styles",
    "component": "ComboBox",
    "match": "flag-graduated",
-   "capturedAt": "2026-11-20T04:10:50.031Z",
+   "capturedAt": "2026-11-20T12:28:54.761Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -2118,7 +2118,7 @@
    "name": "With AI Label",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:50.038Z",
+   "capturedAt": "2026-11-20T12:28:59.049Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -2155,7 +2155,7 @@
    "name": "With Layer",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:50.489Z",
+   "capturedAt": "2026-11-20T12:28:59.696Z",
    "error": null,
    "elements": {
     "before": 27,
@@ -2562,7 +2562,7 @@
    "name": "With Scrolling Content",
    "component": "ComposedModal",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:10:57.938Z",
+   "capturedAt": "2026-11-20T12:29:06.816Z",
    "error": null,
    "elements": {
     "before": 54,
@@ -4782,7 +4782,7 @@
    "name": "Default",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:00.084Z",
+   "capturedAt": "2026-11-20T12:29:34.262Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -4819,7 +4819,7 @@
    "name": "Experimental Auto Align",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:00.961Z",
+   "capturedAt": "2026-11-20T12:29:34.784Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -4856,7 +4856,7 @@
    "name": "🚀 Floating Styles",
    "component": "Dropdown",
    "match": "flag-graduated",
-   "capturedAt": "2026-11-20T04:12:01.418Z",
+   "capturedAt": "2026-11-20T12:29:35.049Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -4893,7 +4893,7 @@
    "name": "Inline",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:03.857Z",
+   "capturedAt": "2026-11-20T12:29:35.372Z",
    "error": null,
    "elements": {
     "before": 8,
@@ -4930,7 +4930,7 @@
    "name": "Inline With Layer",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:04.957Z",
+   "capturedAt": "2026-11-20T12:29:35.977Z",
    "error": null,
    "elements": {
     "before": 24,
@@ -5004,7 +5004,7 @@
    "name": "Test Invalid Text No Overlap",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:06.737Z",
+   "capturedAt": "2026-11-20T12:29:37.289Z",
    "error": null,
    "elements": {
     "before": 17,
@@ -5041,7 +5041,7 @@
    "name": "With AI Label",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:07.237Z",
+   "capturedAt": "2026-11-20T12:29:38.085Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -5078,7 +5078,7 @@
    "name": "With Layer",
    "component": "Dropdown",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:08.723Z",
+   "capturedAt": "2026-11-20T12:29:39.388Z",
    "error": null,
    "elements": {
     "before": 27,
@@ -5485,7 +5485,7 @@
    "name": "Condensed",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:15.606Z",
+   "capturedAt": "2026-11-20T12:29:43.035Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -5522,7 +5522,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:16.541Z",
+   "capturedAt": "2026-11-20T12:29:43.347Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -5596,7 +5596,7 @@
    "name": "With AI Label",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:18.300Z",
+   "capturedAt": "2026-11-20T12:29:43.922Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -5781,7 +5781,7 @@
    "name": "Condensed",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:20.755Z",
+   "capturedAt": "2026-11-20T12:29:46.042Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -5818,7 +5818,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:21.666Z",
+   "capturedAt": "2026-11-20T12:29:46.986Z",
    "error": null,
    "elements": {
     "before": 9,
@@ -5892,7 +5892,7 @@
    "name": "With AI Label",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:25.124Z",
+   "capturedAt": "2026-11-20T12:29:47.362Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -5929,7 +5929,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:25.279Z",
+   "capturedAt": "2026-11-20T12:29:50.786Z",
    "error": null,
    "elements": {
     "before": 251,
@@ -5966,7 +5966,7 @@
    "name": "Condensed",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:25.443Z",
+   "capturedAt": "2026-11-20T12:29:48.548Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -6003,7 +6003,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:26.324Z",
+   "capturedAt": "2026-11-20T12:29:48.764Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -6040,7 +6040,7 @@
    "name": "Filterable",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:29.047Z",
+   "capturedAt": "2026-11-20T12:29:50.289Z",
    "error": null,
    "elements": {
     "before": 13,
@@ -6077,7 +6077,7 @@
    "name": "Filterable With Layer",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:29.722Z",
+   "capturedAt": "2026-11-20T12:29:51.874Z",
    "error": null,
    "elements": {
     "before": 30,
@@ -6151,7 +6151,7 @@
    "name": "With AI Label",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:30.315Z",
+   "capturedAt": "2026-11-20T12:29:53.273Z",
    "error": null,
    "elements": {
     "before": 50,
@@ -6817,7 +6817,7 @@
    "name": "Default",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:44.071Z",
+   "capturedAt": "2026-11-20T12:30:02.611Z",
    "error": null,
    "elements": {
     "before": 252,
@@ -6854,7 +6854,7 @@
    "name": "With AI Label",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:12:44.918Z",
+   "capturedAt": "2026-11-20T12:30:07.195Z",
    "error": null,
    "elements": {
     "before": 750,
@@ -8001,7 +8001,7 @@
    "name": "Default",
    "component": "Modal",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:09.822Z",
+   "capturedAt": "2026-11-20T12:30:17.286Z",
    "error": null,
    "elements": {
     "before": 69,
@@ -8186,7 +8186,7 @@
    "name": "With Scrolling Content",
    "component": "Modal",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:15.770Z",
+   "capturedAt": "2026-11-20T12:30:19.825Z",
    "error": null,
    "elements": {
     "before": 53,
@@ -8371,7 +8371,7 @@
    "name": "Controlled",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:19.786Z",
+   "capturedAt": "2026-11-20T12:30:24.724Z",
    "error": null,
    "elements": {
     "before": 17,
@@ -8408,7 +8408,7 @@
    "name": "Default",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:21.606Z",
+   "capturedAt": "2026-11-20T12:30:25.314Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8445,7 +8445,7 @@
    "name": "Experimental Auto Align",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:22.106Z",
+   "capturedAt": "2026-11-20T12:30:26.826Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8482,7 +8482,7 @@
    "name": "Filterable",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:23.320Z",
+   "capturedAt": "2026-11-20T12:30:27.794Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8519,7 +8519,7 @@
    "name": "Filterable With AI Label",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:23.501Z",
+   "capturedAt": "2026-11-20T12:30:29.226Z",
    "error": null,
    "elements": {
     "before": 46,
@@ -8556,7 +8556,7 @@
    "name": "Filterable With Custom Search",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:23.634Z",
+   "capturedAt": "2026-11-20T12:30:29.748Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8593,7 +8593,7 @@
    "name": "Filterable With Layer",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:24.492Z",
+   "capturedAt": "2026-11-20T12:30:30.107Z",
    "error": null,
    "elements": {
     "before": 30,
@@ -8630,7 +8630,7 @@
    "name": "Filterable With Select All",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:25.416Z",
+   "capturedAt": "2026-11-20T12:30:31.670Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8667,7 +8667,7 @@
    "name": "Select All",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:26.356Z",
+   "capturedAt": "2026-11-20T12:30:32.373Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -8704,7 +8704,7 @@
    "name": "Select All With Dynamic Items",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:26.433Z",
+   "capturedAt": "2026-11-20T12:30:33.035Z",
    "error": null,
    "elements": {
     "before": 11,
@@ -8741,7 +8741,7 @@
    "name": "With AI Label",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:26.998Z",
+   "capturedAt": "2026-11-20T12:30:33.898Z",
    "error": null,
    "elements": {
     "before": 46,
@@ -8778,7 +8778,7 @@
    "name": "With Initial Selected Items",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:27.002Z",
+   "capturedAt": "2026-11-20T12:30:33.469Z",
    "error": null,
    "elements": {
     "before": 14,
@@ -8815,7 +8815,7 @@
    "name": "With Layer Multi Select",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:28.295Z",
+   "capturedAt": "2026-11-20T12:30:35.021Z",
    "error": null,
    "elements": {
     "before": 30,
@@ -8852,7 +8852,7 @@
    "name": "Floating Styles",
    "component": "MultiSelect",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:13:29.021Z",
+   "capturedAt": "2026-11-20T12:30:35.164Z",
    "error": null,
    "elements": {
     "before": 10,
@@ -9361,6 +9361,80 @@
     "before": "shots/v11/components-numberinput--with-type-of-text-controlled.png",
     "v12": "shots/v12/components-numberinput--with-type-of-text-controlled.png",
     "diff": "shots/diff/components-numberinput--with-type-of-text-controlled.png"
+   }
+  },
+  {
+   "id": "components-onboarding-coachmark--floating",
+   "v11Id": "components-onboarding-coachmark--floating",
+   "title": "Components/Onboarding/Coachmark",
+   "name": "Floating",
+   "component": "Onboarding",
+   "match": "exact",
+   "capturedAt": "2026-11-20T12:30:38.591Z",
+   "error": null,
+   "elements": {
+    "before": 32,
+    "v12": 32
+   },
+   "pixel": {
+    "diffPixels": 1430,
+    "totalPixels": 766272,
+    "ratio": 0.00187,
+    "size": {
+     "before": [
+      1228,
+      624
+     ],
+     "v12": [
+      1228,
+      624
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-onboarding-coachmark--floating",
+   "shots": {
+    "before": "shots/v11/components-onboarding-coachmark--floating.png",
+    "v12": "shots/v12/components-onboarding-coachmark--floating.png",
+    "diff": "shots/diff/components-onboarding-coachmark--floating.png"
+   }
+  },
+  {
+   "id": "components-onboarding-coachmark--tooltip",
+   "v11Id": "components-onboarding-coachmark--tooltip",
+   "title": "Components/Onboarding/Coachmark",
+   "name": "Tooltip",
+   "component": "Onboarding",
+   "match": "exact",
+   "capturedAt": "2026-11-20T12:30:38.904Z",
+   "error": null,
+   "elements": {
+    "before": 24,
+    "v12": 24
+   },
+   "pixel": {
+    "diffPixels": 43123,
+    "totalPixels": 332788,
+    "ratio": 0.12958,
+    "size": {
+     "before": [
+      1228,
+      271
+     ],
+     "v12": [
+      1228,
+      271
+     ]
+    },
+    "sizeChanged": false
+   },
+   "base": "v11",
+   "baseId": "components-onboarding-coachmark--tooltip",
+   "shots": {
+    "before": "shots/v11/components-onboarding-coachmark--tooltip.png",
+    "v12": "shots/v12/components-onboarding-coachmark--tooltip.png",
+    "diff": "shots/diff/components-onboarding-coachmark--tooltip.png"
    }
   },
   {
@@ -12996,16 +13070,16 @@
    "name": "Default",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:47.952Z",
+   "capturedAt": "2026-11-20T12:31:17.407Z",
    "error": null,
    "elements": {
     "before": 163,
     "v12": 153
    },
    "pixel": {
-    "diffPixels": 5477,
+    "diffPixels": 5355,
     "totalPixels": 1024000,
-    "ratio": 0.00535,
+    "ratio": 0.00523,
     "size": {
      "before": [
       1280,
@@ -13033,16 +13107,16 @@
    "name": "Narrow Tearsheet",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:48.054Z",
+   "capturedAt": "2026-11-20T12:31:17.474Z",
    "error": null,
    "elements": {
     "before": 163,
     "v12": 153
    },
    "pixel": {
-    "diffPixels": 5566,
+    "diffPixels": 5268,
     "totalPixels": 1024000,
-    "ratio": 0.00544,
+    "ratio": 0.00514,
     "size": {
      "before": [
       1280,
@@ -13070,16 +13144,16 @@
    "name": "Stacking Narrow Tearsheets",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:48.168Z",
+   "capturedAt": "2026-11-20T12:31:15.721Z",
    "error": null,
    "elements": {
     "before": 80,
     "v12": 76
    },
    "pixel": {
-    "diffPixels": 7089,
+    "diffPixels": 6659,
     "totalPixels": 1024000,
-    "ratio": 0.00692,
+    "ratio": 0.0065,
     "size": {
      "before": [
       1280,
@@ -13107,16 +13181,16 @@
    "name": "Stacking Tearsheet",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:48.295Z",
+   "capturedAt": "2026-11-20T12:31:16.355Z",
    "error": null,
    "elements": {
     "before": 81,
     "v12": 77
    },
    "pixel": {
-    "diffPixels": 9312,
+    "diffPixels": 8536,
     "totalPixels": 1024000,
-    "ratio": 0.00909,
+    "ratio": 0.00834,
     "size": {
      "before": [
       1280,
@@ -13144,16 +13218,16 @@
    "name": "Stacking With Different Sizes",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:48.724Z",
+   "capturedAt": "2026-11-20T12:31:16.445Z",
    "error": null,
    "elements": {
     "before": 81,
     "v12": 77
    },
    "pixel": {
-    "diffPixels": 9312,
+    "diffPixels": 8536,
     "totalPixels": 1024000,
-    "ratio": 0.00909,
+    "ratio": 0.00834,
     "size": {
      "before": [
       1280,
@@ -13181,16 +13255,16 @@
    "name": "With Custom Footer Actions",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:50.172Z",
+   "capturedAt": "2026-11-20T12:31:18.055Z",
    "error": null,
    "elements": {
     "before": 111,
     "v12": 105
    },
    "pixel": {
-    "diffPixels": 7993,
+    "diffPixels": 7871,
     "totalPixels": 1024000,
-    "ratio": 0.00781,
+    "ratio": 0.00769,
     "size": {
      "before": [
       1280,
@@ -13218,16 +13292,16 @@
    "name": "With Influencer",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:57.895Z",
+   "capturedAt": "2026-11-20T12:31:28.668Z",
    "error": null,
    "elements": {
     "before": 185,
     "v12": 175
    },
    "pixel": {
-    "diffPixels": 3863,
+    "diffPixels": 3741,
     "totalPixels": 1024000,
-    "ratio": 0.00377,
+    "ratio": 0.00365,
     "size": {
      "before": [
       1280,
@@ -13255,16 +13329,16 @@
    "name": "With Steps",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:58.288Z",
+   "capturedAt": "2026-11-20T12:31:27.380Z",
    "error": null,
    "elements": {
     "before": 91,
     "v12": 89
    },
    "pixel": {
-    "diffPixels": 6827,
+    "diffPixels": 6705,
     "totalPixels": 1024000,
-    "ratio": 0.00667,
+    "ratio": 0.00655,
     "size": {
      "before": [
       1280,
@@ -13292,16 +13366,16 @@
    "name": "With Steps And Horizontal Progress Indicator",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:14:58.571Z",
+   "capturedAt": "2026-11-20T12:31:27.733Z",
    "error": null,
    "elements": {
     "before": 89,
     "v12": 87
    },
    "pixel": {
-    "diffPixels": 6203,
+    "diffPixels": 6081,
     "totalPixels": 1024000,
-    "ratio": 0.00606,
+    "ratio": 0.00594,
     "size": {
      "before": [
       1280,
@@ -13329,16 +13403,16 @@
    "name": "With Tabs",
    "component": "Tearsheet",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:15:03.768Z",
+   "capturedAt": "2026-11-20T12:31:34.746Z",
    "error": null,
    "elements": {
     "before": 119,
     "v12": 117
    },
    "pixel": {
-    "diffPixels": 6591,
+    "diffPixels": 6469,
     "totalPixels": 1024000,
-    "ratio": 0.00644,
+    "ratio": 0.00632,
     "size": {
      "before": [
       1280,
@@ -13773,7 +13847,7 @@
    "name": "Default",
    "component": "Theme",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:15:14.824Z",
+   "capturedAt": "2026-11-20T12:31:40.730Z",
    "error": null,
    "elements": {
     "before": 5,
@@ -18990,7 +19064,7 @@
    "name": "Usage Examples",
    "component": "preview_Text",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:16:53.558Z",
+   "capturedAt": "2026-11-20T12:32:26.661Z",
    "error": null,
    "elements": {
     "before": 23,
@@ -19203,80 +19277,6 @@
     "before": "shots/v11/utilities-overflowhandler--default.png",
     "v12": "shots/v12/utilities-overflowhandler--default.png",
     "diff": "shots/diff/utilities-overflowhandler--default.png"
-   }
-  },
-  {
-   "id": "components-coachmark--floating",
-   "v11Id": null,
-   "title": "Components/Coachmark",
-   "name": "Floating",
-   "component": "Coachmark",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:16:57.373Z",
-   "error": null,
-   "elements": {
-    "before": 31,
-    "v12": 32
-   },
-   "pixel": {
-    "diffPixels": 87913,
-    "totalPixels": 766272,
-    "ratio": 0.11473,
-    "size": {
-     "before": [
-      1228,
-      624
-     ],
-     "v12": [
-      1228,
-      624
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-onboarding-coachmark--floating",
-   "shots": {
-    "before": "shots/ibmp/components-coachmark--floating.png",
-    "v12": "shots/v12/components-coachmark--floating.png",
-    "diff": "shots/diff/components-coachmark--floating.png"
-   }
-  },
-  {
-   "id": "components-coachmark--tooltip",
-   "v11Id": null,
-   "title": "Components/Coachmark",
-   "name": "Tooltip",
-   "component": "Coachmark",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:16:57.377Z",
-   "error": null,
-   "elements": {
-    "before": 23,
-    "v12": 24
-   },
-   "pixel": {
-    "diffPixels": 43428,
-    "totalPixels": 332788,
-    "ratio": 0.1305,
-    "size": {
-     "before": [
-      1228,
-      271
-     ],
-     "v12": [
-      1228,
-      271
-     ]
-    },
-    "sizeChanged": false
-   },
-   "base": "ibmp",
-   "baseId": "preview-onboarding-coachmark--tooltip",
-   "shots": {
-    "before": "shots/ibmp/components-coachmark--tooltip.png",
-    "v12": "shots/v12/components-coachmark--tooltip.png",
-    "diff": "shots/diff/components-coachmark--tooltip.png"
    }
   },
   {
@@ -19915,7 +19915,7 @@
    "name": "Slide in",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:13.004Z",
+   "capturedAt": "2026-11-20T12:32:35.683Z",
    "error": null,
    "elements": {
     "before": 74,
@@ -19952,7 +19952,7 @@
    "name": "Slide over",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:13.618Z",
+   "capturedAt": "2026-11-20T12:32:36.040Z",
    "error": null,
    "elements": {
     "before": 75,
@@ -19989,7 +19989,7 @@
    "name": "Specify element to have initial focus",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:14.114Z",
+   "capturedAt": "2026-11-20T12:32:36.768Z",
    "error": null,
    "elements": {
     "before": 73,
@@ -20026,7 +20026,7 @@
    "name": "With action toolbar",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:17.795Z",
+   "capturedAt": "2026-11-20T12:32:36.657Z",
    "error": null,
    "elements": {
     "before": 90,
@@ -20063,14 +20063,14 @@
    "name": "With AI Label",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:20.029Z",
+   "capturedAt": "2026-11-20T12:32:36.881Z",
    "error": null,
    "elements": {
     "before": 84,
     "v12": 84
    },
    "pixel": {
-    "diffPixels": 92947,
+    "diffPixels": 92949,
     "totalPixels": 1024000,
     "ratio": 0.09077,
     "size": {
@@ -20100,7 +20100,7 @@
    "name": "With static title",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:21.034Z",
+   "capturedAt": "2026-11-20T12:32:39.171Z",
    "error": null,
    "elements": {
     "before": 75,
@@ -20137,7 +20137,7 @@
    "name": "Without title",
    "component": "SidePanel",
    "match": "exact",
-   "capturedAt": "2026-11-20T04:17:21.805Z",
+   "capturedAt": "2026-11-20T12:32:46.981Z",
    "error": null,
    "elements": {
     "before": 72,
@@ -20396,16 +20396,16 @@
    "name": "User Avatars With Overflow Count",
    "component": "TagOverflow",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:32.262Z",
+   "capturedAt": "2026-11-20T12:32:48.565Z",
    "error": null,
    "elements": {
     "before": 115,
     "v12": 113
    },
    "pixel": {
-    "diffPixels": 498,
+    "diffPixels": 465,
     "totalPixels": 157696,
-    "ratio": 0.00316,
+    "ratio": 0.00295,
     "size": {
      "before": [
       1232,
@@ -20433,16 +20433,16 @@
    "name": "User Avatars With Overflow Modal",
    "component": "TagOverflow",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:32.792Z",
+   "capturedAt": "2026-11-20T12:32:49.556Z",
    "error": null,
    "elements": {
     "before": 161,
     "v12": 159
    },
    "pixel": {
-    "diffPixels": 747,
+    "diffPixels": 619,
     "totalPixels": 157696,
-    "ratio": 0.00474,
+    "ratio": 0.00393,
     "size": {
      "before": [
       1232,
@@ -20655,7 +20655,7 @@
    "name": "Non-Hierarchical with Peek Inside Item",
    "component": "Add and select",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:38.791Z",
+   "capturedAt": "2026-11-20T12:32:55.967Z",
    "error": null,
    "elements": {
     "before": 363,
@@ -20766,7 +20766,7 @@
    "name": "With Global Actions",
    "component": "Add and select",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:43.714Z",
+   "capturedAt": "2026-11-20T12:32:56.445Z",
    "error": null,
    "elements": {
     "before": 140,
@@ -20877,7 +20877,7 @@
    "name": "With Modifiers",
    "component": "Add and select",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:57.164Z",
+   "capturedAt": "2026-11-20T12:33:01.943Z",
    "error": null,
    "elements": {
     "before": 321,
@@ -20914,7 +20914,7 @@
    "name": "With Modifiers and Bulk Actions",
    "component": "Add and select",
    "match": "name",
-   "capturedAt": "2026-11-20T04:17:57.261Z",
+   "capturedAt": "2026-11-20T12:33:01.497Z",
    "error": null,
    "elements": {
     "before": 321,
@@ -21469,7 +21469,7 @@
    "name": "Create Modal",
    "component": "Create flows",
    "match": "name",
-   "capturedAt": "2026-11-20T04:18:32.049Z",
+   "capturedAt": "2026-11-20T12:33:21.087Z",
    "error": null,
    "elements": {
     "before": 45,
@@ -21802,16 +21802,16 @@
    "name": "Date Time Format",
    "component": "Date Time Format",
    "match": "name",
-   "capturedAt": "2026-11-20T04:18:40.522Z",
+   "capturedAt": "2026-11-20T12:33:27.490Z",
    "error": null,
    "elements": {
     "before": 81,
     "v12": 82
    },
    "pixel": {
-    "diffPixels": 1937,
+    "diffPixels": 1847,
     "totalPixels": 739840,
-    "ratio": 0.00262,
+    "ratio": 0.0025,
     "size": {
      "before": [
       1280,

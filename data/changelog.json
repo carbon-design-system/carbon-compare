@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-11-20T04:19:07.551Z",
+ "generatedAt": "2026-11-20T12:33:44.680Z",
  "counts": {
-  "components": 117,
+  "components": 118,
   "unchanged": 31,
-  "new": 3,
-  "changed": 37,
-  "migrated": 27,
+  "new": 4,
+  "changed": 38,
+  "migrated": 26,
   "inherited": 15,
   "removed": 4,
   "storiesCompared": 621,
-  "changes": 1386
+  "changes": 1379
  },
  "tokens": {
   "added": [
@@ -2268,1259 +2268,6 @@
    ],
    "notes": [],
    "changes": []
-  },
-  {
-   "id": "coachmark",
-   "name": "Coachmark",
-   "section": "Components",
-   "status": "migrated",
-   "inheritsFrom": [
-    "Button",
-    "IconButton",
-    "Link",
-    "Popover",
-    "Tooltip"
-   ],
-   "base": "ibmp",
-   "migratedFrom": {
-    "ibmpTitles": [
-     "Preview/Onboarding/Coachmark"
-    ],
-    "matched": 5,
-    "unmatched": 0
-   },
-   "pixel": {
-    "max": 0.45484,
-    "mean": 0.22116,
-    "storiesChanged": 5,
-    "storiesCompared": 5
-   },
-   "stories": [
-    {
-     "id": "examples-coachmark-coachmark-fixed--coachmark-fixed",
-     "base": "ibmp",
-     "baseId": "patterns-coachmark-fixed--coachmark-fixed",
-     "v11Id": null,
-     "name": "Coachmark Fixed",
-     "title": "Examples/Coachmark/Coachmark Fixed",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 37054,
-      "totalPixels": 81466,
-      "ratio": 0.45484,
-      "size": {
-       "before": [
-        322,
-        253
-       ],
-       "v12": [
-        322,
-        253
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 958,
-      "y": 547,
-      "width": 322,
-      "height": 253
-     },
-     "baseLayout": "centered",
-     "changes": 32
-    },
-    {
-     "id": "examples-coachmark-coachmark-stacked--coachmark-stack",
-     "base": "ibmp",
-     "baseId": "patterns-coachmark-stacked--coachmark-stack",
-     "v11Id": null,
-     "name": "Coachmark Stack",
-     "title": "Examples/Coachmark/Coachmark Stacked",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 35814,
-      "totalPixels": 113256,
-      "ratio": 0.31622,
-      "size": {
-       "before": [
-        312,
-        363
-       ],
-       "v12": [
-        312,
-        363
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 968,
-      "y": 437,
-      "width": 312,
-      "height": 363
-     },
-     "baseLayout": "centered",
-     "changes": 41
-    },
-    {
-     "id": "components-coachmark--tooltip",
-     "base": "ibmp",
-     "baseId": "preview-onboarding-coachmark--tooltip",
-     "v11Id": null,
-     "name": "Tooltip",
-     "title": "Components/Coachmark",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 43428,
-      "totalPixels": 332788,
-      "ratio": 0.1305,
-      "size": {
-       "before": [
-        1228,
-        271
-       ],
-       "v12": [
-        1228,
-        271
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 0,
-      "width": 1228,
-      "height": 271
-     },
-     "baseLayout": "centered",
-     "changes": 18
-    },
-    {
-     "id": "components-coachmark--floating",
-     "base": "ibmp",
-     "baseId": "preview-onboarding-coachmark--floating",
-     "v11Id": null,
-     "name": "Floating",
-     "title": "Components/Coachmark",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 87913,
-      "totalPixels": 766272,
-      "ratio": 0.11473,
-      "size": {
-       "before": [
-        1228,
-        624
-       ],
-       "v12": [
-        1228,
-        624
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 26,
-      "width": 1228,
-      "height": 624
-     },
-     "baseLayout": "centered",
-     "changes": 19
-    },
-    {
-     "id": "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-     "base": "ibmp",
-     "baseId": "patterns-coachmark-overlay-elements--coachmark-overlay",
-     "v11Id": null,
-     "name": "Coachmark Overlay",
-     "title": "Examples/Coachmark/Coachmark Overlay Elements",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 51762,
-      "totalPixels": 578388,
-      "ratio": 0.08949,
-      "size": {
-       "before": [
-        1228,
-        471
-       ],
-       "v12": [
-        1228,
-        471
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 26,
-      "y": 0,
-      "width": 1228,
-      "height": 471
-     },
-     "baseLayout": "centered",
-     "changes": 37
-    }
-   ],
-   "notes": [],
-   "changes": [
-    {
-     "type": "API",
-     "prop": "class prefix",
-     "element": null,
-     "from": "c4p--",
-     "to": "cds--",
-     "stories": [],
-     "note": "57 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
-     "text": "Coachmark · class prefix c4p-- → cds--"
-    },
-    {
-     "type": "API",
-     "prop": "package",
-     "element": null,
-     "from": "@carbon/ibm-products",
-     "to": "@carbon/react",
-     "stories": [],
-     "note": "IBM Products Storybook: Preview/Onboarding/Coachmark",
-     "text": "Coachmark · package @carbon/ibm-products → @carbon/react"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--popover-content.cds--tooltip-content",
-     "variants": [
-      "cds--popover-content cds--tooltip-content"
-     ],
-     "prop": "border-radius",
-     "from": "2px",
-     "to": "4px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--md cds--btn--tertiary cds--layout--size-md",
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "999999px",
-     "note": "pill",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-coachmark--floating",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip",
-     "variants": [
-      "cds--autoalign cds--icon-tooltip cds--popover--auto-align cds--popover--high-contrast cds--popover--top cds--popover-container cds--tooltip"
-     ],
-     "prop": "display",
-     "from": "block",
-     "to": "inline-block",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "IconButton"
-     ],
-     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--sm cds--coachmark-tagline--close-btn cds--layout--size-sm"
-     ],
-     "prop": "outline",
-     "from": "none",
-     "to": "1px solid transparent",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Coachmark · .cds--btn · outline none → 1px solid transparent"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "background-color",
-     "from": "transparent",
-     "to": "#0f62fe",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn · background-color transparent → #0f62fe (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "color",
-     "from": "#0f62fe",
-     "to": "#ffffff",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn · color #0f62fe → #ffffff (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "display",
-     "from": "inline-flex",
-     "to": "flex",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn · display inline-flex → flex (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "margin",
-     "from": "0px",
-     "to": "16px 0px 0px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--btn · margin 0px → 16px 0px 0px"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "padding",
-     "from": "0px",
-     "to": "5.99996px 63px 5.99996px 15px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--btn · padding 0px → 5.99996px 63px 5.99996px 15px"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
-     ],
-     "prop": "width",
-     "from": "32px",
-     "to": "116.81px",
-     "note": "+84.81px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn · width 32px → 116.81px (+84.81px) (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--coachmark-content.cds--popover-content",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 10,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--content-header",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 5,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--content-header element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--content-body",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 5,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--content-body element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "IconButton",
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--layout",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--layout element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--layer-one.cds--white",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--layer-one.cds--white element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "IconButton",
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--coachmark-content.cds--popover-content",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 6,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--content-header",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--content-header element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--tooltip-trigger__wrapper",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--popover",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--popover element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next--content-body",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next--content-body element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--g10.cds--layer-one",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Coachmark · .cds--g10.cds--layer-one element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--popover-caret",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 8,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--popover-caret element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--tooltip-trigger__wrapper",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--popover",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--popover element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark--coachmark-content.cds--popover-content",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark--coachmark-content.cds--popover-content element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark--content-header",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark--content-header element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark--content-body",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating",
-      "components-coachmark--tooltip"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark--content-body element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline.cds--coachmark-tagline--is-open",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline__cta",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline__cta element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline__idea",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline__idea element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline--close-btn-container",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline--close-btn-container element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--tooltip",
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline.cds--coachmark-tagline--is-open",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline__cta",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline__cta element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline__idea",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline__idea element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-tagline--close-btn-container",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed",
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-tagline--close-btn-container element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark.cds--coachmark--floating",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--floating"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark.cds--coachmark--floating element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "components-coachmark--tooltip"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--link",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Link"
-     ],
-     "text": "Coachmark · .cds--link element added (inherited from Link)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon.cds--coachmark-beacon-default",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon__target",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon__target element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon__center",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon__center element added (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "IconButton",
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark__next.cds--coachmark__next--floating",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "components-coachmark--floating"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--coachmark__next.cds--coachmark__next--floating element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm element removed (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--link",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-fixed--coachmark-fixed"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Link"
-     ],
-     "text": "Coachmark · .cds--link element removed (inherited from Link)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon.cds--coachmark-beacon-default",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon__target",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon__target element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--coachmark-beacon__center",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Coachmark · .cds--coachmark-beacon__center element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "examples-coachmark-coachmark-stacked--coachmark-stack"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)"
-    }
-   ]
   },
   {
    "id": "codesnippet",
@@ -24836,6 +23583,1035 @@
    ]
   },
   {
+   "id": "onboarding",
+   "name": "Onboarding",
+   "section": "Components",
+   "status": "changed",
+   "inheritsFrom": [
+    "Button",
+    "Carousel",
+    "IconButton",
+    "Popover",
+    "Tooltip"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Preview Candidate/Onboarding/Guidebanner"
+    ],
+    "matched": 2,
+    "unmatched": 1
+   },
+   "pixel": {
+    "max": 0.60122,
+    "mean": 0.21685,
+    "storiesChanged": 4,
+    "storiesCompared": 4
+   },
+   "stories": [
+    {
+     "id": "preview-onboarding-preview-guidebanner--many-insights",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-guidebanner--many-insights",
+     "v11Id": null,
+     "name": "Many Insights",
+     "title": "Preview/Onboarding/preview__Guidebanner",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 259341,
+      "totalPixels": 431360,
+      "ratio": 0.60122,
+      "size": {
+       "before": [
+        1280,
+        337
+       ],
+       "v12": [
+        1280,
+        337
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 337
+     },
+     "baseLayout": "fullscreen",
+     "changes": 43
+    },
+    {
+     "id": "preview-onboarding-preview-guidebanner--collapsible",
+     "base": "ibmp",
+     "baseId": "preview-candidate-onboarding-guidebanner--collapsible",
+     "v11Id": null,
+     "name": "Collapsible",
+     "title": "Preview/Onboarding/preview__Guidebanner",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 58111,
+      "totalPixels": 431360,
+      "ratio": 0.13472,
+      "size": {
+       "before": [
+        1280,
+        337
+       ],
+       "v12": [
+        1280,
+        337
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 337
+     },
+     "baseLayout": "fullscreen",
+     "changes": 47
+    },
+    {
+     "id": "components-onboarding-coachmark--tooltip",
+     "base": "v11",
+     "baseId": "components-onboarding-coachmark--tooltip",
+     "v11Id": "components-onboarding-coachmark--tooltip",
+     "name": "Tooltip",
+     "title": "Components/Onboarding/Coachmark",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 43123,
+      "totalPixels": 332788,
+      "ratio": 0.12958,
+      "size": {
+       "before": [
+        1228,
+        271
+       ],
+       "v12": [
+        1228,
+        271
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 0,
+      "width": 1228,
+      "height": 271
+     },
+     "baseLayout": "padded",
+     "changes": 6
+    },
+    {
+     "id": "components-onboarding-coachmark--floating",
+     "base": "v11",
+     "baseId": "components-onboarding-coachmark--floating",
+     "v11Id": "components-onboarding-coachmark--floating",
+     "name": "Floating",
+     "title": "Components/Onboarding/Coachmark",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 1430,
+      "totalPixels": 766272,
+      "ratio": 0.00187,
+      "size": {
+       "before": [
+        1228,
+        624
+       ],
+       "v12": [
+        1228,
+        624
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 26,
+      "width": 1228,
+      "height": 624
+     },
+     "baseLayout": "padded",
+     "changes": 8
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "class prefix",
+     "element": null,
+     "from": "c4p--",
+     "to": "cds--",
+     "stories": [],
+     "note": "86 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
+     "text": "Onboarding · class prefix c4p-- → cds--"
+    },
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Preview Candidate/Onboarding/Guidebanner",
+     "text": "Onboarding · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
+      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
+      "cds--btn cds--btn--md cds--btn--tertiary cds--layout--size-md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-onboarding-coachmark--floating",
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 5,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Onboarding · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
+     "variants": [
+      "cds--guidebanner cds--guidebanner__collapsible"
+     ],
+     "prop": "background-image",
+     "from": "linear-gradient(90deg, #001d6c, #6929c4)",
+     "to": "linear-gradient(90deg, #001d6c 0%, #6929c4 100%)",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · background-image linear-gradient(90deg, #001d6c, #6929c4) → linear-gradient(90deg, #001d6c 0%, #6929c4 100%)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--popover-content",
+     "variants": [
+      "cds--coachmark--coachmark-content cds--popover-content"
+     ],
+     "prop": "border-radius",
+     "from": "2px",
+     "to": "8px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-onboarding-coachmark--floating",
+      "components-onboarding-coachmark--tooltip"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Onboarding · .cds--popover-content · border-radius 2px → 8px (inherited from Popover)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--popover-content.cds--tooltip-content",
+     "variants": [
+      "cds--popover-content cds--tooltip-content"
+     ],
+     "prop": "border-radius",
+     "from": "2px",
+     "to": "4px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-onboarding-coachmark--floating",
+      "components-onboarding-coachmark--tooltip"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--popover-content.cds--tooltip-content · border-radius 2px → 4px (inherited from Popover, Tooltip)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--guidebanner__toggle-button",
+     "variants": [
+      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__toggle-button cds--layout--size-md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--btn.cds--guidebanner__toggle-button · border-radius 0px → 999999px (pill)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn.cds--guidebanner__element-button",
+     "variants": [
+      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__element-button cds--layout--size-md",
+      "cds--btn cds--btn--md cds--btn--tertiary cds--guidebanner__element-button cds--layout--size-md"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 4,
+     "inherited": false,
+     "text": "Onboarding · .cds--btn.cds--guidebanner__element-button · border-radius 0px → 999999px (pill)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__navigation",
+     "variants": [
+      "cds--guidebanner__navigation"
+     ],
+     "prop": "border-top",
+     "from": "none",
+     "to": "1px solid #8a3ffc",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__navigation · border-top none → 1px solid #8a3ffc"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
+     "variants": [
+      "cds--guidebanner__back-button cds--guidebanner__back-button--disabled"
+     ],
+     "prop": "display",
+     "from": "none",
+     "to": "block",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · display none → block"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__next-button",
+     "variants": [
+      "cds--guidebanner__next-button"
+     ],
+     "prop": "display",
+     "from": "none",
+     "to": "block",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__next-button · display none → block"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip",
+     "variants": [
+      "cds--autoalign cds--icon-tooltip cds--popover--auto-align cds--popover--high-contrast cds--popover--open cds--popover--top cds--popover-container cds--tooltip"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "0px 226px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "components-onboarding-coachmark--floating"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · margin 0px → 0px 226px 0px 0px (inherited from Popover, Tooltip)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
+     "variants": [
+      "cds--guidebanner__back-button cds--guidebanner__back-button--disabled"
+     ],
+     "prop": "margin",
+     "from": "0px 0px 0px auto",
+     "to": "0px 0px 0px 1071.55px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · margin 0px 0px 0px auto → 0px 0px 0px 1071.55px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__element",
+     "variants": [
+      "cds--guidebanner__element"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "16px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 5,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element · margin 0px → 16px 0px 0px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--guidebanner__element",
+     "variants": [
+      "cds--guidebanner__element"
+     ],
+     "prop": "padding",
+     "from": "0px 0px 0px 52px",
+     "to": "0px 52px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element · padding 0px 0px 0px 52px → 0px 52px"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
+     "variants": [
+      "cds--guidebanner cds--guidebanner__collapsible"
+     ],
+     "prop": "height",
+     "from": "320.91px",
+     "to": "280.94px",
+     "note": "-39.97px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 320.91px → 280.94px (-39.97px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
+      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md"
+     ],
+     "prop": "height",
+     "from": "0px",
+     "to": "40px",
+     "note": "+40px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Onboarding · .cds--btn · height 0px → 40px (+40px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--guidebanner__navigation",
+     "variants": [
+      "cds--guidebanner__navigation"
+     ],
+     "prop": "height",
+     "from": "40px",
+     "to": "41px",
+     "note": "+1px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__navigation · height 40px → 41px (+1px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
+     "variants": [
+      "cds--guidebanner cds--guidebanner__collapsible"
+     ],
+     "prop": "height",
+     "from": "102px",
+     "to": "320.91px",
+     "note": "+218.91px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 102px → 320.91px (+218.91px)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
+      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md"
+     ],
+     "prop": "width",
+     "from": "0px",
+     "to": "40px",
+     "note": "+40px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Onboarding · .cds--btn · width 0px → 40px (+40px) (inherited from Button)"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn.cds--guidebanner__toggle-button",
+     "variants": [
+      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__toggle-button cds--layout--size-md"
+     ],
+     "prop": "width",
+     "from": "101.45px",
+     "to": "94.45px",
+     "note": "-7px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--btn.cds--guidebanner__toggle-button · width 101.45px → 94.45px (-7px)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--layout element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__carousel-elements-container",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__carousel-elements-container element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__carousel-elements",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__carousel-elements element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__item",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 7,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__item element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__carousel-elements-container--scrolled",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__carousel-elements-container--scrolled element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__carousel-elements-container--scroll-max",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__carousel-elements-container--scroll-max element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover-caret",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "components-onboarding-coachmark--floating",
+      "components-onboarding-coachmark--tooltip"
+     ],
+     "elements": 6,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Onboarding · .cds--popover-caret element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--carousel__elements-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container element removed (inherited from Carousel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--carousel__elements",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements element removed (inherited from Carousel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--carousel__item",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 10,
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__item element removed (inherited from Carousel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--carousel__elements-container--scrolled",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container--scrolled element removed (inherited from Carousel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--carousel__elements-container--scroll-max",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible",
+      "preview-onboarding-preview-guidebanner--many-insights"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Carousel"
+     ],
+     "text": "Onboarding · .cds--carousel__elements-container--scroll-max element removed (inherited from Carousel)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "components-onboarding-coachmark--floating"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "components-onboarding-coachmark--floating"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Onboarding · .cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__element",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__element-title",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element-title element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__element-content",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element-content element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__element-buttons",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element-buttons element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__element-link.cds--link.cds--link--md",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__element-link.cds--link.cds--link--md element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--tooltip-trigger__wrapper",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Onboarding · .cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Onboarding · .cds--popover element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--guidebanner__next-button",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Onboarding · .cds--guidebanner__next-button element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--collapsible"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Onboarding · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)"
+    },
+    {
+     "type": "Story",
+     "prop": "story added",
+     "element": null,
+     "from": "—",
+     "to": "Default",
+     "stories": [
+      "preview-onboarding-preview-guidebanner--default"
+     ],
+     "note": "no IBM Products equivalent",
+     "text": "Onboarding · story added: Default (no IBM Products equivalent)"
+    },
+    {
+     "type": "Flag",
+     "prop": "enable-v12-dynamic-floating-styles",
+     "element": null,
+     "from": "off in V11",
+     "to": "on by default in V12",
+     "note": "Enable dynamic setting of floating styles for components like Popover, Tooltip, etc.",
+     "stories": [],
+     "text": "Onboarding · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12"
+    }
+   ]
+  },
+  {
    "id": "optionstile",
    "name": "OptionsTile",
    "section": "Components",
@@ -28692,7 +28468,7 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 92947,
+      "diffPixels": 92949,
       "totalPixels": 1024000,
       "ratio": 0.09077,
       "size": {
@@ -32385,8 +32161,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.00474,
-    "mean": 0.0011,
+    "max": 0.00393,
+    "mean": 0.00097,
     "storiesChanged": 2,
     "storiesCompared": 8
    },
@@ -32401,9 +32177,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 747,
+      "diffPixels": 619,
       "totalPixels": 157696,
-      "ratio": 0.00474,
+      "ratio": 0.00393,
       "size": {
        "before": [
         1232,
@@ -32435,9 +32211,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 498,
+      "diffPixels": 465,
       "totalPixels": 157696,
-      "ratio": 0.00316,
+      "ratio": 0.00295,
       "size": {
        "before": [
         1232,
@@ -34209,8 +33985,8 @@
    "base": "v11",
    "migratedFrom": null,
    "pixel": {
-    "max": 0.00909,
-    "mean": 0.00666,
+    "max": 0.00834,
+    "mean": 0.00637,
     "storiesChanged": 10,
     "storiesCompared": 10
    },
@@ -34225,9 +34001,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 9312,
+      "diffPixels": 8536,
       "totalPixels": 1024000,
-      "ratio": 0.00909,
+      "ratio": 0.00834,
       "size": {
        "before": [
         1280,
@@ -34247,7 +34023,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 43
+     "changes": 39
     },
     {
      "id": "components-tearsheet--stacking-with-different-sizes",
@@ -34259,9 +34035,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 9312,
+      "diffPixels": 8536,
       "totalPixels": 1024000,
-      "ratio": 0.00909,
+      "ratio": 0.00834,
       "size": {
        "before": [
         1280,
@@ -34281,7 +34057,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 43
+     "changes": 39
     },
     {
      "id": "components-tearsheet--with-custom-footer-actions",
@@ -34293,9 +34069,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 7993,
+      "diffPixels": 7871,
       "totalPixels": 1024000,
-      "ratio": 0.00781,
+      "ratio": 0.00769,
       "size": {
        "before": [
         1280,
@@ -34315,41 +34091,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 62
-    },
-    {
-     "id": "components-tearsheet--stacking-narrow-tearsheets",
-     "base": "v11",
-     "baseId": "components-tearsheet--stacking-narrow-tearsheets",
-     "v11Id": "components-tearsheet--stacking-narrow-tearsheets",
-     "name": "Stacking Narrow Tearsheets",
-     "title": "Components/Tearsheet",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 7089,
-      "totalPixels": 1024000,
-      "ratio": 0.00692,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "baseLayout": "padded",
-     "changes": 43
+     "changes": 54
     },
     {
      "id": "components-tearsheet--with-steps",
@@ -34361,9 +34103,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 6827,
+      "diffPixels": 6705,
       "totalPixels": 1024000,
-      "ratio": 0.00667,
+      "ratio": 0.00655,
       "size": {
        "before": [
         1280,
@@ -34383,7 +34125,41 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 30
+     "changes": 22
+    },
+    {
+     "id": "components-tearsheet--stacking-narrow-tearsheets",
+     "base": "v11",
+     "baseId": "components-tearsheet--stacking-narrow-tearsheets",
+     "v11Id": "components-tearsheet--stacking-narrow-tearsheets",
+     "name": "Stacking Narrow Tearsheets",
+     "title": "Components/Tearsheet",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 6659,
+      "totalPixels": 1024000,
+      "ratio": 0.0065,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "baseLayout": "padded",
+     "changes": 39
     },
     {
      "id": "components-tearsheet--with-tabs",
@@ -34395,9 +34171,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 6591,
+      "diffPixels": 6469,
       "totalPixels": 1024000,
-      "ratio": 0.00644,
+      "ratio": 0.00632,
       "size": {
        "before": [
         1280,
@@ -34417,7 +34193,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 26
+     "changes": 18
     },
     {
      "id": "components-tearsheet--with-steps-and-horizontal-progress-indicator",
@@ -34429,9 +34205,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 6203,
+      "diffPixels": 6081,
       "totalPixels": 1024000,
-      "ratio": 0.00606,
+      "ratio": 0.00594,
       "size": {
        "before": [
         1280,
@@ -34451,41 +34227,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 30
-    },
-    {
-     "id": "components-tearsheet--narrow-tearsheet",
-     "base": "v11",
-     "baseId": "components-tearsheet--narrow-tearsheet",
-     "v11Id": "components-tearsheet--narrow-tearsheet",
-     "name": "Narrow Tearsheet",
-     "title": "Components/Tearsheet",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 5566,
-      "totalPixels": 1024000,
-      "ratio": 0.00544,
-      "size": {
-       "before": [
-        1280,
-        800
-       ],
-       "v12": [
-        1280,
-        800
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 800
-     },
-     "baseLayout": "padded",
-     "changes": 115
+     "changes": 22
     },
     {
      "id": "components-tearsheet--default",
@@ -34497,9 +34239,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 5477,
+      "diffPixels": 5355,
       "totalPixels": 1024000,
-      "ratio": 0.00535,
+      "ratio": 0.00523,
       "size": {
        "before": [
         1280,
@@ -34519,7 +34261,41 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 103
+     "changes": 95
+    },
+    {
+     "id": "components-tearsheet--narrow-tearsheet",
+     "base": "v11",
+     "baseId": "components-tearsheet--narrow-tearsheet",
+     "v11Id": "components-tearsheet--narrow-tearsheet",
+     "name": "Narrow Tearsheet",
+     "title": "Components/Tearsheet",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 5268,
+      "totalPixels": 1024000,
+      "ratio": 0.00514,
+      "size": {
+       "before": [
+        1280,
+        800
+       ],
+       "v12": [
+        1280,
+        800
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+     },
+     "baseLayout": "padded",
+     "changes": 107
     },
     {
      "id": "components-tearsheet--with-influencer",
@@ -34531,9 +34307,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 3863,
+      "diffPixels": 3741,
       "totalPixels": 1024000,
-      "ratio": 0.00377,
+      "ratio": 0.00365,
       "size": {
        "before": [
         1280,
@@ -34553,7 +34329,7 @@
       "height": 800
      },
      "baseLayout": "padded",
-     "changes": 103
+     "changes": 95
     }
    ],
    "notes": [],
@@ -34591,7 +34367,7 @@
       "components-tearsheet--with-steps-and-horizontal-progress-indicator",
       "components-tearsheet--with-tabs"
      ],
-     "elements": 39,
+     "elements": 25,
      "inherited": true,
      "sources": [
       "Button"
@@ -34629,41 +34405,6 @@
      "elements": 10,
      "inherited": false,
      "text": "Tearsheet · .cds--modal-container.cds--tearsheet__container · border-radius 0px → 8px"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn.cds--menu-button__trigger",
-     "variants": [
-      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm cds--menu-button__trigger"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "999999px",
-     "note": "pill",
-     "fromToken": {
-      "token": "$button-radius-ss/se/ee/es"
-     },
-     "toToken": {
-      "token": "$button-radius-ss/se/ee/es"
-     },
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer",
-      "components-tearsheet--with-steps",
-      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-      "components-tearsheet--with-tabs"
-     ],
-     "elements": 10,
-     "inherited": true,
-     "sources": [
-      "MenuButton"
-     ],
-     "text": "Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton)"
     },
     {
      "type": "Visual",
@@ -34918,6 +34659,38 @@
     },
     {
      "type": "Visual",
+     "element": ".cds--btn.cds--menu-button__trigger",
+     "variants": [
+      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm cds--menu-button__trigger"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": {
+      "token": "$button-radius-ss/se/ee/es"
+     },
+     "toToken": {
+      "token": "$button-radius-ss/se/ee/es"
+     },
+     "stories": [
+      "components-tearsheet--default",
+      "components-tearsheet--narrow-tearsheet",
+      "components-tearsheet--with-custom-footer-actions",
+      "components-tearsheet--with-influencer",
+      "components-tearsheet--with-steps",
+      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
+      "components-tearsheet--with-tabs"
+     ],
+     "elements": 7,
+     "inherited": true,
+     "sources": [
+      "MenuButton"
+     ],
+     "text": "Tearsheet · .cds--btn.cds--menu-button__trigger · border-radius 0px → 999999px (pill) (inherited from MenuButton)"
+    },
+    {
+     "type": "Visual",
      "element": ".cds--number__control-btn",
      "variants": [
       "cds--number__control-btn"
@@ -35033,31 +34806,6 @@
       "Tooltip"
      ],
      "text": "Tearsheet · .cds--popover-caret::after · color #161616 → #ffffff (inherited from Popover, Tooltip)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--tearsheet__header-action-item",
-     "variants": [
-      "cds--tearsheet__header-action-item"
-     ],
-     "prop": "display",
-     "from": "none",
-     "to": "block",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer",
-      "components-tearsheet--with-steps",
-      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-      "components-tearsheet--with-tabs"
-     ],
-     "elements": 14,
-     "inherited": false,
-     "text": "Tearsheet · .cds--tearsheet__header-action-item · display none → block"
     },
     {
      "type": "Visual",
@@ -35352,27 +35100,6 @@
     },
     {
      "type": "Visual",
-     "element": ".cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden",
-     "variants": [
-      "cds--tearsheet__header-actions-menuButton cds--tearsheet__header-actions-menuButton--hidden"
-     ],
-     "prop": "display",
-     "from": "none",
-     "to": "block",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Tearsheet · .cds--tearsheet__header-actions-menuButton.cds--tearsheet__header-actions-menuButton--hidden · display none → block"
-    },
-    {
-     "type": "Visual",
      "element": ".cds--btn.cds--tearsheet__scroller-button",
      "variants": [
       "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md cds--tearsheet__scroller-button"
@@ -35423,34 +35150,6 @@
     },
     {
      "type": "Layout",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm"
-     ],
-     "prop": "height",
-     "from": "0px",
-     "to": "32px",
-     "note": "+32px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer",
-      "components-tearsheet--with-steps",
-      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-      "components-tearsheet--with-tabs"
-     ],
-     "elements": 14,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Tearsheet · .cds--btn · height 0px → 32px (+32px) (inherited from Button)"
-    },
-    {
-     "type": "Layout",
      "element": ".cds--number__control-btn",
      "variants": [
       "cds--number__control-btn"
@@ -35479,34 +35178,6 @@
     },
     {
      "type": "Layout",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm"
-     ],
-     "prop": "width",
-     "from": "0px",
-     "to": "133.28px",
-     "note": "+133.28px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--default",
-      "components-tearsheet--narrow-tearsheet",
-      "components-tearsheet--with-custom-footer-actions",
-      "components-tearsheet--with-influencer",
-      "components-tearsheet--with-steps",
-      "components-tearsheet--with-steps-and-horizontal-progress-indicator",
-      "components-tearsheet--with-tabs"
-     ],
-     "elements": 14,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Tearsheet · .cds--btn · width 0px → 133.28px (+133.28px) (inherited from Button)"
-    },
-    {
-     "type": "Layout",
      "element": ".cds--number__control-btn",
      "variants": [
       "cds--number__control-btn"
@@ -35532,56 +35203,6 @@
       "NumberInput"
      ],
      "text": "Tearsheet · .cds--number__control-btn · width 40px → 24px (-16px) (inherited from NumberInput)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn.cds--menu-button__trigger",
-     "variants": [
-      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm cds--menu-button__trigger"
-     ],
-     "prop": "height",
-     "from": "0px",
-     "to": "32px",
-     "note": "+32px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button",
-      "MenuButton"
-     ],
-     "text": "Tearsheet · .cds--btn.cds--menu-button__trigger · height 0px → 32px (+32px) (inherited from Button, MenuButton)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn.cds--menu-button__trigger",
-     "variants": [
-      "cds--btn cds--btn--sm cds--btn--tertiary cds--layout--size-sm cds--menu-button__trigger"
-     ],
-     "prop": "width",
-     "from": "0px",
-     "to": "192px",
-     "note": "+192px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "components-tearsheet--stacking-narrow-tearsheets",
-      "components-tearsheet--stacking-tearsheet",
-      "components-tearsheet--stacking-with-different-sizes"
-     ],
-     "elements": 3,
-     "inherited": true,
-     "sources": [
-      "Button",
-      "MenuButton"
-     ],
-     "text": "Tearsheet · .cds--btn.cds--menu-button__trigger · width 0px → 192px (+192px) (inherited from Button, MenuButton)"
     },
     {
      "type": "Structure",
@@ -36451,6 +36072,32 @@
    ],
    "notes": [],
    "changes": []
+  },
+  {
+   "id": "theming",
+   "name": "Theming",
+   "section": "Components",
+   "status": "new",
+   "inheritsFrom": [],
+   "base": "v11",
+   "migratedFrom": null,
+   "pixel": null,
+   "stories": [],
+   "notes": [],
+   "changes": [
+    {
+     "type": "Story",
+     "prop": "story added",
+     "element": null,
+     "from": "—",
+     "to": "🚀 Generated Themes",
+     "stories": [
+      "components-theming--generated-themes"
+     ],
+     "note": null,
+     "text": "Theming · story added: 🚀 Generated Themes"
+    }
+   ]
   },
   {
    "id": "tile",
@@ -43852,6 +43499,1058 @@
    ]
   },
   {
+   "id": "coachmark",
+   "name": "Coachmark",
+   "section": "Examples",
+   "status": "migrated",
+   "inheritsFrom": [
+    "Button",
+    "IconButton",
+    "Link",
+    "Popover",
+    "Tooltip"
+   ],
+   "base": "ibmp",
+   "migratedFrom": {
+    "ibmpTitles": [
+     "Patterns/Coachmark Fixed"
+    ],
+    "matched": 3,
+    "unmatched": 0
+   },
+   "pixel": {
+    "max": 0.45484,
+    "mean": 0.28685,
+    "storiesChanged": 3,
+    "storiesCompared": 3
+   },
+   "stories": [
+    {
+     "id": "examples-coachmark-coachmark-fixed--coachmark-fixed",
+     "base": "ibmp",
+     "baseId": "patterns-coachmark-fixed--coachmark-fixed",
+     "v11Id": null,
+     "name": "Coachmark Fixed",
+     "title": "Examples/Coachmark/Coachmark Fixed",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 37054,
+      "totalPixels": 81466,
+      "ratio": 0.45484,
+      "size": {
+       "before": [
+        322,
+        253
+       ],
+       "v12": [
+        322,
+        253
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 958,
+      "y": 547,
+      "width": 322,
+      "height": 253
+     },
+     "baseLayout": "centered",
+     "changes": 32
+    },
+    {
+     "id": "examples-coachmark-coachmark-stacked--coachmark-stack",
+     "base": "ibmp",
+     "baseId": "patterns-coachmark-stacked--coachmark-stack",
+     "v11Id": null,
+     "name": "Coachmark Stack",
+     "title": "Examples/Coachmark/Coachmark Stacked",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 35814,
+      "totalPixels": 113256,
+      "ratio": 0.31622,
+      "size": {
+       "before": [
+        312,
+        363
+       ],
+       "v12": [
+        312,
+        363
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 968,
+      "y": 437,
+      "width": 312,
+      "height": 363
+     },
+     "baseLayout": "centered",
+     "changes": 41
+    },
+    {
+     "id": "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+     "base": "ibmp",
+     "baseId": "patterns-coachmark-overlay-elements--coachmark-overlay",
+     "v11Id": null,
+     "name": "Coachmark Overlay",
+     "title": "Examples/Coachmark/Coachmark Overlay Elements",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 51762,
+      "totalPixels": 578388,
+      "ratio": 0.08949,
+      "size": {
+       "before": [
+        1228,
+        471
+       ],
+       "v12": [
+        1228,
+        471
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 26,
+      "y": 0,
+      "width": 1228,
+      "height": 471
+     },
+     "baseLayout": "centered",
+     "changes": 37
+    }
+   ],
+   "notes": [],
+   "changes": [
+    {
+     "type": "API",
+     "prop": "class prefix",
+     "element": null,
+     "from": "c4p--",
+     "to": "cds--",
+     "stories": [],
+     "note": "43 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
+     "text": "Coachmark · class prefix c4p-- → cds--"
+    },
+    {
+     "type": "API",
+     "prop": "package",
+     "element": null,
+     "from": "@carbon/ibm-products",
+     "to": "@carbon/react",
+     "stories": [],
+     "note": "IBM Products Storybook: Patterns/Coachmark Fixed",
+     "text": "Coachmark · package @carbon/ibm-products → @carbon/react"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip",
+     "variants": [
+      "cds--autoalign cds--icon-tooltip cds--popover--auto-align cds--popover--high-contrast cds--popover--top cds--popover-container cds--tooltip"
+     ],
+     "prop": "display",
+     "from": "block",
+     "to": "inline-block",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "IconButton"
+     ],
+     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover-container.cds--tooltip · display block → inline-block (inherited from IconButton)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--sm cds--coachmark-tagline--close-btn cds--layout--size-sm"
+     ],
+     "prop": "outline",
+     "from": "none",
+     "to": "1px solid transparent",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": false,
+     "text": "Coachmark · .cds--btn · outline none → 1px solid transparent"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "background-color",
+     "from": "transparent",
+     "to": "#0f62fe",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn · background-color transparent → #0f62fe (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "border-radius",
+     "from": "0px",
+     "to": "999999px",
+     "note": "pill",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "color",
+     "from": "#0f62fe",
+     "to": "#ffffff",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn · color #0f62fe → #ffffff (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "display",
+     "from": "inline-flex",
+     "to": "flex",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn · display inline-flex → flex (inherited from Button)"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "margin",
+     "from": "0px",
+     "to": "16px 0px 0px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--btn · margin 0px → 16px 0px 0px"
+    },
+    {
+     "type": "Visual",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "padding",
+     "from": "0px",
+     "to": "5.99996px 63px 5.99996px 15px",
+     "note": null,
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--btn · padding 0px → 5.99996px 63px 5.99996px 15px"
+    },
+    {
+     "type": "Layout",
+     "element": ".cds--btn",
+     "variants": [
+      "cds--btn cds--btn--primary cds--btn--sm cds--layout--size-sm"
+     ],
+     "prop": "width",
+     "from": "32px",
+     "to": "116.81px",
+     "note": "+84.81px",
+     "fromToken": null,
+     "toToken": null,
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn · width 32px → 116.81px (+84.81px) (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--coachmark-content.cds--popover-content",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 6,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--content-header",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--content-header element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--tooltip-trigger__wrapper",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Tooltip"
+     ],
+     "text": "Coachmark · .cds--tooltip-trigger__wrapper element added (inherited from Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--popover element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--content-body",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--content-body element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Coachmark · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--tooltip-trigger__wrapper",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Tooltip"
+     ],
+     "text": "Coachmark · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--popover element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--coachmark-content.cds--popover-content",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 6,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--coachmark-content.cds--popover-content element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--content-header",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--content-header element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next--content-body",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next--content-body element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline.cds--coachmark-tagline--is-open",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline__cta",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline__cta element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline__idea",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline__idea element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline--close-btn-container",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline--close-btn-container element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top-start.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn.cds--btn--primary.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline.cds--coachmark-tagline--is-open",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 4,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline.cds--coachmark-tagline--is-open element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline__cta",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline__cta element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline__idea",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline__idea element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-tagline--close-btn-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed",
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-tagline--close-btn-container element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--link",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Link"
+     ],
+     "text": "Coachmark · .cds--link element added (inherited from Link)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layout",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--layout element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--layer-one.cds--white",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--layer-one.cds--white element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next element added"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--autoalign.cds--popover--auto-align.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon.cds--coachmark-beacon-default",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon__target",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon__target element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon__center",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon__center element added (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "IconButton",
+      "Popover",
+      "Tooltip"
+     ],
+     "text": "Coachmark · .cds--autoalign.cds--icon-tooltip.cds--popover--auto-align.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element added (inherited from IconButton, Popover, Tooltip)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm",
+     "prop": "element added",
+     "from": "—",
+     "to": "present",
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element added (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark-tagline--close-btn.cds--layout--size-sm element removed (inherited from Button)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--link",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-fixed--coachmark-fixed"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Link"
+     ],
+     "text": "Coachmark · .cds--link element removed (inherited from Link)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--g10.cds--layer-one",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--g10.cds--layer-one element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark__next",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--coachmark__next element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--popover--caret.cds--popover--drop-shadow.cds--popover--high-contrast.cds--popover--open.cds--popover--top.cds--popover-container element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon.cds--coachmark-beacon-default",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon.cds--coachmark-beacon-default element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon__target",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon__target element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--coachmark-beacon__center",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--coachmark-beacon__center element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 1,
+     "inherited": false,
+     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--sm.cds--coachmark__next--content-header--close-button.cds--layout--size-sm element removed"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--popover-caret",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-overlay-elements--coachmark-overlay"
+     ],
+     "elements": 2,
+     "inherited": true,
+     "sources": [
+      "Popover"
+     ],
+     "text": "Coachmark · .cds--popover-caret element removed (inherited from Popover)"
+    },
+    {
+     "type": "Structure",
+     "element": ".cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm",
+     "prop": "element removed",
+     "from": "present",
+     "to": "—",
+     "stories": [
+      "examples-coachmark-coachmark-stacked--coachmark-stack"
+     ],
+     "elements": 3,
+     "inherited": true,
+     "sources": [
+      "Button"
+     ],
+     "text": "Coachmark · .cds--btn.cds--btn--ghost.cds--btn--sm.cds--layout--size-sm element removed (inherited from Button)"
+    }
+   ]
+  },
+  {
    "id": "create-flows",
    "name": "Create flows",
    "section": "Examples",
@@ -45195,8 +45894,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.00262,
-    "mean": 0.00262,
+    "max": 0.0025,
+    "mean": 0.0025,
     "storiesChanged": 1,
     "storiesCompared": 1
    },
@@ -45211,9 +45910,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1937,
+      "diffPixels": 1847,
       "totalPixels": 739840,
-      "ratio": 0.00262,
+      "ratio": 0.0025,
       "size": {
        "before": [
         1280,
@@ -48156,854 +48855,6 @@
    ],
    "notes": [],
    "changes": []
-  },
-  {
-   "id": "onboarding",
-   "name": "Onboarding",
-   "section": "Preview",
-   "status": "migrated",
-   "inheritsFrom": [
-    "Button",
-    "Carousel",
-    "IconButton",
-    "Popover",
-    "Tooltip"
-   ],
-   "base": "ibmp",
-   "migratedFrom": {
-    "ibmpTitles": [
-     "Preview Candidate/Onboarding/Guidebanner"
-    ],
-    "matched": 2,
-    "unmatched": 1
-   },
-   "pixel": {
-    "max": 0.60122,
-    "mean": 0.36797,
-    "storiesChanged": 2,
-    "storiesCompared": 2
-   },
-   "stories": [
-    {
-     "id": "preview-onboarding-preview-guidebanner--many-insights",
-     "base": "ibmp",
-     "baseId": "preview-candidate-onboarding-guidebanner--many-insights",
-     "v11Id": null,
-     "name": "Many Insights",
-     "title": "Preview/Onboarding/preview__Guidebanner",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 259341,
-      "totalPixels": 431360,
-      "ratio": 0.60122,
-      "size": {
-       "before": [
-        1280,
-        337
-       ],
-       "v12": [
-        1280,
-        337
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 337
-     },
-     "baseLayout": "fullscreen",
-     "changes": 43
-    },
-    {
-     "id": "preview-onboarding-preview-guidebanner--collapsible",
-     "base": "ibmp",
-     "baseId": "preview-candidate-onboarding-guidebanner--collapsible",
-     "v11Id": null,
-     "name": "Collapsible",
-     "title": "Preview/Onboarding/preview__Guidebanner",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 58111,
-      "totalPixels": 431360,
-      "ratio": 0.13472,
-      "size": {
-       "before": [
-        1280,
-        337
-       ],
-       "v12": [
-        1280,
-        337
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 0,
-      "y": 0,
-      "width": 1280,
-      "height": 337
-     },
-     "baseLayout": "fullscreen",
-     "changes": 47
-    }
-   ],
-   "notes": [],
-   "changes": [
-    {
-     "type": "API",
-     "prop": "class prefix",
-     "element": null,
-     "from": "c4p--",
-     "to": "cds--",
-     "stories": [],
-     "note": "86 elements renamed across the compared stories; CSS overrides and test selectors on c4p-- classes need updating",
-     "text": "Onboarding · class prefix c4p-- → cds--"
-    },
-    {
-     "type": "API",
-     "prop": "package",
-     "element": null,
-     "from": "@carbon/ibm-products",
-     "to": "@carbon/react",
-     "stories": [],
-     "note": "IBM Products Storybook: Preview Candidate/Onboarding/Guidebanner",
-     "text": "Onboarding · package @carbon/ibm-products → @carbon/react"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
-     "variants": [
-      "cds--guidebanner cds--guidebanner__collapsible"
-     ],
-     "prop": "background-image",
-     "from": "linear-gradient(90deg, #001d6c, #6929c4)",
-     "to": "linear-gradient(90deg, #001d6c 0%, #6929c4 100%)",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · background-image linear-gradient(90deg, #001d6c, #6929c4) → linear-gradient(90deg, #001d6c 0%, #6929c4 100%)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
-      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "999999px",
-     "note": "pill",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 4,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Onboarding · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn.cds--guidebanner__toggle-button",
-     "variants": [
-      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__toggle-button cds--layout--size-md"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "999999px",
-     "note": "pill",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--btn.cds--guidebanner__toggle-button · border-radius 0px → 999999px (pill)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--btn.cds--guidebanner__element-button",
-     "variants": [
-      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__element-button cds--layout--size-md",
-      "cds--btn cds--btn--md cds--btn--tertiary cds--guidebanner__element-button cds--layout--size-md"
-     ],
-     "prop": "border-radius",
-     "from": "0px",
-     "to": "999999px",
-     "note": "pill",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 4,
-     "inherited": false,
-     "text": "Onboarding · .cds--btn.cds--guidebanner__element-button · border-radius 0px → 999999px (pill)"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__navigation",
-     "variants": [
-      "cds--guidebanner__navigation"
-     ],
-     "prop": "border-top",
-     "from": "none",
-     "to": "1px solid #8a3ffc",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__navigation · border-top none → 1px solid #8a3ffc"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
-     "variants": [
-      "cds--guidebanner__back-button cds--guidebanner__back-button--disabled"
-     ],
-     "prop": "display",
-     "from": "none",
-     "to": "block",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · display none → block"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__next-button",
-     "variants": [
-      "cds--guidebanner__next-button"
-     ],
-     "prop": "display",
-     "from": "none",
-     "to": "block",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__next-button · display none → block"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
-     "variants": [
-      "cds--guidebanner__back-button cds--guidebanner__back-button--disabled"
-     ],
-     "prop": "margin",
-     "from": "0px 0px 0px auto",
-     "to": "0px 0px 0px 1071.55px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled · margin 0px 0px 0px auto → 0px 0px 0px 1071.55px"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__element",
-     "variants": [
-      "cds--guidebanner__element"
-     ],
-     "prop": "margin",
-     "from": "0px",
-     "to": "16px 0px 0px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 5,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element · margin 0px → 16px 0px 0px"
-    },
-    {
-     "type": "Visual",
-     "element": ".cds--guidebanner__element",
-     "variants": [
-      "cds--guidebanner__element"
-     ],
-     "prop": "padding",
-     "from": "0px 0px 0px 52px",
-     "to": "0px 52px",
-     "note": null,
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element · padding 0px 0px 0px 52px → 0px 52px"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
-     "variants": [
-      "cds--guidebanner cds--guidebanner__collapsible"
-     ],
-     "prop": "height",
-     "from": "320.91px",
-     "to": "280.94px",
-     "note": "-39.97px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 320.91px → 280.94px (-39.97px)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
-      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md"
-     ],
-     "prop": "height",
-     "from": "0px",
-     "to": "40px",
-     "note": "+40px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Onboarding · .cds--btn · height 0px → 40px (+40px) (inherited from Button)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--guidebanner__navigation",
-     "variants": [
-      "cds--guidebanner__navigation"
-     ],
-     "prop": "height",
-     "from": "40px",
-     "to": "41px",
-     "note": "+1px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__navigation · height 40px → 41px (+1px)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--guidebanner.cds--guidebanner__collapsible",
-     "variants": [
-      "cds--guidebanner cds--guidebanner__collapsible"
-     ],
-     "prop": "height",
-     "from": "102px",
-     "to": "320.91px",
-     "note": "+218.91px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner.cds--guidebanner__collapsible · height 102px → 320.91px (+218.91px)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn",
-     "variants": [
-      "cds--btn cds--btn--disabled cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md",
-      "cds--btn cds--btn--ghost cds--btn--icon-only cds--btn--md cds--layout--size-md"
-     ],
-     "prop": "width",
-     "from": "0px",
-     "to": "40px",
-     "note": "+40px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Onboarding · .cds--btn · width 0px → 40px (+40px) (inherited from Button)"
-    },
-    {
-     "type": "Layout",
-     "element": ".cds--btn.cds--guidebanner__toggle-button",
-     "variants": [
-      "cds--btn cds--btn--ghost cds--btn--md cds--guidebanner__toggle-button cds--layout--size-md"
-     ],
-     "prop": "width",
-     "from": "101.45px",
-     "to": "94.45px",
-     "note": "-7px",
-     "fromToken": null,
-     "toToken": null,
-     "stories": [
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--btn.cds--guidebanner__toggle-button · width 101.45px → 94.45px (-7px)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--layout",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--layout element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__carousel-elements-container",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__carousel-elements-container element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__carousel-elements",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__carousel-elements element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__item",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 7,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__item element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__carousel-elements-container--scrolled",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__carousel-elements-container--scrolled element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__carousel-elements-container--scroll-max",
-     "prop": "element added",
-     "from": "—",
-     "to": "present",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__carousel-elements-container--scroll-max element added"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--carousel__elements-container",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Carousel"
-     ],
-     "text": "Onboarding · .cds--carousel__elements-container element removed (inherited from Carousel)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--carousel__elements",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Carousel"
-     ],
-     "text": "Onboarding · .cds--carousel__elements element removed (inherited from Carousel)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--carousel__item",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 10,
-     "inherited": true,
-     "sources": [
-      "Carousel"
-     ],
-     "text": "Onboarding · .cds--carousel__item element removed (inherited from Carousel)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--carousel__elements-container--scrolled",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Carousel"
-     ],
-     "text": "Onboarding · .cds--carousel__elements-container--scrolled element removed (inherited from Carousel)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--carousel__elements-container--scroll-max",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible",
-      "preview-onboarding-preview-guidebanner--many-insights"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Carousel"
-     ],
-     "text": "Onboarding · .cds--carousel__elements-container--scroll-max element removed (inherited from Carousel)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 2,
-     "inherited": false,
-     "text": "Onboarding · .cds--btn.cds--btn--ghost.cds--btn--md.cds--guidebanner__element-button.cds--layout--size-md element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__element",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__element-title",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element-title element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__element-content",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element-content element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__element-buttons",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 3,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element-buttons element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__element-link.cds--link.cds--link--md",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__element-link.cds--link.cds--link--md element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__back-button.cds--guidebanner__back-button--disabled",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__back-button.cds--guidebanner__back-button--disabled element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "IconButton",
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Onboarding · .cds--icon-tooltip.cds--icon-tooltip--disabled.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--tooltip-trigger__wrapper",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Tooltip"
-     ],
-     "text": "Onboarding · .cds--tooltip-trigger__wrapper element removed (inherited from Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Onboarding · .cds--btn.cds--btn--disabled.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--popover",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 2,
-     "inherited": true,
-     "sources": [
-      "Popover"
-     ],
-     "text": "Onboarding · .cds--popover element removed (inherited from Popover)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--guidebanner__next-button",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": false,
-     "text": "Onboarding · .cds--guidebanner__next-button element removed"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "IconButton",
-      "Popover",
-      "Tooltip"
-     ],
-     "text": "Onboarding · .cds--icon-tooltip.cds--popover--caret.cds--popover--high-contrast.cds--popover--top-end.cds--popover-container.cds--tooltip element removed (inherited from IconButton, Popover, Tooltip)"
-    },
-    {
-     "type": "Structure",
-     "element": ".cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md",
-     "prop": "element removed",
-     "from": "present",
-     "to": "—",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--collapsible"
-     ],
-     "elements": 1,
-     "inherited": true,
-     "sources": [
-      "Button"
-     ],
-     "text": "Onboarding · .cds--btn.cds--btn--ghost.cds--btn--icon-only.cds--btn--md.cds--layout--size-md element removed (inherited from Button)"
-    },
-    {
-     "type": "Story",
-     "prop": "story added",
-     "element": null,
-     "from": "—",
-     "to": "Default",
-     "stories": [
-      "preview-onboarding-preview-guidebanner--default"
-     ],
-     "note": "no IBM Products equivalent",
-     "text": "Onboarding · story added: Default (no IBM Products equivalent)"
-    },
-    {
-     "type": "Story",
-     "prop": "story removed",
-     "element": null,
-     "from": "Floating",
-     "to": "—",
-     "stories": [
-      "components-onboarding-coachmark--floating"
-     ],
-     "text": "Onboarding · story removed: Floating"
-    },
-    {
-     "type": "Story",
-     "prop": "story removed",
-     "element": null,
-     "from": "Tooltip",
-     "to": "—",
-     "stories": [
-      "components-onboarding-coachmark--tooltip"
-     ],
-     "text": "Onboarding · story removed: Tooltip"
-    }
-   ]
   },
   {
    "id": "preview-bignumber",

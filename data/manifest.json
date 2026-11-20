@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-20T04:10:06.886Z",
+ "generatedAt": "2026-11-20T12:28:29.372Z",
  "counts": {
   "v11Stories": 530,
-  "v12Stories": 658,
+  "v12Stories": 659,
   "ibmpStories": 242,
-  "matched": 519,
-  "migrated": 102
+  "matched": 521,
+  "migrated": 100
  },
  "matched": [
   {
@@ -2536,6 +2536,26 @@
    "title": "Components/NumberInput",
    "name": "With Type Of Text Controlled",
    "component": "NumberInput",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-onboarding-coachmark--floating",
+   "v11": "components-onboarding-coachmark--floating",
+   "v12": "components-onboarding-coachmark--floating",
+   "title": "Components/Onboarding/Coachmark",
+   "name": "Floating",
+   "component": "Onboarding",
+   "match": "exact"
+  },
+  {
+   "base": "v11",
+   "baseId": "components-onboarding-coachmark--tooltip",
+   "v11": "components-onboarding-coachmark--tooltip",
+   "v12": "components-onboarding-coachmark--tooltip",
+   "title": "Components/Onboarding/Coachmark",
+   "name": "Tooltip",
+   "component": "Onboarding",
    "match": "exact"
   },
   {
@@ -5202,26 +5222,6 @@
  "migrated": [
   {
    "base": "ibmp",
-   "baseId": "preview-onboarding-coachmark--floating",
-   "v12": "components-coachmark--floating",
-   "title": "Components/Coachmark",
-   "name": "Floating",
-   "component": "Coachmark",
-   "match": "name",
-   "ibmpTitle": "Preview/Onboarding/Coachmark"
-  },
-  {
-   "base": "ibmp",
-   "baseId": "preview-onboarding-coachmark--tooltip",
-   "v12": "components-coachmark--tooltip",
-   "title": "Components/Coachmark",
-   "name": "Tooltip",
-   "component": "Coachmark",
-   "match": "name",
-   "ibmpTitle": "Preview/Onboarding/Coachmark"
-  },
-  {
-   "base": "ibmp",
    "baseId": "preview-candidate-conditionbuilder--condition-builder-with-actions",
    "v12": "components-conditionbuilder--with-actions",
    "title": "Components/ConditionBuilder",
@@ -6255,12 +6255,12 @@
   },
   {
    "component": "Coachmark",
-   "v12Title": "Components/Coachmark",
+   "v12Title": "Examples/Coachmark/Coachmark Fixed",
    "ibmpTitles": [
-    "Preview/Onboarding/Coachmark"
+    "Patterns/Coachmark Fixed"
    ],
    "tagged": false,
-   "matched": 5,
+   "matched": 3,
    "unmatched": []
   },
   {
@@ -6579,7 +6579,6 @@
    "Components/ComboBox/Feature Flag",
    "Components/ComboButton/Feature Flag",
    "Components/Dropdown/Feature Flag",
-   "Components/Onboarding/Coachmark",
    "Components/OverflowMenu/Feature Flag",
    "Components/Popover/Feature Flag",
    "Components/StructuredList/Feature Flag",
@@ -6591,16 +6590,6 @@
    "Deprecated/preview__StaticNotification"
   ],
   "stories": [
-   {
-    "id": "components-onboarding-coachmark--floating",
-    "title": "Components/Onboarding/Coachmark",
-    "name": "Floating"
-   },
-   {
-    "id": "components-onboarding-coachmark--tooltip",
-    "title": "Components/Onboarding/Coachmark",
-    "name": "Tooltip"
-   },
    {
     "id": "components-overflowmenu-feature-flag--default",
     "title": "Components/OverflowMenu/Feature Flag",
@@ -6651,7 +6640,6 @@
  "onlyV12": {
   "titles": [
    "Components/AddSelect",
-   "Components/Coachmark",
    "Components/ConditionBuilder",
    "Components/EditInPlace",
    "Components/FullPageError",
@@ -6660,6 +6648,7 @@
    "Components/OptionsTile",
    "Components/SidePanel",
    "Components/TagOverflow",
+   "Components/Theming",
    "Components/UserAvatar",
    "Elements/Motion/Custom surface",
    "Elements/Motion/Expand",
@@ -6778,6 +6767,11 @@
     "id": "components-optionstile--static",
     "title": "Components/OptionsTile",
     "name": "Static"
+   },
+   {
+    "id": "components-theming--generated-themes",
+    "title": "Components/Theming",
+    "name": "🚀 Generated Themes"
    },
    {
     "id": "elements-motion-custom-surface--custom-surface-with-motion",
