@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T17:22:43.413Z",
+ "generatedAt": "2026-11-24T08:27:42.079Z",
  "count": 621,
  "stories": [
   {
@@ -20173,8 +20173,8 @@
    "title": "Components/TagOverflow",
    "name": "Custom Components With Overflow Modal",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:22.443Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:44.020Z",
    "error": null,
    "elements": {
     "before": 88,
@@ -20197,7 +20197,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--custom-components-with-overflow-modal",
+   "baseId": "components-tagoverflow--custom-components-with-overflow-modal",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--custom-components-with-overflow-modal.png",
     "v12": "shots/v12/components-tagoverflow--custom-components-with-overflow-modal.png",
@@ -20210,8 +20210,8 @@
    "title": "Components/TagOverflow",
    "name": "Interactive Tags",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:24.537Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:44.500Z",
    "error": null,
    "elements": {
     "before": 155,
@@ -20234,7 +20234,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--interactive-tags",
+   "baseId": "components-tagoverflow--interactive-tags",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--interactive-tags.png",
     "v12": "shots/v12/components-tagoverflow--interactive-tags.png",
@@ -20247,8 +20247,8 @@
    "title": "Components/TagOverflow",
    "name": "Multiline Tags",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:25.634Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:45.232Z",
    "error": null,
    "elements": {
     "before": 113,
@@ -20271,7 +20271,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--multiline-tags",
+   "baseId": "components-tagoverflow--multiline-tags",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--multiline-tags.png",
     "v12": "shots/v12/components-tagoverflow--multiline-tags.png",
@@ -20284,17 +20284,17 @@
    "title": "Components/TagOverflow",
    "name": "Tags With Overflow Count",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:27.027Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:46.785Z",
    "error": null,
    "elements": {
     "before": 58,
-    "v12": 58
+    "v12": 56
    },
    "pixel": {
-    "diffPixels": 138,
+    "diffPixels": 0,
     "totalPixels": 157696,
-    "ratio": 0.00088,
+    "ratio": 0,
     "size": {
      "before": [
       1232,
@@ -20308,7 +20308,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--tags-with-overflow-count",
+   "baseId": "components-tagoverflow--tags-with-overflow-count",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--tags-with-overflow-count.png",
     "v12": "shots/v12/components-tagoverflow--tags-with-overflow-count.png",
@@ -20321,8 +20321,8 @@
    "title": "Components/TagOverflow",
    "name": "Tags With Overflow Modal",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:27.773Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:48.066Z",
    "error": null,
    "elements": {
     "before": 113,
@@ -20345,7 +20345,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--tags-with-overflow-modal",
+   "baseId": "components-tagoverflow--tags-with-overflow-modal",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--tags-with-overflow-modal.png",
     "v12": "shots/v12/components-tagoverflow--tags-with-overflow-modal.png",
@@ -20358,8 +20358,8 @@
    "title": "Components/TagOverflow",
    "name": "Tags With Truncation",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T04:17:28.413Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:48.532Z",
    "error": null,
    "elements": {
     "before": 64,
@@ -20382,7 +20382,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--tags-with-truncation",
+   "baseId": "components-tagoverflow--tags-with-truncation",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--tags-with-truncation.png",
     "v12": "shots/v12/components-tagoverflow--tags-with-truncation.png",
@@ -20395,17 +20395,17 @@
    "title": "Components/TagOverflow",
    "name": "User Avatars With Overflow Count",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T12:32:48.565Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:54.108Z",
    "error": null,
    "elements": {
     "before": 115,
     "v12": 113
    },
    "pixel": {
-    "diffPixels": 465,
+    "diffPixels": 459,
     "totalPixels": 157696,
-    "ratio": 0.00295,
+    "ratio": 0.00291,
     "size": {
      "before": [
       1232,
@@ -20419,7 +20419,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--user-avatars-with-overflow-count",
+   "baseId": "components-tagoverflow--user-avatars-with-overflow-count",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--user-avatars-with-overflow-count.png",
     "v12": "shots/v12/components-tagoverflow--user-avatars-with-overflow-count.png",
@@ -20432,17 +20432,17 @@
    "title": "Components/TagOverflow",
    "name": "User Avatars With Overflow Modal",
    "component": "TagOverflow",
-   "match": "name",
-   "capturedAt": "2026-11-20T12:32:49.556Z",
+   "match": "exact",
+   "capturedAt": "2026-11-24T08:26:55.290Z",
    "error": null,
    "elements": {
     "before": 161,
     "v12": 159
    },
    "pixel": {
-    "diffPixels": 619,
+    "diffPixels": 551,
     "totalPixels": 157696,
-    "ratio": 0.00393,
+    "ratio": 0.00349,
     "size": {
      "before": [
       1232,
@@ -20456,7 +20456,7 @@
     "sizeChanged": false
    },
    "base": "ibmp",
-   "baseId": "utilities-tagoverflow--user-avatars-with-overflow-modal",
+   "baseId": "components-tagoverflow--user-avatars-with-overflow-modal",
    "shots": {
     "before": "shots/ibmp/components-tagoverflow--user-avatars-with-overflow-modal.png",
     "v12": "shots/v12/components-tagoverflow--user-avatars-with-overflow-modal.png",
@@ -21802,16 +21802,16 @@
    "name": "Date Time Format",
    "component": "Date Time Format",
    "match": "name",
-   "capturedAt": "2026-11-20T12:33:27.490Z",
+   "capturedAt": "2026-11-24T08:27:27.574Z",
    "error": null,
    "elements": {
     "before": 81,
     "v12": 82
    },
    "pixel": {
-    "diffPixels": 1847,
+    "diffPixels": 1892,
     "totalPixels": 739840,
-    "ratio": 0.0025,
+    "ratio": 0.00256,
     "size": {
      "before": [
       1280,

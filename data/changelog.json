@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T17:22:44.885Z",
+ "generatedAt": "2026-11-24T08:27:44.158Z",
  "counts": {
   "components": 118,
   "unchanged": 31,
@@ -32155,14 +32155,14 @@
    "base": "ibmp",
    "migratedFrom": {
     "ibmpTitles": [
-     "Utilities/TagOverflow"
+     "Components/TagOverflow"
     ],
     "matched": 8,
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.00393,
-    "mean": 0.00097,
+    "max": 0.00349,
+    "mean": 0.0008,
     "storiesChanged": 2,
     "storiesCompared": 8
    },
@@ -32170,16 +32170,16 @@
     {
      "id": "components-tagoverflow--user-avatars-with-overflow-modal",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--user-avatars-with-overflow-modal",
+     "baseId": "components-tagoverflow--user-avatars-with-overflow-modal",
      "v11Id": null,
      "name": "User Avatars With Overflow Modal",
      "title": "Components/TagOverflow",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 619,
+      "diffPixels": 551,
       "totalPixels": 157696,
-      "ratio": 0.00393,
+      "ratio": 0.00349,
       "size": {
        "before": [
         1232,
@@ -32204,16 +32204,16 @@
     {
      "id": "components-tagoverflow--user-avatars-with-overflow-count",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--user-avatars-with-overflow-count",
+     "baseId": "components-tagoverflow--user-avatars-with-overflow-count",
      "v11Id": null,
      "name": "User Avatars With Overflow Count",
      "title": "Components/TagOverflow",
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 465,
+      "diffPixels": 459,
       "totalPixels": 157696,
-      "ratio": 0.00295,
+      "ratio": 0.00291,
       "size": {
        "before": [
         1232,
@@ -32236,43 +32236,9 @@
      "changes": 88
     },
     {
-     "id": "components-tagoverflow--tags-with-overflow-count",
-     "base": "ibmp",
-     "baseId": "utilities-tagoverflow--tags-with-overflow-count",
-     "v11Id": null,
-     "name": "Tags With Overflow Count",
-     "title": "Components/TagOverflow",
-     "captured": true,
-     "error": null,
-     "pixel": {
-      "diffPixels": 138,
-      "totalPixels": 157696,
-      "ratio": 0.00088,
-      "size": {
-       "before": [
-        1232,
-        128
-       ],
-       "v12": [
-        1232,
-        128
-       ]
-      },
-      "sizeChanged": false
-     },
-     "clip": {
-      "x": 22,
-      "y": 26,
-      "width": 1232,
-      "height": 128
-     },
-     "baseLayout": "centered",
-     "changes": 39
-    },
-    {
      "id": "components-tagoverflow--custom-components-with-overflow-modal",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--custom-components-with-overflow-modal",
+     "baseId": "components-tagoverflow--custom-components-with-overflow-modal",
      "v11Id": null,
      "name": "Custom Components With Overflow Modal",
      "title": "Components/TagOverflow",
@@ -32306,7 +32272,7 @@
     {
      "id": "components-tagoverflow--interactive-tags",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--interactive-tags",
+     "baseId": "components-tagoverflow--interactive-tags",
      "v11Id": null,
      "name": "Interactive Tags",
      "title": "Components/TagOverflow",
@@ -32340,7 +32306,7 @@
     {
      "id": "components-tagoverflow--multiline-tags",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--multiline-tags",
+     "baseId": "components-tagoverflow--multiline-tags",
      "v11Id": null,
      "name": "Multiline Tags",
      "title": "Components/TagOverflow",
@@ -32372,9 +32338,43 @@
      "changes": 66
     },
     {
+     "id": "components-tagoverflow--tags-with-overflow-count",
+     "base": "ibmp",
+     "baseId": "components-tagoverflow--tags-with-overflow-count",
+     "v11Id": null,
+     "name": "Tags With Overflow Count",
+     "title": "Components/TagOverflow",
+     "captured": true,
+     "error": null,
+     "pixel": {
+      "diffPixels": 0,
+      "totalPixels": 157696,
+      "ratio": 0,
+      "size": {
+       "before": [
+        1232,
+        128
+       ],
+       "v12": [
+        1232,
+        128
+       ]
+      },
+      "sizeChanged": false
+     },
+     "clip": {
+      "x": 22,
+      "y": 26,
+      "width": 1232,
+      "height": 128
+     },
+     "baseLayout": "centered",
+     "changes": 36
+    },
+    {
      "id": "components-tagoverflow--tags-with-overflow-modal",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--tags-with-overflow-modal",
+     "baseId": "components-tagoverflow--tags-with-overflow-modal",
      "v11Id": null,
      "name": "Tags With Overflow Modal",
      "title": "Components/TagOverflow",
@@ -32408,7 +32408,7 @@
     {
      "id": "components-tagoverflow--tags-with-truncation",
      "base": "ibmp",
-     "baseId": "utilities-tagoverflow--tags-with-truncation",
+     "baseId": "components-tagoverflow--tags-with-truncation",
      "v11Id": null,
      "name": "Tags With Truncation",
      "title": "Components/TagOverflow",
@@ -32459,7 +32459,7 @@
      "from": "@carbon/ibm-products",
      "to": "@carbon/react",
      "stories": [],
-     "note": "IBM Products Storybook: Utilities/TagOverflow",
+     "note": "IBM Products Storybook: Components/TagOverflow",
      "text": "TagOverflow · package @carbon/ibm-products → @carbon/react"
     },
     {
@@ -32935,7 +32935,7 @@
       "components-tagoverflow--user-avatars-with-overflow-count",
       "components-tagoverflow--user-avatars-with-overflow-modal"
      ],
-     "elements": 48,
+     "elements": 47,
      "inherited": false,
      "text": "TagOverflow · .cds--tag-overflow__tag-container element added"
     },
@@ -33041,7 +33041,7 @@
       "components-tagoverflow--user-avatars-with-overflow-count",
       "components-tagoverflow--user-avatars-with-overflow-modal"
      ],
-     "elements": 35,
+     "elements": 34,
      "inherited": true,
      "sources": [
       "Tag"
@@ -33312,7 +33312,7 @@
       "components-tagoverflow--tags-with-overflow-count",
       "components-tagoverflow--tags-with-overflow-modal"
      ],
-     "elements": 20,
+     "elements": 19,
      "inherited": false,
      "text": "TagOverflow · .cds--tag.cds--tag-overflow__item--tag element added"
     },
@@ -45894,8 +45894,8 @@
     "unmatched": 0
    },
    "pixel": {
-    "max": 0.0025,
-    "mean": 0.0025,
+    "max": 0.00256,
+    "mean": 0.00256,
     "storiesChanged": 1,
     "storiesCompared": 1
    },
@@ -45910,9 +45910,9 @@
      "captured": true,
      "error": null,
      "pixel": {
-      "diffPixels": 1847,
+      "diffPixels": 1892,
       "totalPixels": 739840,
-      "ratio": 0.0025,
+      "ratio": 0.00256,
       "size": {
        "before": [
         1280,

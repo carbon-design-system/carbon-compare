@@ -20,7 +20,7 @@
   },
   "private": true,
   "dependencies": {
-    "@carbon/react": "2.0.0-alpha.14",
+    "@carbon/react": "2.0.0-alpha.15",
     "@ibm/plex": "6.4.1",
     "react": "19.3.1",
     "react-dom": "19.3.1"
