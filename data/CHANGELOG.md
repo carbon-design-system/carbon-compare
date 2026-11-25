@@ -1,6 +1,6 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-11-24T08:27:44.171Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-11-25T15:28:12.206Z from the live V11 and V12 Storybooks. Values are computed styles.
 
 Components: 31 unchanged · 4 new · 38 changed · 26 migrated · 15 inherited · 4 removed
 
@@ -1301,7 +1301,7 @@ _Components · max 10.8% pixels, 8/8 stories differ_
 
 ### TagOverflow
 
-_Components · max 0.3% pixels, 2/8 stories differ_
+_Components · max 0.4% pixels, 2/8 stories differ_
 
 - **API** TagOverflow · class prefix c4p-- → cds--
 - **API** TagOverflow · package @carbon/ibm-products → @carbon/react
