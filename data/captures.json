@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T11:22:27.605Z",
+ "generatedAt": "2026-11-26T23:25:48.706Z",
  "count": 621,
  "stories": [
   {
@@ -1896,16 +1896,16 @@
    "name": "Allow Custom Value",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:53.203Z",
+   "capturedAt": "2026-11-26T23:22:43.997Z",
    "error": null,
    "elements": {
     "before": 9,
     "v12": 9
    },
    "pixel": {
-    "diffPixels": 13,
+    "diffPixels": 943,
     "totalPixels": 38180,
-    "ratio": 0.00034,
+    "ratio": 0.0247,
     "size": {
      "before": [
       332,
@@ -1933,16 +1933,16 @@
    "name": "Autocomplete With Typeahead",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:53.587Z",
+   "capturedAt": "2026-11-26T23:22:44.024Z",
    "error": null,
    "elements": {
     "before": 9,
     "v12": 9
    },
    "pixel": {
-    "diffPixels": 13,
+    "diffPixels": 894,
     "totalPixels": 38180,
-    "ratio": 0.00034,
+    "ratio": 0.02342,
     "size": {
      "before": [
       332,
@@ -1970,16 +1970,16 @@
    "name": "Controlled",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:54.207Z",
+   "capturedAt": "2026-11-26T23:22:44.497Z",
    "error": null,
    "elements": {
     "before": 15,
     "v12": 15
    },
    "pixel": {
-    "diffPixels": 1890,
+    "diffPixels": 6543,
     "totalPixels": 201392,
-    "ratio": 0.00938,
+    "ratio": 0.03249,
     "size": {
      "before": [
       1228,
@@ -2007,24 +2007,24 @@
    "name": "Default",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:53.930Z",
+   "capturedAt": "2026-11-26T23:22:44.585Z",
    "error": null,
    "elements": {
     "before": 9,
     "v12": 9
    },
    "pixel": {
-    "diffPixels": 13,
-    "totalPixels": 38180,
-    "ratio": 0.00034,
+    "diffPixels": 1327,
+    "totalPixels": 43492,
+    "ratio": 0.03051,
     "size": {
      "before": [
       332,
-      115
+      131
      ],
      "v12": [
       332,
-      115
+      131
      ]
     },
     "sizeChanged": false
@@ -2044,16 +2044,16 @@
    "name": "Experimental Auto Align",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:54.271Z",
+   "capturedAt": "2026-11-26T23:22:44.707Z",
    "error": null,
    "elements": {
     "before": 9,
     "v12": 9
    },
    "pixel": {
-    "diffPixels": 13,
+    "diffPixels": 1327,
     "totalPixels": 49680,
-    "ratio": 0.00026,
+    "ratio": 0.02671,
     "size": {
      "before": [
       432,
@@ -2118,24 +2118,24 @@
    "name": "With AI Label",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:59.049Z",
+   "capturedAt": "2026-11-26T23:22:46.891Z",
    "error": null,
    "elements": {
     "before": 45,
     "v12": 45
    },
    "pixel": {
-    "diffPixels": 389,
-    "totalPixels": 38180,
-    "ratio": 0.01019,
+    "diffPixels": 1783,
+    "totalPixels": 43492,
+    "ratio": 0.041,
     "size": {
      "before": [
       332,
-      115
+      131
      ],
      "v12": [
       332,
-      115
+      131
      ]
     },
     "sizeChanged": false
@@ -2155,16 +2155,16 @@
    "name": "With Layer",
    "component": "ComboBox",
    "match": "exact",
-   "capturedAt": "2026-11-20T12:28:59.696Z",
+   "capturedAt": "2026-11-26T23:22:48.126Z",
    "error": null,
    "elements": {
     "before": 27,
     "v12": 27
    },
    "pixel": {
-    "diffPixels": 402,
+    "diffPixels": 13524,
     "totalPixels": 1024000,
-    "ratio": 0.00039,
+    "ratio": 0.01321,
     "size": {
      "before": [
       1280,
@@ -4375,7 +4375,7 @@
    "name": "Default",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:24.457Z",
+   "capturedAt": "2026-11-26T23:23:09.353Z",
    "error": null,
    "elements": {
     "before": 62,
@@ -4412,7 +4412,7 @@
    "name": "Range With Calendar",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:25.415Z",
+   "capturedAt": "2026-11-26T23:23:09.739Z",
    "error": null,
    "elements": {
     "before": 67,
@@ -4449,7 +4449,7 @@
    "name": "Range With Calendar With Layer",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:25.340Z",
+   "capturedAt": "2026-11-26T23:23:10.355Z",
    "error": null,
    "elements": {
     "before": 201,
@@ -4560,7 +4560,7 @@
    "name": "Single With Calendar",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:26.819Z",
+   "capturedAt": "2026-11-26T23:23:11.718Z",
    "error": null,
    "elements": {
     "before": 62,
@@ -4597,7 +4597,7 @@
    "name": "Single With Calendar With Layer",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:28.018Z",
+   "capturedAt": "2026-11-26T23:23:12.492Z",
    "error": null,
    "elements": {
     "before": 186,
@@ -4671,7 +4671,7 @@
    "name": "With AI Label",
    "component": "DatePicker",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:29.435Z",
+   "capturedAt": "2026-11-26T23:23:14.572Z",
    "error": null,
    "elements": {
     "before": 97,
@@ -5633,7 +5633,7 @@
    "name": "Range With Calendar",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:46.844Z",
+   "capturedAt": "2026-11-26T23:23:30.518Z",
    "error": null,
    "elements": {
     "before": 74,
@@ -5707,7 +5707,7 @@
    "name": "Single",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:47.452Z",
+   "capturedAt": "2026-11-26T23:23:31.139Z",
    "error": null,
    "elements": {
     "before": 69,
@@ -5929,7 +5929,7 @@
    "name": "Default",
    "component": "Fluid Components",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:25:52.524Z",
+   "capturedAt": "2026-11-26T23:23:36.371Z",
    "error": null,
    "elements": {
     "before": 251,
@@ -6817,7 +6817,7 @@
    "name": "Default",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:26:01.581Z",
+   "capturedAt": "2026-11-26T23:23:45.265Z",
    "error": null,
    "elements": {
     "before": 252,
@@ -6854,7 +6854,7 @@
    "name": "With AI Label",
    "component": "Form",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:26:04.183Z",
+   "capturedAt": "2026-11-26T23:23:47.468Z",
    "error": null,
    "elements": {
     "before": 750,
@@ -20396,16 +20396,16 @@
    "name": "User Avatars With Overflow Count",
    "component": "TagOverflow",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:27:42.877Z",
+   "capturedAt": "2026-11-26T23:25:23.296Z",
    "error": null,
    "elements": {
     "before": 115,
     "v12": 113
    },
    "pixel": {
-    "diffPixels": 450,
+    "diffPixels": 568,
     "totalPixels": 157696,
-    "ratio": 0.00285,
+    "ratio": 0.0036,
     "size": {
      "before": [
       1232,
@@ -20433,16 +20433,16 @@
    "name": "User Avatars With Overflow Modal",
    "component": "TagOverflow",
    "match": "exact",
-   "capturedAt": "2026-11-25T15:27:42.993Z",
+   "capturedAt": "2026-11-26T23:25:23.554Z",
    "error": null,
    "elements": {
     "before": 161,
     "v12": 159
    },
    "pixel": {
-    "diffPixels": 631,
+    "diffPixels": 570,
     "totalPixels": 157696,
-    "ratio": 0.004,
+    "ratio": 0.00361,
     "size": {
      "before": [
       1232,
@@ -21802,16 +21802,16 @@
    "name": "Date Time Format",
    "component": "Date Time Format",
    "match": "name",
-   "capturedAt": "2026-11-25T15:28:01.043Z",
+   "capturedAt": "2026-11-26T23:25:39.980Z",
    "error": null,
    "elements": {
     "before": 81,
     "v12": 82
    },
    "pixel": {
-    "diffPixels": 1891,
+    "diffPixels": 1880,
     "totalPixels": 739840,
-    "ratio": 0.00256,
+    "ratio": 0.00254,
     "size": {
      "before": [
       1280,

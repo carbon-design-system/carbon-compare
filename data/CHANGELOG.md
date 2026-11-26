@@ -1,6 +1,6 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-11-26T11:22:30.151Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-11-26T23:25:50.766Z from the live V11 and V12 Storybooks. Values are computed styles.
 
 Components: 31 unchanged · 4 new · 38 changed · 26 migrated · 15 inherited · 4 removed
 
@@ -50,24 +50,26 @@ _Components · max 6.6% pixels, 7/25 stories differ_
 
 ### ComboBox
 
-_Components · max 1.0% pixels, 2/8 stories differ_
+_Components · max 4.1% pixels, 7/8 stories differ_
 
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-color #f4f4f4 → transparent _(8 stories)_
 - **Visual** ComboBox · .cds--text-input · border-radius 0px → 4px (inherited from TextInput) _(8 stories)_
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-radius 0px → 4px _(8 stories)_
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-top/right/left none → 1px solid transparent _(8 stories)_
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(7 stories)_
 - **Visual** ComboBox · .cds--text-input · border-bottom 1px solid #8d8d8d → none _(7 stories)_
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent _(7 stories)_
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-color #ffffff → transparent
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%)
-- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients)
+- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-color #f4f4f4 → transparent _(2 stories)_
+- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#e0e0e0 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) _(2 stories)_
+- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent _(2 stories)_
+- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-radius 0px → 4px _(2 stories)_
+- **Visual** ComboBox · .cds--autoalign.cds--combo-box.cds--list-box · border-top/right/left none → 1px solid transparent _(2 stories)_
 - **Visual** ComboBox · .cds--text-input · border-bottom 1px solid transparent → none
 - **Visual** ComboBox · .cds--btn · border-radius 0px → 999999px (pill) (inherited from Button)
 - **Layout** ComboBox · .cds--text-input · height 40px → 38px (-2px) (inherited from TextInput) _(8 stories)_
 - **Layout** ComboBox · .cds--text-input · width 300px → 298px (-2px) (inherited from TextInput) _(6 stories)_
+- **Layout** ComboBox · .cds--btn · width 135.28px → 125.97px (-9.31px) (inherited from Button)
+- **Layout** ComboBox · .cds--btn · width 135.28px → 153.92px (+18.64px) (inherited from Button)
+- **Layout** ComboBox · .cds--btn · width 135.28px → 154.77px (+19.49px) (inherited from Button)
 - **Layout** ComboBox · .cds--text-input · width 1196px → 1194px (-2px) (inherited from TextInput)
 - **Layout** ComboBox · .cds--text-input · width 400px → 398px (-2px) (inherited from TextInput)
+- **Structure** ComboBox · .cds--autoalign.cds--combo-box.cds--layout--size-md.cds--list-box.cds--list-box--md element added _(6 stories)_
+- **Structure** ComboBox · .cds--combo-box.cds--list-box element removed _(6 stories)_
 - **Story** ComboBox · story graduated from Feature Flag: components-combobox--floating-styles
 - **Flag** ComboBox · feature flag enable-v12-dynamic-floating-styles: off in V11 → on by default in V12
 
@@ -315,7 +317,7 @@ _Components · max 5.6% pixels, 28/36 stories differ_
 - **Visual** Fluid Components · .cds--number__controls · gap normal normal undefined undefined → 4px 4px undefined undefined (inherited from NumberInput) _(2 stories)_
 - **Visual** Fluid Components · .cds--number__controls · margin 0px → 0px 8px 0px 0px (inherited from NumberInput) _(2 stories)_
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-color #ffffff → transparent (inherited from MultiSelect)
-- **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from ComboBox)
+- **Visual** Fluid Components · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Fluid Components · .cds--autoalign.cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Fluid Components · .cds--combo-box.cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect)
 - **Visual** Fluid Components · .cds--autoalign.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
@@ -418,7 +420,7 @@ _Components · max 1.0% pixels, 2/2 stories differ_
 - **Visual** Form · .cds--select-input · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Select)
 - **Visual** Form · .cds--combo-box.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
 - **Visual** Form · .cds--autoalign.cds--dropdown.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
-- **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from ComboBox)
+- **Visual** Form · .cds--autoalign.cds--combo-box.cds--list-box · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from Dropdown)
 - **Visual** Form · .cds--autoalign.cds--list-box.cds--multi-select · background-image linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%) → linear-gradient(0deg, #4589ff / 16% 0%, 15%, transparent 50%, transparent 100%), linear-gradient(#f4f4f4, #f4f4f4), linear-gradient(#a6c8ff / 64% calc(100% - 4px), #4589ff 100%) (inherited from MultiSelect)
 - **Visual** Form · .cds--text-input · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from TextInput)
 - **Visual** Form · .cds--date-picker__input.cds--date-picker__input--md · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from DatePicker)
@@ -486,7 +488,7 @@ _Components · max 4.5% pixels, 11/11 stories differ_
 - **Visual** Modal · .cds--select-input · border-top/right/left none → 1px solid transparent (inherited from Select) _(3 stories)_
 - **Visual** Modal · .cds--autoalign.cds--combo-box.cds--list-box · background-color #ffffff → transparent (inherited from ComboBox) _(2 stories)_
 - **Visual** Modal · .cds--autoalign.cds--list-box.cds--multi-select · background-color #ffffff → transparent (inherited from MultiSelect) _(2 stories)_
-- **Visual** Modal · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from ComboBox) _(2 stories)_
+- **Visual** Modal · .cds--autoalign.cds--combo-box.cds--list-box · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from Dropdown) _(2 stories)_
 - **Visual** Modal · .cds--autoalign.cds--list-box.cds--multi-select · background-image none → linear-gradient(#ffffff, #ffffff), linear-gradient(#c6c6c6 calc(100% - 4px), #8d8d8d 100%) (now drawn with gradients) (inherited from MultiSelect) _(2 stories)_
 - **Visual** Modal · .cds--autoalign.cds--combo-box.cds--list-box · border-bottom 1px solid #8d8d8d → 1px solid transparent (inherited from ComboBox) _(2 stories)_
 - **Visual** Modal · .cds--text-input · border-bottom 1px solid #8d8d8d → none _(2 stories)_
