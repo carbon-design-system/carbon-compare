@@ -1,6 +1,6 @@
 # Carbon React V11 → V12 changelog
 
-Generated 2026-11-26T23:25:50.766Z from the live V11 and V12 Storybooks. Values are computed styles.
+Generated 2026-11-27T23:22:26.187Z from the live V11 and V12 Storybooks. Values are computed styles.
 
 Components: 31 unchanged · 4 new · 38 changed · 26 migrated · 15 inherited · 4 removed
 
